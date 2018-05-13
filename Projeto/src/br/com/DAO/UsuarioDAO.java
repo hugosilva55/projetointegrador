@@ -1,9 +1,10 @@
-package projeto.usuario;
+package br.com.DAO;
 
+import br.com.Modelos.Usuario;
 import javax.swing.JOptionPane;
 import org.hibernate.criterion.Restrictions;
-import projeto.util.GenericDAO;
-import projeto.util.HibernateUtil;
+import br.com.Util.GenericDAO;
+import br.com.Util.HibernateUtil;
 
 /**
  *

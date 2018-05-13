@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projeto.telas;
+package br.com.Telas;
 
 import javax.swing.JOptionPane;
-import projeto.usuario.Usuario;
-import projeto.usuario.UsuarioDAO;
+import br.com.Modelos.Usuario;
+import br.com.DAO.UsuarioDAO;
 
 /**
  *
@@ -45,18 +45,17 @@ public class TelaLogin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(600, 400));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(0, 0));
         getContentPane().setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setText("Usuario:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(130, 123, 81, 22);
+        jLabel2.setBounds(130, 123, 74, 24);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel3.setText("Senha:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(144, 203, 67, 22);
+        jLabel3.setBounds(144, 203, 62, 24);
         getContentPane().add(txtUsuario);
         txtUsuario.setBounds(220, 110, 239, 30);
         getContentPane().add(txtSenha);

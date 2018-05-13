@@ -1,4 +1,4 @@
-package projeto.usuario;
+package br.com.Modelos;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
