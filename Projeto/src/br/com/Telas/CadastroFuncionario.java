@@ -45,8 +45,10 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtEmail = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         btCadastrar = new javax.swing.JButton();
+        btEntrar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setText("Cadastro Funcionario");
@@ -68,6 +70,14 @@ public class CadastroFuncionario extends javax.swing.JFrame {
             }
         });
 
+        btEntrar1.setText("Sair");
+        btEntrar1.setToolTipText("");
+        btEntrar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btEntrar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -86,14 +96,16 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                             .addComponent(jLabel10)
                             .addComponent(jLabel11))
                         .addGap(48, 48, 48)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btCadastrar)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtCPF)
-                                .addComponent(txtNome)
-                                .addComponent(txtLogin)
-                                .addComponent(txtSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
-                                .addComponent(txtEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtCPF)
+                            .addComponent(txtNome)
+                            .addComponent(txtLogin)
+                            .addComponent(txtSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+                            .addComponent(txtEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btCadastrar)
+                                .addGap(18, 18, 18)
+                                .addComponent(btEntrar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addGap(160, 160, 160))
         );
         layout.setVerticalGroup(
@@ -121,12 +133,15 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11))
-                .addGap(39, 39, 39)
-                .addComponent(btCadastrar)
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btEntrar1, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                    .addComponent(btCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     //txtDataNascimento.getText().equals("")
     private void btCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastrarActionPerformed
@@ -144,6 +159,10 @@ public class CadastroFuncionario extends javax.swing.JFrame {
             funcDAO.salvar(func);
         }
     }//GEN-LAST:event_btCadastrarActionPerformed
+
+    private void btEntrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEntrar1ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btEntrar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,6 +201,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btCadastrar;
+    private javax.swing.JButton btEntrar1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
