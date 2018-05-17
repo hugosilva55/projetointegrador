@@ -40,6 +40,7 @@ public class TelaLogin extends javax.swing.JFrame {
         txtSenha = new javax.swing.JPasswordField();
         btEntrar = new javax.swing.JButton();
         btEntrar1 = new javax.swing.JButton();
+        btNovoUsuario = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -50,12 +51,12 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setText("Usuario:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(130, 123, 74, 24);
+        jLabel2.setBounds(130, 123, 81, 22);
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel3.setText("Senha:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(144, 203, 62, 24);
+        jLabel3.setBounds(144, 203, 67, 22);
         getContentPane().add(txtUsuario);
         txtUsuario.setBounds(220, 110, 239, 30);
         getContentPane().add(txtSenha);
@@ -79,6 +80,19 @@ public class TelaLogin extends javax.swing.JFrame {
         });
         getContentPane().add(btEntrar1);
         btEntrar1.setBounds(170, 260, 128, 37);
+
+        btNovoUsuario.setForeground(new java.awt.Color(51, 51, 255));
+        btNovoUsuario.setText("Novo Usuario");
+        btNovoUsuario.setToolTipText("");
+        btNovoUsuario.setBorderPainted(false);
+        btNovoUsuario.setContentAreaFilled(false);
+        btNovoUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btNovoUsuarioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btNovoUsuario);
+        btNovoUsuario.setBounds(310, 340, 150, 25);
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 580, 390);
 
@@ -100,8 +114,15 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btEntrarActionPerformed
 
     private void btEntrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEntrar1ActionPerformed
-       System.exit(0);
+        System.exit(0);
     }//GEN-LAST:event_btEntrar1ActionPerformed
+
+    private void btNovoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNovoUsuarioActionPerformed
+        CadastroFuncionario cadastroFunc = new CadastroFuncionario();
+        dispose();
+        cadastroFunc.setVisible(true);
+
+    }//GEN-LAST:event_btNovoUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -148,6 +169,7 @@ public class TelaLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btEntrar;
     private javax.swing.JButton btEntrar1;
+    private javax.swing.JButton btNovoUsuario;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
