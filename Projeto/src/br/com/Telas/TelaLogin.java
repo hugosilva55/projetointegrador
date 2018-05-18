@@ -41,6 +41,7 @@ public class TelaLogin extends javax.swing.JFrame {
         btEntrar = new javax.swing.JButton();
         btEntrar1 = new javax.swing.JButton();
         btNovoUsuario = new javax.swing.JButton();
+        btRecuperarSenha = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -92,7 +93,20 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btNovoUsuario);
-        btNovoUsuario.setBounds(310, 340, 150, 25);
+        btNovoUsuario.setBounds(220, 360, 150, 25);
+
+        btRecuperarSenha.setForeground(new java.awt.Color(51, 51, 255));
+        btRecuperarSenha.setText("Esqueceu a Senha");
+        btRecuperarSenha.setToolTipText("");
+        btRecuperarSenha.setBorderPainted(false);
+        btRecuperarSenha.setContentAreaFilled(false);
+        btRecuperarSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRecuperarSenhaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btRecuperarSenha);
+        btRecuperarSenha.setBounds(210, 330, 170, 25);
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 580, 390);
 
@@ -123,6 +137,12 @@ public class TelaLogin extends javax.swing.JFrame {
         cadastroFunc.setVisible(true);
 
     }//GEN-LAST:event_btNovoUsuarioActionPerformed
+
+    private void btRecuperarSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRecuperarSenhaActionPerformed
+        RecuperarSenha esqueceuSenha = new RecuperarSenha();
+        dispose();
+        esqueceuSenha.setVisible(true);
+    }//GEN-LAST:event_btRecuperarSenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,6 +190,7 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JButton btEntrar;
     private javax.swing.JButton btEntrar1;
     private javax.swing.JButton btNovoUsuario;
+    private javax.swing.JButton btRecuperarSenha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
