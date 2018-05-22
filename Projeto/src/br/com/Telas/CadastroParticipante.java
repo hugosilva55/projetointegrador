@@ -241,6 +241,17 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtPai.setText("");
         
     }
+    public void atualizarDados(){
+        txtNome.setText(part.getNome());
+        txtEmail.setText(part.getEmail());
+        txtCPF.setText(part.getCPF());
+        txtdataNascimento.setText(part.getDataNascimento());
+        txtNacionalidade.setText(part.getNacionalidade());
+        txtRG.setText(part.getRG());
+        txtMae.setText(part.getNomeMae());
+        txtPai.setText(part.getNomePai());
+        
+    }
     
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
      
