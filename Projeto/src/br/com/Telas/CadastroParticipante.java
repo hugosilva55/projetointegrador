@@ -53,6 +53,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         txtMae = new javax.swing.JTextField();
         btSalvar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -113,6 +114,13 @@ public class CadastroParticipante extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Pesquisar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -161,7 +169,9 @@ public class CadastroParticipante extends javax.swing.JFrame {
                                     .addComponent(txtMae, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel10)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(310, 310, 310)
+                        .addGap(204, 204, 204)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btSalvar)))
                 .addContainerGap(31, Short.MAX_VALUE))
         );
@@ -207,7 +217,9 @@ public class CadastroParticipante extends javax.swing.JFrame {
                     .addComponent(txtPai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtMae, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
-                .addComponent(btSalvar)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btSalvar)
+                    .addComponent(jButton1))
                 .addContainerGap())
         );
 
@@ -283,6 +295,12 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btSalvarActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ConsultarParticipante pesquisaPart = new ConsultarParticipante();
+        pesquisaPart.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -322,6 +340,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Ema;
     private javax.swing.JButton btSalvar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
