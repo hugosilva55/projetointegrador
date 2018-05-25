@@ -22,6 +22,8 @@ public class Participante {
     @Column(length = 50, nullable = false)
     private String estadoCivil;
     @Column(length = 50, nullable = false)
+    private String curso;
+    @Column(length = 50, nullable = false)
     private String CPF;
     @Column(length = 50, nullable = false)
     private String dataNascimento;
@@ -188,6 +190,20 @@ public class Participante {
      */
     public void setNomeMae(String nomeMae) {
         this.nomeMae = nomeMae;
+    }
+
+    /**
+     * @return the curso
+     */
+    public String getCurso() {
+        return curso;
+    }
+
+    /**
+     * @param curso the curso to set
+     */
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
     
     
