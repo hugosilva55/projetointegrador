@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  * @author jonat
  */
 public class Login extends javax.swing.JFrame {
-   
+
     Usuario usuario = new Usuario();
     UsuarioDAO usuarioDAO = new UsuarioDAO();
 
@@ -48,6 +48,7 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 1, 76));
@@ -133,6 +134,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 550));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
@@ -151,7 +153,7 @@ public class Login extends javax.swing.JFrame {
             if (usuario != null) {
                 JOptionPane.showMessageDialog(this, "Login OK!!!");
                 limparCampos();
-                //Nessa parte chama a tela principal, que sera chamada dps uqe o login 
+                //Nessa parte chama a tela principal, que sera chamada dps uqe o login
                 //for confirmado
             }
         }
@@ -164,7 +166,7 @@ public class Login extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -191,8 +193,8 @@ public class Login extends javax.swing.JFrame {
             }
         });
     }
-    
-    private void limparCampos(){
+
+    private void limparCampos() {
         txtLogin.setText("");
         txtSenha.setText("");
     }

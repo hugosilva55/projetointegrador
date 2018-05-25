@@ -23,14 +23,14 @@ public class FuncionarioDAO extends GenericDAO<Funcionario> {
             }
         } else {
             if (atualizar(func)) {
-                JOptionPane.showMessageDialog(null, "Participante editado com sucesso!!");
+                JOptionPane.showMessageDialog(null, "Funcionario editado com sucesso!!");
             }
         }
     }
 
-    public void excluirParticipante(Funcionario func) {
+    public void excluirFuncionario(Funcionario func) {
         if (remover(func)) {
-            JOptionPane.showMessageDialog(null, "Participante excluido com sucesso!!");
+            JOptionPane.showMessageDialog(null, "Funcionario excluido com sucesso!!");
         }
     }
 

@@ -10,7 +10,7 @@ import javax.persistence.Id;
  * @author Eugênio
  */
 @Entity
-public class Funcionario{
+public class Funcionario {
 
     @Id
     @GeneratedValue
@@ -25,6 +25,8 @@ public class Funcionario{
     private String loginFunc;
     @Column(length = 25, nullable = false)
     private String senhaFunc;
+    @Column(length = 25, nullable = false)
+    private String NivelDeAcesso;
 
     public String getEmail() {
         return email;
@@ -72,6 +74,14 @@ public class Funcionario{
 
     public void setIdFuncionario(int idFuncionario) {
         this.idFuncionario = idFuncionario;
+    }
+
+    public String getNivelDeAcesso() {
+        return NivelDeAcesso;
+    }
+
+    public void setNivelDeAcesso(String NivelDeAcesso) {
+        this.NivelDeAcesso = NivelDeAcesso;
     }
 
 }
