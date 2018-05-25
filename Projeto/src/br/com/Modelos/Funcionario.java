@@ -14,7 +14,7 @@ public class Funcionario{
 
     @Id
     @GeneratedValue
-    private int idUsuario;
+    private int idFuncionario;
     @Column(length = 25, nullable = false)
     private String nomeFuncionario;
     @Column(length = 25, nullable = false)
@@ -50,14 +50,6 @@ public class Funcionario{
         this.nomeFuncionario = nomeFuncionario;
     }
 
-    public int getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
     public String getLoginFunc() {
         return loginFunc;
     }
@@ -72,6 +64,14 @@ public class Funcionario{
 
     public void setSenhaFunc(String senhaFunc) {
         this.senhaFunc = senhaFunc;
+    }
+
+    public int getIdFuncionario() {
+        return idFuncionario;
+    }
+
+    public void setIdFuncionario(int idFuncionario) {
+        this.idFuncionario = idFuncionario;
     }
 
 }
