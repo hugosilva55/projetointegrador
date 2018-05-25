@@ -33,7 +33,6 @@ public class CadastroCurso extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtCurso = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtTurno = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -44,6 +43,7 @@ public class CadastroCurso extends javax.swing.JFrame {
         txtCoordenador = new javax.swing.JTextField();
         jbSalvar = new javax.swing.JButton();
         jbPesquisar = new javax.swing.JButton();
+        jcCurso = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,12 +51,6 @@ public class CadastroCurso extends javax.swing.JFrame {
         jLabel1.setText("Cadastro de Curso");
 
         jLabel2.setText("Nome do Curso:");
-
-        txtCurso.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCursoActionPerformed(evt);
-            }
-        });
 
         jLabel3.setText("Turno:");
 
@@ -104,6 +98,8 @@ public class CadastroCurso extends javax.swing.JFrame {
             }
         });
 
+        jcCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Fisica", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -122,32 +118,30 @@ public class CadastroCurso extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)
                             .addComponent(jLabel5))
+                        .addGap(154, 154, 154)
+                        .addComponent(jLabel1)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jcCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addComponent(jLabel1)
-                                .addContainerGap())
+                                .addComponent(txtHorario)
+                                .addGap(45, 45, 45)
+                                .addComponent(txtTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(32, 32, 32))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(73, 73, 73)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addGap(158, 158, 158))
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txtHorario)
-                                        .addGap(45, 45, 45)
-                                        .addComponent(txtTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(32, 32, 32))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
-                                        .addComponent(jLabel3)
-                                        .addGap(158, 158, 158))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtCoordenador, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel6))
-                                        .addGap(0, 0, Short.MAX_VALUE))))))))
+                                    .addComponent(txtCoordenador, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel6))
+                                .addGap(0, 0, Short.MAX_VALUE))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,11 +154,12 @@ public class CadastroCurso extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtTurno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtHorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(46, 46, 46)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtHorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jcCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
@@ -172,7 +167,7 @@ public class CadastroCurso extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtVagas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCoordenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbSalvar)
                     .addComponent(jbPesquisar)))
@@ -180,10 +175,6 @@ public class CadastroCurso extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtCursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCursoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCursoActionPerformed
 
     private void txtTurnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTurnoActionPerformed
         // TODO add your handling code here:
@@ -202,7 +193,6 @@ public class CadastroCurso extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCoordenadorActionPerformed
 
     public void limparCampos(){
-        txtCurso.setText("");
         txtHorario.setText("");
         txtTurno.setText("");
         txtVagas.setText("");
@@ -212,7 +202,6 @@ public class CadastroCurso extends javax.swing.JFrame {
     
     public void atualizarCampos(){
         
-        txtCurso.setText(curs.getCurso());
         txtHorario.setText(curs.getCargaHoraria());
         txtTurno.setText(curs.getTurno());
         txtVagas.setText(curs.getQuantVagas());
@@ -221,13 +210,12 @@ public class CadastroCurso extends javax.swing.JFrame {
     }
     
     private void jbSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalvarActionPerformed
-        if (txtCurso.getText().equals("") || txtHorario.getText().equals("") || txtTurno.getText().equals("")
+        if (txtHorario.getText().equals("") || txtTurno.getText().equals("")
                 || txtVagas.getText().equals("") || txtCoordenador.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
-
-            curs.setCurso(txtCurso.getText());
+            curs.setCurso(String.valueOf(jcCurso.getSelectedItem()));
             curs.setCargaHoraria(txtHorario.getText());
             curs.setTurno(txtTurno.getText());
             curs.setQuantVagas(txtVagas.getText());
@@ -292,8 +280,8 @@ public class CadastroCurso extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JButton jbPesquisar;
     private javax.swing.JButton jbSalvar;
+    private javax.swing.JComboBox<String> jcCurso;
     private javax.swing.JTextField txtCoordenador;
-    private javax.swing.JTextField txtCurso;
     private javax.swing.JTextField txtHorario;
     private javax.swing.JTextField txtTurno;
     private javax.swing.JTextField txtVagas;
