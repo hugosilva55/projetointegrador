@@ -9,10 +9,10 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class Funcionario_ {
 
 	public static volatile SingularAttribute<Funcionario, String> loginFunc;
-	public static volatile SingularAttribute<Funcionario, Integer> idUsuario;
 	public static volatile SingularAttribute<Funcionario, String> cpf;
 	public static volatile SingularAttribute<Funcionario, String> nomeFuncionario;
 	public static volatile SingularAttribute<Funcionario, String> senhaFunc;
+	public static volatile SingularAttribute<Funcionario, Integer> idFuncionario;
 	public static volatile SingularAttribute<Funcionario, String> email;
 
 }

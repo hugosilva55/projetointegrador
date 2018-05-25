@@ -67,6 +67,11 @@ public class CadastroCurso extends javax.swing.JFrame {
                 txtHorarioActionPerformed(evt);
             }
         });
+        txtHorario.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtHorarioKeyTyped(evt);
+            }
+        });
 
         jLabel5.setText("Quantidade de Vagas:");
 
@@ -192,23 +197,23 @@ public class CadastroCurso extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCoordenadorActionPerformed
 
-    public void limparCampos(){
+    public void limparCampos() {
         txtHorario.setText("");
         txtTurno.setText("");
         txtVagas.setText("");
         txtCoordenador.setText("");
-        
+
     }
-    
-    public void atualizarCampos(){
-        
+
+    public void atualizarCampos() {
+
         txtHorario.setText(curs.getCargaHoraria());
         txtTurno.setText(curs.getTurno());
         txtVagas.setText(curs.getQuantVagas());
         txtCoordenador.setText(curs.getCoordenador());
-        
+
     }
-    
+
     private void jbSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalvarActionPerformed
         if (txtHorario.getText().equals("") || txtTurno.getText().equals("")
                 || txtVagas.getText().equals("") || txtCoordenador.getText().equals("")) {
@@ -220,7 +225,7 @@ public class CadastroCurso extends javax.swing.JFrame {
             curs.setTurno(txtTurno.getText());
             curs.setQuantVagas(txtVagas.getText());
             curs.setCoordenador(txtCoordenador.getText());
-            
+
             cursDAO.salvarCurso(curs);
             limparCampos();
 
@@ -229,12 +234,22 @@ public class CadastroCurso extends javax.swing.JFrame {
     }//GEN-LAST:event_jbSalvarActionPerformed
 
     private void jbPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbPesquisarActionPerformed
-        
+
         ConsultarCurso conscur = new ConsultarCurso();
         conscur.setVisible(true);
         dispose();
-        
+
     }//GEN-LAST:event_jbPesquisarActionPerformed
+
+    private void txtHorarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHorarioKeyTyped
+        int ascii = evt.getKeyChar();
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+        if (txtHorario.getText().length() >= 4) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtHorarioKeyTyped
 
     /**
      * @param args the command line arguments
@@ -243,7 +258,7 @@ public class CadastroCurso extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
