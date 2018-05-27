@@ -17,7 +17,6 @@
         <mapping class="br.com.Modelos.Usuario"/>
         <mapping class="br.com.Modelos.Participante"/>
         <mapping class="br.com.Modelos.Curso"/>
-        <mapping class="br.com.Modelos.Funcionario"/>
 
 
     </session-factory>
