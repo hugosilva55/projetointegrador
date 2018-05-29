@@ -8,6 +8,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(Funcionario.class)
 public abstract class Funcionario_ {
 
+	public static volatile SingularAttribute<Funcionario, String> NivelDeAcesso;
 	public static volatile SingularAttribute<Funcionario, String> loginFunc;
 	public static volatile SingularAttribute<Funcionario, String> cpf;
 	public static volatile SingularAttribute<Funcionario, String> nomeFuncionario;
