@@ -36,6 +36,26 @@ public class GabaritoOficial {
     private String Resposta9;
     @Column(length = 1, nullable = false)
     private String Resposta10;
+    @Column(length = 50, nullable = false)
+    private String Resposta11;
+    @Column(length = 1, nullable = false)
+    private String Resposta12;
+    @Column(length = 1, nullable = false)
+    private String Resposta13;
+    @Column(length = 1, nullable = false)
+    private String Resposta14;
+    @Column(length = 1, nullable = false)
+    private String Resposta15;
+    @Column(length = 1, nullable = false)
+    private String Resposta16;
+    @Column(length = 1, nullable = false)
+    private String Resposta17;
+    @Column(length = 1, nullable = false)
+    private String Resposta18;
+    @Column(length = 1, nullable = false)
+    private String Resposta19;
+    @Column(length = 1, nullable = false)
+    private String Resposta20;
 
     /**
      * @return the idGabarito
@@ -203,6 +223,146 @@ public class GabaritoOficial {
      */
     public void setResposta10(String Resposta10) {
         this.Resposta10 = Resposta10;
+    }
+
+    /**
+     * @return the Resposta11
+     */
+    public String getResposta11() {
+        return Resposta11;
+    }
+
+    /**
+     * @param Resposta11 the Resposta11 to set
+     */
+    public void setResposta11(String Resposta11) {
+        this.Resposta11 = Resposta11;
+    }
+
+    /**
+     * @return the Resposta12
+     */
+    public String getResposta12() {
+        return Resposta12;
+    }
+
+    /**
+     * @param Resposta12 the Resposta12 to set
+     */
+    public void setResposta12(String Resposta12) {
+        this.Resposta12 = Resposta12;
+    }
+
+    /**
+     * @return the Resposta13
+     */
+    public String getResposta13() {
+        return Resposta13;
+    }
+
+    /**
+     * @param Resposta13 the Resposta13 to set
+     */
+    public void setResposta13(String Resposta13) {
+        this.Resposta13 = Resposta13;
+    }
+
+    /**
+     * @return the Resposta14
+     */
+    public String getResposta14() {
+        return Resposta14;
+    }
+
+    /**
+     * @param Resposta14 the Resposta14 to set
+     */
+    public void setResposta14(String Resposta14) {
+        this.Resposta14 = Resposta14;
+    }
+
+    /**
+     * @return the Resposta15
+     */
+    public String getResposta15() {
+        return Resposta15;
+    }
+
+    /**
+     * @param Resposta15 the Resposta15 to set
+     */
+    public void setResposta15(String Resposta15) {
+        this.Resposta15 = Resposta15;
+    }
+
+    /**
+     * @return the Resposta16
+     */
+    public String getResposta16() {
+        return Resposta16;
+    }
+
+    /**
+     * @param Resposta16 the Resposta16 to set
+     */
+    public void setResposta16(String Resposta16) {
+        this.Resposta16 = Resposta16;
+    }
+
+    /**
+     * @return the Resposta17
+     */
+    public String getResposta17() {
+        return Resposta17;
+    }
+
+    /**
+     * @param Resposta17 the Resposta17 to set
+     */
+    public void setResposta17(String Resposta17) {
+        this.Resposta17 = Resposta17;
+    }
+
+    /**
+     * @return the Resposta18
+     */
+    public String getResposta18() {
+        return Resposta18;
+    }
+
+    /**
+     * @param Resposta18 the Resposta18 to set
+     */
+    public void setResposta18(String Resposta18) {
+        this.Resposta18 = Resposta18;
+    }
+
+    /**
+     * @return the Resposta19
+     */
+    public String getResposta19() {
+        return Resposta19;
+    }
+
+    /**
+     * @param Resposta19 the Resposta19 to set
+     */
+    public void setResposta19(String Resposta19) {
+        this.Resposta19 = Resposta19;
+    }
+
+    /**
+     * @return the Resposta20
+     */
+    public String getResposta20() {
+        return Resposta20;
+    }
+
+    /**
+     * @param Resposta20 the Resposta20 to set
+     */
+    public void setResposta20(String Resposta20) {
+        this.Resposta20 = Resposta20;
     }
 
 }

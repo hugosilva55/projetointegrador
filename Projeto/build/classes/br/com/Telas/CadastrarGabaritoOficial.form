@@ -4,6 +4,49 @@
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="bgAlternativa1">
     </Component>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa2">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa3">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa4">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa5">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa6">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa7">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa8">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa9">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa10">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa11">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa12">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa13">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa14">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa15">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa16">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa17">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa18">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa19">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="bgAlternativa20">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -317,7 +360,7 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="77" max="-2" attributes="0"/>
+              <Component id="jbSalvar" min="-2" pref="77" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -335,190 +378,230 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA1" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA1" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA2" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA2" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA3" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel3" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA3" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel4" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA5" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel5" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA5" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA6" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel6" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA6" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA7" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel7" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA7" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE7" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA8" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel8" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA8" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE8" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA9" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel9" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA9" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE9" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA10" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel10" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA10" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE10" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA11" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel11" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA11" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE11" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA12" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel12" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA12" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE12" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA13" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel13" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA13" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE13" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA14" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel14" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA14" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE14" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA15" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel15" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA15" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE15" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA16" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel16" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA16" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE16" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA17" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel17" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA17" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE17" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA18" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel18" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA18" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE18" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA19" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel19" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA19" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE19" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jrAlternativaA20" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaB20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaC20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaD20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jrAlternativaE20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel20" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jrAlternativaA20" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaB20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaC20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaD20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                              <Component id="jrAlternativaE20" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="32" max="-2" attributes="0"/>
+              <Component id="jbSalvar" min="-2" pref="32" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -555,12 +638,12 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="jbSalvar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbSalvarActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel0">
@@ -583,11 +666,6 @@
         </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
-      <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleParent" type="javax.accessibility.Accessible" editor="org.netbeans.modules.form.ComponentChooserEditor">
-          <ComponentRef name="null"/>
-        </Property>
-      </AccessibilityProperties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrAlternativaA1ActionPerformed"/>
       </Events>
@@ -646,11 +724,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA2">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB2">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -659,6 +743,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC2">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -667,6 +754,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD2">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -675,6 +765,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE2">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -691,11 +784,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA3">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB3">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -704,6 +803,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC3">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -712,6 +814,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD3">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -720,6 +825,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE3">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -736,11 +844,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA4">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa4"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB4">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa4"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -749,6 +863,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC4">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa4"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -757,6 +874,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD4">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa4"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -765,6 +885,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE4">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa4"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -781,11 +904,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA5">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa5"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB5">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa5"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -794,6 +923,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC5">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa5"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -802,6 +934,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD5">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa5"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -810,6 +945,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE5">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa5"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -826,11 +964,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA6">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa6"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB6">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa6"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -839,6 +983,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC6">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa6"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -847,6 +994,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD6">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa6"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -855,6 +1005,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE6">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa6"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -871,11 +1024,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA7">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa7"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB7">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa7"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -884,6 +1043,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC7">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa7"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -892,6 +1054,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD7">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa7"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -900,6 +1065,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE7">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa7"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -916,11 +1084,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA8">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa8"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB8">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa8"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -929,6 +1103,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC8">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa8"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -937,6 +1114,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD8">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa8"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -945,6 +1125,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE8">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa8"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -961,11 +1144,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA9">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa9"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB9">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa9"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -974,6 +1163,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC9">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa9"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -982,6 +1174,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD9">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa9"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -990,6 +1185,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE9">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa9"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1006,11 +1204,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA10">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa10"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB10">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa10"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1019,6 +1223,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC10">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa10"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1027,6 +1234,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD10">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa10"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1035,6 +1245,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE10">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa10"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1051,11 +1264,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA13">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa13"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB13">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa13"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1064,6 +1283,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC13">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa13"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1072,6 +1294,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD13">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa13"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1080,6 +1305,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE13">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa13"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1096,11 +1324,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA11">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa11"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB11">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa11"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1109,6 +1343,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC11">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa11"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1117,6 +1354,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD11">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa11"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1125,6 +1365,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE11">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa11"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1141,11 +1384,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA12">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa12"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB12">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa12"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1154,6 +1403,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC12">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa12"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1162,6 +1414,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD12">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa12"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1170,6 +1425,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE12">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa12"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1186,11 +1444,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA14">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa14"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB14">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa14"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1199,6 +1463,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC14">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa14"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1207,6 +1474,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD14">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa14"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1215,6 +1485,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE14">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa14"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1231,11 +1504,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA15">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa15"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB15">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa15"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1244,6 +1523,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC15">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa15"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1252,6 +1534,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD15">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa15"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1260,6 +1545,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE15">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa15"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1276,11 +1564,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA16">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa16"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB16">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa16"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1289,6 +1583,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC16">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa16"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1297,6 +1594,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD16">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa16"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1305,6 +1605,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE16">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa16"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1321,11 +1624,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA17">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa17"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB17">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa17"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1334,6 +1643,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC17">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa17"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1342,6 +1654,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD17">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa17"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1350,6 +1665,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE17">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa17"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1366,11 +1684,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA18">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa18"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB18">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa18"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1379,6 +1703,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC18">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa18"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1387,6 +1714,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD18">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa18"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1395,6 +1725,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE18">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa18"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1411,11 +1744,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA19">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa19"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB19">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa19"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1424,6 +1763,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC19">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa19"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1432,6 +1774,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD19">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa19"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1440,6 +1785,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE19">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa19"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
@@ -1456,11 +1804,17 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaA20">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa20"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaB20">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa20"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
       <Events>
@@ -1469,6 +1823,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaC20">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa20"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
       <Events>
@@ -1477,6 +1834,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaD20">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa20"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
       <Events>
@@ -1485,6 +1845,9 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrAlternativaE20">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="bgAlternativa20"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="E"/>
       </Properties>
       <Events>
