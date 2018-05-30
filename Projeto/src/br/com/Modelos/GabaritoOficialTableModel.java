@@ -27,7 +27,7 @@ public class GabaritoOficialTableModel {
     }
 
     public int getColumnCount() {
-        return gabaritosOfic.length();
+        return gabaritosOfic.length;
 
     }
 

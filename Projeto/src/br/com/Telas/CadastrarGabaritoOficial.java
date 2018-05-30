@@ -1481,7 +1481,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             gabaritoOfic.setResposta20(bgAlternativa20.toString());
             
          gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
-         LimparCampos();
+         
      }
     }//GEN-LAST:event_jbSalvarActionPerformed
 

@@ -121,6 +121,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel1.setText("Cadastro de Participante");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, 27));
 
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setText("Nome:");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
@@ -132,12 +133,14 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 370, 30));
 
+        Ema.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Ema.setText("Email:");
         jPanel3.add(Ema, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
         txtEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 370, 30));
 
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel3.setText("Estado Civil:");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, -1, -1));
 
@@ -150,12 +153,14 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(jcCivil, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 250, 30));
 
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel4.setText("CPF:");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
         txtCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 370, 30));
 
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel5.setText("Data de Nascimento:");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, -1, -1));
 
@@ -167,6 +172,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 130, 30));
 
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel6.setText("Sexo:");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 70, -1));
 
@@ -174,6 +180,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jcSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino", " " }));
         jPanel3.add(jcSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 200, 160, 30));
 
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel7.setText("Nacionalidade:");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, -1, -1));
 
@@ -185,18 +192,21 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(txtNacionalidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, 146, 30));
 
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel8.setText("RG:");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         txtRG.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 370, 30));
 
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel9.setText("Nome do Pai:");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
         txtPai.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtPai, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 370, 30));
 
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Nome do Mãe:");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, -1, -1));
 
@@ -231,6 +241,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, 160, 30));
 
+        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel11.setText("Curso:");
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, -1, -1));
 

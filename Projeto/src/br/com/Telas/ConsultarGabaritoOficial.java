@@ -6,7 +6,7 @@
 package br.com.Telas;
 
 import br.com.Modelos.GabaritoOficial;
-import br.com.Modelos.GabaritoOficialDAO;
+import br.com.DAO.GabaritoOficialDAO;
 import br.com.Modelos.GabaritoOficialTableModel;
 import javax.swing.JOptionPane;
 
