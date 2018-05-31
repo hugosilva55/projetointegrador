@@ -2264,7 +2264,4 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 
-    void atualizarCampos() {
-        
-    }
 }
