@@ -136,8 +136,8 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVoltarActionPerformed
-        CadastrarGabaritoOficial cadGabaritoOfic = new CadastrarGabaritoOficial();
-        cadGabaritoOfic.setVisible(true);
+        Main menu = new Main();
+        menu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jbVoltarActionPerformed
 

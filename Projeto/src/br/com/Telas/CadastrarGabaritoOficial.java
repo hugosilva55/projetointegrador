@@ -2002,6 +2002,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    void atualizarCampos() {
+        
+    }
     public void LimparCampos() {
         bgAlternativa1.isSelected(null); bgAlternativa2.isSelected(null);
         bgAlternativa3.isSelected(null); bgAlternativa4.isSelected(null);
@@ -2262,6 +2265,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     void atualizarCampos() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 }
