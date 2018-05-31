@@ -9,6 +9,7 @@ import br.com.Modelos.GabaritoOficial;
 import br.com.DAO.GabaritoOficialDAO;
 import br.com.Modelos.GabaritoOficialTableModel;
 import javax.swing.JOptionPane;
+import javax.swing.table.TableModel;
 
 /**
  *
@@ -25,9 +26,8 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
     }
     
     public void atualizarTabela(){
-        GabaritoOficialTableModel gabaritoOficTable = 
-        new GabaritoOficialTableModel(gabaritoOficDAO.listarGabaritoOficial());
-        tbGabaritoOfic1.setModel(gabaritoOficTable);
+        GabaritoOficialTableModel gabaritoOficTable = new GabaritoOficialTableModel(gabaritoOficDAO.listarGabaritoOficial());
+        tbGabaritoOfic1.setModel((TableModel) gabaritoOficTable);
         
         
         
@@ -45,6 +45,7 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
         tbGabaritoOfic1 = new javax.swing.JTable();
         jbEditar = new javax.swing.JButton();
         jbExcluir = new javax.swing.JButton();
+        jbVoltar1 = new javax.swing.JButton();
 
         tbCurso.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,6 +96,13 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
             }
         });
 
+        jbVoltar1.setText("Cadastrar Gabarito");
+        jbVoltar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbVoltar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -102,8 +110,10 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jbVoltar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jbVoltar1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
                 .addComponent(jbEditar)
-                .addGap(31, 31, 31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jbExcluir)
                 .addGap(22, 22, 22))
             .addGroup(layout.createSequentialGroup()
@@ -118,7 +128,8 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbVoltar)
                     .addComponent(jbEditar)
-                    .addComponent(jbExcluir)))
+                    .addComponent(jbExcluir)
+                    .addComponent(jbVoltar1)))
         );
 
         pack();
@@ -160,6 +171,12 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_jbExcluirActionPerformed
+
+    private void jbVoltar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVoltar1ActionPerformed
+        CadastrarGabaritoOficial newGabarito = new CadastrarGabaritoOficial();
+        newGabarito.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jbVoltar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,6 +222,7 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JButton jbEditar;
     private javax.swing.JButton jbExcluir;
     private javax.swing.JButton jbVoltar;
+    private javax.swing.JButton jbVoltar1;
     private javax.swing.JTable tbCurso;
     private javax.swing.JTable tbGabaritoOfic1;
     // End of variables declaration//GEN-END:variables

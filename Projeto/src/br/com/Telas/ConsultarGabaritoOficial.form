@@ -49,8 +49,10 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jbVoltar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
+              <Component id="jbVoltar1" min="-2" pref="134" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Component id="jbEditar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jbExcluir" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
           </Group>
@@ -69,6 +71,7 @@
                   <Component id="jbVoltar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jbEditar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jbExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbVoltar1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -133,6 +136,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbExcluirActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbVoltar1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cadastrar Gabarito"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbVoltar1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

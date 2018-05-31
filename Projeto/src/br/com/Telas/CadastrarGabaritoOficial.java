@@ -178,6 +178,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaC20 = new javax.swing.JRadioButton();
         jrAlternativaD20 = new javax.swing.JRadioButton();
         jrAlternativaE20 = new javax.swing.JRadioButton();
+        jButton1 = new javax.swing.JButton();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -256,6 +257,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa2.add(jrAlternativaA2);
         jrAlternativaA2.setText("A");
+        jrAlternativaA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA2ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa2.add(jrAlternativaB2);
         jrAlternativaB2.setText("B");
@@ -294,6 +300,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa3.add(jrAlternativaA3);
         jrAlternativaA3.setText("A");
+        jrAlternativaA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA3ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa3.add(jrAlternativaB3);
         jrAlternativaB3.setText("B");
@@ -332,6 +343,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa4.add(jrAlternativaA4);
         jrAlternativaA4.setText("A");
+        jrAlternativaA4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA4ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa4.add(jrAlternativaB4);
         jrAlternativaB4.setText("B");
@@ -370,6 +386,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa5.add(jrAlternativaA5);
         jrAlternativaA5.setText("A");
+        jrAlternativaA5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA5ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa5.add(jrAlternativaB5);
         jrAlternativaB5.setText("B");
@@ -408,6 +429,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa6.add(jrAlternativaA6);
         jrAlternativaA6.setText("A");
+        jrAlternativaA6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA6ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa6.add(jrAlternativaB6);
         jrAlternativaB6.setText("B");
@@ -446,6 +472,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa7.add(jrAlternativaA7);
         jrAlternativaA7.setText("A");
+        jrAlternativaA7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA7ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa7.add(jrAlternativaB7);
         jrAlternativaB7.setText("B");
@@ -484,6 +515,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa8.add(jrAlternativaA8);
         jrAlternativaA8.setText("A");
+        jrAlternativaA8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA8ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa8.add(jrAlternativaB8);
         jrAlternativaB8.setText("B");
@@ -522,6 +558,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa9.add(jrAlternativaA9);
         jrAlternativaA9.setText("A");
+        jrAlternativaA9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA9ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa9.add(jrAlternativaB9);
         jrAlternativaB9.setText("B");
@@ -560,6 +601,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa10.add(jrAlternativaA10);
         jrAlternativaA10.setText("A");
+        jrAlternativaA10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA10ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa10.add(jrAlternativaB10);
         jrAlternativaB10.setText("B");
@@ -598,6 +644,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa13.add(jrAlternativaA13);
         jrAlternativaA13.setText("A");
+        jrAlternativaA13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA13ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa13.add(jrAlternativaB13);
         jrAlternativaB13.setText("B");
@@ -636,6 +687,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa11.add(jrAlternativaA11);
         jrAlternativaA11.setText("A");
+        jrAlternativaA11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA11ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa11.add(jrAlternativaB11);
         jrAlternativaB11.setText("B");
@@ -674,6 +730,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa12.add(jrAlternativaA12);
         jrAlternativaA12.setText("A");
+        jrAlternativaA12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA12ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa12.add(jrAlternativaB12);
         jrAlternativaB12.setText("B");
@@ -712,6 +773,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa14.add(jrAlternativaA14);
         jrAlternativaA14.setText("A");
+        jrAlternativaA14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA14ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa14.add(jrAlternativaB14);
         jrAlternativaB14.setText("B");
@@ -750,6 +816,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa15.add(jrAlternativaA15);
         jrAlternativaA15.setText("A");
+        jrAlternativaA15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA15ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa15.add(jrAlternativaB15);
         jrAlternativaB15.setText("B");
@@ -788,6 +859,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa16.add(jrAlternativaA16);
         jrAlternativaA16.setText("A");
+        jrAlternativaA16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA16ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa16.add(jrAlternativaB16);
         jrAlternativaB16.setText("B");
@@ -826,6 +902,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa17.add(jrAlternativaA17);
         jrAlternativaA17.setText("A");
+        jrAlternativaA17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA17ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa17.add(jrAlternativaB17);
         jrAlternativaB17.setText("B");
@@ -864,6 +945,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa18.add(jrAlternativaA18);
         jrAlternativaA18.setText("A");
+        jrAlternativaA18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA18ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa18.add(jrAlternativaB18);
         jrAlternativaB18.setText("B");
@@ -902,6 +988,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa19.add(jrAlternativaA19);
         jrAlternativaA19.setText("A");
+        jrAlternativaA19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA19ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa19.add(jrAlternativaB19);
         jrAlternativaB19.setText("B");
@@ -940,6 +1031,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         bgAlternativa20.add(jrAlternativaA20);
         jrAlternativaA20.setText("A");
+        jrAlternativaA20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrAlternativaA20ActionPerformed(evt);
+            }
+        });
 
         bgAlternativa20.add(jrAlternativaB20);
         jrAlternativaB20.setText("B");
@@ -970,6 +1066,13 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaE20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE20ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Voltar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -1237,7 +1340,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(10, 10, 10))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(22, 22, 22)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jbSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -1433,7 +1538,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                                 .addComponent(jrAlternativaD20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jrAlternativaE20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jbSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jbSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(8, 8, 8))
         );
 
@@ -1459,29 +1566,29 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
             gabaritoOfic.setProcessoSeletivo(String.valueOf(jcProcessoSeletivo.getSelectedItem()));
-            gabaritoOfic.setResposta1(bgAlternativa1.toString());
-            gabaritoOfic.setResposta2(bgAlternativa2.toString());
-            gabaritoOfic.setResposta3(bgAlternativa3.toString());
-            gabaritoOfic.setResposta4(bgAlternativa4.toString());
-            gabaritoOfic.setResposta5(bgAlternativa5.toString());
-            gabaritoOfic.setResposta6(bgAlternativa6.toString());
-            gabaritoOfic.setResposta7(bgAlternativa7.toString());
-            gabaritoOfic.setResposta8(bgAlternativa8.toString());
-            gabaritoOfic.setResposta9(bgAlternativa9.toString());
-            gabaritoOfic.setResposta10(bgAlternativa10.toString());
-            gabaritoOfic.setResposta11(bgAlternativa11.toString());
-            gabaritoOfic.setResposta12(bgAlternativa12.toString());
-            gabaritoOfic.setResposta13(bgAlternativa13.toString());
-            gabaritoOfic.setResposta14(bgAlternativa14.toString());
-            gabaritoOfic.setResposta15(bgAlternativa15.toString());
-            gabaritoOfic.setResposta16(bgAlternativa16.toString());
-            gabaritoOfic.setResposta17(bgAlternativa17.toString());
-            gabaritoOfic.setResposta18(bgAlternativa18.toString());
-            gabaritoOfic.setResposta19(bgAlternativa19.toString());
-            gabaritoOfic.setResposta20(bgAlternativa20.toString());
+            gabaritoOfic.setResposta1(bgAlternativa1.getSelection().getActionCommand());
+            gabaritoOfic.setResposta2(bgAlternativa2.getSelection().getActionCommand());
+            gabaritoOfic.setResposta3(bgAlternativa3.getSelection().getActionCommand());
+            gabaritoOfic.setResposta4(bgAlternativa4.getSelection().getActionCommand());
+            gabaritoOfic.setResposta5(bgAlternativa5.getSelection().getActionCommand());
+            gabaritoOfic.setResposta6(bgAlternativa6.getSelection().getActionCommand());
+            gabaritoOfic.setResposta7(bgAlternativa7.getSelection().getActionCommand());
+            gabaritoOfic.setResposta8(bgAlternativa8.getSelection().getActionCommand());
+            gabaritoOfic.setResposta9(bgAlternativa9.getSelection().getActionCommand());
+            gabaritoOfic.setResposta10(bgAlternativa10.getSelection().getActionCommand());
+            gabaritoOfic.setResposta11(bgAlternativa11.getSelection().getActionCommand());
+            gabaritoOfic.setResposta12(bgAlternativa12.getSelection().getActionCommand());
+            gabaritoOfic.setResposta13(bgAlternativa13.getSelection().getActionCommand());
+            gabaritoOfic.setResposta14(bgAlternativa14.getSelection().getActionCommand());
+            gabaritoOfic.setResposta15(bgAlternativa15.getSelection().getActionCommand());
+            gabaritoOfic.setResposta16(bgAlternativa16.getSelection().getActionCommand());
+            gabaritoOfic.setResposta17(bgAlternativa17.getSelection().getActionCommand());
+            gabaritoOfic.setResposta18(bgAlternativa18.getSelection().getActionCommand());
+            gabaritoOfic.setResposta19(bgAlternativa19.getSelection().getActionCommand());
+            gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());
             
          gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
-         
+         LimparCampos();
      }
     }//GEN-LAST:event_jbSalvarActionPerformed
 
@@ -1490,329 +1597,423 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     }//GEN-LAST:event_jcProcessoSeletivoKeyTyped
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB3.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB3ActionPerformed
 
     private void jrAlternativaC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC3ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC3.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC3ActionPerformed
 
     private void jrAlternativaD3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD3ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD3.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD3ActionPerformed
 
     private void jrAlternativaE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE3ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE3.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaE3ActionPerformed
 
     private void jrAlternativaB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB1ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB1.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB1ActionPerformed
 
     private void jrAlternativaC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC1ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC1.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC1ActionPerformed
 
     private void jrAlternativaD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD1ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD1.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD1ActionPerformed
 
     private void jrAlternativaE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE1ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE1.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE1ActionPerformed
 
     private void jrAlternativaB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB2ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB2.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB2ActionPerformed
 
     private void jrAlternativaC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC2ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC2.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC2ActionPerformed
 
     private void jrAlternativaD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD2ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD2.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD2ActionPerformed
 
     private void jrAlternativaE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE2ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE2.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE2ActionPerformed
 
     private void jrAlternativaB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB4ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB4.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB4ActionPerformed
 
     private void jrAlternativaC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC4ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC4.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC4ActionPerformed
 
     private void jrAlternativaD4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD4ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD4.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD4ActionPerformed
 
     private void jrAlternativaE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE4ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE4.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE4ActionPerformed
 
     private void jrAlternativaB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB5ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB5.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB5ActionPerformed
 
     private void jrAlternativaC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC5ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC5.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC5ActionPerformed
 
     private void jrAlternativaD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD5ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD5.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD5ActionPerformed
 
     private void jrAlternativaE5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE5ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE5.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE5ActionPerformed
 
     private void jrAlternativaB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB6ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB6.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB6ActionPerformed
 
     private void jrAlternativaC6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC6ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC6.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC6ActionPerformed
 
     private void jrAlternativaD6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD6ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD6.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD6ActionPerformed
 
     private void jrAlternativaE6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE6ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE6.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE6ActionPerformed
 
     private void jrAlternativaB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB7ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB7.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB7ActionPerformed
 
     private void jrAlternativaC7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC7ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC7.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC7ActionPerformed
 
     private void jrAlternativaD7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD7ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD7.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD7ActionPerformed
 
     private void jrAlternativaE7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE7ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE7.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE7ActionPerformed
 
     private void jrAlternativaB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB8ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB8.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB8ActionPerformed
 
     private void jrAlternativaC8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC8ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC8.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC8ActionPerformed
 
     private void jrAlternativaD8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD8ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD8.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD8ActionPerformed
 
     private void jrAlternativaE8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE8ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE8.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE8ActionPerformed
 
     private void jrAlternativaB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB9ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB9.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB9ActionPerformed
 
     private void jrAlternativaC9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC9ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC9.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC9ActionPerformed
 
     private void jrAlternativaD9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD9ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD9.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD9ActionPerformed
 
     private void jrAlternativaE9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE9ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE9.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE9ActionPerformed
 
     private void jrAlternativaB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB10ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB10.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB10ActionPerformed
 
     private void jrAlternativaC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC10ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC10.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC10ActionPerformed
 
     private void jrAlternativaD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD10ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD10.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD10ActionPerformed
 
     private void jrAlternativaE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE10ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE10.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE10ActionPerformed
 
     private void jrAlternativaC19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC19ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC19.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC19ActionPerformed
 
     private void jrAlternativaD19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD19ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD19.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD19ActionPerformed
 
     private void jrAlternativaE19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE19ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE19.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE19ActionPerformed
 
     private void jrAlternativaB20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB20ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB20.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB20ActionPerformed
 
     private void jrAlternativaC20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC20ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC20.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC20ActionPerformed
 
     private void jrAlternativaD20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD20ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD20.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD20ActionPerformed
 
     private void jrAlternativaE20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE20ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE20.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE20ActionPerformed
 
     private void jrAlternativaB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB13ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB13.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB13ActionPerformed
 
     private void jrAlternativaC13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC13ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC13.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC13ActionPerformed
 
     private void jrAlternativaD13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD13ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD13.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD13ActionPerformed
 
     private void jrAlternativaE13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE13ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE13.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE13ActionPerformed
 
     private void jrAlternativaB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB11ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB11.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB11ActionPerformed
 
     private void jrAlternativaC11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC11ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC11.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC11ActionPerformed
 
     private void jrAlternativaD11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD11ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD11.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD11ActionPerformed
 
     private void jrAlternativaE11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE11ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE11.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE11ActionPerformed
 
     private void jrAlternativaB12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB12ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB12.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB12ActionPerformed
 
     private void jrAlternativaC12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC12ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC12.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC12ActionPerformed
 
     private void jrAlternativaD12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD12ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD12.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD12ActionPerformed
 
     private void jrAlternativaE12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE12ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE12.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE12ActionPerformed
 
     private void jrAlternativaB14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB14ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB14.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB14ActionPerformed
 
     private void jrAlternativaC14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC14ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC14.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC14ActionPerformed
 
     private void jrAlternativaD14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD14ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD14.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD14ActionPerformed
 
     private void jrAlternativaE14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE14ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE14.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE14ActionPerformed
 
     private void jrAlternativaB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB15ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB15.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB15ActionPerformed
 
     private void jrAlternativaC15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC15ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC15.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC15ActionPerformed
 
     private void jrAlternativaD15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD15ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD15.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD15ActionPerformed
 
     private void jrAlternativaE15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE15ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE15.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE15ActionPerformed
 
     private void jrAlternativaB16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB16ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB16.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB16ActionPerformed
 
     private void jrAlternativaC16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC16ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC16.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC16ActionPerformed
 
     private void jrAlternativaD16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD16ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD16.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD16ActionPerformed
 
     private void jrAlternativaE16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE16ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE16.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE16ActionPerformed
 
     private void jrAlternativaB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB17ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB17.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB17ActionPerformed
 
     private void jrAlternativaC17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC17ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC17.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC17ActionPerformed
 
     private void jrAlternativaD17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD17ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD17.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD17ActionPerformed
 
     private void jrAlternativaE17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE17ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE17.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE17ActionPerformed
 
     private void jrAlternativaB18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB18ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB18.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB18ActionPerformed
 
     private void jrAlternativaC18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC18ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaC18.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC18ActionPerformed
 
     private void jrAlternativaD18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD18ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaD18.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaD18ActionPerformed
 
     private void jrAlternativaE18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE18ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaE18.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE18ActionPerformed
 
     private void jrAlternativaB19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB19ActionPerformed
-        // TODO add your handling code here:
+        jrAlternativaB19.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB19ActionPerformed
 
     private void jrAlternativaA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA1ActionPerformed
-        bgAlternativa1.setSelected(jrAlternativaA1.toString(), rootPaneCheckingEnabled);
+        jrAlternativaA1.setActionCommand("A");
     }//GEN-LAST:event_jrAlternativaA1ActionPerformed
 
+    private void jrAlternativaA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA2ActionPerformed
+        jrAlternativaA2.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA2ActionPerformed
+
+    private void jrAlternativaA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA3ActionPerformed
+        jrAlternativaA3.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA3ActionPerformed
+
+    private void jrAlternativaA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA4ActionPerformed
+        jrAlternativaA4.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA4ActionPerformed
+
+    private void jrAlternativaA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA5ActionPerformed
+        jrAlternativaA5.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA5ActionPerformed
+
+    private void jrAlternativaA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA6ActionPerformed
+        jrAlternativaA6.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA6ActionPerformed
+
+    private void jrAlternativaA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA7ActionPerformed
+        jrAlternativaA7.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA7ActionPerformed
+
+    private void jrAlternativaA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA8ActionPerformed
+        jrAlternativaA8.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA8ActionPerformed
+
+    private void jrAlternativaA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA9ActionPerformed
+        jrAlternativaA9.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA9ActionPerformed
+
+    private void jrAlternativaA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA10ActionPerformed
+        jrAlternativaA10.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA10ActionPerformed
+
+    private void jrAlternativaA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA11ActionPerformed
+        jrAlternativaA11.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA11ActionPerformed
+
+    private void jrAlternativaA12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA12ActionPerformed
+        jrAlternativaA12.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA12ActionPerformed
+
+    private void jrAlternativaA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA13ActionPerformed
+        jrAlternativaA13.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA13ActionPerformed
+
+    private void jrAlternativaA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA14ActionPerformed
+        jrAlternativaA14.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA14ActionPerformed
+
+    private void jrAlternativaA15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA15ActionPerformed
+        jrAlternativaA15.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA15ActionPerformed
+
+    private void jrAlternativaA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA16ActionPerformed
+        jrAlternativaA16.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA16ActionPerformed
+
+    private void jrAlternativaA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA17ActionPerformed
+        jrAlternativaA17.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA17ActionPerformed
+
+    private void jrAlternativaA18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA18ActionPerformed
+        jrAlternativaA18.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA18ActionPerformed
+
+    private void jrAlternativaA19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA19ActionPerformed
+        jrAlternativaA19.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA19ActionPerformed
+
+    private void jrAlternativaA20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA20ActionPerformed
+        jrAlternativaA20.setActionCommand("A");
+    }//GEN-LAST:event_jrAlternativaA20ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ConsultarGabaritoOficial consultarGabaritos = new ConsultarGabaritoOficial();
+        consultarGabaritos.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    public void LimparCampos() {
+        bgAlternativa1.isSelected(null); bgAlternativa2.isSelected(null);
+        bgAlternativa3.isSelected(null); bgAlternativa4.isSelected(null);
+        bgAlternativa5.isSelected(null); bgAlternativa6.isSelected(null);
+        bgAlternativa7.isSelected(null); bgAlternativa8.isSelected(null);
+        bgAlternativa9.isSelected(null); bgAlternativa10.isSelected(null);
+        bgAlternativa11.isSelected(null); bgAlternativa12.isSelected(null);
+        bgAlternativa13.isSelected(null); bgAlternativa14.isSelected(null);
+        bgAlternativa15.isSelected(null); bgAlternativa16.isSelected(null);
+        bgAlternativa17.isSelected(null); bgAlternativa18.isSelected(null);
+        bgAlternativa19.isSelected(null); bgAlternativa20.isSelected(null);
+    };
     /**
      * @param args the command line arguments
      */
@@ -1838,6 +2039,54 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(CadastrarGabaritoOficial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -1884,6 +2133,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.ButtonGroup bgAlternativa7;
     private javax.swing.ButtonGroup bgAlternativa8;
     private javax.swing.ButtonGroup bgAlternativa9;
+    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel0;
     private javax.swing.JLabel jLabel1;
@@ -2010,4 +2260,8 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JRadioButton jrAlternativaE9;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
+
+    void atualizarCampos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
