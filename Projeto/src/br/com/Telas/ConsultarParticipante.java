@@ -124,7 +124,6 @@ public class ConsultarParticipante extends javax.swing.JFrame {
         , JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
             participante = participanteDAO.pesquisarParticipanteId("idUsuario",(int) tbParticipante.getValueAt(linha, 0));
             participanteDAO.excluirParticipante(participante);
-            JOptionPane.showMessageDialog(rootPane, "Participante excluído!");
             atualizarTabela();
         }
     }//GEN-LAST:event_jButton5ActionPerformed

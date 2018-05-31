@@ -16,7 +16,7 @@ public class GabaritoOficial {
     private int idGabarito;
     @Column(length = 50, nullable = false)
     private String ProcessoSeletivo;
-    @Column(length = 50, nullable = false)
+    @Column(length = 1, nullable = false)
     private String Resposta1;
     @Column(length = 1, nullable = false)
     private String Resposta2;
@@ -36,7 +36,7 @@ public class GabaritoOficial {
     private String Resposta9;
     @Column(length = 1, nullable = false)
     private String Resposta10;
-    @Column(length = 50, nullable = false)
+    @Column(length = 1, nullable = false)
     private String Resposta11;
     @Column(length = 1, nullable = false)
     private String Resposta12;

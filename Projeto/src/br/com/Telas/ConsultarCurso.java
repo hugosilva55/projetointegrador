@@ -160,7 +160,6 @@ public class ConsultarCurso extends javax.swing.JFrame {
             
             curso = cursoDAO.pesquisarCursoId("idCurso",(int) tbCurso1.getValueAt(linha, 0));
             cursoDAO.excluirCurso(curso);
-            JOptionPane.showMessageDialog(null, "Curso Excluido Com Sucesso!!!");
             atualizarTabela();
             
             

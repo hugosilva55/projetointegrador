@@ -17,6 +17,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
     GabaritoOficial gabaritoOfic = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
+
     /**
      * Creates new form GabaritoOficial
      */
@@ -56,7 +57,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         bgAlternativa20 = new javax.swing.ButtonGroup();
         titulo = new javax.swing.JLabel();
         jcProcessoSeletivo = new javax.swing.JComboBox<>();
-        jbSalvar = new javax.swing.JButton();
+        btSalvar = new javax.swing.JButton();
         jLabel0 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jrAlternativaA1 = new javax.swing.JRadioButton();
@@ -178,7 +179,8 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaC20 = new javax.swing.JRadioButton();
         jrAlternativaD20 = new javax.swing.JRadioButton();
         jrAlternativaE20 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
+        btVoltar = new javax.swing.JButton();
+        btPesquisar = new javax.swing.JButton();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -200,10 +202,10 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             }
         });
 
-        jbSalvar.setText("Salvar");
-        jbSalvar.addActionListener(new java.awt.event.ActionListener() {
+        btSalvar.setText("Salvar");
+        btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbSalvarActionPerformed(evt);
+                btSalvarActionPerformed(evt);
             }
         });
 
@@ -1069,10 +1071,17 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Voltar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btVoltar.setText("Voltar");
+        btVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btVoltarActionPerformed(evt);
+            }
+        });
+
+        btPesquisar.setText("Pesquisar");
+        btPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPesquisarActionPerformed(evt);
             }
         });
 
@@ -1102,18 +1111,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jrAlternativaE1))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1209,8 +1206,23 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(jrAlternativaD3)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE3))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                                    .addComponent(jrAlternativaE3))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jrAlternativaA10)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jrAlternativaB10)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btPesquisar)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jrAlternativaC10)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jrAlternativaD10)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jrAlternativaE10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1341,9 +1353,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 .addGap(10, 10, 10))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btVoltar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jbSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         layout.setVerticalGroup(
@@ -1539,29 +1551,140 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                                 .addComponent(jrAlternativaE20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jbSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btVoltar)
+                        .addComponent(btPesquisar)))
                 .addGap(8, 8, 8))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jcProcessoSeletivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcProcessoSeletivoActionPerformed
+    private void atualizarDados(){
+        jrAlternativaA20.setActionCommand("A");
+        jrAlternativaA19.setActionCommand("A");
+        jrAlternativaA18.setActionCommand("A");
+        jrAlternativaA17.setActionCommand("A");
+        jrAlternativaA16.setActionCommand("A");
+        jrAlternativaA15.setActionCommand("A");
+        jrAlternativaA14.setActionCommand("A");
+        jrAlternativaA13.setActionCommand("A");
+        jrAlternativaA12.setActionCommand("A");
+        jrAlternativaA11.setActionCommand("A");
+        jrAlternativaA10.setActionCommand("A");
+        jrAlternativaA9.setActionCommand("A");
+        jrAlternativaA8.setActionCommand("A");
+        jrAlternativaA7.setActionCommand("A");
+        jrAlternativaA6.setActionCommand("A");
+        jrAlternativaA5.setActionCommand("A");
+        jrAlternativaA4.setActionCommand("A");
+        jrAlternativaA3.setActionCommand("A");
+        jrAlternativaA2.setActionCommand("A");
+        jrAlternativaA1.setActionCommand("A");
         
+        jrAlternativaB20.setActionCommand("B");
+        jrAlternativaB19.setActionCommand("B");
+        jrAlternativaB18.setActionCommand("B");
+        jrAlternativaB17.setActionCommand("B");
+        jrAlternativaB16.setActionCommand("B");
+        jrAlternativaB15.setActionCommand("B");
+        jrAlternativaB14.setActionCommand("B");
+        jrAlternativaB13.setActionCommand("B");
+        jrAlternativaB12.setActionCommand("B");
+        jrAlternativaB11.setActionCommand("B");
+        jrAlternativaB10.setActionCommand("B");
+        jrAlternativaB9.setActionCommand("B");
+        jrAlternativaB8.setActionCommand("B");
+        jrAlternativaB7.setActionCommand("B");
+        jrAlternativaB6.setActionCommand("B");
+        jrAlternativaB5.setActionCommand("B");
+        jrAlternativaB4.setActionCommand("B");
+        jrAlternativaB3.setActionCommand("B");
+        jrAlternativaB2.setActionCommand("B");
+        jrAlternativaB1.setActionCommand("B");
+        
+                
+        jrAlternativaC20.setActionCommand("C");
+        jrAlternativaC19.setActionCommand("C");
+        jrAlternativaC18.setActionCommand("C");
+        jrAlternativaC17.setActionCommand("C");
+        jrAlternativaC16.setActionCommand("C");
+        jrAlternativaC15.setActionCommand("C");
+        jrAlternativaC14.setActionCommand("C");
+        jrAlternativaC13.setActionCommand("C");
+        jrAlternativaC12.setActionCommand("C");
+        jrAlternativaC11.setActionCommand("C");
+        jrAlternativaC10.setActionCommand("C");
+        jrAlternativaC9.setActionCommand("C");
+        jrAlternativaC8.setActionCommand("C");
+        jrAlternativaC7.setActionCommand("C");
+        jrAlternativaC6.setActionCommand("C");
+        jrAlternativaC5.setActionCommand("C");
+        jrAlternativaC4.setActionCommand("C");
+        jrAlternativaC3.setActionCommand("C");
+        jrAlternativaC2.setActionCommand("C");
+        jrAlternativaC1.setActionCommand("C");
+        
+                
+        jrAlternativaD20.setActionCommand("D");
+        jrAlternativaD19.setActionCommand("D");
+        jrAlternativaD18.setActionCommand("D");
+        jrAlternativaD17.setActionCommand("D");
+        jrAlternativaD16.setActionCommand("D");
+        jrAlternativaD15.setActionCommand("D");
+        jrAlternativaD14.setActionCommand("D");
+        jrAlternativaD13.setActionCommand("D");
+        jrAlternativaD12.setActionCommand("D");
+        jrAlternativaD11.setActionCommand("D");
+        jrAlternativaD10.setActionCommand("D");
+        jrAlternativaD9.setActionCommand("D");
+        jrAlternativaD8.setActionCommand("D");
+        jrAlternativaD7.setActionCommand("D");
+        jrAlternativaD6.setActionCommand("D");
+        jrAlternativaD5.setActionCommand("D");
+        jrAlternativaD4.setActionCommand("D");
+        jrAlternativaD3.setActionCommand("D");
+        jrAlternativaD2.setActionCommand("D");
+        jrAlternativaD1.setActionCommand("D");
+        
+                
+        jrAlternativaE20.setActionCommand("E");
+        jrAlternativaE19.setActionCommand("E");
+        jrAlternativaE18.setActionCommand("E");
+        jrAlternativaE17.setActionCommand("E");
+        jrAlternativaE16.setActionCommand("E");
+        jrAlternativaE15.setActionCommand("E");
+        jrAlternativaE14.setActionCommand("E");
+        jrAlternativaE13.setActionCommand("E");
+        jrAlternativaE12.setActionCommand("E");
+        jrAlternativaE11.setActionCommand("E");
+        jrAlternativaE10.setActionCommand("E");
+        jrAlternativaE9.setActionCommand("E");
+        jrAlternativaE8.setActionCommand("E");
+        jrAlternativaE7.setActionCommand("E");
+        jrAlternativaE6.setActionCommand("E");
+        jrAlternativaE5.setActionCommand("E");
+        jrAlternativaE4.setActionCommand("E");
+        jrAlternativaE3.setActionCommand("E");
+        jrAlternativaE2.setActionCommand("E");
+        jrAlternativaE1.setActionCommand("E");
+    }
+    private void jcProcessoSeletivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcProcessoSeletivoActionPerformed
+
     }//GEN-LAST:event_jcProcessoSeletivoActionPerformed
 
-    private void jbSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalvarActionPerformed
-     if(bgAlternativa1.isSelected(null)||bgAlternativa2.isSelected(null)||
-        bgAlternativa3.isSelected(null)||bgAlternativa4.isSelected(null)||
-        bgAlternativa5.isSelected(null)||bgAlternativa6.isSelected(null)||
-        bgAlternativa7.isSelected(null)||bgAlternativa8.isSelected(null)||
-        bgAlternativa9.isSelected(null)||bgAlternativa10.isSelected(null)||
-        bgAlternativa11.isSelected(null)||bgAlternativa12.isSelected(null)||
-        bgAlternativa13.isSelected(null)||bgAlternativa14.isSelected(null)||
-        bgAlternativa15.isSelected(null)||bgAlternativa16.isSelected(null)||
-        bgAlternativa17.isSelected(null)||bgAlternativa18.isSelected(null)||
-        bgAlternativa19.isSelected(null)||bgAlternativa20.isSelected(null)){
+    private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
+        atualizarDados();
+        if (bgAlternativa1.isSelected(null) || bgAlternativa2.isSelected(null)
+                || bgAlternativa3.isSelected(null) || bgAlternativa4.isSelected(null)
+                || bgAlternativa5.isSelected(null) || bgAlternativa6.isSelected(null)
+                || bgAlternativa7.isSelected(null) || bgAlternativa8.isSelected(null)
+                || bgAlternativa9.isSelected(null) || bgAlternativa10.isSelected(null)
+                || bgAlternativa11.isSelected(null) || bgAlternativa12.isSelected(null)
+                || bgAlternativa13.isSelected(null) || bgAlternativa14.isSelected(null)
+                || bgAlternativa15.isSelected(null) || bgAlternativa16.isSelected(null)
+                || bgAlternativa17.isSelected(null) || bgAlternativa18.isSelected(null)
+                || bgAlternativa19.isSelected(null) || bgAlternativa20.isSelected(null)) {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
@@ -1586,437 +1709,716 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             gabaritoOfic.setResposta18(bgAlternativa18.getSelection().getActionCommand());
             gabaritoOfic.setResposta19(bgAlternativa19.getSelection().getActionCommand());
             gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());
-            
-         gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
-         LimparCampos();
-     }
-    }//GEN-LAST:event_jbSalvarActionPerformed
+
+            gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
+            LimparCampos();
+        }
+    }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jcProcessoSeletivoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jcProcessoSeletivoKeyTyped
-    
+
     }//GEN-LAST:event_jcProcessoSeletivoKeyTyped
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed
-        jrAlternativaB3.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB3ActionPerformed
 
     private void jrAlternativaC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC3ActionPerformed
-        jrAlternativaC3.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC3ActionPerformed
 
     private void jrAlternativaD3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD3ActionPerformed
-        jrAlternativaD3.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD3ActionPerformed
 
     private void jrAlternativaE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE3ActionPerformed
-        jrAlternativaE3.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaE3ActionPerformed
 
     private void jrAlternativaB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB1ActionPerformed
-        jrAlternativaB1.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB1ActionPerformed
 
     private void jrAlternativaC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC1ActionPerformed
-        jrAlternativaC1.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC1ActionPerformed
 
     private void jrAlternativaD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD1ActionPerformed
-        jrAlternativaD1.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD1ActionPerformed
 
     private void jrAlternativaE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE1ActionPerformed
-        jrAlternativaE1.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE1ActionPerformed
 
     private void jrAlternativaB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB2ActionPerformed
-        jrAlternativaB2.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB2ActionPerformed
 
     private void jrAlternativaC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC2ActionPerformed
-        jrAlternativaC2.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC2ActionPerformed
 
     private void jrAlternativaD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD2ActionPerformed
-        jrAlternativaD2.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD2ActionPerformed
 
     private void jrAlternativaE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE2ActionPerformed
-        jrAlternativaE2.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE2ActionPerformed
 
     private void jrAlternativaB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB4ActionPerformed
-        jrAlternativaB4.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB4ActionPerformed
 
     private void jrAlternativaC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC4ActionPerformed
-        jrAlternativaC4.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC4ActionPerformed
 
     private void jrAlternativaD4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD4ActionPerformed
-        jrAlternativaD4.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD4ActionPerformed
 
     private void jrAlternativaE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE4ActionPerformed
-        jrAlternativaE4.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE4ActionPerformed
 
     private void jrAlternativaB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB5ActionPerformed
-        jrAlternativaB5.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB5ActionPerformed
 
     private void jrAlternativaC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC5ActionPerformed
-        jrAlternativaC5.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC5ActionPerformed
 
     private void jrAlternativaD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD5ActionPerformed
-        jrAlternativaD5.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD5ActionPerformed
 
     private void jrAlternativaE5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE5ActionPerformed
-        jrAlternativaE5.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE5ActionPerformed
 
     private void jrAlternativaB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB6ActionPerformed
-        jrAlternativaB6.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB6ActionPerformed
 
     private void jrAlternativaC6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC6ActionPerformed
-        jrAlternativaC6.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC6ActionPerformed
 
     private void jrAlternativaD6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD6ActionPerformed
-        jrAlternativaD6.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD6ActionPerformed
 
     private void jrAlternativaE6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE6ActionPerformed
-        jrAlternativaE6.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE6ActionPerformed
 
     private void jrAlternativaB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB7ActionPerformed
-        jrAlternativaB7.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB7ActionPerformed
 
     private void jrAlternativaC7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC7ActionPerformed
-        jrAlternativaC7.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC7ActionPerformed
 
     private void jrAlternativaD7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD7ActionPerformed
-        jrAlternativaD7.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD7ActionPerformed
 
     private void jrAlternativaE7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE7ActionPerformed
-        jrAlternativaE7.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE7ActionPerformed
 
     private void jrAlternativaB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB8ActionPerformed
-        jrAlternativaB8.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB8ActionPerformed
 
     private void jrAlternativaC8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC8ActionPerformed
-        jrAlternativaC8.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC8ActionPerformed
 
     private void jrAlternativaD8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD8ActionPerformed
-        jrAlternativaD8.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD8ActionPerformed
 
     private void jrAlternativaE8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE8ActionPerformed
-        jrAlternativaE8.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE8ActionPerformed
 
     private void jrAlternativaB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB9ActionPerformed
-        jrAlternativaB9.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB9ActionPerformed
 
     private void jrAlternativaC9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC9ActionPerformed
-        jrAlternativaC9.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC9ActionPerformed
 
     private void jrAlternativaD9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD9ActionPerformed
-        jrAlternativaD9.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD9ActionPerformed
 
     private void jrAlternativaE9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE9ActionPerformed
-        jrAlternativaE9.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE9ActionPerformed
 
     private void jrAlternativaB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB10ActionPerformed
-        jrAlternativaB10.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB10ActionPerformed
 
     private void jrAlternativaC10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC10ActionPerformed
-        jrAlternativaC10.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC10ActionPerformed
 
     private void jrAlternativaD10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD10ActionPerformed
-        jrAlternativaD10.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD10ActionPerformed
 
     private void jrAlternativaE10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE10ActionPerformed
-        jrAlternativaE10.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE10ActionPerformed
 
     private void jrAlternativaC19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC19ActionPerformed
-        jrAlternativaC19.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC19ActionPerformed
 
     private void jrAlternativaD19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD19ActionPerformed
-        jrAlternativaD19.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD19ActionPerformed
 
     private void jrAlternativaE19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE19ActionPerformed
-        jrAlternativaE19.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE19ActionPerformed
 
     private void jrAlternativaB20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB20ActionPerformed
-        jrAlternativaB20.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB20ActionPerformed
 
     private void jrAlternativaC20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC20ActionPerformed
-        jrAlternativaC20.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC20ActionPerformed
 
     private void jrAlternativaD20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD20ActionPerformed
-        jrAlternativaD20.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD20ActionPerformed
 
     private void jrAlternativaE20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE20ActionPerformed
-        jrAlternativaE20.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE20ActionPerformed
 
     private void jrAlternativaB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB13ActionPerformed
-        jrAlternativaB13.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB13ActionPerformed
 
     private void jrAlternativaC13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC13ActionPerformed
-        jrAlternativaC13.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC13ActionPerformed
 
     private void jrAlternativaD13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD13ActionPerformed
-        jrAlternativaD13.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD13ActionPerformed
 
     private void jrAlternativaE13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE13ActionPerformed
-        jrAlternativaE13.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE13ActionPerformed
 
     private void jrAlternativaB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB11ActionPerformed
-        jrAlternativaB11.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB11ActionPerformed
 
     private void jrAlternativaC11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC11ActionPerformed
-        jrAlternativaC11.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC11ActionPerformed
 
     private void jrAlternativaD11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD11ActionPerformed
-        jrAlternativaD11.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD11ActionPerformed
 
     private void jrAlternativaE11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE11ActionPerformed
-        jrAlternativaE11.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE11ActionPerformed
 
     private void jrAlternativaB12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB12ActionPerformed
-        jrAlternativaB12.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB12ActionPerformed
 
     private void jrAlternativaC12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC12ActionPerformed
-        jrAlternativaC12.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC12ActionPerformed
 
     private void jrAlternativaD12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD12ActionPerformed
-        jrAlternativaD12.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD12ActionPerformed
 
     private void jrAlternativaE12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE12ActionPerformed
-        jrAlternativaE12.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE12ActionPerformed
 
     private void jrAlternativaB14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB14ActionPerformed
-        jrAlternativaB14.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB14ActionPerformed
 
     private void jrAlternativaC14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC14ActionPerformed
-        jrAlternativaC14.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC14ActionPerformed
 
     private void jrAlternativaD14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD14ActionPerformed
-        jrAlternativaD14.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD14ActionPerformed
 
     private void jrAlternativaE14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE14ActionPerformed
-        jrAlternativaE14.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE14ActionPerformed
 
     private void jrAlternativaB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB15ActionPerformed
-        jrAlternativaB15.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB15ActionPerformed
 
     private void jrAlternativaC15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC15ActionPerformed
-        jrAlternativaC15.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC15ActionPerformed
 
     private void jrAlternativaD15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD15ActionPerformed
-        jrAlternativaD15.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD15ActionPerformed
 
     private void jrAlternativaE15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE15ActionPerformed
-        jrAlternativaE15.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE15ActionPerformed
 
     private void jrAlternativaB16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB16ActionPerformed
-        jrAlternativaB16.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB16ActionPerformed
 
     private void jrAlternativaC16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC16ActionPerformed
-        jrAlternativaC16.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC16ActionPerformed
 
     private void jrAlternativaD16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD16ActionPerformed
-        jrAlternativaD16.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD16ActionPerformed
 
     private void jrAlternativaE16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE16ActionPerformed
-        jrAlternativaE16.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE16ActionPerformed
 
     private void jrAlternativaB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB17ActionPerformed
-        jrAlternativaB17.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB17ActionPerformed
 
     private void jrAlternativaC17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC17ActionPerformed
-        jrAlternativaC17.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC17ActionPerformed
 
     private void jrAlternativaD17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD17ActionPerformed
-        jrAlternativaD17.setActionCommand("D");
     }//GEN-LAST:event_jrAlternativaD17ActionPerformed
 
     private void jrAlternativaE17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE17ActionPerformed
-        jrAlternativaE17.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE17ActionPerformed
 
     private void jrAlternativaB18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB18ActionPerformed
-        jrAlternativaB18.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB18ActionPerformed
 
     private void jrAlternativaC18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaC18ActionPerformed
-        jrAlternativaC18.setActionCommand("C");
     }//GEN-LAST:event_jrAlternativaC18ActionPerformed
 
     private void jrAlternativaD18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaD18ActionPerformed
-        jrAlternativaD18.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaD18ActionPerformed
 
     private void jrAlternativaE18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaE18ActionPerformed
-        jrAlternativaE18.setActionCommand("E");
     }//GEN-LAST:event_jrAlternativaE18ActionPerformed
 
     private void jrAlternativaB19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB19ActionPerformed
-        jrAlternativaB19.setActionCommand("B");
     }//GEN-LAST:event_jrAlternativaB19ActionPerformed
 
     private void jrAlternativaA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA1ActionPerformed
-        jrAlternativaA1.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA1ActionPerformed
 
     private void jrAlternativaA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA2ActionPerformed
-        jrAlternativaA2.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA2ActionPerformed
 
     private void jrAlternativaA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA3ActionPerformed
-        jrAlternativaA3.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA3ActionPerformed
 
     private void jrAlternativaA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA4ActionPerformed
-        jrAlternativaA4.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA4ActionPerformed
 
     private void jrAlternativaA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA5ActionPerformed
-        jrAlternativaA5.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA5ActionPerformed
 
     private void jrAlternativaA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA6ActionPerformed
-        jrAlternativaA6.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA6ActionPerformed
 
     private void jrAlternativaA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA7ActionPerformed
-        jrAlternativaA7.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA7ActionPerformed
 
     private void jrAlternativaA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA8ActionPerformed
-        jrAlternativaA8.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA8ActionPerformed
 
     private void jrAlternativaA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA9ActionPerformed
-        jrAlternativaA9.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA9ActionPerformed
 
     private void jrAlternativaA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA10ActionPerformed
-        jrAlternativaA10.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA10ActionPerformed
 
     private void jrAlternativaA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA11ActionPerformed
-        jrAlternativaA11.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA11ActionPerformed
 
     private void jrAlternativaA12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA12ActionPerformed
-        jrAlternativaA12.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA12ActionPerformed
 
     private void jrAlternativaA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA13ActionPerformed
-        jrAlternativaA13.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA13ActionPerformed
 
     private void jrAlternativaA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA14ActionPerformed
-        jrAlternativaA14.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA14ActionPerformed
 
     private void jrAlternativaA15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA15ActionPerformed
-        jrAlternativaA15.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA15ActionPerformed
 
     private void jrAlternativaA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA16ActionPerformed
-        jrAlternativaA16.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA16ActionPerformed
 
     private void jrAlternativaA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA17ActionPerformed
-        jrAlternativaA17.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA17ActionPerformed
 
     private void jrAlternativaA18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA18ActionPerformed
-        jrAlternativaA18.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA18ActionPerformed
 
     private void jrAlternativaA19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA19ActionPerformed
-        jrAlternativaA19.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA19ActionPerformed
 
     private void jrAlternativaA20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA20ActionPerformed
-        jrAlternativaA20.setActionCommand("A");
+        
     }//GEN-LAST:event_jrAlternativaA20ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ConsultarGabaritoOficial consultarGabaritos = new ConsultarGabaritoOficial();
-        consultarGabaritos.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
 
+    }//GEN-LAST:event_btVoltarActionPerformed
+
+    private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
+        ConsultarGabaritoOficial consultarGabarito = new ConsultarGabaritoOficial();
+        consultarGabarito.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btPesquisarActionPerformed
+    
     void atualizarCampos() {
+
+        switch (gabaritoOfic.getResposta1()) {
+            case "A":
+                bgAlternativa1.setSelected(jrAlternativaB1.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa1.setSelected(jrAlternativaB1.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa1.setSelected(jrAlternativaC1.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa1.setSelected(jrAlternativaD1.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa1.setSelected(jrAlternativaE1.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta2()) {
+            case "A":
+                bgAlternativa2.setSelected(jrAlternativaA2.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa2.setSelected(jrAlternativaB2.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa2.setSelected(jrAlternativaC2.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa2.setSelected(jrAlternativaD2.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa2.setSelected(jrAlternativaE2.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta3()) {
+            case "A":
+                bgAlternativa3.setSelected(jrAlternativaA3.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa3.setSelected(jrAlternativaB3.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa3.setSelected(jrAlternativaC3.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa3.setSelected(jrAlternativaD3.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa3.setSelected(jrAlternativaE3.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta4()) {
+            case "A":
+                bgAlternativa4.setSelected(jrAlternativaA4.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa4.setSelected(jrAlternativaB4.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa4.setSelected(jrAlternativaC4.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa4.setSelected(jrAlternativaD4.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa4.setSelected(jrAlternativaE4.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta5()) {
+            case "A":
+                bgAlternativa5.setSelected(jrAlternativaA5.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa5.setSelected(jrAlternativaB5.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa5.setSelected(jrAlternativaC5.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa5.setSelected(jrAlternativaD5.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa5.setSelected(jrAlternativaE5.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta6()) {
+            case "A":
+                bgAlternativa6.setSelected(jrAlternativaA6.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa6.setSelected(jrAlternativaB6.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa6.setSelected(jrAlternativaC6.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa6.setSelected(jrAlternativaD6.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa6.setSelected(jrAlternativaE6.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta7()) {
+            case "A":
+                bgAlternativa7.setSelected(jrAlternativaA7.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa7.setSelected(jrAlternativaB7.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa7.setSelected(jrAlternativaC7.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa7.setSelected(jrAlternativaD7.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa7.setSelected(jrAlternativaE7.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta8()) {
+            case "A":
+                bgAlternativa8.setSelected(jrAlternativaA8.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa8.setSelected(jrAlternativaB8.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa8.setSelected(jrAlternativaC8.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa8.setSelected(jrAlternativaD8.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa8.setSelected(jrAlternativaE8.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta9()) {
+            case "A":
+                bgAlternativa9.setSelected(jrAlternativaA9.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa9.setSelected(jrAlternativaB9.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa9.setSelected(jrAlternativaC9.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa9.setSelected(jrAlternativaD9.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa9.setSelected(jrAlternativaE9.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta10()) {
+            case "A":
+                bgAlternativa10.setSelected(jrAlternativaA10.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa10.setSelected(jrAlternativaB10.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa10.setSelected(jrAlternativaC10.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa10.setSelected(jrAlternativaD10.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa10.setSelected(jrAlternativaE10.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta11()) {
+            case "A":
+                bgAlternativa11.setSelected(jrAlternativaA11.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa11.setSelected(jrAlternativaB11.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa11.setSelected(jrAlternativaC11.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa11.setSelected(jrAlternativaD11.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa11.setSelected(jrAlternativaE11.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta12()) {
+            case "A":
+                bgAlternativa12.setSelected(jrAlternativaA12.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa12.setSelected(jrAlternativaB12.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa12.setSelected(jrAlternativaC12.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa12.setSelected(jrAlternativaD12.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa12.setSelected(jrAlternativaE12.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta13()) {
+            case "A":
+                bgAlternativa13.setSelected(jrAlternativaA13.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa13.setSelected(jrAlternativaB13.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa13.setSelected(jrAlternativaC13.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa13.setSelected(jrAlternativaD13.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa13.setSelected(jrAlternativaE13.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta14()) {
+            case "A":
+                bgAlternativa14.setSelected(jrAlternativaA14.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa14.setSelected(jrAlternativaB14.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa14.setSelected(jrAlternativaC14.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa14.setSelected(jrAlternativaD14.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa14.setSelected(jrAlternativaE14.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta15()) {
+            case "A":
+                bgAlternativa15.setSelected(jrAlternativaA15.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa15.setSelected(jrAlternativaB15.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa15.setSelected(jrAlternativaC15.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa15.setSelected(jrAlternativaD15.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa15.setSelected(jrAlternativaE15.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta16()) {
+            case "A":
+                bgAlternativa16.setSelected(jrAlternativaA16.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa16.setSelected(jrAlternativaB16.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa16.setSelected(jrAlternativaC16.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa16.setSelected(jrAlternativaD16.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa16.setSelected(jrAlternativaE16.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta17()) {
+            case "A":
+                bgAlternativa17.setSelected(jrAlternativaA17.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa17.setSelected(jrAlternativaB17.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa17.setSelected(jrAlternativaC17.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa17.setSelected(jrAlternativaD17.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa17.setSelected(jrAlternativaE17.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta18()) {
+            case "A":
+                bgAlternativa18.setSelected(jrAlternativaA18.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa18.setSelected(jrAlternativaB18.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa18.setSelected(jrAlternativaC18.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa18.setSelected(jrAlternativaD18.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa18.setSelected(jrAlternativaE18.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta19()) {
+            case "A":
+                bgAlternativa19.setSelected(jrAlternativaA19.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa19.setSelected(jrAlternativaB19.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa19.setSelected(jrAlternativaC19.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa19.setSelected(jrAlternativaD19.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa19.setSelected(jrAlternativaE19.getModel(), true);
+                break;
+        }
+        switch (gabaritoOfic.getResposta20()) {
+            case "A":
+                bgAlternativa20.setSelected(jrAlternativaA20.getModel(), true);
+                break;
+            case "B":
+                bgAlternativa20.setSelected(jrAlternativaB20.getModel(), true);
+                break;
+            case "C":
+                bgAlternativa20.setSelected(jrAlternativaC20.getModel(), true);
+                break;
+            case "D":
+                bgAlternativa20.setSelected(jrAlternativaD20.getModel(), true);
+                break;
+            case "E":
+                bgAlternativa20.setSelected(jrAlternativaE20.getModel(), true);
+                break;
+        }
         
+        jcProcessoSeletivo.setSelectedItem(gabaritoOfic.getProcessoSeletivo());
     }
+
     public void LimparCampos() {
-        bgAlternativa1.isSelected(null); bgAlternativa2.isSelected(null);
-        bgAlternativa3.isSelected(null); bgAlternativa4.isSelected(null);
-        bgAlternativa5.isSelected(null); bgAlternativa6.isSelected(null);
-        bgAlternativa7.isSelected(null); bgAlternativa8.isSelected(null);
-        bgAlternativa9.isSelected(null); bgAlternativa10.isSelected(null);
-        bgAlternativa11.isSelected(null); bgAlternativa12.isSelected(null);
-        bgAlternativa13.isSelected(null); bgAlternativa14.isSelected(null);
-        bgAlternativa15.isSelected(null); bgAlternativa16.isSelected(null);
-        bgAlternativa17.isSelected(null); bgAlternativa18.isSelected(null);
-        bgAlternativa19.isSelected(null); bgAlternativa20.isSelected(null);
-    };
+        bgAlternativa1.clearSelection();
+        bgAlternativa2.clearSelection();
+        bgAlternativa3.clearSelection();
+        bgAlternativa4.clearSelection();
+        bgAlternativa5.clearSelection();
+        bgAlternativa6.clearSelection();
+        bgAlternativa7.clearSelection();
+        bgAlternativa8.clearSelection();
+        bgAlternativa9.clearSelection();
+        bgAlternativa10.clearSelection();
+        bgAlternativa11.clearSelection();
+        bgAlternativa12.clearSelection();
+        bgAlternativa13.clearSelection();
+        bgAlternativa14.clearSelection();
+        bgAlternativa15.clearSelection();
+        bgAlternativa16.clearSelection();
+        bgAlternativa17.clearSelection();
+        bgAlternativa18.clearSelection();
+        bgAlternativa19.clearSelection();
+        bgAlternativa20.clearSelection();
+    }
+
+    ;
     /**
      * @param args the command line arguments
      */
@@ -2136,7 +2538,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.ButtonGroup bgAlternativa7;
     private javax.swing.ButtonGroup bgAlternativa8;
     private javax.swing.ButtonGroup bgAlternativa9;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btPesquisar;
+    private javax.swing.JButton btSalvar;
+    private javax.swing.JButton btVoltar;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel0;
     private javax.swing.JLabel jLabel1;
@@ -2159,7 +2563,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JButton jbSalvar;
     private javax.swing.JComboBox<String> jcProcessoSeletivo;
     private javax.swing.JRadioButton jrAlternativaA1;
     private javax.swing.JRadioButton jrAlternativaA10;
