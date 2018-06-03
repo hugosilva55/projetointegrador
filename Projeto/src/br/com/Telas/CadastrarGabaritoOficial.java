@@ -7,7 +7,9 @@ package br.com.Telas;
 
 import br.com.Modelos.GabaritoOficial;
 import br.com.DAO.GabaritoOficialDAO;
+import java.awt.Color;
 import javax.swing.JOptionPane;
+import javax.swing.border.LineBorder;
 
 /**
  *
@@ -23,6 +25,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
      */
     public CadastrarGabaritoOficial() {
         initComponents();
+
     }
 
     /**
@@ -55,10 +58,14 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         bgAlternativa18 = new javax.swing.ButtonGroup();
         bgAlternativa19 = new javax.swing.ButtonGroup();
         bgAlternativa20 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
         jcProcessoSeletivo = new javax.swing.JComboBox<>();
         btSalvar = new javax.swing.JButton();
-        jLabel0 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jrAlternativaA1 = new javax.swing.JRadioButton();
         jrAlternativaB1 = new javax.swing.JRadioButton();
@@ -179,17 +186,58 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaC20 = new javax.swing.JRadioButton();
         jrAlternativaD20 = new javax.swing.JRadioButton();
         jrAlternativaE20 = new javax.swing.JRadioButton();
-        btVoltar = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
         btPesquisar = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
 
         jCheckBox1.setText("jCheckBox1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        titulo.setFont(new java.awt.Font("Franklin Gothic Demi Cond", 1, 24)); // NOI18N
-        titulo.setText("Respostas Corretas");
+        jPanel1.setBackground(new java.awt.Color(235, 235, 235));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/logo pequena.png"))); // NOI18N
+
+        jLabel22.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel22.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel22.setText("X");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel22)
+                .addGap(18, 18, 18))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22))
+                .addContainerGap())
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, -1));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        titulo.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        titulo.setText("Cadastrar Gabarito Oficial");
+        jPanel3.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 230, -1));
 
         jcProcessoSeletivo.setEditable(true);
+        jcProcessoSeletivo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcProcessoSeletivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2016", "2016.2", "2017", "2017.2", "2018", "2018.2" }));
         jcProcessoSeletivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,882 +249,1212 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jcProcessoSeletivoKeyTyped(evt);
             }
         });
+        jPanel3.add(jcProcessoSeletivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 100, -1));
 
-        btSalvar.setText("Salvar");
+        btSalvar.setBackground(new java.awt.Color(0, 1, 76));
+        btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btSalvar.setForeground(new java.awt.Color(255, 255, 255));
+        btSalvar.setText("Gerar Correção");
         btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btSalvarActionPerformed(evt);
             }
         });
+        jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 140, 40));
 
-        jLabel0.setText("Nomes Proceso Seletivo.:");
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel1.setText("1°");
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 28, 25));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel1.setText("1.:");
-
+        jrAlternativaA1.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa1.add(jrAlternativaA1);
+        jrAlternativaA1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA1.setText("A");
         jrAlternativaA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA1ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, 25));
 
+        jrAlternativaB1.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa1.add(jrAlternativaB1);
+        jrAlternativaB1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB1.setText("B");
         jrAlternativaB1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB1ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, -1, 26));
 
+        jrAlternativaC1.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa1.add(jrAlternativaC1);
+        jrAlternativaC1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC1.setText("C");
         jrAlternativaC1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC1ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, -1, 26));
 
+        jrAlternativaD1.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa1.add(jrAlternativaD1);
+        jrAlternativaD1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD1.setText("D");
         jrAlternativaD1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD1ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, -1, 26));
 
+        jrAlternativaE1.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa1.add(jrAlternativaE1);
+        jrAlternativaE1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE1.setText("E");
         jrAlternativaE1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE1ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, 26));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel2.setText("2.:");
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel2.setText("2°");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 28, 25));
 
+        jrAlternativaA2.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa2.add(jrAlternativaA2);
+        jrAlternativaA2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA2.setText("A");
         jrAlternativaA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA2ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, 25));
 
+        jrAlternativaB2.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa2.add(jrAlternativaB2);
+        jrAlternativaB2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB2.setText("B");
         jrAlternativaB2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB2ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, -1, 26));
 
+        jrAlternativaC2.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa2.add(jrAlternativaC2);
+        jrAlternativaC2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC2.setText("C");
         jrAlternativaC2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC2ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, 26));
 
+        jrAlternativaD2.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa2.add(jrAlternativaD2);
+        jrAlternativaD2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD2.setText("D");
         jrAlternativaD2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD2ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, -1, 26));
 
+        jrAlternativaE2.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa2.add(jrAlternativaE2);
+        jrAlternativaE2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE2.setText("E");
         jrAlternativaE2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE2ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, -1, 26));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel3.setText("3.:");
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel3.setText("3°");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 28, 25));
 
+        jrAlternativaA3.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa3.add(jrAlternativaA3);
+        jrAlternativaA3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA3.setText("A");
         jrAlternativaA3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA3ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, 25));
 
+        jrAlternativaB3.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa3.add(jrAlternativaB3);
+        jrAlternativaB3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB3.setText("B");
         jrAlternativaB3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB3ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, 26));
 
+        jrAlternativaC3.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa3.add(jrAlternativaC3);
+        jrAlternativaC3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC3.setText("C");
         jrAlternativaC3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC3ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, 26));
 
+        jrAlternativaD3.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa3.add(jrAlternativaD3);
+        jrAlternativaD3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD3.setText("D");
         jrAlternativaD3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD3ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, -1, 26));
 
+        jrAlternativaE3.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa3.add(jrAlternativaE3);
+        jrAlternativaE3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE3.setText("E");
         jrAlternativaE3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE3ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, 26));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel4.setText("4.:");
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel4.setText("4°");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 28, 25));
 
+        jrAlternativaA4.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa4.add(jrAlternativaA4);
+        jrAlternativaA4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA4.setText("A");
         jrAlternativaA4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA4ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, 25));
 
+        jrAlternativaB4.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa4.add(jrAlternativaB4);
+        jrAlternativaB4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB4.setText("B");
         jrAlternativaB4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB4ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, 26));
 
+        jrAlternativaC4.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa4.add(jrAlternativaC4);
+        jrAlternativaC4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC4.setText("C");
         jrAlternativaC4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC4ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, 26));
 
+        jrAlternativaD4.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa4.add(jrAlternativaD4);
+        jrAlternativaD4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD4.setText("D");
         jrAlternativaD4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD4ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, -1, 26));
 
+        jrAlternativaE4.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa4.add(jrAlternativaE4);
+        jrAlternativaE4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE4.setText("E");
         jrAlternativaE4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE4ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 40, 26));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel5.setText("5.:");
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel5.setText("5°");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 28, 25));
 
+        jrAlternativaA5.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa5.add(jrAlternativaA5);
+        jrAlternativaA5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA5.setText("A");
         jrAlternativaA5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA5ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, 25));
 
+        jrAlternativaB5.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa5.add(jrAlternativaB5);
+        jrAlternativaB5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB5.setText("B");
         jrAlternativaB5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB5ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, 26));
 
+        jrAlternativaC5.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa5.add(jrAlternativaC5);
+        jrAlternativaC5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC5.setText("C");
         jrAlternativaC5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC5ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, 26));
 
+        jrAlternativaD5.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa5.add(jrAlternativaD5);
+        jrAlternativaD5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD5.setText("D");
         jrAlternativaD5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD5ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, 26));
 
+        jrAlternativaE5.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa5.add(jrAlternativaE5);
+        jrAlternativaE5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE5.setText("E");
         jrAlternativaE5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE5ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 35, 26));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("6.:");
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel6.setText("6°");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 20, 25));
 
+        jrAlternativaA6.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa6.add(jrAlternativaA6);
+        jrAlternativaA6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA6.setText("A");
         jrAlternativaA6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA6ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, 25));
 
+        jrAlternativaB6.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa6.add(jrAlternativaB6);
+        jrAlternativaB6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB6.setText("B");
         jrAlternativaB6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB6ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, 26));
 
+        jrAlternativaC6.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa6.add(jrAlternativaC6);
+        jrAlternativaC6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC6.setText("C");
         jrAlternativaC6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC6ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, 26));
 
+        jrAlternativaD6.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa6.add(jrAlternativaD6);
+        jrAlternativaD6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD6.setText("D");
         jrAlternativaD6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD6ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, -1, 26));
 
+        jrAlternativaE6.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa6.add(jrAlternativaE6);
+        jrAlternativaE6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE6.setText("E");
         jrAlternativaE6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE6ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 35, 26));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setText("7.:");
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel7.setText("7°");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 28, 25));
 
+        jrAlternativaA7.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa7.add(jrAlternativaA7);
+        jrAlternativaA7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA7.setText("A");
         jrAlternativaA7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA7ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, 25));
 
+        jrAlternativaB7.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa7.add(jrAlternativaB7);
+        jrAlternativaB7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB7.setText("B");
         jrAlternativaB7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB7ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, -1, 26));
 
+        jrAlternativaC7.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa7.add(jrAlternativaC7);
+        jrAlternativaC7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC7.setText("C");
         jrAlternativaC7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC7ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, -1, 26));
 
+        jrAlternativaD7.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa7.add(jrAlternativaD7);
+        jrAlternativaD7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD7.setText("D");
         jrAlternativaD7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD7ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, -1, 26));
 
+        jrAlternativaE7.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa7.add(jrAlternativaE7);
+        jrAlternativaE7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE7.setText("E");
         jrAlternativaE7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE7ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 35, 26));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("8.:");
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel8.setText("8°");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 28, 25));
 
+        jrAlternativaA8.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa8.add(jrAlternativaA8);
+        jrAlternativaA8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA8.setText("A");
         jrAlternativaA8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA8ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, 25));
 
+        jrAlternativaB8.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa8.add(jrAlternativaB8);
+        jrAlternativaB8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB8.setText("B");
         jrAlternativaB8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB8ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, -1, 26));
 
+        jrAlternativaC8.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa8.add(jrAlternativaC8);
+        jrAlternativaC8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC8.setText("C");
         jrAlternativaC8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC8ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, 26));
 
+        jrAlternativaD8.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa8.add(jrAlternativaD8);
+        jrAlternativaD8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD8.setText("D");
         jrAlternativaD8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD8ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, 26));
 
+        jrAlternativaE8.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa8.add(jrAlternativaE8);
+        jrAlternativaE8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE8.setText("E");
         jrAlternativaE8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE8ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, 35, 26));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel9.setText("9.:");
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel9.setText("9°");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 28, 25));
 
+        jrAlternativaA9.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa9.add(jrAlternativaA9);
+        jrAlternativaA9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA9.setText("A");
         jrAlternativaA9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA9ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, -1, 25));
 
+        jrAlternativaB9.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa9.add(jrAlternativaB9);
+        jrAlternativaB9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB9.setText("B");
         jrAlternativaB9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB9ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, -1, 26));
 
+        jrAlternativaC9.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa9.add(jrAlternativaC9);
+        jrAlternativaC9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC9.setText("C");
         jrAlternativaC9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC9ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, -1, 26));
 
+        jrAlternativaD9.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa9.add(jrAlternativaD9);
+        jrAlternativaD9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD9.setText("D");
         jrAlternativaD9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD9ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, -1, 26));
 
+        jrAlternativaE9.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa9.add(jrAlternativaE9);
+        jrAlternativaE9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE9.setText("E");
         jrAlternativaE9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE9ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 35, 26));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel10.setText("10.:");
+        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel10.setText("10°");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 20, 25));
 
+        jrAlternativaA10.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa10.add(jrAlternativaA10);
+        jrAlternativaA10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA10.setText("A");
         jrAlternativaA10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA10ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, -1, 25));
 
+        jrAlternativaB10.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa10.add(jrAlternativaB10);
+        jrAlternativaB10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB10.setText("B");
         jrAlternativaB10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB10ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, -1, 26));
 
+        jrAlternativaC10.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa10.add(jrAlternativaC10);
+        jrAlternativaC10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC10.setText("C");
         jrAlternativaC10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC10ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC10, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, -1, 26));
 
+        jrAlternativaD10.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa10.add(jrAlternativaD10);
+        jrAlternativaD10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD10.setText("D");
         jrAlternativaD10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD10ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, -1, 26));
 
+        jrAlternativaE10.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa10.add(jrAlternativaE10);
+        jrAlternativaE10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE10.setText("E");
         jrAlternativaE10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE10ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, -1, 26));
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel13.setText("13.:");
+        jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel13.setText("13°");
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 28, 25));
 
+        jrAlternativaA13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaA13);
+        jrAlternativaA13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA13.setText("A");
         jrAlternativaA13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA13ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, -1, 25));
 
+        jrAlternativaB13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaB13);
+        jrAlternativaB13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB13.setText("B");
         jrAlternativaB13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB13ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB13, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, -1, 26));
 
+        jrAlternativaC13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaC13);
+        jrAlternativaC13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC13.setText("C");
         jrAlternativaC13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC13ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, -1, 26));
 
+        jrAlternativaD13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaD13);
+        jrAlternativaD13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD13.setText("D");
         jrAlternativaD13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD13ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, -1, 26));
 
+        jrAlternativaE13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaE13);
+        jrAlternativaE13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE13.setText("E");
         jrAlternativaE13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE13ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE13, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, -1, 26));
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel11.setText("11.:");
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel11.setText("11°");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 28, 25));
 
+        jrAlternativaA11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaA11);
+        jrAlternativaA11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA11.setText("A");
         jrAlternativaA11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA11ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, 25));
 
+        jrAlternativaB11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaB11);
+        jrAlternativaB11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB11.setText("B");
         jrAlternativaB11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB11ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, 26));
 
+        jrAlternativaC11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaC11);
+        jrAlternativaC11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC11.setText("C");
         jrAlternativaC11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC11ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC11, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, -1, 26));
 
+        jrAlternativaD11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaD11);
+        jrAlternativaD11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD11.setText("D");
         jrAlternativaD11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD11ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD11, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, 26));
 
+        jrAlternativaE11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaE11);
+        jrAlternativaE11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE11.setText("E");
         jrAlternativaE11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE11ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 50, -1, 26));
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel12.setText("12.:");
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel12.setText("12°");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 28, 25));
 
+        jrAlternativaA12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaA12);
+        jrAlternativaA12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA12.setText("A");
         jrAlternativaA12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA12ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA12, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 90, -1, 25));
 
+        jrAlternativaB12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaB12);
+        jrAlternativaB12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB12.setText("B");
         jrAlternativaB12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB12ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, -1, 26));
 
+        jrAlternativaC12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaC12);
+        jrAlternativaC12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC12.setText("C");
         jrAlternativaC12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC12ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, -1, 26));
 
+        jrAlternativaD12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaD12);
+        jrAlternativaD12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD12.setText("D");
         jrAlternativaD12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD12ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, -1, 26));
 
+        jrAlternativaE12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaE12);
+        jrAlternativaE12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE12.setText("E");
         jrAlternativaE12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE12ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE12, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, -1, 26));
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel14.setText("14.:");
+        jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel14.setText("14°");
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 28, 25));
 
+        jrAlternativaA14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaA14);
+        jrAlternativaA14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA14.setText("A");
         jrAlternativaA14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA14ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 25));
 
+        jrAlternativaB14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaB14);
+        jrAlternativaB14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB14.setText("B");
         jrAlternativaB14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB14ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB14, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, -1, 26));
 
+        jrAlternativaC14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaC14);
+        jrAlternativaC14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC14.setText("C");
         jrAlternativaC14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC14ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC14, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, -1, 26));
 
+        jrAlternativaD14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaD14);
+        jrAlternativaD14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD14.setText("D");
         jrAlternativaD14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD14ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD14, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, -1, 26));
 
+        jrAlternativaE14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaE14);
+        jrAlternativaE14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE14.setText("E");
         jrAlternativaE14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE14ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE14, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 170, -1, 26));
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel15.setText("15.:");
+        jLabel15.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel15.setText("15°");
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 28, 25));
 
+        jrAlternativaA15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaA15);
+        jrAlternativaA15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA15.setText("A");
         jrAlternativaA15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA15ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA15, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 210, -1, 25));
 
+        jrAlternativaB15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaB15);
+        jrAlternativaB15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB15.setText("B");
         jrAlternativaB15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB15ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB15, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, -1, 26));
 
+        jrAlternativaC15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaC15);
+        jrAlternativaC15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC15.setText("C");
         jrAlternativaC15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC15ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, -1, 26));
 
+        jrAlternativaD15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaD15);
+        jrAlternativaD15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD15.setText("D");
         jrAlternativaD15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD15ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD15, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 210, -1, 26));
 
+        jrAlternativaE15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaE15);
+        jrAlternativaE15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE15.setText("E");
         jrAlternativaE15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE15ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE15, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 210, -1, 26));
 
-        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel16.setText("16.:");
+        jLabel16.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel16.setText("16°");
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 28, 25));
 
+        jrAlternativaA16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaA16);
+        jrAlternativaA16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA16.setText("A");
         jrAlternativaA16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA16ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, -1, 25));
 
+        jrAlternativaB16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaB16);
+        jrAlternativaB16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB16.setText("B");
         jrAlternativaB16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB16ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB16, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, -1, 26));
 
+        jrAlternativaC16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaC16);
+        jrAlternativaC16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC16.setText("C");
         jrAlternativaC16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC16ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC16, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, -1, 26));
 
+        jrAlternativaD16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaD16);
+        jrAlternativaD16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD16.setText("D");
         jrAlternativaD16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD16ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, -1, 26));
 
+        jrAlternativaE16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaE16);
+        jrAlternativaE16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE16.setText("E");
         jrAlternativaE16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE16ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE16, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, -1, 26));
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel17.setText("17.:");
+        jLabel17.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel17.setText("17°");
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 28, 25));
 
+        jrAlternativaA17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaA17);
+        jrAlternativaA17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA17.setText("A");
         jrAlternativaA17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA17ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, -1, 25));
 
+        jrAlternativaB17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaB17);
+        jrAlternativaB17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB17.setText("B");
         jrAlternativaB17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB17ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB17, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, 26));
 
+        jrAlternativaC17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaC17);
+        jrAlternativaC17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC17.setText("C");
         jrAlternativaC17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC17ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, -1, 26));
 
+        jrAlternativaD17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaD17);
+        jrAlternativaD17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD17.setText("D");
         jrAlternativaD17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD17ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, -1, 26));
 
+        jrAlternativaE17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaE17);
+        jrAlternativaE17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE17.setText("E");
         jrAlternativaE17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE17ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE17, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, 26));
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel18.setText("18.:");
+        jLabel18.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel18.setText("18°");
+        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 28, 25));
 
+        jrAlternativaA18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaA18);
+        jrAlternativaA18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA18.setText("A");
         jrAlternativaA18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA18ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA18, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 330, -1, 25));
 
+        jrAlternativaB18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaB18);
+        jrAlternativaB18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB18.setText("B");
         jrAlternativaB18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB18ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB18, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, -1, 26));
 
+        jrAlternativaC18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaC18);
+        jrAlternativaC18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC18.setText("C");
         jrAlternativaC18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC18ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC18, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, -1, 26));
 
+        jrAlternativaD18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaD18);
+        jrAlternativaD18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD18.setText("D");
         jrAlternativaD18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD18ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, 26));
 
+        jrAlternativaE18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaE18);
+        jrAlternativaE18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE18.setText("E");
         jrAlternativaE18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE18ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE18, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 330, -1, 26));
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel19.setText("19.:");
+        jLabel19.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel19.setText("19°");
+        jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 28, 25));
 
+        jrAlternativaA19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaA19);
+        jrAlternativaA19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA19.setText("A");
         jrAlternativaA19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA19ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, -1, 25));
 
+        jrAlternativaB19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaB19);
+        jrAlternativaB19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB19.setText("B");
         jrAlternativaB19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB19ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB19, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, -1, 26));
 
+        jrAlternativaC19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaC19);
+        jrAlternativaC19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC19.setText("C");
         jrAlternativaC19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC19ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC19, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, -1, 26));
 
+        jrAlternativaD19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaD19);
+        jrAlternativaD19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD19.setText("D");
         jrAlternativaD19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD19ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD19, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, -1, 26));
 
+        jrAlternativaE19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaE19);
+        jrAlternativaE19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE19.setText("E");
         jrAlternativaE19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE19ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE19, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, -1, 26));
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel20.setText("20.:");
+        jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel20.setText("20°");
+        jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 28, 25));
 
+        jrAlternativaA20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaA20);
+        jrAlternativaA20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaA20.setText("A");
         jrAlternativaA20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaA20ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaA20, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, 25));
 
+        jrAlternativaB20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaB20);
+        jrAlternativaB20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaB20.setText("B");
         jrAlternativaB20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaB20ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaB20, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, -1, 26));
 
+        jrAlternativaC20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaC20);
+        jrAlternativaC20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaC20.setText("C");
         jrAlternativaC20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaC20ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaC20, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, -1, 26));
 
+        jrAlternativaD20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaD20);
+        jrAlternativaD20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaD20.setText("D");
         jrAlternativaD20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaD20ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaD20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, 26));
 
+        jrAlternativaE20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaE20);
+        jrAlternativaE20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jrAlternativaE20.setText("E");
         jrAlternativaE20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrAlternativaE20ActionPerformed(evt);
             }
         });
+        jPanel3.add(jrAlternativaE20, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 410, -1, 26));
 
-        btVoltar.setText("Voltar");
-        btVoltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btVoltarActionPerformed(evt);
-            }
-        });
+        jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel23.setText("Respostas");
+        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
 
         btPesquisar.setText("Pesquisar");
         btPesquisar.addActionListener(new java.awt.event.ActionListener() {
@@ -1084,478 +1462,23 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 btPesquisarActionPerformed(evt);
             }
         });
+        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 450, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel24.setText("Ano Letivo:");
+        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 200, 80, 25));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jrAlternativaA1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaB1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaC1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaD1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaE1))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA8)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB8)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC8)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD8)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA7)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB7)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC7)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD7)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD6)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE2))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE3))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btPesquisar)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jrAlternativaC10)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jrAlternativaD10)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jrAlternativaE10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jrAlternativaA11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaB11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaC11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaD11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jrAlternativaE11))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA19)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB19)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC19)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD19)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA18)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB18)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC18)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD18)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA17)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB17)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC17)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD17)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA16)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB16)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC16)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD16)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA15)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB15)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC15)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD15)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA14)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB14)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC14)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD14)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA12)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB12)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC12)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD12)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE12))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA13)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB13)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC13)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD13)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE13))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jrAlternativaA20)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaB20)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaC20)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaD20)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jrAlternativaE20)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel0, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jcProcessoSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(10, 10, 10))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(btVoltar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(titulo)
-                .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel0, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jcProcessoSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE8, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA11, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA12, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA13, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA14, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE14, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA15, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE15, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA16, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE16, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA17, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE17, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA18, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA19, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE19, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jrAlternativaA20, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaB20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaC20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaD20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jrAlternativaE20, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btVoltar)
-                        .addComponent(btPesquisar)))
-                .addGap(8, 8, 8))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -2038,10 +1961,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private void jrAlternativaA20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA20ActionPerformed
         
     }//GEN-LAST:event_jrAlternativaA20ActionPerformed
-
-    private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
-
-    }//GEN-LAST:event_btVoltarActionPerformed
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
         ConsultarGabaritoOficial consultarGabarito = new ConsultarGabaritoOficial();
@@ -2540,9 +2459,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.ButtonGroup bgAlternativa9;
     private javax.swing.JButton btPesquisar;
     private javax.swing.JButton btSalvar;
-    private javax.swing.JButton btVoltar;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JLabel jLabel0;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2556,6 +2473,10 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -2563,6 +2484,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JComboBox<String> jcProcessoSeletivo;
     private javax.swing.JRadioButton jrAlternativaA1;
     private javax.swing.JRadioButton jrAlternativaA10;
