@@ -18,6 +18,7 @@
         <mapping class="br.com.Modelos.Participante"/>
         <mapping class="br.com.Modelos.Curso"/>
         <mapping class="br.com.Modelos.GabaritoOficial"/>
+        <mapping class="br.com.Modelos.Funcionario"/>
 
 
     </session-factory>
