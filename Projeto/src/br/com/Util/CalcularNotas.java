@@ -4,15 +4,15 @@ package br.com.Util;
  *
  * @author Eugênio
  */
-public class CalcularPesos {
+public class CalcularNotas {
 
-    private double CalcularPesoA(int bloco1, int bloco2, int bloco3, int bloco4) {
+    public double CalcularPesoA(int bloco1, int bloco2, int bloco3, int bloco4) {
         double calc = (bloco1 * 4) + (bloco2 * 4) + (bloco3 * 6) + (bloco4 * 4);
         return calc;
     }
 
-    private double CalcularPesoB(int bloco1, int bloco2, int bloco3, int bloco4) {
-        double calc = (bloco1 * 4) + (bloco2 * 4) + (bloco3 * 6) + (bloco4 * 4);
+    public double CalcularPesoB(int bloco1, int bloco2, int bloco3, int bloco4) {
+        double calc = (bloco1 * 6) + (bloco2 * 4) + (bloco3 * 2) + (bloco4 * 6);
         return calc;
     }
 
