@@ -256,7 +256,8 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         btSalvar.setBackground(new java.awt.Color(0, 1, 76));
         btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btSalvar.setForeground(new java.awt.Color(255, 255, 255));
-        btSalvar.setText("Gerar Correção");
+        btSalvar.setText("Salvar");
+        btSalvar.setActionCommand("Salvar");
         btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btSalvarActionPerformed(evt);

@@ -131,7 +131,7 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
         if (linha == -1) {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
         } else {
-            func = funcDAO.pesquisarFuncionarioId("idFuncionario", (int) tbFuncionario.getValueAt(linha, 0));
+            func = funcDAO.pesquisarFuncionarioId("idUsuario", (int) tbFuncionario.getValueAt(linha, 0));
             CadastroFuncionario cadFunc = new CadastroFuncionario();
             cadFunc.funcionario = func;
             cadFunc.atualizarDados();
