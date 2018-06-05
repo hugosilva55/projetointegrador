@@ -1,9 +1,11 @@
 package br.com.DAO;
 
+import br.com.Modelos.GabaritoOficial;
 import br.com.Modelos.Participante;
 import br.com.Util.GenericDAO;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.criterion.Restrictions;
 
 /**
  *
@@ -40,6 +42,12 @@ public class ParticipanteDAO extends GenericDAO<Participante> {
 
     public Participante pesquisarParticipanteId(String campo, int valor) {
         return consultarObjetoId(campo, valor);
+    }
+    
+    public List<Participante> listarParticipantesPorCurso(String curso){
+        
+        List<Participante> participante = sessao.createCriteria(Participante.class).add(Restrictions.eq("curso", curso)).list();
+        return  participante;
     }
 
 }

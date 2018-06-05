@@ -4,6 +4,7 @@ import br.com.Modelos.GabaritoOficial;
 import br.com.Util.GenericDAO;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.criterion.Restrictions;
 
 /**
  *
@@ -44,5 +45,7 @@ public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
         return consultarObjetoId(campo, valor);
         
     }
+    
+   
     
 }
