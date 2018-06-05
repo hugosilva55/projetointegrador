@@ -15,6 +15,8 @@ public class GabaritoOficial {
     @GeneratedValue  
     private int idGabarito;
     @Column(length = 50, nullable = false)
+    private String curso;
+    @Column(length = 50, nullable = false)
     private String ProcessoSeletivo;
     @Column(length = 1, nullable = false)
     private String Resposta1;
@@ -363,6 +365,14 @@ public class GabaritoOficial {
      */
     public void setResposta20(String Resposta20) {
         this.Resposta20 = Resposta20;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 
 }
