@@ -19,6 +19,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
     GabaritoOficial gabaritoOfic = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
+    
+    PesquisarParticipantes participantes = new PesquisarParticipantes();
 
     /**
      * Creates new form GabaritoOficial
@@ -1579,6 +1581,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaE1.setActionCommand("E");
     }
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
+        
+       
         atualizarDados();
         if (bgAlternativa1.isSelected(null) || bgAlternativa2.isSelected(null)
                 || bgAlternativa3.isSelected(null) || bgAlternativa4.isSelected(null)
@@ -1612,9 +1616,9 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             gabaritoOfic.setResposta17(bgAlternativa17.getSelection().getActionCommand());
             gabaritoOfic.setResposta18(bgAlternativa18.getSelection().getActionCommand());
             gabaritoOfic.setResposta19(bgAlternativa19.getSelection().getActionCommand());
-            gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());
-            
+            gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());     
             LimparCampos();
+                      
         }
     }//GEN-LAST:event_btSalvarActionPerformed
 
@@ -2631,4 +2635,5 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private javax.swing.JTextField txtRedacao;
     // End of variables declaration//GEN-END:variables
 
+  
 }

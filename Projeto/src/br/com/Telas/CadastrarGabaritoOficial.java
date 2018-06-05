@@ -257,7 +257,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btSalvar.setForeground(new java.awt.Color(255, 255, 255));
         btSalvar.setText("Salvar");
-        btSalvar.setActionCommand("Salvar");
         btSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btSalvarActionPerformed(evt);
@@ -1472,7 +1471,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 200, 80, 25));
 
         jLabel25.setText("Curso:");
-        jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 280, -1, -1));
+        jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, -1, -1));
 
         jcProcessoSeletivo.setEditable(true);
         jcProcessoSeletivo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N

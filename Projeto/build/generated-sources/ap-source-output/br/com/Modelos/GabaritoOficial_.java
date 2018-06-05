@@ -20,6 +20,7 @@ public abstract class GabaritoOficial_ {
 	public static volatile SingularAttribute<GabaritoOficial, String> Resposta1;
 	public static volatile SingularAttribute<GabaritoOficial, String> Resposta19;
 	public static volatile SingularAttribute<GabaritoOficial, String> Resposta18;
+	public static volatile SingularAttribute<GabaritoOficial, String> curso;
 	public static volatile SingularAttribute<GabaritoOficial, Integer> idGabarito;
 	public static volatile SingularAttribute<GabaritoOficial, String> Resposta13;
 	public static volatile SingularAttribute<GabaritoOficial, String> Resposta12;
