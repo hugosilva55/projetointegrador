@@ -3,6 +3,7 @@ package br.com.DAO;
 import br.com.Modelos.GabaritoOficial;
 import br.com.Modelos.Participante;
 import br.com.Util.GenericDAO;
+import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
 import org.hibernate.criterion.Restrictions;
@@ -46,8 +47,16 @@ public class ParticipanteDAO extends GenericDAO<Participante> {
     
     public List<Participante> listarParticipantesPorCurso(String curso){
         
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+        
         List<Participante> participante = sessao.createCriteria(Participante.class).add(Restrictions.eq("curso", curso)).list();
-        return  participante;
+        
+        if (participante.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
+        }else{
+            return participante;
+        }
+        return participante;
     }
-
 }

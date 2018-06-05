@@ -171,9 +171,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         System.out.println(curso);
         
         atualizarTabela(curso);
-        
-        
-        
+             
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     /**
