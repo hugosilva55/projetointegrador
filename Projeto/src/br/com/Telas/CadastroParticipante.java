@@ -74,6 +74,8 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jcCurso = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 290), new java.awt.Dimension(0, 290), new java.awt.Dimension(32767, 290));
+        jLabel14 = new javax.swing.JLabel();
+        txtAno = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -249,6 +251,17 @@ public class CadastroParticipante extends javax.swing.JFrame {
         filler1.setOpaque(true);
         jPanel3.add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 2, -1));
 
+        jLabel14.setText("Ano do Vestibular:");
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, -1, -1));
+
+        txtAno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtAno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAnoActionPerformed(evt);
+            }
+        });
+        jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 304, 30));
+
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 790, 410));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
@@ -287,7 +300,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         if(txtNome.getText().equals("") || txtEmail.getText().equals("") ||
             txtCPF.getText().equals("") || txtdataNascimento.getText().equals("") ||
             txtNacionalidade.getText().equals("") || txtRG.getText().equals("") || txtMae.getText().equals("") ||
-            txtPai.getText().equals("")){
+            txtPai.getText().equals("") || txtAno.getText().equals("")){
 
             JOptionPane.showMessageDialog(null,"Por favor, preencha todos os campos!!");
         }else{
@@ -303,12 +316,17 @@ public class CadastroParticipante extends javax.swing.JFrame {
             part.setRG(txtRG.getText());
             part.setNomeMae(txtMae.getText());
             part.setNomePai(txtPai.getText());
+            part.setAno(txtAno.getText());
 
             partDAO.salvarParticipante(part);
             limparCampos();
 
         }
     }//GEN-LAST:event_btSalvarActionPerformed
+
+    private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnoActionPerformed
 
     public void limparCampos(){
         txtNome.setText("");
@@ -319,6 +337,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtRG.setText("");
         txtMae.setText("");
         txtPai.setText("");
+        txtAno.setText("");
         
     }
     public void atualizarDados(){
@@ -330,6 +349,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtRG.setText(part.getRG());
         txtMae.setText(part.getNomeMae());
         txtPai.setText(part.getNomePai());
+        txtAno.setText(part.getAno());
         
     }
     
@@ -379,6 +399,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -393,6 +414,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jcCivil;
     private javax.swing.JComboBox<String> jcCurso;
     private javax.swing.JComboBox<String> jcSexo;
+    private javax.swing.JTextField txtAno;
     private javax.swing.JTextField txtCPF;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtMae;

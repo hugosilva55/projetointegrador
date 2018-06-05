@@ -37,6 +37,8 @@ public class Participante {
     private String nomePai;
     @Column(length = 50, nullable = false)
     private String nomeMae;
+    @Column(length = 50, nullable = false)
+    private String ano;
 
     /**
      * @return the idUsuario
@@ -204,6 +206,20 @@ public class Participante {
      */
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    /**
+     * @return the ano
+     */
+    public String getAno() {
+        return ano;
+    }
+
+    /**
+     * @param ano the ano to set
+     */
+    public void setAno(String ano) {
+        this.ano = ano;
     }
     
     
