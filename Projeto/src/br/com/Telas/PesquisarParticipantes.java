@@ -182,11 +182,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         //Recuperar valores
         String AnoLetivo = jcbAno.getSelectedItem().toString();
         String curso = jcbCurso.getSelectedItem().toString();
-        atualizarTabela(AnoLetivo,curso);
-        
-        cga.recuperarAnoCurso(AnoLetivo,curso);
-       
-             
+        atualizarTabela(AnoLetivo,curso);           
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     private void btnCorrigirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCorrigirActionPerformed
@@ -196,6 +192,9 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
         }else{
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tableParicipantes.getValueAt(linha, 0));
+            cga.Ano = String.valueOf(jcbAno.getSelectedItem());
+            cga.Curso = String.valueOf(jcbCurso.getSelectedItem());
+            cga.nomeParticipante = String.valueOf(tableParicipantes.getValueAt(tableParicipantes.getSelectedRow(), 1));
             cga.setVisible(true);
             dispose();
             

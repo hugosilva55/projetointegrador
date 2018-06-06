@@ -7,7 +7,10 @@ package br.com.Telas;
 
 import br.com.Modelos.GabaritoOficial;
 import br.com.DAO.GabaritoOficialDAO;
+import br.com.DAO.ResultadoFinalDAO;
 import br.com.Modelos.GabaritoAluno;
+import br.com.Modelos.ResultadoFinal;
+import br.com.Util.CalcularNotas;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -18,28 +21,28 @@ import javax.swing.border.LineBorder;
  * @author vinni
  */
 public class CorrigirGabaritoAluno extends javax.swing.JFrame {
-    
-    GabaritoAluno aluno = new GabaritoAluno();
 
+    GabaritoAluno aluno = new GabaritoAluno();
     GabaritoOficial gabaritoOficial = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
-    
+    CalcularNotas calcNotas = new CalcularNotas();
+    ResultadoFinal resultFinal = new ResultadoFinal();
+    ResultadoFinalDAO resultFinalDAO = new ResultadoFinalDAO();
+
     String Curso;
     String Ano;
-    
-           
+    String nomeParticipante;
+
     /**
      * Creates new form GabaritoOficial
      */
     public CorrigirGabaritoAluno() {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
-        txtRedacao.setBorder(lineBorder );
-        
+        txtRedacao.setBorder(lineBorder);
 
     }
-    
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -1505,7 +1508,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void atualizarDados(){
+    private void atualizarDados() {
         jrAlternativaA20.setActionCommand("A");
         jrAlternativaA19.setActionCommand("A");
         jrAlternativaA18.setActionCommand("A");
@@ -1526,7 +1529,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaA3.setActionCommand("A");
         jrAlternativaA2.setActionCommand("A");
         jrAlternativaA1.setActionCommand("A");
-        
+
         jrAlternativaB20.setActionCommand("B");
         jrAlternativaB19.setActionCommand("B");
         jrAlternativaB18.setActionCommand("B");
@@ -1547,8 +1550,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaB3.setActionCommand("B");
         jrAlternativaB2.setActionCommand("B");
         jrAlternativaB1.setActionCommand("B");
-        
-                
+
         jrAlternativaC20.setActionCommand("C");
         jrAlternativaC19.setActionCommand("C");
         jrAlternativaC18.setActionCommand("C");
@@ -1569,8 +1571,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaC3.setActionCommand("C");
         jrAlternativaC2.setActionCommand("C");
         jrAlternativaC1.setActionCommand("C");
-        
-                
+
         jrAlternativaD20.setActionCommand("D");
         jrAlternativaD19.setActionCommand("D");
         jrAlternativaD18.setActionCommand("D");
@@ -1591,8 +1592,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaD3.setActionCommand("D");
         jrAlternativaD2.setActionCommand("D");
         jrAlternativaD1.setActionCommand("D");
-        
-                
+
         jrAlternativaE20.setActionCommand("E");
         jrAlternativaE19.setActionCommand("E");
         jrAlternativaE18.setActionCommand("E");
@@ -1613,16 +1613,91 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaE3.setActionCommand("E");
         jrAlternativaE2.setActionCommand("E");
         jrAlternativaE1.setActionCommand("E");
-      
-        
+
     }
+//Blocos
+    private int linguagem() {
+        int nRespostarLinguagem = 0;
+        if (bgAlternativa1.getSelection().getActionCommand().equals(gabaritoOficial.getResposta1())) {
+            nRespostarLinguagem++;
+        }
+        if (bgAlternativa2.getSelection().getActionCommand().equals(gabaritoOficial.getResposta2())) {
+            nRespostarLinguagem++;
+        }
+        if (bgAlternativa3.getSelection().getActionCommand().equals(gabaritoOficial.getResposta3())) {
+            nRespostarLinguagem++;
+        }
+        if (bgAlternativa4.getSelection().getActionCommand().equals(gabaritoOficial.getResposta4())) {
+            nRespostarLinguagem++;
+        }
+        if (bgAlternativa5.getSelection().getActionCommand().equals(gabaritoOficial.getResposta5())) {
+            nRespostarLinguagem++;
+        }
+        return nRespostarLinguagem;
+    }
+    private int matematica() {
+        int nRespostarMatematica = 0;
+        if (bgAlternativa6.getSelection().getActionCommand().equals(gabaritoOficial.getResposta6())) {
+            nRespostarMatematica++;
+        }
+        if (bgAlternativa7.getSelection().getActionCommand().equals(gabaritoOficial.getResposta7())) {
+            nRespostarMatematica++;
+        }
+        if (bgAlternativa8.getSelection().getActionCommand().equals(gabaritoOficial.getResposta8())) {
+            nRespostarMatematica++;
+        }
+        if (bgAlternativa9.getSelection().getActionCommand().equals(gabaritoOficial.getResposta9())) {
+            nRespostarMatematica++;
+        }
+        if (bgAlternativa10.getSelection().getActionCommand().equals(gabaritoOficial.getResposta10())) {
+            nRespostarMatematica++;
+        }
+        return nRespostarMatematica;
+    }
+    private int cNatureza() {
+        int nRespostarcNatureza = 0;
+        if (bgAlternativa11.getSelection().getActionCommand().equals(gabaritoOficial.getResposta11())) {
+            nRespostarcNatureza++;
+        }
+        if (bgAlternativa12.getSelection().getActionCommand().equals(gabaritoOficial.getResposta12())) {
+            nRespostarcNatureza++;
+        }
+        if (bgAlternativa13.getSelection().getActionCommand().equals(gabaritoOficial.getResposta13())) {
+            nRespostarcNatureza++;
+        }
+        if (bgAlternativa14.getSelection().getActionCommand().equals(gabaritoOficial.getResposta14())) {
+            nRespostarcNatureza++;
+        }
+        if (bgAlternativa15.getSelection().getActionCommand().equals(gabaritoOficial.getResposta15())) {
+            nRespostarcNatureza++;
+        }
+        return nRespostarcNatureza;
+    }
+    private int cHumanas() {
+        int nRespostarcHumanas = 0;
+        if (bgAlternativa16.getSelection().getActionCommand().equals(gabaritoOficial.getResposta16())) {
+            nRespostarcHumanas++;
+        }
+        if (bgAlternativa17.getSelection().getActionCommand().equals(gabaritoOficial.getResposta17())) {
+            nRespostarcHumanas++;
+        }
+        if (bgAlternativa18.getSelection().getActionCommand().equals(gabaritoOficial.getResposta18())) {
+            nRespostarcHumanas++;
+        }
+        if (bgAlternativa19.getSelection().getActionCommand().equals(gabaritoOficial.getResposta19())) {
+            nRespostarcHumanas++;
+        }
+        if (bgAlternativa20.getSelection().getActionCommand().equals(gabaritoOficial.getResposta20())) {
+            nRespostarcHumanas++;
+        }
+        return nRespostarcHumanas;
+    }
+    
+    
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
-        
-        Ano = txtAno.getText();
-        Curso = txtCurso.getText();
-        
+
         atualizarDados();
-        
+
         if (bgAlternativa1.isSelected(null) || bgAlternativa2.isSelected(null)
                 || bgAlternativa3.isSelected(null) || bgAlternativa4.isSelected(null)
                 || bgAlternativa5.isSelected(null) || bgAlternativa6.isSelected(null)
@@ -1636,36 +1711,17 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
-            aluno.setResposta1(bgAlternativa1.getSelection().getActionCommand());
-            aluno.setResposta2(bgAlternativa2.getSelection().getActionCommand());
-            aluno.setResposta3(bgAlternativa3.getSelection().getActionCommand());
-            aluno.setResposta4(bgAlternativa4.getSelection().getActionCommand());
-            aluno.setResposta5(bgAlternativa5.getSelection().getActionCommand());
-            aluno.setResposta6(bgAlternativa6.getSelection().getActionCommand());
-            aluno.setResposta7(bgAlternativa7.getSelection().getActionCommand());
-            aluno.setResposta8(bgAlternativa8.getSelection().getActionCommand());
-            aluno.setResposta9(bgAlternativa9.getSelection().getActionCommand());
-            aluno.setResposta10(bgAlternativa10.getSelection().getActionCommand());
-            aluno.setResposta11(bgAlternativa11.getSelection().getActionCommand());
-            aluno.setResposta12(bgAlternativa12.getSelection().getActionCommand());
-            aluno.setResposta13(bgAlternativa13.getSelection().getActionCommand());
-            aluno.setResposta14(bgAlternativa14.getSelection().getActionCommand());
-            aluno.setResposta15(bgAlternativa15.getSelection().getActionCommand());
-            aluno.setResposta16(bgAlternativa16.getSelection().getActionCommand());
-            aluno.setResposta17(bgAlternativa17.getSelection().getActionCommand());
-            aluno.setResposta18(bgAlternativa18.getSelection().getActionCommand());
-            aluno.setResposta19(bgAlternativa19.getSelection().getActionCommand());
-            aluno.setResposta20(bgAlternativa20.getSelection().getActionCommand());     
+            gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso);
+            PesquisarParticipantes pesqPart = new PesquisarParticipantes();
+            resultFinal.setNomeParticipante(nomeParticipante);
+            resultFinal.setNotaFinal(calcNotas.calcNota(Curso,linguagem(), matematica(), cNatureza(),cHumanas()));
+            resultFinalDAO.salvarResultadoFinal(resultFinal);
             LimparCampos();
+            pesqPart.setVisible(true);
+            dispose();
             
-            //Aqui preciso buscar o gabarito por ano e curso. Se caso existir retornar os valores dele para comparar.
-             gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano,Curso);
-             System.out.println(gabaritoOficial.getIdGabarito());
-        
-        
-            
-                      
         }
+        
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed
@@ -1909,83 +1965,83 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jrAlternativaB19ActionPerformed
 
     private void jrAlternativaA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA1ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA1ActionPerformed
 
     private void jrAlternativaA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA2ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA2ActionPerformed
 
     private void jrAlternativaA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA3ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA3ActionPerformed
 
     private void jrAlternativaA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA4ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA4ActionPerformed
 
     private void jrAlternativaA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA5ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA5ActionPerformed
 
     private void jrAlternativaA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA6ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA6ActionPerformed
 
     private void jrAlternativaA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA7ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA7ActionPerformed
 
     private void jrAlternativaA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA8ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA8ActionPerformed
 
     private void jrAlternativaA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA9ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA9ActionPerformed
 
     private void jrAlternativaA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA10ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA10ActionPerformed
 
     private void jrAlternativaA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA11ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA11ActionPerformed
 
     private void jrAlternativaA12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA12ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA12ActionPerformed
 
     private void jrAlternativaA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA13ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA13ActionPerformed
 
     private void jrAlternativaA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA14ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA14ActionPerformed
 
     private void jrAlternativaA15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA15ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA15ActionPerformed
 
     private void jrAlternativaA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA16ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA16ActionPerformed
 
     private void jrAlternativaA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA17ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA17ActionPerformed
 
     private void jrAlternativaA18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA18ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA18ActionPerformed
 
     private void jrAlternativaA19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA19ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA19ActionPerformed
 
     private void jrAlternativaA20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA20ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA20ActionPerformed
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
@@ -1997,7 +2053,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAnoActionPerformed
-    
+
     void atualizarCampos() {
 
         switch (aluno.getResposta1()) {
@@ -2340,8 +2396,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa20.setSelected(jrAlternativaE20.getModel(), true);
                 break;
         }
-        
-    
+
     }
 
     public void LimparCampos() {
@@ -2687,10 +2742,4 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private javax.swing.JTextField txtRedacao;
     // End of variables declaration//GEN-END:variables
 
-    public void recuperarAnoCurso(String ano ,String curso){
-        
-        txtAno.setText("Ano Letivo: "+ano);
-        txtCurso.setText(curso);
-       
-    }
 }
