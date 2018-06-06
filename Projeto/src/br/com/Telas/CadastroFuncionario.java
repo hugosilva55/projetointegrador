@@ -212,6 +212,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtSenha.setText("");
         txtEmail.setText("");
         txtCPF.setText("");
+        funcionario = new Funcionario();
     }
 
     public void atualizarDados() {
