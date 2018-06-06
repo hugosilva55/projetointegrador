@@ -339,6 +339,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtMae.setText("");
         txtPai.setText("");
         txtAno.setText("");
+        part = new Participante();
         
     }
     public void atualizarDados(){

@@ -2355,6 +2355,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         bgAlternativa18.clearSelection();
         bgAlternativa19.clearSelection();
         bgAlternativa20.clearSelection();
+        gabaritoOfic = new GabaritoOficial();
     }
 
     ;

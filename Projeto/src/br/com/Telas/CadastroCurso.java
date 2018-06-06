@@ -224,6 +224,7 @@ public class CadastroCurso extends javax.swing.JFrame {
         txtTurno.setText("");
         txtVagas.setText("");
         txtCoordenador.setText("");
+        curs = new Curso();
 
     }
 
