@@ -1658,7 +1658,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             aluno.setResposta20(bgAlternativa20.getSelection().getActionCommand());     
             LimparCampos();
             
-            
+            //Aqui preciso buscar o gabarito por ano e curso. Se caso existir retornar os valores dele para comparar.
              gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano,Curso);
              System.out.println(gabaritoOficial.getIdGabarito());
         
