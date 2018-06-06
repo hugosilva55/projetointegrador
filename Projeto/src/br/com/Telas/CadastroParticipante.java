@@ -31,6 +31,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtPai.setBorder(lineBorder );
         txtRG.setBorder(lineBorder );
         txtdataNascimento.setBorder(lineBorder );
+        txtAno.setBorder(lineBorder);
        
     }
 
@@ -144,7 +145,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel3.setText("Estado Civil:");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, -1, -1));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, -1, -1));
 
         jcCivil.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcCivil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Solteiro(a)", "Casado(a)", "Divorciado(a)", "Viúvo(a)" }));
@@ -153,7 +154,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
                 jcCivilActionPerformed(evt);
             }
         });
-        jPanel3.add(jcCivil, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 250, 30));
+        jPanel3.add(jcCivil, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 250, 30));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel4.setText("CPF:");
@@ -164,7 +165,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel5.setText("Data de Nascimento:");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, -1, -1));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, -1));
 
         txtdataNascimento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtdataNascimento.addActionListener(new java.awt.event.ActionListener() {
@@ -172,19 +173,19 @@ public class CadastroParticipante extends javax.swing.JFrame {
                 txtdataNascimentoActionPerformed(evt);
             }
         });
-        jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 130, 30));
+        jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 130, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel6.setText("Sexo:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 70, -1));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 230, 70, -1));
 
         jcSexo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino", " " }));
-        jPanel3.add(jcSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 200, 160, 30));
+        jPanel3.add(jcSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, 160, 30));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel7.setText("Nacionalidade:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, -1, -1));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, -1, -1));
 
         txtNacionalidade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtNacionalidade.addActionListener(new java.awt.event.ActionListener() {
@@ -192,7 +193,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
                 txtNacionalidadeActionPerformed(evt);
             }
         });
-        jPanel3.add(txtNacionalidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, 146, 30));
+        jPanel3.add(txtNacionalidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 146, 30));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel8.setText("RG:");
@@ -210,10 +211,10 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Nome do Mãe:");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, -1, -1));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, -1, -1));
 
         txtMae.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jPanel3.add(txtMae, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 260, 304, 30));
+        jPanel3.add(txtMae, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 320, 30));
 
         btSalvar.setBackground(new java.awt.Color(0, 1, 76));
         btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -241,18 +242,18 @@ public class CadastroParticipante extends javax.swing.JFrame {
                 jcCursoActionPerformed(evt);
             }
         });
-        jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, 160, 30));
+        jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, 160, 30));
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel11.setText("Curso:");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, -1, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 170, -1, -1));
 
         filler1.setBackground(new java.awt.Color(255, 245, 255));
         filler1.setOpaque(true);
         jPanel3.add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 2, -1));
 
         jLabel14.setText("Ano do Vestibular:");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, -1, -1));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, -1));
 
         txtAno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtAno.addActionListener(new java.awt.event.ActionListener() {
@@ -260,9 +261,9 @@ public class CadastroParticipante extends javax.swing.JFrame {
                 txtAnoActionPerformed(evt);
             }
         });
-        jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 304, 30));
+        jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 120, 30));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 790, 410));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 410));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
 

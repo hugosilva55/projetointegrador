@@ -251,7 +251,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jcCursoKeyTyped(evt);
             }
         });
-        jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 310, 120, -1));
+        jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 110, -1));
 
         btSalvar.setBackground(new java.awt.Color(0, 1, 76));
         btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -1470,6 +1470,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jLabel24.setText("Ano Letivo:");
         jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 200, 80, 25));
 
+        jLabel25.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel25.setText("Curso:");
         jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, -1, -1));
 
@@ -1486,7 +1487,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jcProcessoSeletivoKeyTyped(evt);
             }
         });
-        jPanel3.add(jcProcessoSeletivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 100, -1));
+        jPanel3.add(jcProcessoSeletivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 110, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 500));
 

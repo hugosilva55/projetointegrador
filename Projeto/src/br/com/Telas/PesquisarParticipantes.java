@@ -16,11 +16,12 @@ import javax.swing.JOptionPane;
  * @author jonat
  */
 public class PesquisarParticipantes extends javax.swing.JFrame {
-
+    
     Participante participante = new Participante();
     ParticipanteDAO participanteDAO = new ParticipanteDAO();
     
     CorrigirGabaritoAluno cga = new CorrigirGabaritoAluno();
+    
     
     public PesquisarParticipantes() {
         initComponents();
@@ -181,8 +182,10 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         //Recuperar valores
         String AnoLetivo = jcbAno.getSelectedItem().toString();
         String curso = jcbCurso.getSelectedItem().toString();
-        
         atualizarTabela(curso);
+        
+        cga.recuperarAnoCurso(AnoLetivo,curso);
+       
              
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
@@ -193,8 +196,6 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
         }else{
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tableParicipantes.getValueAt(linha, 0));
-            
-            CorrigirGabaritoAluno cga = new CorrigirGabaritoAluno();
             cga.setVisible(true);
             dispose();
             
@@ -252,17 +253,5 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         listarParticipantesTableModel modelo = new 
         listarParticipantesTableModel(participanteDAO.listarParticipantesPorCurso(curso));
         tableParicipantes.setModel(modelo);
-    }
- 
- public String ano(){
-      String AnoLetivo = jcbAno.getSelectedItem().toString();
-      return  AnoLetivo;
- }
- 
- public String curso(){
-      String curso = jcbCurso.getSelectedItem().toString();
-      
-      return curso;
- }
-
+    } 
 }

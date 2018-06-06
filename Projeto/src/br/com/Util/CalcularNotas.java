@@ -32,7 +32,6 @@ public class CalcularNotas {
             case "Direito":
                 CalcularPesoB(bloco1, bloco2, bloco3, bloco4);
                 break;
-                
 
         }
         return 0;
