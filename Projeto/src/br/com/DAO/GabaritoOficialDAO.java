@@ -1,7 +1,9 @@
 package br.com.DAO;
 
 import br.com.Modelos.GabaritoOficial;
+import br.com.Modelos.Participante;
 import br.com.Util.GenericDAO;
+import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
 import org.hibernate.criterion.Restrictions;
@@ -11,6 +13,8 @@ import org.hibernate.criterion.Restrictions;
  * @author vinni
  */
 public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
+    
+    GabaritoOficial gabaritoOficial = new GabaritoOficial();
 
     public GabaritoOficialDAO() {
         super(GabaritoOficial.class);
@@ -46,6 +50,17 @@ public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
         
     }
     
-   
     
+   public GabaritoOficial listarGabaritoPorCursoAno(String ano, String curso){
+        
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+        
+        GabaritoOficial gabarito = (GabaritoOficial) sessao.createCriteria(GabaritoOficial.class).add(Restrictions.eq("ProcessoSeletivo", ano)).
+                add(Restrictions.eq("curso", curso)).uniqueResult();
+        
+        return gabarito;
+   }
 }
+        
+

@@ -7,7 +7,9 @@ package br.com.Telas;
 
 import br.com.Modelos.GabaritoOficial;
 import br.com.DAO.GabaritoOficialDAO;
+import br.com.Modelos.GabaritoAluno;
 import java.awt.Color;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
 
@@ -17,11 +19,13 @@ import javax.swing.border.LineBorder;
  */
 public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     
+    GabaritoAluno aluno = new GabaritoAluno();
 
-    GabaritoOficial gabaritoOfic = new GabaritoOficial();
+    GabaritoOficial gabaritoOficial = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
     
     String Curso;
+    String Ano;
     
            
     /**
@@ -1609,13 +1613,16 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaE3.setActionCommand("E");
         jrAlternativaE2.setActionCommand("E");
         jrAlternativaE1.setActionCommand("E");
+      
+        
     }
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
         
+        Ano = txtAno.getText();
         Curso = txtCurso.getText();
-        System.out.println(Curso);
         
         atualizarDados();
+        
         if (bgAlternativa1.isSelected(null) || bgAlternativa2.isSelected(null)
                 || bgAlternativa3.isSelected(null) || bgAlternativa4.isSelected(null)
                 || bgAlternativa5.isSelected(null) || bgAlternativa6.isSelected(null)
@@ -1629,27 +1636,32 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
-            gabaritoOfic.setResposta1(bgAlternativa1.getSelection().getActionCommand());
-            gabaritoOfic.setResposta2(bgAlternativa2.getSelection().getActionCommand());
-            gabaritoOfic.setResposta3(bgAlternativa3.getSelection().getActionCommand());
-            gabaritoOfic.setResposta4(bgAlternativa4.getSelection().getActionCommand());
-            gabaritoOfic.setResposta5(bgAlternativa5.getSelection().getActionCommand());
-            gabaritoOfic.setResposta6(bgAlternativa6.getSelection().getActionCommand());
-            gabaritoOfic.setResposta7(bgAlternativa7.getSelection().getActionCommand());
-            gabaritoOfic.setResposta8(bgAlternativa8.getSelection().getActionCommand());
-            gabaritoOfic.setResposta9(bgAlternativa9.getSelection().getActionCommand());
-            gabaritoOfic.setResposta10(bgAlternativa10.getSelection().getActionCommand());
-            gabaritoOfic.setResposta11(bgAlternativa11.getSelection().getActionCommand());
-            gabaritoOfic.setResposta12(bgAlternativa12.getSelection().getActionCommand());
-            gabaritoOfic.setResposta13(bgAlternativa13.getSelection().getActionCommand());
-            gabaritoOfic.setResposta14(bgAlternativa14.getSelection().getActionCommand());
-            gabaritoOfic.setResposta15(bgAlternativa15.getSelection().getActionCommand());
-            gabaritoOfic.setResposta16(bgAlternativa16.getSelection().getActionCommand());
-            gabaritoOfic.setResposta17(bgAlternativa17.getSelection().getActionCommand());
-            gabaritoOfic.setResposta18(bgAlternativa18.getSelection().getActionCommand());
-            gabaritoOfic.setResposta19(bgAlternativa19.getSelection().getActionCommand());
-            gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());     
+            aluno.setResposta1(bgAlternativa1.getSelection().getActionCommand());
+            aluno.setResposta2(bgAlternativa2.getSelection().getActionCommand());
+            aluno.setResposta3(bgAlternativa3.getSelection().getActionCommand());
+            aluno.setResposta4(bgAlternativa4.getSelection().getActionCommand());
+            aluno.setResposta5(bgAlternativa5.getSelection().getActionCommand());
+            aluno.setResposta6(bgAlternativa6.getSelection().getActionCommand());
+            aluno.setResposta7(bgAlternativa7.getSelection().getActionCommand());
+            aluno.setResposta8(bgAlternativa8.getSelection().getActionCommand());
+            aluno.setResposta9(bgAlternativa9.getSelection().getActionCommand());
+            aluno.setResposta10(bgAlternativa10.getSelection().getActionCommand());
+            aluno.setResposta11(bgAlternativa11.getSelection().getActionCommand());
+            aluno.setResposta12(bgAlternativa12.getSelection().getActionCommand());
+            aluno.setResposta13(bgAlternativa13.getSelection().getActionCommand());
+            aluno.setResposta14(bgAlternativa14.getSelection().getActionCommand());
+            aluno.setResposta15(bgAlternativa15.getSelection().getActionCommand());
+            aluno.setResposta16(bgAlternativa16.getSelection().getActionCommand());
+            aluno.setResposta17(bgAlternativa17.getSelection().getActionCommand());
+            aluno.setResposta18(bgAlternativa18.getSelection().getActionCommand());
+            aluno.setResposta19(bgAlternativa19.getSelection().getActionCommand());
+            aluno.setResposta20(bgAlternativa20.getSelection().getActionCommand());     
             LimparCampos();
+            
+            
+             gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano,Curso);
+             System.out.println(gabaritoOficial.getIdGabarito());
+        
         
             
                       
@@ -1988,7 +2000,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     
     void atualizarCampos() {
 
-        switch (gabaritoOfic.getResposta1()) {
+        switch (aluno.getResposta1()) {
             case "A":
                 bgAlternativa1.setSelected(jrAlternativaB1.getModel(), true);
                 break;
@@ -2005,7 +2017,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa1.setSelected(jrAlternativaE1.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta2()) {
+        switch (aluno.getResposta2()) {
             case "A":
                 bgAlternativa2.setSelected(jrAlternativaA2.getModel(), true);
                 break;
@@ -2022,7 +2034,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa2.setSelected(jrAlternativaE2.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta3()) {
+        switch (aluno.getResposta3()) {
             case "A":
                 bgAlternativa3.setSelected(jrAlternativaA3.getModel(), true);
                 break;
@@ -2039,7 +2051,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa3.setSelected(jrAlternativaE3.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta4()) {
+        switch (aluno.getResposta4()) {
             case "A":
                 bgAlternativa4.setSelected(jrAlternativaA4.getModel(), true);
                 break;
@@ -2056,7 +2068,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa4.setSelected(jrAlternativaE4.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta5()) {
+        switch (aluno.getResposta5()) {
             case "A":
                 bgAlternativa5.setSelected(jrAlternativaA5.getModel(), true);
                 break;
@@ -2073,7 +2085,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa5.setSelected(jrAlternativaE5.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta6()) {
+        switch (aluno.getResposta6()) {
             case "A":
                 bgAlternativa6.setSelected(jrAlternativaA6.getModel(), true);
                 break;
@@ -2090,7 +2102,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa6.setSelected(jrAlternativaE6.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta7()) {
+        switch (aluno.getResposta7()) {
             case "A":
                 bgAlternativa7.setSelected(jrAlternativaA7.getModel(), true);
                 break;
@@ -2107,7 +2119,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa7.setSelected(jrAlternativaE7.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta8()) {
+        switch (aluno.getResposta8()) {
             case "A":
                 bgAlternativa8.setSelected(jrAlternativaA8.getModel(), true);
                 break;
@@ -2124,7 +2136,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa8.setSelected(jrAlternativaE8.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta9()) {
+        switch (aluno.getResposta9()) {
             case "A":
                 bgAlternativa9.setSelected(jrAlternativaA9.getModel(), true);
                 break;
@@ -2141,7 +2153,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa9.setSelected(jrAlternativaE9.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta10()) {
+        switch (aluno.getResposta10()) {
             case "A":
                 bgAlternativa10.setSelected(jrAlternativaA10.getModel(), true);
                 break;
@@ -2158,7 +2170,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa10.setSelected(jrAlternativaE10.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta11()) {
+        switch (aluno.getResposta11()) {
             case "A":
                 bgAlternativa11.setSelected(jrAlternativaA11.getModel(), true);
                 break;
@@ -2175,7 +2187,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa11.setSelected(jrAlternativaE11.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta12()) {
+        switch (aluno.getResposta12()) {
             case "A":
                 bgAlternativa12.setSelected(jrAlternativaA12.getModel(), true);
                 break;
@@ -2192,7 +2204,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa12.setSelected(jrAlternativaE12.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta13()) {
+        switch (aluno.getResposta13()) {
             case "A":
                 bgAlternativa13.setSelected(jrAlternativaA13.getModel(), true);
                 break;
@@ -2209,7 +2221,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa13.setSelected(jrAlternativaE13.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta14()) {
+        switch (aluno.getResposta14()) {
             case "A":
                 bgAlternativa14.setSelected(jrAlternativaA14.getModel(), true);
                 break;
@@ -2226,7 +2238,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa14.setSelected(jrAlternativaE14.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta15()) {
+        switch (aluno.getResposta15()) {
             case "A":
                 bgAlternativa15.setSelected(jrAlternativaA15.getModel(), true);
                 break;
@@ -2243,7 +2255,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa15.setSelected(jrAlternativaE15.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta16()) {
+        switch (aluno.getResposta16()) {
             case "A":
                 bgAlternativa16.setSelected(jrAlternativaA16.getModel(), true);
                 break;
@@ -2260,7 +2272,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa16.setSelected(jrAlternativaE16.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta17()) {
+        switch (aluno.getResposta17()) {
             case "A":
                 bgAlternativa17.setSelected(jrAlternativaA17.getModel(), true);
                 break;
@@ -2277,7 +2289,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa17.setSelected(jrAlternativaE17.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta18()) {
+        switch (aluno.getResposta18()) {
             case "A":
                 bgAlternativa18.setSelected(jrAlternativaA18.getModel(), true);
                 break;
@@ -2294,7 +2306,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa18.setSelected(jrAlternativaE18.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta19()) {
+        switch (aluno.getResposta19()) {
             case "A":
                 bgAlternativa19.setSelected(jrAlternativaA19.getModel(), true);
                 break;
@@ -2311,7 +2323,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa19.setSelected(jrAlternativaE19.getModel(), true);
                 break;
         }
-        switch (gabaritoOfic.getResposta20()) {
+        switch (aluno.getResposta20()) {
             case "A":
                 bgAlternativa20.setSelected(jrAlternativaA20.getModel(), true);
                 break;

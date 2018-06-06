@@ -182,7 +182,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         //Recuperar valores
         String AnoLetivo = jcbAno.getSelectedItem().toString();
         String curso = jcbCurso.getSelectedItem().toString();
-        atualizarTabela(curso);
+        atualizarTabela(AnoLetivo,curso);
         
         cga.recuperarAnoCurso(AnoLetivo,curso);
        
@@ -249,9 +249,9 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
     private javax.swing.JTable tableParicipantes;
     // End of variables declaration//GEN-END:variables
 
- public void atualizarTabela(String curso){
+ public void atualizarTabela(String ano, String curso){
         listarParticipantesTableModel modelo = new 
-        listarParticipantesTableModel(participanteDAO.listarParticipantesPorCurso(curso));
+        listarParticipantesTableModel(participanteDAO.listarParticipantesPorCurso(ano,curso));
         tableParicipantes.setModel(modelo);
     } 
 }

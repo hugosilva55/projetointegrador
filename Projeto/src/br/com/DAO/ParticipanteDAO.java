@@ -45,12 +45,13 @@ public class ParticipanteDAO extends GenericDAO<Participante> {
         return consultarObjetoId(campo, valor);
     }
     
-    public List<Participante> listarParticipantesPorCurso(String curso){
+    public List<Participante> listarParticipantesPorCurso(String ano, String curso){
         
         this.setSessao(HibernateUtil.getSessionFactory().openSession());
             setTransacao(getSessao().beginTransaction());
         
-        List<Participante> participante = sessao.createCriteria(Participante.class).add(Restrictions.eq("curso", curso)).list();
+        List<Participante> participante = sessao.createCriteria(Participante.class).add(Restrictions.eq("ano", ano)).
+                add(Restrictions.eq("curso", curso)).list();
         
         if (participante.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
