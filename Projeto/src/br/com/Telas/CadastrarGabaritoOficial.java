@@ -190,7 +190,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         btPesquisar = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jcProcessoSeletivo = new javax.swing.JComboBox<>();
+        txtAnoLetivo = new javax.swing.JTextField();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -1474,20 +1474,12 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jLabel25.setText("Curso:");
         jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, -1, -1));
 
-        jcProcessoSeletivo.setEditable(true);
-        jcProcessoSeletivo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jcProcessoSeletivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2016", "2016.2", "2017", "2017.2", "2018", "2018.2" }));
-        jcProcessoSeletivo.addActionListener(new java.awt.event.ActionListener() {
+        txtAnoLetivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcProcessoSeletivoActionPerformed(evt);
+                txtAnoLetivoActionPerformed(evt);
             }
         });
-        jcProcessoSeletivo.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jcProcessoSeletivoKeyTyped(evt);
-            }
-        });
-        jPanel3.add(jcProcessoSeletivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 110, -1));
+        jPanel3.add(txtAnoLetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 220, 110, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 500));
 
@@ -1628,12 +1620,13 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 || bgAlternativa13.isSelected(null) || bgAlternativa14.isSelected(null)
                 || bgAlternativa15.isSelected(null) || bgAlternativa16.isSelected(null)
                 || bgAlternativa17.isSelected(null) || bgAlternativa18.isSelected(null)
-                || bgAlternativa19.isSelected(null) || bgAlternativa20.isSelected(null)) {
+                || bgAlternativa19.isSelected(null) || bgAlternativa20.isSelected(null)
+                || txtAnoLetivo.getText().equals(""))  {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
             gabaritoOfic.setCurso(String.valueOf(jcCurso.getSelectedItem()));
-            gabaritoOfic.setProcessoSeletivo(String.valueOf(jcProcessoSeletivo.getSelectedItem()));
+            gabaritoOfic.setProcessoSeletivo(txtAnoLetivo.getText());
             gabaritoOfic.setResposta1(bgAlternativa1.getSelection().getActionCommand());
             gabaritoOfic.setResposta2(bgAlternativa2.getSelection().getActionCommand());
             gabaritoOfic.setResposta3(bgAlternativa3.getSelection().getActionCommand());
@@ -1990,13 +1983,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btPesquisarActionPerformed
 
-    private void jcProcessoSeletivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcProcessoSeletivoActionPerformed
+    private void txtAnoLetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoLetivoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jcProcessoSeletivoActionPerformed
-
-    private void jcProcessoSeletivoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jcProcessoSeletivoKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jcProcessoSeletivoKeyTyped
+    }//GEN-LAST:event_txtAnoLetivoActionPerformed
     
     void atualizarCampos() {
 
@@ -2341,7 +2330,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 break;
         }
         
-        jcProcessoSeletivo.setSelectedItem(gabaritoOfic.getProcessoSeletivo());
+        txtAnoLetivo.setText(gabaritoOfic.getProcessoSeletivo());
         jcCurso.setSelectedItem(gabaritoOfic.getCurso());
     }
 
@@ -2520,7 +2509,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JComboBox<String> jcCurso;
-    private javax.swing.JComboBox<String> jcProcessoSeletivo;
     private javax.swing.JRadioButton jrAlternativaA1;
     private javax.swing.JRadioButton jrAlternativaA10;
     private javax.swing.JRadioButton jrAlternativaA11;
@@ -2622,6 +2610,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JRadioButton jrAlternativaE8;
     private javax.swing.JRadioButton jrAlternativaE9;
     private javax.swing.JLabel titulo;
+    private javax.swing.JTextField txtAnoLetivo;
     // End of variables declaration//GEN-END:variables
 
 }
