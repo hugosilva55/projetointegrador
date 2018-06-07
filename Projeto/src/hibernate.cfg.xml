@@ -8,7 +8,7 @@
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost/template_correction</property>
         <property name="connection.username">root</property>
-        <property name="connection.password"></property>
+        <property name="connection.password">23cm</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="generate_statistics">true</property>
@@ -19,6 +19,7 @@
         <mapping class="br.com.Modelos.Curso"/>
         <mapping class="br.com.Modelos.GabaritoOficial"/>
         <mapping class="br.com.Modelos.Funcionario"/>
+        <mapping class="br.com.Modelos.ResultadoFinal"/>
 
 
     </session-factory>

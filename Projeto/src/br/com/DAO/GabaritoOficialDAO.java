@@ -6,6 +6,8 @@ import br.com.Util.GenericDAO;
 import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
 /**
@@ -13,8 +15,11 @@ import org.hibernate.criterion.Restrictions;
  * @author vinni
  */
 public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
-    
+
     GabaritoOficial gabaritoOficial = new GabaritoOficial();
+    //public Session sessao;
+    public Transaction transacao;
+    private Class classe;
 
     public GabaritoOficialDAO() {
         super(GabaritoOficial.class);
@@ -41,26 +46,25 @@ public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
         }
     }
 
-    public List<GabaritoOficial> listarGabaritoOficial(){
+    public List<GabaritoOficial> listarGabaritoOficial() {
         return listar();
-        
+
     }
-    public GabaritoOficial pesquisarGabaritoOficId(String campo, int valor){
+
+    public GabaritoOficial pesquisarGabaritoOficId(String campo, int valor) {
         return consultarObjetoId(campo, valor);
-        
+
     }
-    
-    
-   public GabaritoOficial listarGabaritoPorCursoAno(String ano, String curso){
-        
+
+    public GabaritoOficial listarGabaritoPorCursoAno(String ano, String curso) {
+
         this.setSessao(HibernateUtil.getSessionFactory().openSession());
-            setTransacao(getSessao().beginTransaction());
-        
+        setTransacao(getSessao().beginTransaction());
+
         GabaritoOficial gabarito = (GabaritoOficial) sessao.createCriteria(GabaritoOficial.class).add(Restrictions.eq("ProcessoSeletivo", ano)).
                 add(Restrictions.eq("curso", curso)).uniqueResult();
-        
+        sessao.close();
         return gabarito;
-   }
-}
         
-
+    }
+}
