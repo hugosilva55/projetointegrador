@@ -6,6 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.MatchMode;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 
 @SuppressWarnings("unchecked")
@@ -83,6 +84,25 @@ public abstract class GenericDAO<T> {
             this.setSessao(HibernateUtil.getSessionFactory().openSession());
             setTransacao(getSessao().beginTransaction());
             lista = this.getSessao().createCriteria(classe).list();
+            
+            //sessao.close();
+        } catch (Throwable e) {
+            if (getTransacao().isActive()) {
+                getTransacao().rollback();
+            }
+            JOptionPane.showMessageDialog(null, "Não foi possível executar essa operação"
+                    + ". Erro: " + e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
+        }
+        return lista;
+    }
+    
+    public List<T> listarParticipantePorMaiorNota() {
+        List<T> lista = null;
+        try {
+            this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+            lista = this.getSessao().createCriteria(classe).addOrder(Order.desc("notaFinal")).list();
+            
             //sessao.close();
         } catch (Throwable e) {
             if (getTransacao().isActive()) {

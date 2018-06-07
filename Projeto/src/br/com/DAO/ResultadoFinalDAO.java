@@ -35,7 +35,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
     }
 
     public List<ResultadoFinal> listarResultadoFinal() {
-        return listar();
+        return listarParticipantePorMaiorNota();
     }
 
     public ResultadoFinal pesquisarResultadoFinalId(String campo, int valor) {
