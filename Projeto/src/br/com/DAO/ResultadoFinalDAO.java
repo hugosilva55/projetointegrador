@@ -17,13 +17,21 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
 
     public void salvarResultadoFinal(ResultadoFinal result) {
 
-        if (result.getIdResultadoFinal()== 0) {
+        if (result.getIdResultadoFinal() == 0) {
             if (adicionar(result)) {
                 JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
             }
         } else {
             if (atualizar(result)) {
                 JOptionPane.showMessageDialog(null, "Resultado Final editado com sucesso!!");
+            }
+        }
+    }
+    public void atualizarResultadoFinalPorID(ResultadoFinal result, int id) {
+
+        if (result.getIdResultadoFinal() == id) {
+            if (adicionar(result)) {
+                JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
             }
         }
     }
@@ -40,6 +48,13 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
 
     public ResultadoFinal pesquisarResultadoFinalId(String campo, int valor) {
         return consultarObjetoId(campo, valor);
+    }
+
+    public void atualizarResultadoFinal(ResultadoFinal result) {
+        if (atualizar(result)) {
+            JOptionPane.showMessageDialog(null, "Resultado Final editado com sucesso!!");
+        }
+
     }
 
 }

@@ -13,6 +13,7 @@ import br.com.Modelos.ResultadoFinal;
 import br.com.Util.CalcularNotas;
 import java.awt.Color;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
 
@@ -1616,6 +1617,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
     }
 //Blocos
+
     private int linguagem() {
         int nRespostarLinguagem = 0;
         if (bgAlternativa1.getSelection().getActionCommand().equals(gabaritoOficial.getResposta1())) {
@@ -1635,6 +1637,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         }
         return nRespostarLinguagem;
     }
+
     private int matematica() {
         int nRespostarMatematica = 0;
         if (bgAlternativa6.getSelection().getActionCommand().equals(gabaritoOficial.getResposta6())) {
@@ -1654,6 +1657,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         }
         return nRespostarMatematica;
     }
+
     private int cNatureza() {
         int nRespostarcNatureza = 0;
         if (bgAlternativa11.getSelection().getActionCommand().equals(gabaritoOficial.getResposta11())) {
@@ -1673,6 +1677,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         }
         return nRespostarcNatureza;
     }
+
     private int cHumanas() {
         int nRespostarcHumanas = 0;
         if (bgAlternativa16.getSelection().getActionCommand().equals(gabaritoOficial.getResposta16())) {
@@ -1692,8 +1697,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         }
         return nRespostarcHumanas;
     }
-    
-    
+
+
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
 
         atualizarDados();
@@ -1713,15 +1718,17 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         } else {
             gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso);
             PesquisarParticipantes pesqPart = new PesquisarParticipantes();
+            ConsultarResultadoFinal consultarRF = new ConsultarResultadoFinal();
             resultFinal.setNomeParticipante(nomeParticipante);
-            resultFinal.setNotaFinal(calcNotas.calcNota(Curso,linguagem(), matematica(), cNatureza(),cHumanas()));
+            resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas()));
+            consultarRF.verificaAprovados(resultFinal,resultFinalDAO);
             resultFinalDAO.salvarResultadoFinal(resultFinal);
             LimparCampos();
             pesqPart.setVisible(true);
             dispose();
-            
+
         }
-        
+
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed

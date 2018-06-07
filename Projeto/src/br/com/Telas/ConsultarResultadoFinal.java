@@ -19,10 +19,10 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
 
     ResultadoFinal resultFinal = new ResultadoFinal();
     ResultadoFinalDAO resultFinalDAO = new ResultadoFinalDAO();
-            /**
-             * Creates new form ConsultarFuncionario
-             */
 
+    /**
+     * Creates new form ConsultarFuncionario
+     */
     public ConsultarResultadoFinal() {
         initComponents();
         atualizarTabela();
@@ -31,6 +31,16 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
     public void atualizarTabela() {
         ResultadoFinalTableModel modelo = new ResultadoFinalTableModel(resultFinalDAO.listarResultadoFinal());
         tbResultadoFinal.setModel(modelo);
+        
+    }
+
+    public void verificaAprovados(ResultadoFinal result,ResultadoFinalDAO resultDAO) {
+        for(int i = 0; i < 3; i++){
+            tbResultadoFinal.setValueAt("APROVADO", i, 2); 
+            result.setClassificacao("APROVADOS");
+            if(tbResultadoFinal.getValueAt(i, 0) != null)
+            resultDAO.atualizarResultadoFinalPorID(result, (int)tbResultadoFinal.getValueAt(i, 0));
+        }
     }
 
     /**
@@ -108,7 +118,7 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
         if (linha == -1) {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
         } else if (JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Excluir",
-                 JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+                JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
             resultFinal = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", (int) tbResultadoFinal.getValueAt(linha, 0));
             resultFinalDAO.excluirResultadoFinal(resultFinal);
             atualizarTabela();

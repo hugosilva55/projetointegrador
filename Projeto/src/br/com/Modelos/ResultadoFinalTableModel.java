@@ -1,14 +1,19 @@
 package br.com.Modelos;
 
+import br.com.DAO.ResultadoFinalDAO;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
 
 public class ResultadoFinalTableModel extends AbstractTableModel {
 
     private List<ResultadoFinal> resultados = new ArrayList<>();
     private String[] colunas = {"Id", "Nome", "Classificação", "Nota Final"};
-
+    ResultadoFinal result = new ResultadoFinal();
+    ResultadoFinalDAO resultDAO = new ResultadoFinalDAO();
+    
     public ResultadoFinalTableModel(List<ResultadoFinal> resultados) {
         this.resultados = resultados;
     }
@@ -40,7 +45,18 @@ public class ResultadoFinalTableModel extends AbstractTableModel {
         }
         return null;
     }
+    
+    @Override
+    public void setValueAt(Object valor, int linha, int coluna){
+        if( valor == null) return;
+         
+        switch(coluna){
+            case 2:  resultados.get(linha).setClassificacao((String) valor);break;
+        } 
+        this.fireTableRowsUpdated(linha, coluna);
+    }
 
+    @Override
     public String getColumnName(int index) {
         switch (index) {
             case 0:
@@ -54,5 +70,4 @@ public class ResultadoFinalTableModel extends AbstractTableModel {
         }
         return null;
     }
-
 }
