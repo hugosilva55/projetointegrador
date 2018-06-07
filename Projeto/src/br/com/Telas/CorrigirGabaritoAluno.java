@@ -1717,6 +1717,10 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
             gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso);
+            
+             if (gabaritoOficial == null) {
+                JOptionPane.showMessageDialog(null, "Não existe Gabarito Cadastrado com o mesmo Ano: "+Ano+ " e Curso: "+Curso);
+            }else{
             PesquisarParticipantes pesqPart = new PesquisarParticipantes();
             ConsultarResultadoFinal consultarRF = new ConsultarResultadoFinal();
             resultFinal.setNomeParticipante(nomeParticipante);
@@ -1726,9 +1730,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             LimparCampos();
             pesqPart.setVisible(true);
             dispose();
-
+           }     
         }
-
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed
