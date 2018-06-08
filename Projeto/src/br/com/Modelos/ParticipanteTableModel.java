@@ -40,13 +40,13 @@ public class ParticipanteTableModel extends AbstractTableModel {
             case 5:
                 return participante.getEstadoCivil();
             case 6:
-                return participante.getNacionalidade();
+                    return participante.getCurso();
             case 7:
-                return participante.getRG();
+                return participante.getNacionalidade();
             case 8:
-                return participante.getSexo();
+                return participante.getRG();
             case 9:
-                return participante.getCurso();
+                return participante.getSexo();
             case 10:
                 return participante.getAno();
         }
