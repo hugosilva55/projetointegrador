@@ -156,9 +156,9 @@ public class ListarPorCurso extends javax.swing.JFrame {
 
     private void ListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarActionPerformed
         //Recuperar valores
-        String AnoVestibular = this.tfAnoVestibular.getSelectedText();
-        String cursoVestibular = cbCursoVestibular.getSelectedItem().toString();
-        atualizarTabela(AnoVestibular, cursoVestibular);
+        String ano = this.tfAnoVestibular.getSelectedText();
+        String curso = cbCursoVestibular.getSelectedItem().toString();
+        atualizarTabela(ano, curso);
     }//GEN-LAST:event_ListarActionPerformed
 
     /**

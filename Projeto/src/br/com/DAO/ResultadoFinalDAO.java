@@ -1,5 +1,6 @@
 package br.com.DAO;
 
+import br.com.Modelos.Participante;
 import br.com.Modelos.ResultadoFinal;
 import br.com.Util.GenericDAO;
 import br.com.Util.HibernateUtil;
@@ -29,6 +30,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
             }
         }
     }
+
     public void atualizarResultadoFinalPorID(ResultadoFinal result, int id) {
 
         if (result.getIdResultadoFinal() == id) {
@@ -58,16 +60,21 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
         }
 
     }
-    
-     public ResultadoFinal listarPorAnoeCurso(String ano, String curso) {
 
+    public List<ResultadoFinal> listarResultadoPorCurso(String ano, String curso){
+        
         this.setSessao(HibernateUtil.getSessionFactory().openSession());
-        setTransacao(getSessao().beginTransaction());
-
-        ResultadoFinal resultFinal = (ResultadoFinal) sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ProcessoSeletivo", ano)).
+            setTransacao(getSessao().beginTransaction());
+        
+        List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
                 add(Restrictions.eq("curso", curso)).list();
-            
-        return resultFinal;
+        
+        if (resultadoFinal.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
+        }else{
+            return resultadoFinal;
+        }
+        return resultadoFinal;
     }
 
 }
