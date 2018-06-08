@@ -2,8 +2,10 @@ package br.com.DAO;
 
 import br.com.Modelos.ResultadoFinal;
 import br.com.Util.GenericDAO;
+import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.criterion.Restrictions;
 
 /**
  *
@@ -55,6 +57,17 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
             JOptionPane.showMessageDialog(null, "Resultado Final editado com sucesso!!");
         }
 
+    }
+    
+     public ResultadoFinal listarPorAnoeCurso(String ano, String curso) {
+
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+        setTransacao(getSessao().beginTransaction());
+
+        ResultadoFinal resultFinal = (ResultadoFinal) sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ProcessoSeletivo", ano)).
+                add(Restrictions.eq("curso", curso)).list();
+            
+        return resultFinal;
     }
 
 }

@@ -21,6 +21,10 @@ public class ResultadoFinal {
     private double notaFinal;
     //@Column(length = 50, nullable = false)
     private String classificacao;
+    @Column
+    private String ano;
+    @Column
+    private String curso;
 
     public int getIdResultadoFinal() {
         return idResultadoFinal;
@@ -52,5 +56,33 @@ public class ResultadoFinal {
 
     public void setClassificacao(String classificacao) {
         this.classificacao = classificacao;
+    }
+
+    /**
+     * @return the ano
+     */
+    public String getAno() {
+        return ano;
+    }
+
+    /**
+     * @param ano the ano to set
+     */
+    public void setAno(String ano) {
+        this.ano = ano;
+    }
+
+    /**
+     * @return the curso
+     */
+    public String getCurso() {
+        return curso;
+    }
+
+    /**
+     * @param curso the curso to set
+     */
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 }

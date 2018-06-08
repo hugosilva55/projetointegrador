@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -29,8 +30,8 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
     }
 
     public void atualizarTabela() {
-        ResultadoFinalTableModel modelo = new ResultadoFinalTableModel(resultFinalDAO.listarResultadoFinal());
-        tbResultadoFinal.setModel(modelo);
+        //ResultadoFinalTableModel modelo = new ResultadoFinalTableModel(resultFinalDAO.listarResultadoFinal());
+        //tbResultadoFinal.setModel(modelo);
         
     }
 

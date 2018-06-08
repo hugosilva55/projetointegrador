@@ -1717,7 +1717,9 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
            
-            if(gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso)){
+            gabaritoOficial = gabaritoOficDAO.pesquisarGabaritoPorCursoAno(Ano, Curso);
+                
+            if(gabaritoOficial == null){
                 JOptionPane.showMessageDialog(null, "Não existe Gabarito Cadastrado com o mesmo Ano: "+Ano+ " e Curso: "+Curso);
             }else{
             PesquisarParticipantes pesqPart = new PesquisarParticipantes();
@@ -1725,6 +1727,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             resultFinal.setNomeParticipante(nomeParticipante);
             resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas()));
             consultarRF.verificaAprovados(resultFinal,resultFinalDAO);
+            resultFinal.setAno(Ano);
+            resultFinal.setCurso(Curso);
             resultFinalDAO.salvarResultadoFinal(resultFinal);
             LimparCampos();
             pesqPart.setVisible(true);

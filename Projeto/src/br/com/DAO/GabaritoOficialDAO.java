@@ -72,4 +72,16 @@ public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
         
         }
     }
+   
+   public GabaritoOficial pesquisarGabaritoPorCursoAno(String ano, String curso) {
+
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+        setTransacao(getSessao().beginTransaction());
+
+        GabaritoOficial gabarito = (GabaritoOficial) sessao.createCriteria(GabaritoOficial.class).add(Restrictions.eq("ProcessoSeletivo", ano)).
+                add(Restrictions.eq("curso", curso)).uniqueResult();
+        sessao.close();
+        
+       return gabarito;
+    }
 }
