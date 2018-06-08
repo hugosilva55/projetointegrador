@@ -17,20 +17,12 @@ public class ListarPorCurso extends javax.swing.JFrame {
 
     ResultadoFinal resultadoFinal = new ResultadoFinal();
     ResultadoFinalDAO resultadoFinalDAO = new ResultadoFinalDAO();
-    
-    ResultadoFinalTableModel modeloTabela;
 
-    String AnoVestibular;
-    String cursoVestibular;
     /**
      * Creates new form Tela_Ordenacao
      */
     public ListarPorCurso() {
         initComponents();
-        
-        modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoFinal());
-        TabelaResultado.setModel(modeloTabela);
-        
     }
 
     /**
@@ -163,17 +155,10 @@ public class ListarPorCurso extends javax.swing.JFrame {
     }//GEN-LAST:event_tfAnoVestibularActionPerformed
 
     private void ListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarActionPerformed
-    atualizarTabela(AnoVestibular, cursoVestibular);        
-        
         //Recuperar valores
-<<<<<<< HEAD
         String ano = this.tfAnoVestibular.getSelectedText();
         String curso = cbCursoVestibular.getSelectedItem().toString();
         atualizarTabela(ano, curso);
-=======
-        AnoVestibular = tfAnoVestibular.getText();
-        cursoVestibular = cbCursoVestibular.getSelectedItem().toString();
->>>>>>> 41e5cee89c5b240fa745536c021d7fb3a1c4497d
     }//GEN-LAST:event_ListarActionPerformed
 
     /**
@@ -232,7 +217,8 @@ public class ListarPorCurso extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
 public void atualizarTabela(String ano, String curso){
-         modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarPorAnoeCurso(ano, curso));
+        ResultadoFinalTableModel modeloTabela = new 
+        ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoPorCurso(ano, curso));
         TabelaResultado.setModel(modeloTabela);
     }
 
