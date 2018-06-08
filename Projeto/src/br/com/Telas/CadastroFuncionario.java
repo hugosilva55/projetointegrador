@@ -134,6 +134,16 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jPanel3.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 330, 30));
 
         txtCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtCPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCPFActionPerformed(evt);
+            }
+        });
+        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCPFKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 330, 30));
 
         txtLogin.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -245,6 +255,20 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         consultarFunc.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCPFActionPerformed
+
+    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
+        int ascii = evt.getKeyChar();
+        if (!(ascii >= 48  && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtCPF.getText().length() >= 11){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCPFKeyTyped
 
     /**
      * @param args the command line arguments

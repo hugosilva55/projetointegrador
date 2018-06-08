@@ -161,6 +161,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
         txtCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCPFKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 370, 30));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -171,6 +176,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtdataNascimento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtdataNascimentoActionPerformed(evt);
+            }
+        });
+        txtdataNascimento.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtdataNascimentoKeyTyped(evt);
             }
         });
         jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 130, 30));
@@ -200,6 +210,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         txtRG.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txtRG.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtRGKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 370, 30));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -259,6 +274,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtAno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAnoActionPerformed(evt);
+            }
+        });
+        txtAno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAnoKeyTyped(evt);
             }
         });
         jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 120, 30));
@@ -328,6 +348,47 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAnoActionPerformed
+
+    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
+        int ascii = evt.getKeyChar();
+        
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtCPF.getText().length() >= 11){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCPFKeyTyped
+
+    private void txtRGKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRGKeyTyped
+        int ascii = evt.getKeyChar();
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtRG.getText().length() >= 12){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtRGKeyTyped
+
+    private void txtAnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnoKeyTyped
+        int ascii = evt.getKeyChar();
+        if(!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtAno.getText().length() >= 5){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtAnoKeyTyped
+
+    private void txtdataNascimentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtdataNascimentoKeyTyped
+        int ascii = evt.getKeyChar();
+        if(!(ascii >= 48 && ascii <=57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtdataNascimento.getText().length() >= 8){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtdataNascimentoKeyTyped
 
     public void limparCampos(){
         txtNome.setText("");
