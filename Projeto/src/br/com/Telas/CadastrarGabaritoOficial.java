@@ -19,6 +19,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
     GabaritoOficial gabaritoOfic = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
+    
+    String Ano;
+    String Curso;
 
     /**
      * Creates new form GabaritoOficial
@@ -1604,6 +1607,9 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaE3.setActionCommand("E");
         jrAlternativaE2.setActionCommand("E");
         jrAlternativaE1.setActionCommand("E");
+        
+        Ano = txtAnoLetivo.getText();
+        Curso = String.valueOf(jcCurso.getSelectedItem());
     }
     private void jcCursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcCursoActionPerformed
 
@@ -1648,8 +1654,13 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             gabaritoOfic.setResposta19(bgAlternativa19.getSelection().getActionCommand());
             gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());
 
-            gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
-            LimparCampos();
+           if(!gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso)){
+                
+                  JOptionPane.showMessageDialog(null, "O gabarito com o Ano: "+Ano+ ", e o Curso: " +Curso+ " já existe!!!");
+            }else{
+                  gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
+                   LimparCampos();
+            }
         }
     }//GEN-LAST:event_btSalvarActionPerformed
 

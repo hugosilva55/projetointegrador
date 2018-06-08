@@ -1716,9 +1716,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
-            gabaritoOficial = gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso);
-            
-             if (gabaritoOficial == null) {
+           
+            if(gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso)){
                 JOptionPane.showMessageDialog(null, "Não existe Gabarito Cadastrado com o mesmo Ano: "+Ano+ " e Curso: "+Curso);
             }else{
             PesquisarParticipantes pesqPart = new PesquisarParticipantes();
