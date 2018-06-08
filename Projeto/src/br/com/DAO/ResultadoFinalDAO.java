@@ -59,12 +59,12 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
 
     }
     
-     public ResultadoFinal listarPorAnoeCurso(String ano, String curso) {
+     public List <ResultadoFinal> listarPorAnoeCurso(String ano, String curso) {
 
         this.setSessao(HibernateUtil.getSessionFactory().openSession());
         setTransacao(getSessao().beginTransaction());
 
-        ResultadoFinal resultFinal = (ResultadoFinal) sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ProcessoSeletivo", ano)).
+        List <ResultadoFinal> resultFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
                 add(Restrictions.eq("curso", curso)).list();
             
         return resultFinal;
