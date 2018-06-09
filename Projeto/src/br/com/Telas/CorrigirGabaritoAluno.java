@@ -13,6 +13,7 @@ import br.com.Modelos.ResultadoFinal;
 import br.com.Util.CalcularNotas;
 import java.awt.Color;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
@@ -33,6 +34,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     String Curso;
     String Ano;
     String nomeParticipante;
+    String Redação;
 
     /**
      * Creates new form GabaritoOficial
@@ -1726,11 +1728,15 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             ConsultarResultadoFinal consultarRF = new ConsultarResultadoFinal();
             resultFinal.setNomeParticipante(nomeParticipante);
             resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas()));
-            consultarRF.verificaAprovados(resultFinal,resultFinalDAO);
             resultFinal.setAno(Ano);
             resultFinal.setCurso(Curso);
-            resultFinalDAO.salvarResultadoFinal(resultFinal);
+            resultFinal.setClassificacao("Classificado");
+            //resultFinalDAO.salvarResultadoFinal(resultFinal);
             LimparCampos();
+            
+            
+                atualizarClassificacao(Ano, Curso);
+            
             pesqPart.setVisible(true);
             dispose();
            }     
@@ -2409,7 +2415,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa20.setSelected(jrAlternativaE20.getModel(), true);
                 break;
         }
-
+          
+        Redação = txtRedacao.getText();
     }
 
     public void LimparCampos() {
@@ -2755,4 +2762,20 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private javax.swing.JTextField txtRedacao;
     // End of variables declaration//GEN-END:variables
 
+    private void atualizarClassificacao(String ano, String curso){
+    
+        //Retornar todos os dados por curso e ano   
+        for (ResultadoFinal rf : resultFinalDAO.listarResultadoPorCurso(ano, curso)) {
+            
+            System.out.println(rf.getNotaFinal());
+            
+            
+           
+            
+   
+           
+            
+        }
+        
+    }
 }

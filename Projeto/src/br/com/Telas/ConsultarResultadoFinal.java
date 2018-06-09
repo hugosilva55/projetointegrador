@@ -34,16 +34,7 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
         //tbResultadoFinal.setModel(modelo);
         
     }
-
-    public void verificaAprovados(ResultadoFinal result,ResultadoFinalDAO resultDAO) {
-        for(int i = 0; i < 3; i++){
-            tbResultadoFinal.setValueAt("APROVADO", i, 2); 
-            result.setClassificacao("APROVADOS");
-            if(tbResultadoFinal.getValueAt(i, 0) != null)
-            resultDAO.atualizarResultadoFinalPorID(result, (int)tbResultadoFinal.getValueAt(i, 0));
-        }
-    }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OrderBy;
 
 /**
  *
@@ -19,7 +20,7 @@ public class ResultadoFinal {
     private String nomeParticipante;
     @Column(length = 10, nullable = false)
     private double notaFinal;
-    //@Column(length = 50, nullable = false)
+    @Column(length = 50, nullable = false)
     private String classificacao;
     @Column
     private String ano;

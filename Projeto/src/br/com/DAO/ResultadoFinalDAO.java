@@ -6,6 +6,7 @@ import br.com.Util.GenericDAO;
 import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 
 /**
@@ -67,7 +68,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
             setTransacao(getSessao().beginTransaction());
         
         List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
-                add(Restrictions.eq("curso", curso)).list();
+                add(Restrictions.eq("curso", curso)).addOrder(Order.desc("notaFinal")).list();
         sessao.close();
         
         if (resultadoFinal.isEmpty()) {

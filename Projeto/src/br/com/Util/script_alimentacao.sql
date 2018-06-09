@@ -80,16 +80,16 @@ INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, 
 --TABELA DE RESULTADO FINAL
 
 
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (1,"1","Elias Lucas Pinto","1000","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (2,"2","Cláudia Lucca Santos","990","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (3,"3","Tereza Carla da Rosa","980","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (4,"4","Oliver Pedro Marcelo da Costa","970","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (5,"5","Malu Maya Figueiredo","960","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (6,"6","Breno Lucca da Rosa","950","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (7,"7","Antônia Simone Ribeiro","940","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (8,"8","Elias Gael Lima","930","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (9,"9","Isabela Cláudia Olivia Rodrigues","920","2018.1","Analise e Desenvolvimento de Sistemas");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (10,"10","Henry Cláudio Vitor Rodrigues","910","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (1,"Classificado","Elias Lucas Pinto","1000","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (2,"Classificado","Cláudia Lucca Santos","990","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (3,"Classificado","Tereza Carla da Rosa","980","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (4,"Classificado","Oliver Pedro Marcelo da Costa","970","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (5,"Classificado","Malu Maya Figueiredo","960","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (6,"Classificado","Breno Lucca da Rosa","950","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (7,"Classificado","Antônia Simone Ribeiro","940","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (8,"Classificado","Elias Gael Lima","930","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (9,"Classificado","Isabela Cláudia Olivia Rodrigues","920","2018.1","Analise e Desenvolvimento de Sistemas");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (10,"Classificado","Henry Cláudio Vitor Rodrigues","910","2018.1","Analise e Desenvolvimento de Sistemas");
 INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (11,"11","Allana Isabella Costa","900","2018.1","Enfermagem");
 INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (12,"12","Mário Gustavo Nelson da Costa","890","2018.1","Enfermagem");
 INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) VALUES (13,"13","Sarah Emanuelly Amanda Caldeira","880","2018.1","Enfermagem");
