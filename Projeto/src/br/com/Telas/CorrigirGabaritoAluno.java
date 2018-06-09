@@ -1727,7 +1727,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             PesquisarParticipantes pesqPart = new PesquisarParticipantes();
             ConsultarResultadoFinal consultarRF = new ConsultarResultadoFinal();
             resultFinal.setNomeParticipante(nomeParticipante);
-            resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas()));
+            resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas(),Integer.valueOf(txtRedacao.getText())));
             resultFinal.setAno(Ano);
             resultFinal.setCurso(Curso);
             resultFinal.setClassificacao("Classificado");
