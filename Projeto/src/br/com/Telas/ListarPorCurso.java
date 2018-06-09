@@ -17,12 +17,18 @@ public class ListarPorCurso extends javax.swing.JFrame {
 
     ResultadoFinal resultadoFinal = new ResultadoFinal();
     ResultadoFinalDAO resultadoFinalDAO = new ResultadoFinalDAO();
+    ResultadoFinalTableModel modeloTabela;
+    
+    String ano;
+    String curso;
 
     /**
      * Creates new form Tela_Ordenacao
      */
     public ListarPorCurso() {
         initComponents();
+        modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoFinal());
+        TabelaResultado.setModel(modeloTabela); 
     }
 
     /**
@@ -57,7 +63,7 @@ public class ListarPorCurso extends javax.swing.JFrame {
 
         jLabel2.setText("Curso");
 
-        cbCursoVestibular.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Análise de Sistemas", "Enfermagem", "Psicologia", "Fisioterapia", "Administração", "Ciências Contábeis", "Serviço Social", "Direito", "Educação Física" }));
+        cbCursoVestibular.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enfermagem", "Fisioterapia", "Educação Física", "Administração", "Ciências Contábeis", "Analise e Desenvolvimento de Sistemas", "Psicologia", "Serviço Social", "Direito" }));
         cbCursoVestibular.setToolTipText("");
 
         Listar.setText("Listar");
@@ -156,8 +162,8 @@ public class ListarPorCurso extends javax.swing.JFrame {
 
     private void ListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarActionPerformed
         //Recuperar valores
-        String ano = this.tfAnoVestibular.getSelectedText();
-        String curso = cbCursoVestibular.getSelectedItem().toString();
+        ano = tfAnoVestibular.getText();
+        curso = cbCursoVestibular.getSelectedItem().toString();
         atualizarTabela(ano, curso);
     }//GEN-LAST:event_ListarActionPerformed
 
@@ -217,7 +223,7 @@ public class ListarPorCurso extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
 public void atualizarTabela(String ano, String curso){
-        ResultadoFinalTableModel modeloTabela = new 
+        modeloTabela = new 
         ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoPorCurso(ano, curso));
         TabelaResultado.setModel(modeloTabela);
     }

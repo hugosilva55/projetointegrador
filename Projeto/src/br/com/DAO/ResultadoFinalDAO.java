@@ -68,6 +68,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
         
         List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
                 add(Restrictions.eq("curso", curso)).list();
+        sessao.close();
         
         if (resultadoFinal.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
