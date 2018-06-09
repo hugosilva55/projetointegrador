@@ -1,5 +1,6 @@
 package br.com.Modelos;
 
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,6 +28,7 @@ public class ResultadoFinal {
     @Column
     private String curso;
 
+ 
     public int getIdResultadoFinal() {
         return idResultadoFinal;
     }

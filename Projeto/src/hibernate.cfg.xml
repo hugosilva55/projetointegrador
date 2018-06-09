@@ -16,7 +16,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="br.com.Modelos.Usuario"/>
         <mapping class="br.com.Modelos.Participante"/>
-        <mapping class="br.com.Modelos.Curso"/>
         <mapping class="br.com.Modelos.GabaritoOficial"/>
         <mapping class="br.com.Modelos.Funcionario"/>
         <mapping class="br.com.Modelos.ResultadoFinal"/>

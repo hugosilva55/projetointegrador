@@ -1730,13 +1730,18 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas(),Integer.valueOf(txtRedacao.getText())));
             resultFinal.setAno(Ano);
             resultFinal.setCurso(Curso);
+            
+            //Verificar se o participante zerou em algum bloco
+            if(linguagem() == 0 || matematica()==0 || cNatureza()==0 || cHumanas()==0 ||Integer.valueOf(txtRedacao.getText()) == 0 ){
+                resultFinal.setClassificacao("Desclassificado");
+            }else{  
             resultFinal.setClassificacao("Classificado");
-            //resultFinalDAO.salvarResultadoFinal(resultFinal);
+            }
+            resultFinalDAO.salvarResultadoFinal(resultFinal);
             LimparCampos();
             
             
-                atualizarClassificacao(Ano, Curso);
-            
+            atualizarClassificacao(Ano, Curso);
             pesqPart.setVisible(true);
             dispose();
            }     
@@ -2763,19 +2768,16 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void atualizarClassificacao(String ano, String curso){
-    
+        
+        
         //Retornar todos os dados por curso e ano   
         for (ResultadoFinal rf : resultFinalDAO.listarResultadoPorCurso(ano, curso)) {
             
-            System.out.println(rf.getNotaFinal());
-            
-            
-           
-            
-   
-           
-            
-        }
-        
+            System.out.println("Nome: "+rf.getNomeParticipante());
+            System.out.println("Nota Final: "+rf.getNotaFinal());
+            System.out.println("Classificação: "+rf.getClassificacao());
+            System.out.println("");
+                  
+        } 
     }
 }
