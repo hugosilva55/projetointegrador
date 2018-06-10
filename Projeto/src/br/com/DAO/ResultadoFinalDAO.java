@@ -26,9 +26,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
                 JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
             }
         } else {
-            if (atualizar(result)) {
-                JOptionPane.showMessageDialog(null, "Resultado Final editado com sucesso!!");
-            }
+            atualizar(result);
         }
     }
 
@@ -52,13 +50,18 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
     }
 
     public ResultadoFinal pesquisarResultadoFinalId(String campo, int valor) {
-        return consultarObjetoId(campo, valor);
+         this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+         sessao.close();
+            return consultarObjetoId(campo, valor);     
     }
 
     public void atualizarResultadoFinal(ResultadoFinal result) {
-        if (atualizar(result)) {
-            JOptionPane.showMessageDialog(null, "Resultado Final editado com sucesso!!");
-        }
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+            atualizar(result); 
+            sessao.close();
+        
 
     }
 
@@ -69,6 +72,47 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
         
         List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
                 add(Restrictions.eq("curso", curso)).addOrder(Order.asc("classificacao").desc("notaFinal")).list();
+        sessao.close();
+        
+        if (resultadoFinal.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
+        }else{
+            return resultadoFinal;
+        }
+        return resultadoFinal;
+    }
+    
+       public List<ResultadoFinal> listarAprovadosClassificadosPorCursoAno(String ano, String curso){
+        
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+        
+        List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class)
+                .add(Restrictions.eq("ano", ano))
+                .add(Restrictions.eq("curso", curso))
+                .add(Restrictions.disjunction()
+                .add(Restrictions.eq("classificacao", "Aprovado"))
+                .add(Restrictions.eq("classificacao", "Classificado")))
+                .addOrder(Order.asc("classificacao").desc("notaFinal")).list();
+        sessao.close();
+        
+        if (resultadoFinal.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
+        }else{
+            return resultadoFinal;
+        }
+        return resultadoFinal;
+    }
+    
+     public List<ResultadoFinal> listar40Melhores(String ano, String curso){
+        
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+        
+        List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
+                add(Restrictions.eq("curso", curso))
+                .add(Restrictions.eq("classificacao", "Classificado"))
+                .addOrder(Order.asc("classificacao").desc("notaFinal")).setMaxResults(40).list();
         sessao.close();
         
         if (resultadoFinal.isEmpty()) {

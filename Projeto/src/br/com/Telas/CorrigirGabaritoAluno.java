@@ -2771,13 +2771,32 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         
         
         //Retornar todos os dados por curso e ano   
-        for (ResultadoFinal rf : resultFinalDAO.listarResultadoPorCurso(ano, curso)) {
+        for (ResultadoFinal rf : resultFinalDAO.listarAprovadosClassificadosPorCursoAno(ano, curso)) {
+                        
+            //Recuperar o id dos particantes
+            int id = rf.getIdResultadoFinal();
             
-            System.out.println("Nome: "+rf.getNomeParticipante());
-            System.out.println("Nota Final: "+rf.getNotaFinal());
-            System.out.println("Classificação: "+rf.getClassificacao());
-            System.out.println("");
-                  
-        } 
+            //Pesquisar resultado final pelo id
+            ResultadoFinal idEncontrado = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", id);
+            System.out.println(idEncontrado.getIdResultadoFinal());
+            idEncontrado.setClassificacao("Classificado");
+            resultFinalDAO.salvarResultadoFinal(idEncontrado);
+                           
+        }
+        
+        //Setar os 40 como aprovado
+        for (ResultadoFinal rf : resultFinalDAO.listar40Melhores(ano, curso)) {
+            //Recuperar o id dos particantes
+            int id = rf.getIdResultadoFinal();
+            
+            //Pesquisar resultado final pelo id
+            ResultadoFinal idEncontrado = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", id);
+            System.out.println(idEncontrado.getIdResultadoFinal());
+            idEncontrado.setClassificacao("Aprovado");
+            resultFinalDAO.salvarResultadoFinal(idEncontrado);
+            
+        }
+        
+        
     }
 }
