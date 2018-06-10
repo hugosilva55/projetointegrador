@@ -77,6 +77,8 @@ public class CadastroParticipante extends javax.swing.JFrame {
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 290), new java.awt.Dimension(0, 290), new java.awt.Dimension(32767, 290));
         jLabel14 = new javax.swing.JLabel();
         txtAno = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        txtFone = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -283,6 +285,13 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 130, 30));
 
+        jLabel15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel15.setText("Telefone:");
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 60, -1));
+
+        txtFone.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jPanel3.add(txtFone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 320, 30));
+
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 410));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
@@ -321,7 +330,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         if(txtNome.getText().equals("") || txtEmail.getText().equals("") ||
             txtCPF.getText().equals("") || txtdataNascimento.getText().equals("") ||
             txtNacionalidade.getText().equals("") || txtRG.getText().equals("") || txtMae.getText().equals("") ||
-            txtPai.getText().equals("") || txtAno.getText().equals("")){
+            txtPai.getText().equals("") || txtAno.getText().equals("") || txtFone.getText().equals("") ){
 
             JOptionPane.showMessageDialog(null,"Por favor, preencha todos os campos!!");
         }else{
@@ -338,7 +347,8 @@ public class CadastroParticipante extends javax.swing.JFrame {
             part.setNomeMae(txtMae.getText());
             part.setNomePai(txtPai.getText());
             part.setAno(txtAno.getText());
-
+            part.setTelefone(txtFone.getText());
+            
             partDAO.salvarParticipante(part);
             limparCampos();
 
@@ -463,6 +473,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -480,6 +491,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JTextField txtAno;
     private javax.swing.JTextField txtCPF;
     private javax.swing.JTextField txtEmail;
+    private javax.swing.JTextField txtFone;
     private javax.swing.JTextField txtMae;
     private javax.swing.JTextField txtNacionalidade;
     private javax.swing.JTextField txtNome;

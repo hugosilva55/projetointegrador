@@ -39,6 +39,8 @@ public class Participante {
     private String nomeMae;
     @Column(length = 50, nullable = false)
     private String ano;
+    @Column(length = 50, nullable = false)
+    private String telefone;
 
     /**
      * @return the idUsuario
@@ -220,6 +222,14 @@ public class Participante {
      */
     public void setAno(String ano) {
         this.ano = ano;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
     
     
