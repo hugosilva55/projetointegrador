@@ -195,6 +195,19 @@ public class ConsultarParticipante extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        int linha = tbParticipante.getSelectedRow();
+        if(linha == -1){
+            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+        }else if(JOptionPane.showConfirmDialog
+        (rootPane, "Deseja realmente excluir?", "Excluir"
+        , JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
+            participante = participanteDAO.pesquisarParticipanteId("idUsuario",(int) tbParticipante.getValueAt(linha, 0));
+            participanteDAO.excluirParticipante(participante);
+            atualizarTabela();
+        }
+    }//GEN-LAST:event_jLabel2MouseClicked
+
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         int linha = tbParticipante.getSelectedRow();
         if(linha == -1){
@@ -208,19 +221,6 @@ public class ConsultarParticipante extends javax.swing.JFrame {
             dispose();
         }
     }//GEN-LAST:event_jLabel1MouseClicked
-
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        int linha = tbParticipante.getSelectedRow();
-        if(linha == -1){
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
-        }else if(JOptionPane.showConfirmDialog
-        (rootPane, "Deseja realmente excluir?", "Excluir"
-        , JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
-            participante = participanteDAO.pesquisarParticipanteId("idUsuario",(int) tbParticipante.getValueAt(linha, 0));
-            participanteDAO.excluirParticipante(participante);
-            atualizarTabela();
-        }
-    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments

@@ -10,7 +10,7 @@ import javax.swing.table.AbstractTableModel;
 public class ResultadoFinalTableModel extends AbstractTableModel {
 
     private List<ResultadoFinal> resultados = new ArrayList<>();
-    private String[] colunas = {"Id", "Nome", "Classificação", "Nota Final"};
+    private String[] colunas = {"Id", "Participante","Ano","Curso","Nota","Classificação"};
     ResultadoFinal result = new ResultadoFinal();
     ResultadoFinalDAO resultDAO = new ResultadoFinalDAO();
     
@@ -39,9 +39,13 @@ public class ResultadoFinalTableModel extends AbstractTableModel {
             case 1:
                 return resultado.getNomeParticipante();
             case 2:
-                return resultado.getClassificacao();
+                return resultado.getAno();
             case 3:
+                return resultado.getCurso();
+            case 4:
                 return resultado.getNotaFinal();
+            case 5:
+                return resultado.getClassificacao();    
         }
         return null;
     }
@@ -67,6 +71,10 @@ public class ResultadoFinalTableModel extends AbstractTableModel {
                 return colunas[2];
             case 3:
                 return colunas[3];
+            case 4:
+                return colunas[4];
+            case 5:
+                return colunas[5];    
         }
         return null;
     }
