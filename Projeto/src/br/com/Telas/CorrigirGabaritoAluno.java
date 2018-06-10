@@ -205,10 +205,10 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jrAlternativaC20 = new javax.swing.JRadioButton();
         jrAlternativaD20 = new javax.swing.JRadioButton();
         jrAlternativaE20 = new javax.swing.JRadioButton();
-        jLabel23 = new javax.swing.JLabel();
         btPesquisar = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         txtRedacao = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -275,8 +275,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         titulo.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        titulo.setText("Corrigir Gabarito do Aluno");
-        jPanel3.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 230, -1));
+        titulo.setText("Corrigir Gabarito ");
+        jPanel3.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 140, -1));
 
         btSalvar.setBackground(new java.awt.Color(0, 1, 76));
         btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -287,7 +287,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 btSalvarActionPerformed(evt);
             }
         });
-        jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 140, 40));
+        jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, 140, 40));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -1479,22 +1479,23 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         });
         jPanel3.add(jrAlternativaE20, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 410, -1, 26));
 
-        jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel23.setText("Respostas");
-        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
-
         btPesquisar.setText("Pesquisar");
         btPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btPesquisarActionPerformed(evt);
             }
         });
-        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, -1));
+        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel24.setText("Redação");
-        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 80, 25));
+        jLabel24.setText("Redação:");
+        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 80, 30));
         jPanel3.add(txtRedacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 450, 120, 30));
+
+        jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel23.setText("Respostas");
+        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 790, 500));
 
@@ -1506,7 +1507,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 613, Short.MAX_VALUE)
         );
 
         pack();
