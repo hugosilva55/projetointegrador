@@ -1464,13 +1464,14 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jLabel23.setText("Respostas");
         jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
 
+        btPesquisar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btPesquisar.setText("Pesquisar");
         btPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btPesquisarActionPerformed(evt);
             }
         });
-        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 470, -1, -1));
+        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 460, 110, 40));
 
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel24.setText("Ano Letivo:");

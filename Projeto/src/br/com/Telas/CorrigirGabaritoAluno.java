@@ -30,6 +30,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     CalcularNotas calcNotas = new CalcularNotas();
     ResultadoFinal resultFinal = new ResultadoFinal();
     ResultadoFinalDAO resultFinalDAO = new ResultadoFinalDAO();
+    ConsultarResultadoFinal resultadoFinal = new ConsultarResultadoFinal();
 
     String Curso;
     String Ano;
@@ -1479,13 +1480,14 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         });
         jPanel3.add(jrAlternativaE20, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 410, -1, 26));
 
+        btPesquisar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btPesquisar.setText("Pesquisar");
         btPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btPesquisarActionPerformed(evt);
             }
         });
-        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, -1));
+        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 110, 40));
 
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel24.setText("Redação:");
@@ -2070,9 +2072,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jrAlternativaA20ActionPerformed
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
-        ConsultarGabaritoOficial consultarGabarito = new ConsultarGabaritoOficial();
-        consultarGabarito.setVisible(true);
-        dispose();
+       resultadoFinal.setVisible(true);
+       dispose();
     }//GEN-LAST:event_btPesquisarActionPerformed
 
     private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed

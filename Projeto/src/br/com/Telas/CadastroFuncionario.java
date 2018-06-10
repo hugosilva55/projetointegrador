@@ -156,13 +156,14 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         cbNivelAcesso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Funcionario", "Estágiario", "Jovem Aprendiz " }));
         jPanel3.add(cbNivelAcesso, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 330, 30));
 
+        jButton2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jButton2.setText("Pesquisar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 370, -1, -1));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 350, 110, 40));
 
         jButton4.setBackground(new java.awt.Color(0, 1, 76));
         jButton4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N

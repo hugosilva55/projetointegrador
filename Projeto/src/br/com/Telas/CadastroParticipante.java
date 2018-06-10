@@ -32,6 +32,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtRG.setBorder(lineBorder );
         txtdataNascimento.setBorder(lineBorder );
         txtAno.setBorder(lineBorder);
+        txtFone.setBorder(lineBorder);
        
     }
 
@@ -244,13 +245,14 @@ public class CadastroParticipante extends javax.swing.JFrame {
         });
         jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 130, 40));
 
+        jButton1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jButton1.setText("Pesquisar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, -1, -1));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(669, 360, 100, 40));
 
         jcCurso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Análise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Física", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
@@ -292,7 +294,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtFone.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtFone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 320, 30));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 410));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 420));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
 
