@@ -37,16 +37,11 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tbCurso = new javax.swing.JTable();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jbVoltar = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tbGabaritoOfic1 = new javax.swing.JTable();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jbEditar = new javax.swing.JButton();
+        jbExcluir = new javax.swing.JButton();
 
         tbCurso.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -63,131 +58,76 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(235, 235, 235));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jbVoltar.setText("Voltar");
+        jbVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbVoltarActionPerformed(evt);
+            }
+        });
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/logo pequena.png"))); // NOI18N
-
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel12.setText("X");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 384, Short.MAX_VALUE)
-                .addComponent(jLabel12)
-                .addGap(18, 18, 18))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
-                .addContainerGap())
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jScrollPane2.setBorder(null);
-
-        tbGabaritoOfic1.setAutoCreateRowSorter(true);
-        tbGabaritoOfic1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         tbGabaritoOfic1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
             },
             new String [] {
-                "ID", "Ano Seletivo", "Curso"
+                "Title 1", "Title 2"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        tbGabaritoOfic1.setGridColor(new java.awt.Color(255, 255, 255));
-        tbGabaritoOfic1.setIntercellSpacing(new java.awt.Dimension(5, 5));
-        tbGabaritoOfic1.setRowHeight(30);
-        tbGabaritoOfic1.setSelectionBackground(new java.awt.Color(0, 1, 76));
+        ));
         jScrollPane2.setViewportView(tbGabaritoOfic1);
 
-        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 730, 270));
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 1, 76));
-        jLabel3.setText("Consultar Gabarito Oficial");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, -1, 27));
-
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/edit.png"))); // NOI18N
-        jLabel1.setText("Editar");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+        jbEditar.setText("Editar");
+        jbEditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbEditarActionPerformed(evt);
             }
         });
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, -1, 40));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/x-button.png"))); // NOI18N
-        jLabel2.setText("Remover");
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+        jbExcluir.setText("Excluir");
+        jbExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbExcluirActionPerformed(evt);
             }
         });
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, -1, 40));
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 790, 420));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jbVoltar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 609, Short.MAX_VALUE)
+                .addComponent(jbEditar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jbExcluir)
+                .addGap(22, 22, 22))
+            .addComponent(jScrollPane2)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 534, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbVoltar)
+                    .addComponent(jbEditar)
+                    .addComponent(jbExcluir)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-       int linha = tbGabaritoOfic1.getSelectedRow();
+    private void jbVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVoltarActionPerformed
+        Main menu = new Main();
+        menu.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jbVoltarActionPerformed
+
+    private void jbEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbEditarActionPerformed
+
+        int linha = tbGabaritoOfic1.getSelectedRow();
         if (linha == -1) {
 
             JOptionPane.showMessageDialog(null, " Selecione uma linha!! ");
@@ -200,9 +140,9 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
             dispose();
 
         }
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_jbEditarActionPerformed
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    private void jbExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExcluirActionPerformed
         int linha = tbGabaritoOfic1.getSelectedRow();
         if (linha == -1) {
             JOptionPane.showMessageDialog(null,"Por favor, selecione uma linha!!");
@@ -214,7 +154,7 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
             atualizarTabela();
             
         }
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }//GEN-LAST:event_jbExcluirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,16 +195,11 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JButton jbEditar;
+    private javax.swing.JButton jbExcluir;
+    private javax.swing.JButton jbVoltar;
     private javax.swing.JTable tbCurso;
     private javax.swing.JTable tbGabaritoOfic1;
     // End of variables declaration//GEN-END:variables
