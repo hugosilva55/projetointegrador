@@ -28,6 +28,8 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
      */
     public CadastrarGabaritoOficial() {
         initComponents();
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txtAnoLetivo.setBorder(lineBorder );
 
     }
 
@@ -239,7 +241,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         titulo.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         titulo.setText("Cadastrar Gabarito Oficial");
-        jPanel3.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 230, -1));
+        jPanel3.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 230, -1));
 
         jcCurso.setEditable(true);
         jcCurso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -254,7 +256,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jcCursoKeyTyped(evt);
             }
         });
-        jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 110, -1));
+        jPanel3.add(jcCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 300, 150, 30));
 
         btSalvar.setBackground(new java.awt.Color(0, 1, 76));
         btSalvar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -265,7 +267,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 btSalvarActionPerformed(evt);
             }
         });
-        jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 140, 40));
+        jPanel3.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 140, 40));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -869,7 +871,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel13.setText("13°");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 28, 25));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 28, 25));
 
         jrAlternativaA13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaA13);
@@ -880,7 +882,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA13ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, -1, 25));
+        jPanel3.add(jrAlternativaA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, -1, 25));
 
         jrAlternativaB13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaB13);
@@ -891,7 +893,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB13ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB13, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 130, -1, 26));
+        jPanel3.add(jrAlternativaB13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, 26));
 
         jrAlternativaC13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaC13);
@@ -902,7 +904,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC13ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, -1, 26));
+        jPanel3.add(jrAlternativaC13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, -1, 26));
 
         jrAlternativaD13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaD13);
@@ -913,7 +915,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD13ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, -1, 26));
+        jPanel3.add(jrAlternativaD13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, -1, 26));
 
         jrAlternativaE13.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa13.add(jrAlternativaE13);
@@ -924,11 +926,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE13ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE13, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, -1, 26));
+        jPanel3.add(jrAlternativaE13, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, -1, 26));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel11.setText("11°");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 28, 25));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, 28, 25));
 
         jrAlternativaA11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaA11);
@@ -939,7 +941,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA11ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, 25));
+        jPanel3.add(jrAlternativaA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, -1, 25));
 
         jrAlternativaB11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaB11);
@@ -950,7 +952,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB11ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, 26));
+        jPanel3.add(jrAlternativaB11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, -1, 26));
 
         jrAlternativaC11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaC11);
@@ -961,7 +963,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC11ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC11, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, -1, 26));
+        jPanel3.add(jrAlternativaC11, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 50, -1, 26));
 
         jrAlternativaD11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaD11);
@@ -972,7 +974,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD11ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD11, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, 26));
+        jPanel3.add(jrAlternativaD11, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, -1, 26));
 
         jrAlternativaE11.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa11.add(jrAlternativaE11);
@@ -983,11 +985,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE11ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 50, -1, 26));
+        jPanel3.add(jrAlternativaE11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 50, -1, 26));
 
         jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel12.setText("12°");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 28, 25));
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 28, 25));
 
         jrAlternativaA12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaA12);
@@ -998,7 +1000,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA12ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA12, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 90, -1, 25));
+        jPanel3.add(jrAlternativaA12, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, 25));
 
         jrAlternativaB12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaB12);
@@ -1009,7 +1011,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB12ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB12, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, -1, 26));
+        jPanel3.add(jrAlternativaB12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 90, -1, 26));
 
         jrAlternativaC12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaC12);
@@ -1020,7 +1022,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC12ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, -1, 26));
+        jPanel3.add(jrAlternativaC12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, -1, 26));
 
         jrAlternativaD12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaD12);
@@ -1031,7 +1033,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD12ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, -1, 26));
+        jPanel3.add(jrAlternativaD12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, -1, 26));
 
         jrAlternativaE12.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa12.add(jrAlternativaE12);
@@ -1042,11 +1044,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE12ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE12, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, -1, 26));
+        jPanel3.add(jrAlternativaE12, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 90, -1, 26));
 
         jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel14.setText("14°");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 28, 25));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 28, 25));
 
         jrAlternativaA14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaA14);
@@ -1057,7 +1059,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA14ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, -1, 25));
+        jPanel3.add(jrAlternativaA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, -1, 25));
 
         jrAlternativaB14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaB14);
@@ -1068,7 +1070,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB14ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB14, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, -1, 26));
+        jPanel3.add(jrAlternativaB14, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, -1, 26));
 
         jrAlternativaC14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaC14);
@@ -1079,7 +1081,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC14ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC14, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, -1, 26));
+        jPanel3.add(jrAlternativaC14, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, -1, 26));
 
         jrAlternativaD14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaD14);
@@ -1090,7 +1092,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD14ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD14, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, -1, 26));
+        jPanel3.add(jrAlternativaD14, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, -1, 26));
 
         jrAlternativaE14.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa14.add(jrAlternativaE14);
@@ -1101,11 +1103,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE14ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE14, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 170, -1, 26));
+        jPanel3.add(jrAlternativaE14, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 170, -1, 26));
 
         jLabel15.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel15.setText("15°");
-        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 28, 25));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 28, 25));
 
         jrAlternativaA15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaA15);
@@ -1116,7 +1118,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA15ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA15, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 210, -1, 25));
+        jPanel3.add(jrAlternativaA15, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 210, -1, 25));
 
         jrAlternativaB15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaB15);
@@ -1127,7 +1129,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB15ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB15, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, -1, 26));
+        jPanel3.add(jrAlternativaB15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, -1, 26));
 
         jrAlternativaC15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaC15);
@@ -1138,7 +1140,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC15ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, -1, 26));
+        jPanel3.add(jrAlternativaC15, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, -1, 26));
 
         jrAlternativaD15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaD15);
@@ -1149,7 +1151,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD15ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD15, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 210, -1, 26));
+        jPanel3.add(jrAlternativaD15, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, 26));
 
         jrAlternativaE15.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa15.add(jrAlternativaE15);
@@ -1160,11 +1162,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE15ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE15, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 210, -1, 26));
+        jPanel3.add(jrAlternativaE15, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, -1, 26));
 
         jLabel16.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel16.setText("16°");
-        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 28, 25));
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 28, 25));
 
         jrAlternativaA16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaA16);
@@ -1175,7 +1177,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA16ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, -1, 25));
+        jPanel3.add(jrAlternativaA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, -1, 25));
 
         jrAlternativaB16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaB16);
@@ -1186,7 +1188,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB16ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB16, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, -1, 26));
+        jPanel3.add(jrAlternativaB16, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, -1, 26));
 
         jrAlternativaC16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaC16);
@@ -1197,7 +1199,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC16ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC16, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, -1, 26));
+        jPanel3.add(jrAlternativaC16, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, -1, 26));
 
         jrAlternativaD16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaD16);
@@ -1208,7 +1210,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD16ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, -1, 26));
+        jPanel3.add(jrAlternativaD16, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, -1, 26));
 
         jrAlternativaE16.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa16.add(jrAlternativaE16);
@@ -1219,11 +1221,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE16ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE16, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, -1, 26));
+        jPanel3.add(jrAlternativaE16, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, -1, 26));
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel17.setText("17°");
-        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 28, 25));
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 28, 25));
 
         jrAlternativaA17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaA17);
@@ -1234,7 +1236,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, -1, 25));
+        jPanel3.add(jrAlternativaA17, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, -1, 25));
 
         jrAlternativaB17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaB17);
@@ -1245,7 +1247,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB17, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, 26));
+        jPanel3.add(jrAlternativaB17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, 26));
 
         jrAlternativaC17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaC17);
@@ -1256,7 +1258,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, -1, 26));
+        jPanel3.add(jrAlternativaC17, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, -1, 26));
 
         jrAlternativaD17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaD17);
@@ -1267,7 +1269,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, -1, 26));
+        jPanel3.add(jrAlternativaD17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, -1, 26));
 
         jrAlternativaE17.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa17.add(jrAlternativaE17);
@@ -1278,11 +1280,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE17ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE17, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, -1, 26));
+        jPanel3.add(jrAlternativaE17, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 290, -1, 26));
 
         jLabel18.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel18.setText("18°");
-        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 28, 25));
+        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 28, 25));
 
         jrAlternativaA18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaA18);
@@ -1293,7 +1295,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA18, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 330, -1, 25));
+        jPanel3.add(jrAlternativaA18, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, -1, 25));
 
         jrAlternativaB18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaB18);
@@ -1304,7 +1306,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB18, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 330, -1, 26));
+        jPanel3.add(jrAlternativaB18, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, -1, 26));
 
         jrAlternativaC18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaC18);
@@ -1315,7 +1317,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC18, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, -1, 26));
+        jPanel3.add(jrAlternativaC18, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, -1, 26));
 
         jrAlternativaD18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaD18);
@@ -1326,7 +1328,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, 26));
+        jPanel3.add(jrAlternativaD18, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, -1, 26));
 
         jrAlternativaE18.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa18.add(jrAlternativaE18);
@@ -1337,11 +1339,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE18ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE18, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 330, -1, 26));
+        jPanel3.add(jrAlternativaE18, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, -1, 26));
 
         jLabel19.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel19.setText("19°");
-        jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 28, 25));
+        jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 28, 25));
 
         jrAlternativaA19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaA19);
@@ -1352,7 +1354,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, -1, 25));
+        jPanel3.add(jrAlternativaA19, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 370, -1, 25));
 
         jrAlternativaB19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaB19);
@@ -1363,7 +1365,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB19, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, -1, 26));
+        jPanel3.add(jrAlternativaB19, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, -1, 26));
 
         jrAlternativaC19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaC19);
@@ -1374,7 +1376,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC19, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, -1, 26));
+        jPanel3.add(jrAlternativaC19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, -1, 26));
 
         jrAlternativaD19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaD19);
@@ -1385,7 +1387,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD19, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, -1, 26));
+        jPanel3.add(jrAlternativaD19, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 370, -1, 26));
 
         jrAlternativaE19.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa19.add(jrAlternativaE19);
@@ -1396,11 +1398,11 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE19ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE19, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, -1, 26));
+        jPanel3.add(jrAlternativaE19, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, -1, 26));
 
         jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel20.setText("20°");
-        jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 28, 25));
+        jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 410, 28, 25));
 
         jrAlternativaA20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaA20);
@@ -1411,7 +1413,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaA20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaA20, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, 25));
+        jPanel3.add(jrAlternativaA20, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, -1, 25));
 
         jrAlternativaB20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaB20);
@@ -1422,7 +1424,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaB20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaB20, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, -1, 26));
+        jPanel3.add(jrAlternativaB20, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 410, -1, 26));
 
         jrAlternativaC20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaC20);
@@ -1433,7 +1435,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaC20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaC20, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, -1, 26));
+        jPanel3.add(jrAlternativaC20, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, -1, 26));
 
         jrAlternativaD20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaD20);
@@ -1444,7 +1446,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaD20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaD20, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, 26));
+        jPanel3.add(jrAlternativaD20, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 410, -1, 26));
 
         jrAlternativaE20.setBackground(new java.awt.Color(255, 255, 255));
         bgAlternativa20.add(jrAlternativaE20);
@@ -1455,9 +1457,10 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 jrAlternativaE20ActionPerformed(evt);
             }
         });
-        jPanel3.add(jrAlternativaE20, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 410, -1, 26));
+        jPanel3.add(jrAlternativaE20, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, -1, 26));
 
         jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(153, 153, 153));
         jLabel23.setText("Respostas");
         jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
 
@@ -1467,24 +1470,25 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 btPesquisarActionPerformed(evt);
             }
         });
-        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 450, -1, -1));
+        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 470, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel24.setText("Ano Letivo:");
-        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 200, 80, 25));
+        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 190, 90, 25));
 
         jLabel25.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel25.setText("Curso:");
-        jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, -1, -1));
+        jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, -1, -1));
 
+        txtAnoLetivo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtAnoLetivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAnoLetivoActionPerformed(evt);
             }
         });
-        jPanel3.add(txtAnoLetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 220, 110, -1));
+        jPanel3.add(txtAnoLetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 220, 110, 30));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 500));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 790, 520));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1494,7 +1498,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 634, Short.MAX_VALUE)
         );
 
         pack();
