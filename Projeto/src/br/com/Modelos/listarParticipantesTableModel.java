@@ -8,16 +8,16 @@ import javax.swing.table.AbstractTableModel;
 
 public class listarParticipantesTableModel extends AbstractTableModel{
     
-        private List<Participante> participantes = new ArrayList<>();
-    private String[] colunas = {"Id", "Participante"};
+    private List<ResultadoFinal> resultadoFinal = new ArrayList<>();
+    private String[] colunas = {"Id", "Participante","Nota","Classificação"};
 
 public listarParticipantesTableModel(List<Participante> participantes) {
-        this.participantes = participantes;
+        this.resultadoFinal = resultadoFinal;
     }
 
     @Override
     public int getRowCount() {
-        return participantes.size();
+        return resultadoFinal.size();
     }
 
     @Override
@@ -27,12 +27,16 @@ public listarParticipantesTableModel(List<Participante> participantes) {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        Participante participante = participantes.get(rowIndex);
+        ResultadoFinal resultado = resultadoFinal.get(rowIndex);
         switch (columnIndex) {
             case 0:
-                return participante.getIdUsuario();
+                return resultado.getIdResultadoFinal();
             case 1:
-                return participante.getNome();
+                return resultado.getNomeParticipante();
+            case 2:
+                return resultado.getNotaFinal();
+            case 3:
+                return resultado.getClassificacao();    
 
         }
         return null;
@@ -45,6 +49,9 @@ public listarParticipantesTableModel(List<Participante> participantes) {
             case 1:
                 return colunas[1];
             case 2:
+                return colunas[2];
+            case 3:
+                return colunas[3];
         }
         return null;
     }    
