@@ -8,6 +8,24 @@ package br.com.Telas;
 import br.com.DAO.ResultadoFinalDAO;
 import br.com.Modelos.ResultadoFinal;
 import br.com.Modelos.ResultadoFinalTableModel;
+import com.itextpdf.text.BadElementException;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.PageSize;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -18,7 +36,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
     ResultadoFinal resultadoFinal = new ResultadoFinal();
     ResultadoFinalDAO resultadoFinalDAO = new ResultadoFinalDAO();
     ResultadoFinalTableModel modeloTabela;
-    
+
     String ano;
     String curso;
 
@@ -28,7 +46,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
     public ListarPorAnoCurso() {
         initComponents();
         modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoFinal());
-        TabelaResultado.setModel(modeloTabela); 
+        TabelaResultado.setModel(modeloTabela);
     }
 
     /**
@@ -52,8 +70,8 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jcbCurso = new javax.swing.JComboBox<>();
         btnPesquisar = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         txAno = new javax.swing.JFormattedTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -150,10 +168,6 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         });
         jPanel2.add(btnPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 100, 30));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/pdf.png"))); // NOI18N
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
-
         try {
             txAno.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####.#")));
         } catch (java.text.ParseException ex) {
@@ -165,6 +179,15 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
             }
         });
         jPanel2.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 110, 30));
+
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/pdf.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 20, 40, -1));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -207,7 +230,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         //Recuperar valores
         String AnoLetivo = txAno.getText();
         String curso = jcbCurso.getSelectedItem().toString();
-        atualizarTabela(AnoLetivo,curso);
+        atualizarTabela(AnoLetivo, curso);
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
@@ -220,10 +243,108 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txAnoActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        String AnoLetivo = txAno.getText();
+        String curso = jcbCurso.getSelectedItem().toString();
+
+        if (AnoLetivo == null || curso == null) {
+            JOptionPane.showMessageDialog(null, "Ano e Curso não Especificado!!!");
+        } else {
+
+            Document document = null;
+            OutputStream stream = null;
+
+            try {
+                       
+                document = new Document(PageSize.A4, 30, 20, 20, 30);
+                stream = new FileOutputStream(curso+ " - "+ AnoLetivo+".pdf");
+
+                try {
+                    PdfWriter.getInstance(document, stream);
+                    document.open();
+
+                    Font font = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD);
+                    Font fontBold = new Font(Font.FontFamily.TIMES_ROMAN, 14, Font.BOLD);
+
+                    Image image = Image.getInstance("logo.png");
+                    image.setAlignment(Element.ALIGN_CENTER);
+                    document.add(image);
+
+                    Paragraph cabecalho = new Paragraph("PROCESSO DE SELEÇÃO DE ALUNOS", font);
+                    cabecalho.setAlignment(Element.ALIGN_CENTER);
+                    document.add(cabecalho);
+
+                    Paragraph p1 = new Paragraph(curso, font);
+                    p1.setAlignment(Element.ALIGN_CENTER);
+                    document.add(p1);
+
+                    Paragraph p2 = new Paragraph("Ano Seletivo " + AnoLetivo, font);
+                    p2.setAlignment(Element.ALIGN_CENTER);
+                    document.add(p2);
+
+                    //Espaçamentos//
+                    Paragraph q1 = new Paragraph(" ");
+                    cabecalho.setAlignment(Element.ALIGN_CENTER);
+                    document.add(q1);
+                    Paragraph q2 = new Paragraph(" ");
+                    cabecalho.setAlignment(Element.ALIGN_CENTER);
+                    document.add(q2);
+                    Paragraph q3 = new Paragraph(" ");
+                    cabecalho.setAlignment(Element.ALIGN_CENTER);
+                    document.add(q3);
+                    ////Espaçamentos//
+
+                    Paragraph participante = new Paragraph("Participante", fontBold);
+                    Paragraph nota = new Paragraph("Nota", fontBold);
+                    Paragraph classificacao = new Paragraph("Classificação", fontBold);
+
+                    PdfPTable title = new PdfPTable(3);
+                    title.setWidthPercentage(100);
+                    title.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
+                    title.getDefaultCell().setVerticalAlignment(Element.ALIGN_MIDDLE);
+                    title.getDefaultCell().setBorder(PdfPCell.NO_BORDER);
+                    title.getDefaultCell().setBorderWidthBottom(1);
+                    title.getDefaultCell().setFixedHeight(30);
+                    title.addCell(participante);
+                    title.addCell(nota);
+                    title.addCell(classificacao);
+                    document.add(title);
+
+                    for (ResultadoFinal rf : resultadoFinalDAO.listarResultadoPorCurso(AnoLetivo, curso)) {
+                        
+                        PdfPTable tabela = new PdfPTable(3);
+                        tabela.setWidthPercentage(100);
+                        tabela.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
+                        tabela.getDefaultCell().setVerticalAlignment(Element.ALIGN_MIDDLE);
+                        tabela.getDefaultCell().setBorder(PdfPCell.NO_BORDER);
+                        tabela.addCell(rf.getNomeParticipante());
+                        tabela.addCell(String.valueOf(rf.getNotaFinal()));
+                        tabela.addCell(rf.getClassificacao());
+                        document.add(tabela);
+
+                    }
+
+                } catch (DocumentException ex) {
+                    Logger.getLogger(ListarPorAnoCurso.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(ListarPorAnoCurso.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(ListarPorAnoCurso.class.getName()).log(Level.SEVERE, null, ex);
+            } finally {
+                if (document != null) {
+                    JOptionPane.showMessageDialog(null, "Arquivo exportado com Sucesso!!!");
+                    document.close();
+                }
+            }
+    }//GEN-LAST:event_jButton1ActionPerformed
+    }
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws BadElementException, FileNotFoundException {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -273,12 +394,12 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TabelaResultado;
     private javax.swing.JButton btnPesquisar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -287,9 +408,8 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField txAno;
     // End of variables declaration//GEN-END:variables
 
-public void atualizarTabela(String ano, String curso){
-        modeloTabela = new 
-        ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoPorCurso(ano, curso));
+    public void atualizarTabela(String ano, String curso) {
+        modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoPorCurso(ano, curso));
         TabelaResultado.setModel(modeloTabela);
     }
 
