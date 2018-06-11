@@ -214,6 +214,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jCheckBox1.setText("jCheckBox1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(235, 235, 235));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -226,6 +228,11 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 0, 0));
         jLabel22.setText("X");
+        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel22MouseClicked(evt);
+            }
+        });
 
         txtAno.setEditable(false);
         txtAno.setBackground(new java.awt.Color(255, 255, 255));
@@ -1513,6 +1520,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     private void atualizarDados() {
         jrAlternativaA20.setActionCommand("A");
@@ -2079,6 +2087,12 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAnoActionPerformed
+
+    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+        Main main = new Main();
+        main.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel22MouseClicked
 
     void atualizarCampos() {
 

@@ -56,6 +56,8 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(235, 235, 235));
 
@@ -69,6 +71,11 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 0, 0));
         jLabel12.setText("X");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 11, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -183,6 +190,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
@@ -192,6 +200,12 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         String curso = jcbCurso.getSelectedItem().toString();
         atualizarTabela(AnoLetivo,curso);
     }//GEN-LAST:event_btnPesquisarActionPerformed
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        Main main = new Main();
+        main.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
      * @param args the command line arguments

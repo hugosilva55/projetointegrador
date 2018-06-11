@@ -82,6 +82,8 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtFone = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(235, 235, 235));
@@ -95,6 +97,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 0, 0));
         jLabel12.setText("X");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -299,6 +306,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jcCursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcCursoActionPerformed
@@ -401,6 +409,12 @@ public class CadastroParticipante extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_txtdataNascimentoKeyTyped
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        Main main = new Main();
+        main.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel12MouseClicked
 
     public void limparCampos(){
         txtNome.setText("");
