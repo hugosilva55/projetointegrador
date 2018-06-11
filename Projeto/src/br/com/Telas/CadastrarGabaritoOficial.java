@@ -195,7 +195,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         btPesquisar = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        txtAnoLetivo = new javax.swing.JTextField();
+        txtAnoLetivo = new javax.swing.JFormattedTextField();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -1488,13 +1488,12 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jLabel25.setText("Curso:");
         jPanel3.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, -1, -1));
 
-        txtAnoLetivo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtAnoLetivo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAnoLetivoActionPerformed(evt);
-            }
-        });
-        jPanel3.add(txtAnoLetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 220, 110, 30));
+        try {
+            txtAnoLetivo.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####.#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel3.add(txtAnoLetivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 210, 110, 30));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 790, 520));
 
@@ -2006,10 +2005,6 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         consultarGabarito.setVisible(true);
         dispose();
     }//GEN-LAST:event_btPesquisarActionPerformed
-
-    private void txtAnoLetivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoLetivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAnoLetivoActionPerformed
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
         Main main = new Main();
@@ -2641,7 +2636,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     private javax.swing.JRadioButton jrAlternativaE8;
     private javax.swing.JRadioButton jrAlternativaE9;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextField txtAnoLetivo;
+    private javax.swing.JFormattedTextField txtAnoLetivo;
     // End of variables declaration//GEN-END:variables
 
 }

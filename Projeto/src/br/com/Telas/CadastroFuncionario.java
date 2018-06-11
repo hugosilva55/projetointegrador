@@ -57,7 +57,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
-        txtCPF = new javax.swing.JTextField();
         txtLogin = new javax.swing.JTextField();
         txtSenha = new javax.swing.JPasswordField();
         cbNivelAcesso = new javax.swing.JComboBox<>();
@@ -65,6 +64,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 290), new java.awt.Dimension(0, 290), new java.awt.Dimension(32767, 290));
+        txtCPF = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -140,19 +140,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 330, 30));
 
-        txtCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtCPF.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCPFActionPerformed(evt);
-            }
-        });
-        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtCPFKeyTyped(evt);
-            }
-        });
-        jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 330, 30));
-
         txtLogin.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jPanel3.add(txtLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 330, 30));
 
@@ -191,6 +178,13 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         filler1.setBackground(new java.awt.Color(255, 245, 255));
         filler1.setOpaque(true);
         jPanel3.add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 100, 2, 230));
+
+        try {
+            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 330, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -265,20 +259,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCPFActionPerformed
-
-    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
-        int ascii = evt.getKeyChar();
-        if (!(ascii >= 48  && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
-            evt.consume();
-        }
-        if(txtCPF.getText().length() >= 11){
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtCPFKeyTyped
-
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
         Main main = new Main();
         main.setVisible(true);
@@ -338,7 +318,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField txtCPF;
+    private javax.swing.JFormattedTextField txtCPF;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtLogin;
     private javax.swing.JTextField txtNome;

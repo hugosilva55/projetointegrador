@@ -51,10 +51,10 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         jcbCurso = new javax.swing.JComboBox<>();
         btnPesquisar = new javax.swing.JButton();
         btnCorrigir = new javax.swing.JButton();
-        txAno = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableParicipantes = new javax.swing.JTable();
+        txAno = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -118,9 +118,6 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         });
         jPanel4.add(btnCorrigir, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 310, 40));
 
-        txAno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jPanel4.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 110, 30));
-
         jLabel3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 1, 76));
         jLabel3.setText("Pesquisar Participante");
@@ -167,6 +164,13 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tableParicipantes);
 
         jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 690, 210));
+
+        try {
+            txAno.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####.#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel4.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 110, 30));
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 790, 430));
 
@@ -276,7 +280,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox<String> jcbCurso;
     private javax.swing.JTable tableParicipantes;
-    private javax.swing.JTextField txAno;
+    private javax.swing.JFormattedTextField txAno;
     // End of variables declaration//GEN-END:variables
 
  public void atualizarTabela(String ano, String curso){

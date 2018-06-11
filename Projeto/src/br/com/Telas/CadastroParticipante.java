@@ -58,15 +58,12 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jcCivil = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
-        txtCPF = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        txtdataNascimento = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jcSexo = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         txtNacionalidade = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        txtRG = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         txtPai = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -77,9 +74,12 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 290), new java.awt.Dimension(0, 290), new java.awt.Dimension(32767, 290));
         jLabel14 = new javax.swing.JLabel();
-        txtAno = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        txtFone = new javax.swing.JTextField();
+        txtCPF = new javax.swing.JFormattedTextField();
+        txtRG = new javax.swing.JFormattedTextField();
+        txtAno = new javax.swing.JFormattedTextField();
+        txtdataNascimento = new javax.swing.JFormattedTextField();
+        txtFone = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -170,30 +170,9 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel4.setText("CPF:");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
-        txtCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtCPFKeyTyped(evt);
-            }
-        });
-        jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 370, 30));
-
         jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel5.setText("Data de Nascimento:");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, -1, -1));
-
-        txtdataNascimento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtdataNascimento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtdataNascimentoActionPerformed(evt);
-            }
-        });
-        txtdataNascimento.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtdataNascimentoKeyTyped(evt);
-            }
-        });
-        jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 130, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel6.setText("Sexo:");
@@ -218,14 +197,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel8.setText("RG:");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
-
-        txtRG.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtRG.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtRGKeyTyped(evt);
-            }
-        });
-        jPanel3.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 370, 30));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel9.setText("Nome do Pai:");
@@ -281,24 +252,43 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jLabel14.setText("Ano do Vestibular:");
         jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, -1, -1));
 
-        txtAno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtAno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAnoActionPerformed(evt);
-            }
-        });
-        txtAno.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtAnoKeyTyped(evt);
-            }
-        });
-        jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 130, 30));
-
         jLabel15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel15.setText("Telefone:");
         jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 60, -1));
 
-        txtFone.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        try {
+            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 370, 30));
+
+        try {
+            txtRG.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#########-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel3.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 370, 30));
+
+        try {
+            txtAno.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####.#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 130, 30));
+
+        try {
+            txtdataNascimento.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 130, 30));
+
+        try {
+            txtFone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##) #####-####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
         jPanel3.add(txtFone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 320, 30));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 420));
@@ -322,10 +312,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private void txtNacionalidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNacionalidadeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNacionalidadeActionPerformed
-
-    private void txtdataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdataNascimentoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtdataNascimentoActionPerformed
 
     private void jcCivilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcCivilActionPerformed
         // TODO add your handling code here:
@@ -364,51 +350,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
         }
     }//GEN-LAST:event_btSalvarActionPerformed
-
-    private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAnoActionPerformed
-
-    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
-        int ascii = evt.getKeyChar();
-        
-        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
-            evt.consume();
-        }
-        if(txtCPF.getText().length() >= 11){
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtCPFKeyTyped
-
-    private void txtRGKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRGKeyTyped
-        int ascii = evt.getKeyChar();
-        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
-            evt.consume();
-        }
-        if(txtRG.getText().length() >= 12){
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtRGKeyTyped
-
-    private void txtAnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnoKeyTyped
-        int ascii = evt.getKeyChar();
-        if(!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
-            evt.consume();
-        }
-        if(txtAno.getText().length() >= 5){
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtAnoKeyTyped
-
-    private void txtdataNascimentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtdataNascimentoKeyTyped
-        int ascii = evt.getKeyChar();
-        if(!(ascii >= 48 && ascii <=57) && !(ascii == evt.VK_BACK_SPACE)){
-            evt.consume();
-        }
-        if(txtdataNascimento.getText().length() >= 8){
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtdataNascimentoKeyTyped
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
         Main main = new Main();
@@ -504,15 +445,15 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jcCivil;
     private javax.swing.JComboBox<String> jcCurso;
     private javax.swing.JComboBox<String> jcSexo;
-    private javax.swing.JTextField txtAno;
-    private javax.swing.JTextField txtCPF;
+    private javax.swing.JFormattedTextField txtAno;
+    private javax.swing.JFormattedTextField txtCPF;
     private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtFone;
+    private javax.swing.JFormattedTextField txtFone;
     private javax.swing.JTextField txtMae;
     private javax.swing.JTextField txtNacionalidade;
     private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtPai;
-    private javax.swing.JTextField txtRG;
-    private javax.swing.JTextField txtdataNascimento;
+    private javax.swing.JFormattedTextField txtRG;
+    private javax.swing.JFormattedTextField txtdataNascimento;
     // End of variables declaration//GEN-END:variables
 }

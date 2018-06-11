@@ -49,11 +49,11 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         TabelaResultado = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        txAno = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jcbCurso = new javax.swing.JComboBox<>();
         btnPesquisar = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        txAno = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -132,9 +132,6 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         jLabel1.setText("Ano Letivo:");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, 30));
 
-        txAno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jPanel2.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 110, 30));
-
         jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel2.setText("Curso:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, 30));
@@ -156,6 +153,18 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/pdf.png"))); // NOI18N
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
+
+        try {
+            txAno.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####.#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txAno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txAnoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 110, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -206,6 +215,10 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void txAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txAnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txAnoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -271,7 +284,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox<String> jcbCurso;
-    private javax.swing.JTextField txAno;
+    private javax.swing.JFormattedTextField txAno;
     // End of variables declaration//GEN-END:variables
 
 public void atualizarTabela(String ano, String curso){
