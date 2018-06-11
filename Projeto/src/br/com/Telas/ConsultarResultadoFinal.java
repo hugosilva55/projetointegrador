@@ -30,8 +30,8 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
     }
 
     public void atualizarTabela() {
-        //ResultadoFinalTableModel modelo = new ResultadoFinalTableModel(resultFinalDAO.listarResultadoFinal());
-        //tbResultadoFinal.setModel(modelo);
+        ResultadoFinalTableModel modelo = new ResultadoFinalTableModel(resultFinalDAO.listarResultadoFinal());
+        tbResultadoFinal.setModel(modelo);
         
     }
     
