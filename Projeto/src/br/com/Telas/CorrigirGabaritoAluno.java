@@ -1499,6 +1499,12 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel24.setText("Redação:");
         jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 80, 30));
+
+        txtRedacao.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtRedacaoKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtRedacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 450, 120, 30));
 
         jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -1716,18 +1722,9 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
         atualizarDados();
 
-        if (bgAlternativa1.isSelected(null) || bgAlternativa2.isSelected(null)
-                || bgAlternativa3.isSelected(null) || bgAlternativa4.isSelected(null)
-                || bgAlternativa5.isSelected(null) || bgAlternativa6.isSelected(null)
-                || bgAlternativa7.isSelected(null) || bgAlternativa8.isSelected(null)
-                || bgAlternativa9.isSelected(null) || bgAlternativa10.isSelected(null)
-                || bgAlternativa11.isSelected(null) || bgAlternativa12.isSelected(null)
-                || bgAlternativa13.isSelected(null) || bgAlternativa14.isSelected(null)
-                || bgAlternativa15.isSelected(null) || bgAlternativa16.isSelected(null)
-                || bgAlternativa17.isSelected(null) || bgAlternativa18.isSelected(null)
-                || bgAlternativa19.isSelected(null) || bgAlternativa20.isSelected(null)) {
+        if (txtRedacao.getText().equals("")) {
 
-            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
+            JOptionPane.showMessageDialog(null, "Preencha o Campo de Redação !!! ");
         } else {
            
             gabaritoOficial = gabaritoOficDAO.pesquisarGabaritoPorCursoAno(Ano, Curso);
@@ -2093,6 +2090,16 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel22MouseClicked
+
+    private void txtRedacaoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRedacaoKeyTyped
+        int ascii = evt.getKeyChar();
+        if(!(ascii >= 48 && ascii <=57 ) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtRedacao.getText().length() >= 3){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtRedacaoKeyTyped
 
     void atualizarCampos() {
 
