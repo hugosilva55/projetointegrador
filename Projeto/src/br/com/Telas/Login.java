@@ -5,8 +5,8 @@
  */
 package br.com.Telas;
 
-import br.com.DAO.UsuarioDAO;
-import br.com.Modelos.Usuario;
+import br.com.DAO.FuncionarioDAO;
+import br.com.Modelos.Funcionario;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
@@ -17,8 +17,8 @@ import javax.swing.JOptionPane;
  */
 public class Login extends javax.swing.JFrame {
 
-    Usuario usuario = new Usuario();
-    UsuarioDAO usuarioDAO = new UsuarioDAO();
+    Funcionario funcionario = new Funcionario();
+    FuncionarioDAO funcDAO = new FuncionarioDAO();
 
     /**
      * Creates new form Login
@@ -58,7 +58,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/logo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/logo pequena.png"))); // NOI18N
 
         txtLogin.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -161,8 +161,8 @@ public class Login extends javax.swing.JFrame {
         if (txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Campos em Branco, Preencha todos os campos !!");
         } else {
-            usuario = usuarioDAO.verificarUsuario(txtLogin.getText(), txtSenha.getText());
-            if (usuario != null) {
+            funcionario = funcDAO.verificarUsuario(txtLogin.getText(), txtSenha.getText());
+            if (funcionario != null) {
                 Main main = new Main();
                 main.setVisible(true);
                 dispose();
@@ -174,7 +174,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
-        
+
         System.exit(0);
     }//GEN-LAST:event_jLabel15MouseClicked
 

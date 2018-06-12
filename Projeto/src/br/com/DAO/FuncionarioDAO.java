@@ -2,8 +2,10 @@ package br.com.DAO;
 
 import br.com.Modelos.Funcionario;
 import br.com.Util.GenericDAO;
+import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.criterion.Restrictions;
 
 /**
  *
@@ -41,5 +43,18 @@ public class FuncionarioDAO extends GenericDAO<Funcionario> {
     public Funcionario pesquisarFuncionarioId(String campo, int valor) {
         return consultarObjetoId(campo, valor);
     }
+    
+    public Funcionario verificarUsuario(String login, String senha) { 
+        sessao = HibernateUtil.getSessionFactory().openSession(); 
+        transacao = sessao.beginTransaction(); 
+        Funcionario func = (Funcionario) sessao.createCriteria(Funcionario.class).add(Restrictions.eq("senhaFunc", senha)).add(Restrictions.eq("loginFunc", login)).uniqueResult(); 
+        if (func == null) { 
+            JOptionPane.showMessageDialog(null, "Usuário ou Senha Inválidos!"); 
+        } else { 
+            sessao.close(); 
+            return func; 
+        } 
+        return func; 
+    } 
 
 }
