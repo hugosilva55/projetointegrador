@@ -19,21 +19,21 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
     Participante part = new Participante();
     ParticipanteDAO partDAO = new ParticipanteDAO();
-    
+
     public CadastroParticipante() {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
-        txtNome.setBorder(lineBorder );
-        txtCPF.setBorder(lineBorder );
-        txtEmail.setBorder(lineBorder );
-        txtMae.setBorder(lineBorder );
-        txtNacionalidade.setBorder(lineBorder );
-        txtPai.setBorder(lineBorder );
-        txtRG.setBorder(lineBorder );
-        txtdataNascimento.setBorder(lineBorder );
+        txtNome.setBorder(lineBorder);
+        txtCPF.setBorder(lineBorder);
+        txtEmail.setBorder(lineBorder);
+        txtMae.setBorder(lineBorder);
+        txtNacionalidade.setBorder(lineBorder);
+        txtPai.setBorder(lineBorder);
+        txtRG.setBorder(lineBorder);
+        txtdataNascimento.setBorder(lineBorder);
         txtAno.setBorder(lineBorder);
         txtFone.setBorder(lineBorder);
-       
+
     }
 
     /**
@@ -261,6 +261,16 @@ public class CadastroParticipante extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        txtCPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCPFActionPerformed(evt);
+            }
+        });
+        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCPFKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 370, 30));
 
         try {
@@ -268,6 +278,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        txtRG.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtRGKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 370, 30));
 
         try {
@@ -275,6 +290,16 @@ public class CadastroParticipante extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        txtAno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAnoActionPerformed(evt);
+            }
+        });
+        txtAno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtAnoKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 130, 30));
 
         try {
@@ -282,6 +307,16 @@ public class CadastroParticipante extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        txtdataNascimento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdataNascimentoActionPerformed(evt);
+            }
+        });
+        txtdataNascimento.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtdataNascimentoKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtdataNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 130, 30));
 
         try {
@@ -289,6 +324,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        txtFone.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtFoneKeyTyped(evt);
+            }
+        });
         jPanel3.add(txtFone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 320, 30));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 420));
@@ -323,13 +363,13 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
 
-        if(txtNome.getText().equals("") || txtEmail.getText().equals("") ||
-            txtCPF.getText().equals("") || txtdataNascimento.getText().equals("") ||
-            txtNacionalidade.getText().equals("") || txtRG.getText().equals("") || txtMae.getText().equals("") ||
-            txtPai.getText().equals("") || txtAno.getText().equals("") || txtFone.getText().equals("") ){
+        if (txtNome.getText().equals("") || txtEmail.getText().equals("")
+                || txtCPF.getText().equals("") || txtdataNascimento.getText().equals("")
+                || txtNacionalidade.getText().equals("") || txtRG.getText().equals("") || txtMae.getText().equals("")
+                || txtPai.getText().equals("") || txtAno.getText().equals("") || txtFone.getText().equals("")) {
 
-            JOptionPane.showMessageDialog(null,"Por favor, preencha todos os campos!!");
-        }else{
+            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos!!");
+        } else {
 
             part.setNome(txtNome.getText());
             part.setEmail(txtEmail.getText());
@@ -344,7 +384,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
             part.setNomePai(txtPai.getText());
             part.setAno(txtAno.getText());
             part.setTelefone(txtFone.getText());
-            
+
             partDAO.salvarParticipante(part);
             limparCampos();
 
@@ -357,7 +397,79 @@ public class CadastroParticipante extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
 
-    public void limparCampos(){
+    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
+
+    }//GEN-LAST:event_txtCPFActionPerformed
+
+    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
+
+        int ascii = evt.getKeyChar();
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+
+        if (txtCPF.getText().length() >= 11) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtCPFKeyTyped
+
+    private void txtRGKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRGKeyTyped
+        int ascii = evt.getKeyChar();
+
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+
+        if (txtRG.getText().length() >= 14) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtRGKeyTyped
+
+    private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnoActionPerformed
+
+    private void txtAnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnoKeyTyped
+        int ascii = evt.getKeyChar();
+
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+        if (txtAno.getText().length() >= 5) {
+            evt.consume();
+        }
+
+    }//GEN-LAST:event_txtAnoKeyTyped
+
+    private void txtdataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdataNascimentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtdataNascimentoActionPerformed
+
+    private void txtdataNascimentoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtdataNascimentoKeyTyped
+
+        int ascii = evt.getKeyChar();
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+            evt.consume();
+        }
+        if (txtdataNascimento.getText().length() >= 8) {
+            evt.consume();
+        }
+
+    }//GEN-LAST:event_txtdataNascimentoKeyTyped
+
+    private void txtFoneKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFoneKeyTyped
+        
+        int ascii = evt.getKeyChar();
+        if(!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txtFone.getText().length() >= 11){
+            evt.consume();
+        }
+        
+    }//GEN-LAST:event_txtFoneKeyTyped
+
+    public void limparCampos() {
         txtNome.setText("");
         txtEmail.setText("");
         txtCPF.setText("");
@@ -368,9 +480,10 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtPai.setText("");
         txtAno.setText("");
         part = new Participante();
-        
+
     }
-    public void atualizarDados(){
+
+    public void atualizarDados() {
         txtNome.setText(part.getNome());
         txtEmail.setText(part.getEmail());
         txtCPF.setText(part.getCPF());
@@ -380,9 +493,9 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtMae.setText(part.getNomeMae());
         txtPai.setText(part.getNomePai());
         txtAno.setText(part.getAno());
-        
+
     }
-    
+
     /**
      * @param args the command line arguments
      */

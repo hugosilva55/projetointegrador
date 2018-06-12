@@ -170,6 +170,11 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        txAno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txAnoKeyTyped(evt);
+            }
+        });
         jPanel4.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 110, 30));
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 790, 430));
@@ -229,6 +234,19 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void txAnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txAnoKeyTyped
+        
+        int ascii = evt.getKeyChar();
+        if(!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
+            evt.consume();
+        }
+        if(txAno.getText().length() >= 5){
+            evt.consume();
+        }
+        
+        
+    }//GEN-LAST:event_txAnoKeyTyped
 
     /**
      * @param args the command line arguments
