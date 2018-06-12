@@ -11,7 +11,6 @@ import java.awt.Color;
 import java.util.Set;
 import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
-
 /**
  *
  * @author root
@@ -27,11 +26,11 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     public CadastroFuncionario() {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
-        txtNome.setBorder(lineBorder );
-        txtCPF.setBorder(lineBorder );
-        txtEmail.setBorder(lineBorder );
-        txtSenha.setBorder(lineBorder );
-        txtLogin.setBorder(lineBorder );   
+        txtNome.setBorder(lineBorder);
+        txtCPF.setBorder(lineBorder);
+        txtEmail.setBorder(lineBorder);
+        txtSenha.setBorder(lineBorder);
+        txtLogin.setBorder(lineBorder);
     }
 
     /**
@@ -180,7 +179,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jPanel3.add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 100, 2, 230));
 
         try {
-            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###-####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
@@ -225,7 +224,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtSenha.setText("");
         txtEmail.setText("");
         txtCPF.setText("");
-        
+
         funcionario = new Funcionario();
     }
 
@@ -236,21 +235,27 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtNome.setText(funcionario.getNomeFuncionario());
         txtSenha.setText(funcionario.getSenhaFunc());
     }
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if (txtNome.getText().equals("") || txtCPF.getText().equals("") || txtEmail.getText().equals("")
-                || txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
-            JOptionPane.showMessageDialog(this, "Existem Campos em Branco");
-        } else {
-            funcionario.setCpf(txtCPF.getText());
-            funcionario.setEmail(txtEmail.getText());
-            funcionario.setLoginFunc(txtLogin.getText());
-            funcionario.setNomeFuncionario(txtNome.getText());
-            funcionario.setSenhaFunc(txtSenha.getText());
-            funcionario.setNivelDeAcesso(String.valueOf(cbNivelAcesso.getSelectedItem()));
-            funcDAO.salvarFuncionario(funcionario);
-            limparCampos();
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        if (funcDAO.chequeCPF("cpf", txtCPF.getText()) == false) {
+            if (txtNome.getText().equals("") || txtCPF.getText().equals("") || txtEmail.getText().equals("")
+                    || txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
+                JOptionPane.showMessageDialog(this, "Existem Campos em Branco");
+
+            } else {
+                funcionario.setCpf(txtCPF.getText());
+                funcionario.setEmail(txtEmail.getText());
+                funcionario.setLoginFunc(txtLogin.getText());
+                funcionario.setNomeFuncionario(txtNome.getText());
+                funcionario.setSenhaFunc((txtSenha.getText()));
+                funcionario.setNivelDeAcesso(String.valueOf(cbNivelAcesso.getSelectedItem()));
+                funcDAO.salvarFuncionario(funcionario);
+                limparCampos();
+            }
+        }else{
+            JOptionPane.showMessageDialog(this,"CPF Existente !!!");
         }
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

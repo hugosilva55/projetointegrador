@@ -56,5 +56,9 @@ public class FuncionarioDAO extends GenericDAO<Funcionario> {
         } 
         return func; 
     } 
+    
+    public boolean chequeCPF(String campo, String valor){
+        return consultarValorRepetido(campo, valor);
+    }
 
 }
