@@ -23,7 +23,7 @@ public class Funcionario {
     private String cpf;
     @Column(length = 25, nullable = false)
     private String loginFunc;
-    @Column(length = 100, nullable = false)
+    @Column(length = 25, nullable = false)
     private String senhaFunc;
     @Column(length = 25, nullable = false)
     private String NivelDeAcesso;
