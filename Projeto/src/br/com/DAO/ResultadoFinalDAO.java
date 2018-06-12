@@ -7,6 +7,7 @@ import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
 import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
 /**
@@ -121,6 +122,16 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
             return resultadoFinal;
         }
         return resultadoFinal;
+    }
+     
+     public int contarResultadoPorCurso(String ano, String curso){
+        
+        this.setSessao(HibernateUtil.getSessionFactory().openSession());
+            setTransacao(getSessao().beginTransaction());
+        
+        return ((Number) sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
+                add(Restrictions.eq("curso", curso)).setProjection(Projections.rowCount()).uniqueResult()).intValue();
+    
     }
 
 }

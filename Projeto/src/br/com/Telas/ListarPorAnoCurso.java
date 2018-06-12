@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.com.Telas;
 
 import br.com.DAO.ResultadoFinalDAO;
@@ -247,11 +243,17 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
 
         String AnoLetivo = txAno.getText();
         String curso = jcbCurso.getSelectedItem().toString();
-
-        if (AnoLetivo == null || curso == null) {
+        
+        if(AnoLetivo == null || curso == null){
             JOptionPane.showMessageDialog(null, "Ano e Curso não Especificado!!!");
-        } else {
-
+        }else{            
+           int count = resultadoFinalDAO.contarResultadoPorCurso(AnoLetivo, curso);
+           
+            if (count<=0) {
+                JOptionPane.showMessageDialog(null, "Não há nenhum dado registrado com esse Ano e Curso.!!!");
+            }else{
+                
+                
             Document document = null;
             OutputStream stream = null;
 
@@ -312,7 +314,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
                     document.add(title);
 
                     for (ResultadoFinal rf : resultadoFinalDAO.listarResultadoPorCurso(AnoLetivo, curso)) {
-                        
+                       
                         PdfPTable tabela = new PdfPTable(3);
                         tabela.setWidthPercentage(100);
                         tabela.getDefaultCell().setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -337,9 +339,11 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Arquivo exportado com Sucesso!!!");
                     document.close();
                 }
-            }
+            }                
+            }      
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
-    }
+
 
     /**
      * @param args the command line arguments
