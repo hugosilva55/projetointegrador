@@ -8,6 +8,7 @@ package br.com.Telas;
 import br.com.DAO.FuncionarioDAO;
 import br.com.Modelos.Funcionario;
 import java.awt.Color;
+import java.io.UnsupportedEncodingException;
 import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 
@@ -161,14 +162,18 @@ public class Login extends javax.swing.JFrame {
         if (txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Campos em Branco, Preencha todos os campos !!");
         } else {
-            funcionario = funcDAO.verificarUsuario(txtLogin.getText(), txtSenha.getText());
-            if (funcionario != null) {
-                Main main = new Main();
-                main.setVisible(true);
-                dispose();
-                limparCampos();
-                //Nessa parte chama a tela principal, que sera chamada dps uqe o login
-                //for confirmado
+            try {
+                funcionario = funcDAO.verificarUsuario(txtLogin.getText(), funcDAO.criptografia(txtSenha.getText()));
+                if (funcionario != null) {
+                    Main main = new Main();
+                    main.setVisible(true);
+                    dispose();
+                    limparCampos();
+                    //Nessa parte chama a tela principal, que sera chamada dps uqe o login
+                    //for confirmado
+                }
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
