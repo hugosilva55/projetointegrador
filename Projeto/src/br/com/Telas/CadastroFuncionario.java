@@ -186,15 +186,12 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-<<<<<<< HEAD
         txtCPF.setText("");
         txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtCPFKeyTyped(evt);
             }
         });
-=======
->>>>>>> parent of 850835d... adição criterio numeros
         jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 330, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -287,6 +284,10 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCPFKeyTyped
 
     /**
      * @param args the command line arguments
