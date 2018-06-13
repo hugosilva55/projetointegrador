@@ -408,11 +408,11 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtMae.setText(part.getNomeMae());
         txtPai.setText(part.getNomePai());
         txtAno.setText(part.getAno());
-<<<<<<< Updated upstream
-        txtFone.setText(part.getTelefone());
-=======
 
->>>>>>> Stashed changes
+        txtFone.setText(part.getTelefone());
+
+
+
     }
 
     /**

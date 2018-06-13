@@ -226,12 +226,12 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
             cga.Curso = String.valueOf(jcbCurso.getSelectedItem());
             cga.nomeParticipante = String.valueOf(tableParicipantes.getValueAt(tableParicipantes.getSelectedRow(), 1));
             cga.setVisible(true);
-<<<<<<< Updated upstream
+
             
-=======
+
             dispose();
 
->>>>>>> Stashed changes
+
         }
     }//GEN-LAST:event_btnCorrigirActionPerformed
 

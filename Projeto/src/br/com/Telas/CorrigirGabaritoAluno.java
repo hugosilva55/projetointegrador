@@ -2091,11 +2091,11 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_txtAnoActionPerformed
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-<<<<<<< Updated upstream
-=======
+
+
         Main main = new Main(this.tipoUser);
         main.setVisible(true);
->>>>>>> Stashed changes
+
         dispose();
     }//GEN-LAST:event_jLabel22MouseClicked
 
