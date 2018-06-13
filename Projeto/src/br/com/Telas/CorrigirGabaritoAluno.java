@@ -1745,12 +1745,13 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             }else{  
             resultFinal.setClassificacao("Classificado");
             }
-            resultFinalDAO.salvarResultadoFinal(resultFinal);
+            resultFinalDAO.salvarResultadoFinal(resultFinal); 
             LimparCampos();
-            
+            atualizarClassificacao(Ano, Curso);
             dispose();
            }     
         }
+                
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed
@@ -2786,8 +2787,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void atualizarClassificacao(String ano, String curso){
-        
-        
+            
         //Retornar todos os dados por curso e ano   
         for (ResultadoFinal rf : resultFinalDAO.listarAprovadosClassificadosPorCursoAno(ano, curso)) {
                         
@@ -2796,7 +2796,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             
             //Pesquisar resultado final pelo id
             ResultadoFinal idEncontrado = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", id);
-            System.out.println(idEncontrado.getIdResultadoFinal());
+            //System.out.println(idEncontrado.getIdResultadoFinal());
+            //System.out.println("");
             idEncontrado.setClassificacao("Classificado");
             resultFinalDAO.salvarResultadoFinal(idEncontrado);
                            
@@ -2804,12 +2805,15 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         
         //Setar os 40 como aprovado
         for (ResultadoFinal rf : resultFinalDAO.listar40Melhores(ano, curso)) {
+            
+            //System.out.println(rf.getIdResultadoFinal());
+            
             //Recuperar o id dos particantes
             int id = rf.getIdResultadoFinal();
             
             //Pesquisar resultado final pelo id
             ResultadoFinal idEncontrado = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", id);
-            System.out.println(idEncontrado.getIdResultadoFinal());
+            //System.out.println(idEncontrado.getIdResultadoFinal());
             idEncontrado.setClassificacao("Aprovado");
             resultFinalDAO.salvarResultadoFinal(idEncontrado);
             
