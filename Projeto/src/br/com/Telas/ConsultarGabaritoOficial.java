@@ -206,7 +206,7 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, " Selecione uma linha!! ");
         } else {
             gabaritoOfic = gabaritoOficDAO.pesquisarGabaritoOficId("idGabarito", (int) tbGabaritoOfic1.getValueAt(linha, 0));
-            CadastrarGabaritoOficial  cadGabaritoOfic = new CadastrarGabaritoOficial ();
+            CadastrarGabaritoOficial  cadGabaritoOfic = new CadastrarGabaritoOficial (this.tipoUser);
             cadGabaritoOfic.gabaritoOfic = gabaritoOfic;
             cadGabaritoOfic.atualizarCampos();
             cadGabaritoOfic.setVisible(true);
