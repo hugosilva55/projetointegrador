@@ -245,7 +245,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if (funcDAO.chequeCPF("cpf", txtCPF.getText()) == false) {
+        if (funcDAO.chequeCPF("cpf", txtCPF.getText()) == false || funcionario.getIdFuncionario() != 0) {
             if (txtNome.getText().equals("") || txtCPF.getText().equals("") || txtEmail.getText().equals("")
                     || txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
                 JOptionPane.showMessageDialog(this, "Existem Campos em Branco");
