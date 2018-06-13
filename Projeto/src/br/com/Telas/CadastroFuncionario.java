@@ -27,7 +27,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtNome.setBorder(lineBorder);
-        txtCPF.setBorder(lineBorder);
+        //txtCPF.setBorder(lineBorder);
         txtEmail.setBorder(lineBorder);
         txtSenha.setBorder(lineBorder);
         txtLogin.setBorder(lineBorder);
@@ -179,17 +179,16 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jPanel3.add(filler1, new org.netbeans.lib.awtextra.AbsoluteConstraints(395, 100, 2, 230));
 
         try {
-            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###-####")));
+            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        txtCPF.setText("");
-        txtCPF.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtCPFKeyTyped(evt);
+        txtCPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCPFActionPerformed(evt);
             }
         });
-        jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 330, 30));
+        jPanel3.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 320, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -276,9 +275,9 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
 
-    private void txtCPFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCPFKeyTyped
+    private void txtCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCPFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCPFKeyTyped
+    }//GEN-LAST:event_txtCPFActionPerformed
 
     /**
      * @param args the command line arguments

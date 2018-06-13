@@ -165,7 +165,6 @@ public class Login extends javax.swing.JFrame {
             if (funcionario != null) {
                 Main main = new Main();
                 main.setVisible(true);
-                dispose();
                 limparCampos();
                 //Nessa parte chama a tela principal, que sera chamada dps uqe o login
                 //for confirmado

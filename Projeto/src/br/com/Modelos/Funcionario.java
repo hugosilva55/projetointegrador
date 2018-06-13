@@ -19,7 +19,7 @@ public class Funcionario {
     private String nomeFuncionario;
     @Column(length = 25, nullable = false)
     private String email;
-    @Column(length = 11, nullable = false)
+    @Column(length = 20, nullable = false)
     private String cpf;
     @Column(length = 25, nullable = false)
     private String loginFunc;
