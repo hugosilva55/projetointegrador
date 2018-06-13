@@ -174,11 +174,6 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
                 txAnoActionPerformed(evt);
             }
         });
-        txAno.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txAnoKeyTyped(evt);
-            }
-        });
         jPanel2.add(txAno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 110, 30));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
@@ -348,19 +343,6 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
             }      
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void txAnoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txAnoKeyTyped
-        
-        int ascii = evt.getKeyChar();
-        if(!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)){
-            evt.consume();
-        }
-        if(txAno.getText().length() >= 5){
-            evt.consume();
-        }
-                
-                
-    }//GEN-LAST:event_txAnoKeyTyped
 
 
     /**
