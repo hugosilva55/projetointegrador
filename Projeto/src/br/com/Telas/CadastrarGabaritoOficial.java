@@ -19,9 +19,10 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
 
     GabaritoOficial gabaritoOfic = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
-    
+
     String Ano;
     String Curso;
+    private String tipoUser;
 
     /**
      * Creates new form GabaritoOficial
@@ -29,8 +30,15 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     public CadastrarGabaritoOficial() {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
-        txtAnoLetivo.setBorder(lineBorder );
+        txtAnoLetivo.setBorder(lineBorder);
 
+    }
+
+    public CadastrarGabaritoOficial(String tipo) {
+        initComponents();
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txtAnoLetivo.setBorder(lineBorder);
+        this.tipoUser = tipo;
     }
 
     /**
@@ -1511,7 +1519,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    private void atualizarDados(){
+    private void atualizarDados() {
         jrAlternativaA20.setActionCommand("A");
         jrAlternativaA19.setActionCommand("A");
         jrAlternativaA18.setActionCommand("A");
@@ -1532,7 +1540,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaA3.setActionCommand("A");
         jrAlternativaA2.setActionCommand("A");
         jrAlternativaA1.setActionCommand("A");
-        
+
         jrAlternativaB20.setActionCommand("B");
         jrAlternativaB19.setActionCommand("B");
         jrAlternativaB18.setActionCommand("B");
@@ -1553,8 +1561,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaB3.setActionCommand("B");
         jrAlternativaB2.setActionCommand("B");
         jrAlternativaB1.setActionCommand("B");
-        
-                
+
         jrAlternativaC20.setActionCommand("C");
         jrAlternativaC19.setActionCommand("C");
         jrAlternativaC18.setActionCommand("C");
@@ -1575,8 +1582,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaC3.setActionCommand("C");
         jrAlternativaC2.setActionCommand("C");
         jrAlternativaC1.setActionCommand("C");
-        
-                
+
         jrAlternativaD20.setActionCommand("D");
         jrAlternativaD19.setActionCommand("D");
         jrAlternativaD18.setActionCommand("D");
@@ -1597,8 +1603,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaD3.setActionCommand("D");
         jrAlternativaD2.setActionCommand("D");
         jrAlternativaD1.setActionCommand("D");
-        
-                
+
         jrAlternativaE20.setActionCommand("E");
         jrAlternativaE19.setActionCommand("E");
         jrAlternativaE18.setActionCommand("E");
@@ -1619,7 +1624,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         jrAlternativaE3.setActionCommand("E");
         jrAlternativaE2.setActionCommand("E");
         jrAlternativaE1.setActionCommand("E");
-        
+
         Ano = txtAnoLetivo.getText();
         Curso = String.valueOf(jcCurso.getSelectedItem());
     }
@@ -1639,7 +1644,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 || bgAlternativa15.isSelected(null) || bgAlternativa16.isSelected(null)
                 || bgAlternativa17.isSelected(null) || bgAlternativa18.isSelected(null)
                 || bgAlternativa19.isSelected(null) || bgAlternativa20.isSelected(null)
-                || txtAnoLetivo.getText().equals(""))  {
+                || txtAnoLetivo.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos !!! ");
         } else {
@@ -1666,12 +1671,12 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
             gabaritoOfic.setResposta19(bgAlternativa19.getSelection().getActionCommand());
             gabaritoOfic.setResposta20(bgAlternativa20.getSelection().getActionCommand());
 
-           if(!gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso)){
-                
-                  JOptionPane.showMessageDialog(null, "O gabarito com o Ano: "+Ano+ ", e o Curso: " +Curso+ " já existe!!!");
-            }else{
-                  gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
-                   LimparCampos();
+            if (!gabaritoOficDAO.listarGabaritoPorCursoAno(Ano, Curso)) {
+
+                JOptionPane.showMessageDialog(null, "O gabarito com o Ano: " + Ano + ", e o Curso: " + Curso + " já existe!!!");
+            } else {
+                gabaritoOficDAO.salvarGabaritoOficial(gabaritoOfic);
+                LimparCampos();
             }
         }
     }//GEN-LAST:event_btSalvarActionPerformed
@@ -1921,97 +1926,97 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
     }//GEN-LAST:event_jrAlternativaB19ActionPerformed
 
     private void jrAlternativaA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA1ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA1ActionPerformed
 
     private void jrAlternativaA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA2ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA2ActionPerformed
 
     private void jrAlternativaA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA3ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA3ActionPerformed
 
     private void jrAlternativaA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA4ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA4ActionPerformed
 
     private void jrAlternativaA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA5ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA5ActionPerformed
 
     private void jrAlternativaA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA6ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA6ActionPerformed
 
     private void jrAlternativaA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA7ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA7ActionPerformed
 
     private void jrAlternativaA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA8ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA8ActionPerformed
 
     private void jrAlternativaA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA9ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA9ActionPerformed
 
     private void jrAlternativaA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA10ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA10ActionPerformed
 
     private void jrAlternativaA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA11ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA11ActionPerformed
 
     private void jrAlternativaA12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA12ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA12ActionPerformed
 
     private void jrAlternativaA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA13ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA13ActionPerformed
 
     private void jrAlternativaA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA14ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA14ActionPerformed
 
     private void jrAlternativaA15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA15ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA15ActionPerformed
 
     private void jrAlternativaA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA16ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA16ActionPerformed
 
     private void jrAlternativaA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA17ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA17ActionPerformed
 
     private void jrAlternativaA18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA18ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA18ActionPerformed
 
     private void jrAlternativaA19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA19ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA19ActionPerformed
 
     private void jrAlternativaA20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaA20ActionPerformed
-        
+
     }//GEN-LAST:event_jrAlternativaA20ActionPerformed
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
-        ConsultarGabaritoOficial consultarGabarito = new ConsultarGabaritoOficial();
+        ConsultarGabaritoOficial consultarGabarito = new ConsultarGabaritoOficial(this.tipoUser);
         consultarGabarito.setVisible(true);
         dispose();
     }//GEN-LAST:event_btPesquisarActionPerformed
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUser);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel22MouseClicked
-    
+
     void atualizarCampos() {
 
         switch (gabaritoOfic.getResposta1()) {
@@ -2354,7 +2359,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
                 bgAlternativa20.setSelected(jrAlternativaE20.getModel(), true);
                 break;
         }
-        
+
         txtAnoLetivo.setText(gabaritoOfic.getProcessoSeletivo());
         jcCurso.setSelectedItem(gabaritoOfic.getCurso());
     }

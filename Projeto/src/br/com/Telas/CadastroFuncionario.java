@@ -22,6 +22,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
 
     Funcionario funcionario = new Funcionario();
     FuncionarioDAO funcDAO = new FuncionarioDAO();
+    private String tipoUser;
 
     /**
      * Creates new form CadastrarFuncionario
@@ -34,6 +35,17 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtEmail.setBorder(lineBorder);
         txtSenha.setBorder(lineBorder);
         txtLogin.setBorder(lineBorder);
+    }
+
+    public CadastroFuncionario(String tipo) {
+        initComponents();
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txtNome.setBorder(lineBorder);
+        //txtCPF.setBorder(lineBorder);
+        txtEmail.setBorder(lineBorder);
+        txtSenha.setBorder(lineBorder);
+        txtLogin.setBorder(lineBorder);
+        this.tipoUser = tipo;
     }
 
     /**
@@ -241,7 +253,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         txtEmail.setText(funcionario.getEmail());
         txtLogin.setText(funcionario.getLoginFunc());
         txtNome.setText(funcionario.getNomeFuncionario());
-        txtSenha.setText(funcionario.getSenhaFunc());
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -272,13 +283,13 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        ConsultarFuncionario consultarFunc = new ConsultarFuncionario();
+        ConsultarFuncionario consultarFunc = new ConsultarFuncionario(this.tipoUser);
         consultarFunc.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUser);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked

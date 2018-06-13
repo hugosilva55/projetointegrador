@@ -18,17 +18,24 @@ import javax.swing.border.LineBorder;
  * @author jonat
  */
 public class PesquisarParticipantes extends javax.swing.JFrame {
-    
+
     Participante participante = new Participante();
     ParticipanteDAO participanteDAO = new ParticipanteDAO();
-    
+
     CorrigirGabaritoAluno cga = new CorrigirGabaritoAluno();
-    
-    
+    private String tipoUsuario;
+
     public PesquisarParticipantes() {
         initComponents();
-          LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
-          txAno.setBorder(lineBorder );
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txAno.setBorder(lineBorder);
+    }
+
+    public PesquisarParticipantes(String tipo) {
+        initComponents();
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txAno.setBorder(lineBorder);
+        this.tipoUsuario = tipo;
     }
 
     /**
@@ -201,30 +208,35 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
-        
+
         //Recuperar valores
         String AnoLetivo = txAno.getText();
         String curso = jcbCurso.getSelectedItem().toString();
-        atualizarTabela(AnoLetivo,curso);           
+        atualizarTabela(AnoLetivo, curso);
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     private void btnCorrigirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCorrigirActionPerformed
-       int linha = tableParicipantes.getSelectedRow();
-       
+        int linha = tableParicipantes.getSelectedRow();
+
         if (linha == -1) {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
-        }else{
+        } else {
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tableParicipantes.getValueAt(linha, 0));
             cga.Ano = txAno.getText();
             cga.Curso = String.valueOf(jcbCurso.getSelectedItem());
             cga.nomeParticipante = String.valueOf(tableParicipantes.getValueAt(tableParicipantes.getSelectedRow(), 1));
             cga.setVisible(true);
+<<<<<<< Updated upstream
             
+=======
+            dispose();
+
+>>>>>>> Stashed changes
         }
     }//GEN-LAST:event_btnCorrigirActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUsuario);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
@@ -282,9 +294,8 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField txAno;
     // End of variables declaration//GEN-END:variables
 
- public void atualizarTabela(String ano, String curso){
-        listarParticipantesTableModel modelo = new 
-        listarParticipantesTableModel(participanteDAO.listarParticipantesPorCurso(ano,curso));
+    public void atualizarTabela(String ano, String curso) {
+        listarParticipantesTableModel modelo = new listarParticipantesTableModel(participanteDAO.listarParticipantesPorCurso(ano, curso));
         tableParicipantes.setModel(modelo);
-    } 
+    }
 }

@@ -19,10 +19,15 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
 
     GabaritoOficial gabaritoOfic = new GabaritoOficial();
     GabaritoOficialDAO gabaritoOficDAO = new GabaritoOficialDAO();
-
+    private String tipoUser;
     public ConsultarGabaritoOficial() {
         initComponents();
         atualizarTabela();
+    }
+        public ConsultarGabaritoOficial(String tipo) {
+        initComponents();
+        atualizarTabela();
+        this.tipoUser = tipo;
     }
     
     public void atualizarTabela(){
@@ -225,7 +230,7 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUser);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked

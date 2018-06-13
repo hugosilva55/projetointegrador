@@ -20,13 +20,18 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
 
     ResultadoFinal resultFinal = new ResultadoFinal();
     ResultadoFinalDAO resultFinalDAO = new ResultadoFinalDAO();
-
+    private String tipoUser;
     /**
      * Creates new form ConsultarFuncionario
      */
     public ConsultarResultadoFinal() {
         initComponents();
         atualizarTabela();
+    }
+        public ConsultarResultadoFinal(String tipo) {
+        initComponents();
+        atualizarTabela();
+        this.tipoUser = tipo;
     }
 
     public void atualizarTabela() {
@@ -205,7 +210,7 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUser);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked

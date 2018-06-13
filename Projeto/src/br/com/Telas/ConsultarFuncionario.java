@@ -19,13 +19,18 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
 
     Funcionario func = new Funcionario();
     FuncionarioDAO funcDAO = new FuncionarioDAO();
-
+    private String tipoUser;
     /**
      * Creates new form ConsultarFuncionario
      */
     public ConsultarFuncionario() {
         initComponents();
         atualizarTabela();
+    }
+       public ConsultarFuncionario(String tipo) {
+        initComponents();
+        atualizarTabela();
+        this.tipoUser = tipo;
     }
 
     public void atualizarTabela() {
@@ -213,7 +218,7 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUser);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked

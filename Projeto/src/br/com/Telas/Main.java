@@ -5,17 +5,73 @@
  */
 package br.com.Telas;
 
+import br.com.Modelos.Funcionario;
+
 /**
  *
  * @author jonat
  */
 public class Main extends javax.swing.JFrame {
 
+    Funcionario funcionario = new Funcionario();
+    private boolean userFuncionario = true;
+    private boolean cadGabaritoOfic = true;
+    public String tipoUsuario;
+
     /**
      * Creates new form Main
      */
     public Main() {
         initComponents();
+    }
+
+    public Main(String tipo) {
+        initComponents();
+        this.tipoUsuario = tipo;
+        lbUsuario.setText(tipoUsuario);
+
+        if (tipoUsuario.equals("Funcionario")) {
+            lbCadFunc.enable(false);
+            jLabel10.enable(false);
+            lbCadGab.enable(false);
+            jLabel13.enable(false);
+            userFuncionario = true;
+            cadGabaritoOfic = false;
+            lbListaResult.enable(false);
+            lbConsulFunc.enable(false);
+            lbConsulGabOfci.enable(false);
+            lbConsulAva.enable(false);
+            lbResultadosFinais.enable(false);
+        }
+        else{
+            userFuncionario = false;
+        }
+    }
+
+    public Main(Funcionario funcionario) {
+
+        this.funcionario = funcionario;
+        initComponents();
+        this.tipoUsuario = funcionario.getNivelDeAcesso();
+        lbUsuario.setText(tipoUsuario);
+
+        if (funcionario.getNivelDeAcesso().equalsIgnoreCase("Funcionario") || tipoUsuario.equalsIgnoreCase("Funcionario")) {
+            lbCadFunc.enable(false);
+            jLabel10.enable(false);
+            lbCadGab.enable(false);
+            jLabel13.enable(false);
+            userFuncionario = true;
+            cadGabaritoOfic = false;
+            lbListaResult.enable(false);
+            lbConsulFunc.enable(false);
+            lbConsulGabOfci.enable(false);
+            lbConsulAva.enable(false);
+            lbResultadosFinais.enable(false);
+
+        }else{
+            userFuncionario = false;
+        }
+
     }
 
     /**
@@ -30,35 +86,37 @@ public class Main extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel9 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        lbCadFunc = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        lbCadPArt = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        lbCadGab = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        lbCadAva = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
+        lbListaResult = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        lbUsuario = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        lbConsulFunc = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
+        lbConsulPart = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
+        lbConsulGabOfci = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
+        lbConsulAva = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
+        lbResultadosFinais = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -81,13 +139,13 @@ public class Main extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/team (1).png"))); // NOI18N
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbCadFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/team (1).png"))); // NOI18N
+        lbCadFunc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
+                lbCadFuncMouseClicked(evt);
             }
         });
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, 70));
+        jPanel4.add(lbCadFunc, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, 70));
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(42, 44, 138));
@@ -99,13 +157,13 @@ public class Main extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/graduate.png"))); // NOI18N
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbCadPArt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/graduate.png"))); // NOI18N
+        lbCadPArt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
+                lbCadPArtMouseClicked(evt);
             }
         });
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 70));
+        jPanel5.add(lbCadPArt, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 70));
 
         jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(42, 44, 138));
@@ -117,13 +175,13 @@ public class Main extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/feedback.png"))); // NOI18N
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbCadGab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/feedback.png"))); // NOI18N
+        lbCadGab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel6MouseClicked(evt);
+                lbCadGabMouseClicked(evt);
             }
         });
-        jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 70));
+        jPanel7.add(lbCadGab, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 70));
 
         jLabel13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(42, 44, 138));
@@ -135,13 +193,13 @@ public class Main extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/tick-box-with-a-check-mark.png"))); // NOI18N
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbCadAva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/tick-box-with-a-check-mark.png"))); // NOI18N
+        lbCadAva.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
+                lbCadAvaMouseClicked(evt);
             }
         });
-        jPanel8.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 80));
+        jPanel8.add(lbCadAva, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 80));
 
         jLabel14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(42, 44, 138));
@@ -153,13 +211,13 @@ public class Main extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/list.png"))); // NOI18N
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbListaResult.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/list.png"))); // NOI18N
+        lbListaResult.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                lbListaResultMouseClicked(evt);
             }
         });
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, -1));
+        jPanel3.add(lbListaResult, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(42, 44, 138));
@@ -169,6 +227,12 @@ public class Main extends javax.swing.JFrame {
 
         jPanel9.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 138, 113));
 
+        jLabel24.setText("Usuário:");
+        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        lbUsuario.setText("??");
+        jPanel9.add(lbUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, -1, -1));
+
         jTabbedPane1.addTab("Cadastrar", jPanel9);
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
@@ -176,13 +240,13 @@ public class Main extends javax.swing.JFrame {
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/consultar Funcionario.png"))); // NOI18N
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbConsulFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/consultar Funcionario.png"))); // NOI18N
+        lbConsulFunc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+                lbConsulFuncMouseClicked(evt);
             }
         });
-        jPanel11.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, 70));
+        jPanel11.add(lbConsulFunc, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, 70));
 
         jLabel12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(42, 44, 138));
@@ -192,13 +256,13 @@ public class Main extends javax.swing.JFrame {
         jPanel12.setBackground(new java.awt.Color(255, 255, 255));
         jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/candidate.png"))); // NOI18N
-        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbConsulPart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/candidate.png"))); // NOI18N
+        lbConsulPart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel16MouseClicked(evt);
+                lbConsulPartMouseClicked(evt);
             }
         });
-        jPanel12.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 70));
+        jPanel12.add(lbConsulPart, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 70));
 
         jLabel17.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(42, 44, 138));
@@ -208,13 +272,13 @@ public class Main extends javax.swing.JFrame {
         jPanel13.setBackground(new java.awt.Color(255, 255, 255));
         jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/consulta gabarito.png"))); // NOI18N
-        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbConsulGabOfci.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/consulta gabarito.png"))); // NOI18N
+        lbConsulGabOfci.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel18MouseClicked(evt);
+                lbConsulGabOfciMouseClicked(evt);
             }
         });
-        jPanel13.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 70));
+        jPanel13.add(lbConsulGabOfci, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 70));
 
         jLabel19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(42, 44, 138));
@@ -224,13 +288,13 @@ public class Main extends javax.swing.JFrame {
         jPanel14.setBackground(new java.awt.Color(255, 255, 255));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/consulta Avaliacao.png"))); // NOI18N
-        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbConsulAva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/consulta Avaliacao.png"))); // NOI18N
+        lbConsulAva.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel20MouseClicked(evt);
+                lbConsulAvaMouseClicked(evt);
             }
         });
-        jPanel14.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 80));
+        jPanel14.add(lbConsulAva, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 80));
 
         jLabel21.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(42, 44, 138));
@@ -240,13 +304,13 @@ public class Main extends javax.swing.JFrame {
         jPanel15.setBackground(new java.awt.Color(255, 255, 255));
         jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/list.png"))); // NOI18N
-        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbResultadosFinais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/imagens/list.png"))); // NOI18N
+        lbResultadosFinais.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel22MouseClicked(evt);
+                lbResultadosFinaisMouseClicked(evt);
             }
         });
-        jPanel15.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, -1));
+        jPanel15.add(lbResultadosFinais, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 11, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(42, 44, 138));
@@ -363,35 +427,41 @@ public class Main extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel15MouseClicked
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-        CadastroFuncionario cf = new CadastroFuncionario();
-        cf.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel3MouseClicked
+    private void lbCadFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCadFuncMouseClicked
+        if (!userFuncionario) {
+            CadastroFuncionario cf = new CadastroFuncionario(tipoUsuario);
+            cf.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_lbCadFuncMouseClicked
 
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        CadastroParticipante cp = new CadastroParticipante();
+    private void lbCadPArtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCadPArtMouseClicked
+        CadastroParticipante cp = new CadastroParticipante(tipoUsuario);
         cp.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jLabel4MouseClicked
+    }//GEN-LAST:event_lbCadPArtMouseClicked
 
-    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        CadastrarGabaritoOficial cg = new CadastrarGabaritoOficial();
-        cg.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel6MouseClicked
+    private void lbCadGabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCadGabMouseClicked
+        if (!userFuncionario) {
+            CadastrarGabaritoOficial cg = new CadastrarGabaritoOficial(tipoUsuario);
+            cg.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_lbCadGabMouseClicked
 
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        PesquisarParticipantes pp = new PesquisarParticipantes();
+    private void lbCadAvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbCadAvaMouseClicked
+        PesquisarParticipantes pp = new PesquisarParticipantes(tipoUsuario);
         pp.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jLabel7MouseClicked
+    }//GEN-LAST:event_lbCadAvaMouseClicked
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        ListarPorAnoCurso listAno = new ListarPorAnoCurso();
-        listAno.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel8MouseClicked
+    private void lbListaResultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbListaResultMouseClicked
+        if (!userFuncionario) {
+            ListarPorAnoCurso listAno = new ListarPorAnoCurso(tipoUsuario);
+            listAno.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_lbListaResultMouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         Login lg = new Login();
@@ -399,35 +469,43 @@ public class Main extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jLabel2MouseClicked
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        ConsultarFuncionario conf = new ConsultarFuncionario();
-        conf.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel5MouseClicked
+    private void lbConsulFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbConsulFuncMouseClicked
+        if (!userFuncionario) {
+            ConsultarFuncionario conf = new ConsultarFuncionario(tipoUsuario);
+            conf.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_lbConsulFuncMouseClicked
 
-    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
-        ConsultarParticipante conp = new ConsultarParticipante();
+    private void lbConsulPartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbConsulPartMouseClicked
+        ConsultarParticipante conp = new ConsultarParticipante(tipoUsuario);
         conp.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jLabel16MouseClicked
+    }//GEN-LAST:event_lbConsulPartMouseClicked
 
-    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
-        ConsultarGabaritoOficial conOf = new ConsultarGabaritoOficial();
-        conOf.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel18MouseClicked
+    private void lbConsulGabOfciMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbConsulGabOfciMouseClicked
+        if (!userFuncionario) {
+            ConsultarGabaritoOficial conOf = new ConsultarGabaritoOficial(tipoUsuario);
+            conOf.setVisible(true);
+            dispose();
+        }
+    }//GEN-LAST:event_lbConsulGabOfciMouseClicked
 
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        ConsultarResultadoFinal conRF = new ConsultarResultadoFinal();
+    private void lbConsulAvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbConsulAvaMouseClicked
+        if (!userFuncionario) {
+        ConsultarResultadoFinal conRF = new ConsultarResultadoFinal(tipoUsuario);
         conRF.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jLabel20MouseClicked
+        }
+    }//GEN-LAST:event_lbConsulAvaMouseClicked
 
-    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-        ListarPorAnoCurso listAno = new ListarPorAnoCurso();
+    private void lbResultadosFinaisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbResultadosFinaisMouseClicked
+        if (!userFuncionario) {
+        ListarPorAnoCurso listAno = new ListarPorAnoCurso(tipoUsuario);
         listAno.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jLabel22MouseClicked
+        }
+    }//GEN-LAST:event_lbResultadosFinaisMouseClicked
 
     /**
      * @param args the command line arguments
@@ -472,21 +550,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -504,5 +573,16 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lbCadAva;
+    private javax.swing.JLabel lbCadFunc;
+    private javax.swing.JLabel lbCadGab;
+    private javax.swing.JLabel lbCadPArt;
+    private javax.swing.JLabel lbConsulAva;
+    private javax.swing.JLabel lbConsulFunc;
+    private javax.swing.JLabel lbConsulGabOfci;
+    private javax.swing.JLabel lbConsulPart;
+    private javax.swing.JLabel lbListaResult;
+    private javax.swing.JLabel lbResultadosFinais;
+    private javax.swing.JLabel lbUsuario;
     // End of variables declaration//GEN-END:variables
 }

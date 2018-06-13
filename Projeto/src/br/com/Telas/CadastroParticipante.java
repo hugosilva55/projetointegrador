@@ -6,6 +6,7 @@
 package br.com.Telas;
 
 import br.com.DAO.ParticipanteDAO;
+import br.com.Modelos.Funcionario;
 import br.com.Modelos.Participante;
 import java.awt.Color;
 import javax.swing.JOptionPane;
@@ -19,21 +20,43 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
     Participante part = new Participante();
     ParticipanteDAO partDAO = new ParticipanteDAO();
-    
+    Funcionario func = new Funcionario();
+    private String tipoUser;
+
     public CadastroParticipante() {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
-        txtNome.setBorder(lineBorder );
-        txtCPF.setBorder(lineBorder );
-        txtEmail.setBorder(lineBorder );
-        txtMae.setBorder(lineBorder );
-        txtNacionalidade.setBorder(lineBorder );
-        txtPai.setBorder(lineBorder );
-        txtRG.setBorder(lineBorder );
-        txtdataNascimento.setBorder(lineBorder );
+        txtNome.setBorder(lineBorder);
+        txtCPF.setBorder(lineBorder);
+        txtEmail.setBorder(lineBorder);
+        txtMae.setBorder(lineBorder);
+        txtNacionalidade.setBorder(lineBorder);
+        txtPai.setBorder(lineBorder);
+        txtRG.setBorder(lineBorder);
+        txtdataNascimento.setBorder(lineBorder);
         txtAno.setBorder(lineBorder);
         txtFone.setBorder(lineBorder);
-       
+        jLabel16.setText(tipoUser);
+
+    }
+
+    public CadastroParticipante(String TipoUser) {
+        initComponents();
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txtNome.setBorder(lineBorder);
+        txtCPF.setBorder(lineBorder);
+        txtEmail.setBorder(lineBorder);
+        txtMae.setBorder(lineBorder);
+        txtNacionalidade.setBorder(lineBorder);
+        txtPai.setBorder(lineBorder);
+        txtRG.setBorder(lineBorder);
+        txtdataNascimento.setBorder(lineBorder);
+        txtAno.setBorder(lineBorder);
+        txtFone.setBorder(lineBorder);
+        this.tipoUser = TipoUser;
+        jLabel16.setText(tipoUser);
+        
+
     }
 
     /**
@@ -80,6 +103,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtAno = new javax.swing.JFormattedTextField();
         txtdataNascimento = new javax.swing.JFormattedTextField();
         txtFone = new javax.swing.JFormattedTextField();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -291,6 +315,9 @@ public class CadastroParticipante extends javax.swing.JFrame {
         }
         jPanel3.add(txtFone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 320, 30));
 
+        jLabel16.setText("??");
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, -1, -1));
+
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 420));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 550));
@@ -304,7 +331,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     }//GEN-LAST:event_jcCursoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ConsultarParticipante pesquisaPart = new ConsultarParticipante();
+        ConsultarParticipante pesquisaPart = new ConsultarParticipante(this.tipoUser);
         pesquisaPart.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -323,13 +350,13 @@ public class CadastroParticipante extends javax.swing.JFrame {
 
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
 
-        if(txtNome.getText().equals("") || txtEmail.getText().equals("") ||
-            txtCPF.getText().equals("") || txtdataNascimento.getText().equals("") ||
-            txtNacionalidade.getText().equals("") || txtRG.getText().equals("") || txtMae.getText().equals("") ||
-            txtPai.getText().equals("") || txtAno.getText().equals("") || txtFone.getText().equals("") ){
+        if (txtNome.getText().equals("") || txtEmail.getText().equals("")
+                || txtCPF.getText().equals("") || txtdataNascimento.getText().equals("")
+                || txtNacionalidade.getText().equals("") || txtRG.getText().equals("") || txtMae.getText().equals("")
+                || txtPai.getText().equals("") || txtAno.getText().equals("") || txtFone.getText().equals("")) {
 
-            JOptionPane.showMessageDialog(null,"Por favor, preencha todos os campos!!");
-        }else{
+            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos!!");
+        } else {
 
             part.setNome(txtNome.getText());
             part.setEmail(txtEmail.getText());
@@ -344,7 +371,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
             part.setNomePai(txtPai.getText());
             part.setAno(txtAno.getText());
             part.setTelefone(txtFone.getText());
-            
+
             partDAO.salvarParticipante(part);
             limparCampos();
 
@@ -352,12 +379,12 @@ public class CadastroParticipante extends javax.swing.JFrame {
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUser);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
 
-    public void limparCampos(){
+    public void limparCampos() {
         txtNome.setText("");
         txtEmail.setText("");
         txtCPF.setText("");
@@ -368,9 +395,10 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtPai.setText("");
         txtAno.setText("");
         part = new Participante();
-        
+
     }
-    public void atualizarDados(){
+
+    public void atualizarDados() {
         txtNome.setText(part.getNome());
         txtEmail.setText(part.getEmail());
         txtCPF.setText(part.getCPF());
@@ -380,9 +408,13 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtMae.setText(part.getNomeMae());
         txtPai.setText(part.getNomePai());
         txtAno.setText(part.getAno());
+<<<<<<< Updated upstream
         txtFone.setText(part.getTelefone());
+=======
+
+>>>>>>> Stashed changes
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -431,6 +463,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

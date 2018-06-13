@@ -165,9 +165,9 @@ public class Login extends javax.swing.JFrame {
             try { 
                 funcionario = funcDAO.verificarUsuario(txtLogin.getText(), funcDAO.criptografia(txtSenha.getText())); 
                 if (funcionario != null) { 
-                    Main main = new Main(); 
-                    main.setVisible(true); 
-                    dispose(); 
+                    Main main = new Main(funcionario); 
+                    main.setVisible(true);
+                    dispose();
                     limparCampos(); 
                     //Nessa parte chama a tela principal, que sera chamada dps uqe o login 
                     //for confirmado 

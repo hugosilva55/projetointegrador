@@ -35,7 +35,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
 
     String ano;
     String curso;
-
+    private String tipoUsuario;
     /**
      * Creates new form Tela_Ordenacao
      */
@@ -43,6 +43,12 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         initComponents();
         modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoFinal());
         TabelaResultado.setModel(modeloTabela);
+    }
+        public ListarPorAnoCurso(String tipo) {
+        initComponents();
+        modeloTabela = new ResultadoFinalTableModel(resultadoFinalDAO.listarResultadoFinal());
+        TabelaResultado.setModel(modeloTabela);
+        this.tipoUsuario = tipo;
     }
 
     /**
@@ -230,7 +236,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPesquisarActionPerformed
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
+        Main main = new Main(this.tipoUsuario);
         main.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel12MouseClicked

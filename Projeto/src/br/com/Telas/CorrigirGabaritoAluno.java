@@ -36,11 +36,18 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     String Ano;
     String nomeParticipante;
     String Redação;
-
+    
+    private String tipoUser;
     /**
      * Creates new form GabaritoOficial
      */
     public CorrigirGabaritoAluno() {
+        initComponents();
+        LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
+        txtRedacao.setBorder(lineBorder);
+
+    }
+    public CorrigirGabaritoAluno(String tipo) {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtRedacao.setBorder(lineBorder);
@@ -2084,6 +2091,11 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_txtAnoActionPerformed
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+<<<<<<< Updated upstream
+=======
+        Main main = new Main(this.tipoUser);
+        main.setVisible(true);
+>>>>>>> Stashed changes
         dispose();
     }//GEN-LAST:event_jLabel22MouseClicked
 
