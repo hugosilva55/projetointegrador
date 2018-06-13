@@ -11,6 +11,9 @@ import java.awt.Color;
 import java.util.Set;
 import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
+import java.io.UnsupportedEncodingException;
+import java.security.*;
+
 /**
  *
  * @author root
@@ -248,17 +251,22 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Existem Campos em Branco");
 
             } else {
-                funcionario.setCpf(txtCPF.getText());
-                funcionario.setEmail(txtEmail.getText());
-                funcionario.setLoginFunc(txtLogin.getText());
-                funcionario.setNomeFuncionario(txtNome.getText());
-                funcionario.setSenhaFunc((txtSenha.getText()));
-                funcionario.setNivelDeAcesso(String.valueOf(cbNivelAcesso.getSelectedItem()));
-                funcDAO.salvarFuncionario(funcionario);
-                limparCampos();
+                try {
+                    funcionario.setCpf(txtCPF.getText());
+                    funcionario.setEmail(txtEmail.getText());
+                    funcionario.setLoginFunc(txtLogin.getText());
+                    funcionario.setNomeFuncionario(txtNome.getText());
+                    funcionario.setSenhaFunc(funcDAO.criptografia(txtSenha.getText()));
+                    funcionario.setNivelDeAcesso(String.valueOf(cbNivelAcesso.getSelectedItem()));
+                    funcDAO.salvarFuncionario(funcionario);
+                    limparCampos();
+
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
             }
-        }else{
-            JOptionPane.showMessageDialog(this,"CPF Existente !!!");
+        } else {
+            JOptionPane.showMessageDialog(this, "CPF Existente !!!");
         }
 
     }//GEN-LAST:event_jButton4ActionPerformed

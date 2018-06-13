@@ -23,9 +23,9 @@ public class Funcionario {
     private String cpf;
     @Column(length = 25, nullable = false)
     private String loginFunc;
-    @Column(length = 25, nullable = false)
+    @Column(length = 50, nullable = false)
     private String senhaFunc;
-    @Column(length = 25, nullable = false)
+    @Column(length = 50, nullable = false)
     private String NivelDeAcesso;
 
     public String getEmail() {
