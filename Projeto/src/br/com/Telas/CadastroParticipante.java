@@ -380,7 +380,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtMae.setText(part.getNomeMae());
         txtPai.setText(part.getNomePai());
         txtAno.setText(part.getAno());
-        
+        txtFone.setText(part.getTelefone());
     }
     
     /**
