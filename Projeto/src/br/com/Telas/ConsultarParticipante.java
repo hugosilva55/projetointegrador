@@ -203,13 +203,19 @@ public class ConsultarParticipante extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        Main main = new Main();
+        main.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel12MouseClicked
+
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         int linha = tbParticipante.getSelectedRow();
         if(linha == -1){
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
         }else if(JOptionPane.showConfirmDialog
-        (rootPane, "Deseja realmente excluir?", "Excluir"
-        , JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
+            (rootPane, "Deseja realmente excluir?", "Excluir"
+                , JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
             participante = participanteDAO.pesquisarParticipanteId("idUsuario",(int) tbParticipante.getValueAt(linha, 0));
             participanteDAO.excluirParticipante(participante);
             atualizarTabela();
@@ -229,12 +235,6 @@ public class ConsultarParticipante extends javax.swing.JFrame {
             dispose();
         }
     }//GEN-LAST:event_jLabel1MouseClicked
-
-    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        Main main = new Main();
-        main.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
      * @param args the command line arguments

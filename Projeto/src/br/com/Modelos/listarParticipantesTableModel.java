@@ -1,23 +1,21 @@
-
 package br.com.Modelos;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
+public class listarParticipantesTableModel extends AbstractTableModel {
 
-public class listarParticipantesTableModel extends AbstractTableModel{
-    
-    private List<ResultadoFinal> resultadoFinal = new ArrayList<>();
-    private String[] colunas = {"Id", "Participante","Nota","Classificação"};
+    private List<Participante> participantes = new ArrayList<>();
+    private String[] colunas = {"Id", "Participantes"};
 
-public listarParticipantesTableModel(List<Participante> participantes) {
-        this.resultadoFinal = resultadoFinal;
+    public listarParticipantesTableModel(List<Participante> participantes) {
+        this.participantes = participantes;
     }
 
     @Override
     public int getRowCount() {
-        return resultadoFinal.size();
+        return participantes.size();
     }
 
     @Override
@@ -27,17 +25,12 @@ public listarParticipantesTableModel(List<Participante> participantes) {
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        ResultadoFinal resultado = resultadoFinal.get(rowIndex);
+        Participante participante = participantes.get(rowIndex);
         switch (columnIndex) {
             case 0:
-                return resultado.getIdResultadoFinal();
+                return participante.getIdUsuario();
             case 1:
-                return resultado.getNomeParticipante();
-            case 2:
-                return resultado.getNotaFinal();
-            case 3:
-                return resultado.getClassificacao();    
-
+                return participante.getNome();
         }
         return null;
     }
@@ -48,11 +41,8 @@ public listarParticipantesTableModel(List<Participante> participantes) {
                 return colunas[0];
             case 1:
                 return colunas[1];
-            case 2:
-                return colunas[2];
-            case 3:
-                return colunas[3];
         }
         return null;
-    }    
+    }
+
 }

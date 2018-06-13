@@ -382,8 +382,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        CorrigirGabaritoAluno cgAluno = new CorrigirGabaritoAluno();
-        cgAluno.setVisible(true);
+        PesquisarParticipantes pp = new PesquisarParticipantes();
+        pp.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel7MouseClicked
 
