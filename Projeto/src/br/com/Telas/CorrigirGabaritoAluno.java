@@ -1750,7 +1750,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             
             
             atualizarClassificacao(Ano, Curso);
-            pesqPart.setVisible(true);
             dispose();
            }     
         }
@@ -2086,8 +2085,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_txtAnoActionPerformed
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
-        Main main = new Main();
-        main.setVisible(true);
+        
         dispose();
     }//GEN-LAST:event_jLabel22MouseClicked
 
