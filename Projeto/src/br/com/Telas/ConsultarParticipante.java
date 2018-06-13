@@ -232,7 +232,7 @@ public class ConsultarParticipante extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
         } else {
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tbParticipante.getValueAt(linha, 0));
-            CadastroParticipante cadPart = new CadastroParticipante();
+            CadastroParticipante cadPart = new CadastroParticipante(this.tipoUsuario);
             cadPart.part = participante;
             cadPart.atualizarDados();
             cadPart.setVisible(true);
