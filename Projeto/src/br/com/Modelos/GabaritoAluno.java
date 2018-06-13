@@ -14,51 +14,51 @@ public class GabaritoAluno {
     @Id
     @GeneratedValue  
     private int idGabarito;
-    @Column(length = 50, nullable = false)
+    @Column(length = 50, nullable = true)
     private String curso;
-    @Column(length = 50, nullable = false)
+    @Column(length = 50, nullable = true)
     private String ProcessoSeletivo;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta1;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta2;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta3;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta4;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta5;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta6;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta7;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta8;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta9;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta10;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta11;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta12;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta13;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta14;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta15;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta16;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta17;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta18;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta19;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String Resposta20;
-    @Column(length = 1, nullable = false)
+    @Column(length = 1, nullable = true)
     private String redacao;
     
 
