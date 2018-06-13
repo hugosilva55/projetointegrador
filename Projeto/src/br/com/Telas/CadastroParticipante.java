@@ -394,6 +394,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtMae.setText("");
         txtPai.setText("");
         txtAno.setText("");
+        txtFone.setText("");
         part = new Participante();
 
     }
