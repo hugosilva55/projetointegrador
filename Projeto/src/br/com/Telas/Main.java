@@ -227,11 +227,15 @@ public class Main extends javax.swing.JFrame {
 
         jPanel9.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 138, 113));
 
+        jLabel24.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(0, 1, 76));
         jLabel24.setText("Usuário:");
-        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
+        lbUsuario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lbUsuario.setForeground(new java.awt.Color(0, 1, 76));
         lbUsuario.setText("??");
-        jPanel9.add(lbUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, -1, -1));
+        jPanel9.add(lbUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 140, -1));
 
         jTabbedPane1.addTab("Cadastrar", jPanel9);
 
@@ -537,7 +541,7 @@ public class Main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main().setVisible(true);
+                new Main().setVisible(false);
             }
         });
     }

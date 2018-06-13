@@ -271,7 +271,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PesquisarParticipantes().setVisible(true);
+                new PesquisarParticipantes().setVisible(false);
             }
         });
     }

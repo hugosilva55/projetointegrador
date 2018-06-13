@@ -446,7 +446,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroParticipante().setVisible(true);
+                new CadastroParticipante().setVisible(false);
             }
         });
     }

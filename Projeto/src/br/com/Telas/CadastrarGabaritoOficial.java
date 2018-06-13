@@ -31,6 +31,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtAnoLetivo.setBorder(lineBorder);
+        
 
     }
 
@@ -2482,7 +2483,7 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastrarGabaritoOficial().setVisible(true);
+                new CadastrarGabaritoOficial().setVisible(false);
             }
         });
     }

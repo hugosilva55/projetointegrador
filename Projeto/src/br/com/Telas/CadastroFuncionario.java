@@ -161,7 +161,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jPanel3.add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 330, 30));
 
         cbNivelAcesso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cbNivelAcesso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Funcionario", "Estágiario", "Jovem Aprendiz " }));
+        cbNivelAcesso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Funcionario", " " }));
         jPanel3.add(cbNivelAcesso, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 330, 30));
 
         jButton2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -329,7 +329,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroFuncionario().setVisible(true);
+                new CadastroFuncionario().setVisible(false);
             }
         });
     }
