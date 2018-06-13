@@ -15,9 +15,9 @@ public class Funcionario {
     @Id
     @GeneratedValue
     private int idFuncionario;
-    @Column(length = 25, nullable = false)
+    @Column(length = 50, nullable = false)
     private String nomeFuncionario;
-    @Column(length = 25, nullable = false)
+    @Column(length = 100, nullable = false)
     private String email;
     @Column(length = 20, nullable = false)
     private String cpf;

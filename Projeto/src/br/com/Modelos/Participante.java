@@ -17,7 +17,7 @@ public class Participante {
     private int idUsuario;
     @Column(length = 50, nullable = false)
     private String nome;
-    @Column(length = 50, nullable = false)
+    @Column(length = 100, nullable = false)
     private String email;
     @Column(length = 50, nullable = false)
     private String estadoCivil;
@@ -35,9 +35,9 @@ public class Participante {
     private String RG;
     @Column(length = 50, nullable = false)
     private String nomePai;
-    @Column(length = 50, nullable = false)
+    @Column(length = 100, nullable = false)
     private String nomeMae;
-    @Column(length = 50, nullable = false)
+    @Column(length = 100, nullable = false)
     private String ano;
     @Column(length = 50, nullable = false)
     private String telefone;

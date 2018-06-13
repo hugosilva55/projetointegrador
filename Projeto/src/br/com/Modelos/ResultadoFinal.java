@@ -19,7 +19,7 @@ public class ResultadoFinal {
     private int idResultadoFinal;
     @Column(length = 50, nullable = false)
     private String nomeParticipante;
-    @Column(length = 10, nullable = false)
+    @Column(length = 100, nullable = false)
     private double notaFinal;
     @Column(length = 50, nullable = false)
     private String classificacao;
