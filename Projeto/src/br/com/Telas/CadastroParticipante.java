@@ -201,7 +201,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 230, 70, -1));
 
         jcSexo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jcSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino", " " }));
+        jcSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino" }));
         jPanel3.add(jcSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, 150, 30));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
