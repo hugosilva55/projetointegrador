@@ -135,7 +135,7 @@ VALUES
 (NULL,"633.314.633-96","62.928.481-6","Ciências Contabeis","16/11/1994","Natalie@gmail.com","Solteiro(a)","Brasileiro(a)","Natalie Luiza Sara Fogaça","Amber Julia Gabriela da Luz","Tyler da Luz Fogaça","Feminino","2018.1","(46) 99508-7435"),
 (NULL,"733.314.633-96","72.928.481-6","Ciências Contabeis","16/11/1994","Eloise@gmail.com","Solteiro(a)","Brasileiro(a)","Eloise Luiza Sara Fogaça","Abbie Julia Gabriela da Luz","Nathan da Luz Fogaça","Feminino","2018.1","(46) 99608-7431"),
 (NULL,"833.314.633-96","82.928.481-6","Ciências Contabeis","16/11/1994","Lauren@gmail.com","Solteiro(a)","Brasileiro(a)","Lauren Luiza Sara Fogaça","Lydia Julia Gabriela da Luz","Aidan da Luz Fogaça","Feminino","2018.1","(46) 99708-7432"),
-(NULL,"933.314.633-96","92.928.481-6","Ciências Contabeis","16/11/1994","Naomi@gmail.com","Solteiro(a)","Brasileiro(a)","Naomi Luiza Sara Fogaça","Daisy Julia Gabriela da Luz","Mohammed da Luz Fogaça","Feminino","2018.1","(46) 99808-7433")
+(NULL,"933.314.633-96","92.928.481-6","Ciências Contabeis","16/11/1994","Naomi@gmail.com","Solteiro(a)","Brasileiro(a)","Naomi Luiza Sara Fogaça","Daisy Julia Gabriela da Luz","Mohammed da Luz Fogaça","Feminino","2018.1","(46) 99808-7433"),
 
 (NULL,"210.226.613-37","36.145.655-4","Educação Fisica","16/09/1999","hadassamarli@gmail.com","Solteiro(a)","Brasileiro(a)","Hadassa Marli Ribeiro","Daiane Josefa Cristiane Almada","Marcos Vinicius Porto","Feminino","2018.1","(62) 99241-8450"),
 (NULL,"002.522.873-04","18.517.643-4","Educação Fisica","29/06/1999","luizjulio@gmail.com","Solteiro(a)","Brasileiro(a)","Luiz Julio Ribeiro","Teresinha Brenda Aparício","Romerio Ribeiro Aparício","Masculino","2018.1","(64) 98751-5998"),
