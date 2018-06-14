@@ -72,7 +72,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
             setTransacao(getSessao().beginTransaction());
         
         List<ResultadoFinal> resultadoFinal = sessao.createCriteria(ResultadoFinal.class).add(Restrictions.eq("ano", ano)).
-                add(Restrictions.eq("curso", curso)).addOrder(Order.asc("classificacao").desc("notaFinal")).list();
+                add(Restrictions.eq("curso", curso)).addOrder(Order.asc("classificacao")).addOrder(Order.desc("notaFinal")).list();
         sessao.close();
         
         if (resultadoFinal.isEmpty()) {
