@@ -24,7 +24,7 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
 
         if (result.getIdResultadoFinal() == 0) {
             if (adicionar(result)) {
-                JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
+                JOptionPane.showMessageDialog(null, "Gabarito Corrigido com Sucesso!!!");
             }
         } else {
             atualizar(result);
@@ -35,14 +35,14 @@ public class ResultadoFinalDAO extends GenericDAO<ResultadoFinal> {
 
         if (result.getIdResultadoFinal() == id) {
             if (adicionar(result)) {
-                JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
+                JOptionPane.showMessageDialog(null, "Gabarito Editado com Sucesso!!!");
             }
         }
     }
 
     public void excluirResultadoFinal(ResultadoFinal result) {
         if (remover(result)) {
-            JOptionPane.showMessageDialog(null, "Resultado Final excluido com sucesso!!");
+            JOptionPane.showMessageDialog(null, "Gabarito Excluído com Sucesso!!");
         }
     }
 

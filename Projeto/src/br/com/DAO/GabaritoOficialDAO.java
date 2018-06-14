@@ -41,7 +41,7 @@ public class GabaritoOficialDAO extends GenericDAO<GabaritoOficial> {
 
     public void excluirGabaritoOficial(GabaritoOficial gabaritoOfic) {
         if (remover(gabaritoOfic)) {
-            JOptionPane.showMessageDialog(null, " Gabarito Excluido Com Sucesso !!!");
+            JOptionPane.showMessageDialog(null, " Gabarito Excluído Com Sucesso !!!");
 
         }
     }

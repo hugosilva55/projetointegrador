@@ -36,7 +36,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtdataNascimento.setBorder(lineBorder);
         txtAno.setBorder(lineBorder);
         txtFone.setBorder(lineBorder);
-        jLabel16.setText(tipoUser);
+       
 
     }
 
@@ -54,7 +54,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtAno.setBorder(lineBorder);
         txtFone.setBorder(lineBorder);
         this.tipoUser = TipoUser;
-        jLabel16.setText(tipoUser);
         
 
     }
@@ -103,7 +102,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
         txtAno = new javax.swing.JFormattedTextField();
         txtdataNascimento = new javax.swing.JFormattedTextField();
         txtFone = new javax.swing.JFormattedTextField();
-        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -230,7 +228,7 @@ public class CadastroParticipante extends javax.swing.JFrame {
         jPanel3.add(txtPai, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 370, 30));
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel10.setText("Nome do Mãe:");
+        jLabel10.setText("Nome da Mãe:");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, -1, -1));
 
         txtMae.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -314,9 +312,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         jPanel3.add(txtFone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 320, 30));
-
-        jLabel16.setText("??");
-        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, -1, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 790, 420));
 
@@ -464,7 +459,6 @@ public class CadastroParticipante extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

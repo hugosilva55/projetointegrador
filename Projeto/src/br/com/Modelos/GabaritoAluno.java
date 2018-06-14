@@ -378,4 +378,18 @@ public class GabaritoAluno {
         this.curso = curso;
     }
 
+    /**
+     * @param redacao the redacao to set
+     */
+    public void setRedacao(String redacao) {
+        this.redacao = redacao;
+    }
+
+    /**
+     * @return the redacao
+     */
+    public String getRedacao() {
+        return redacao;
+    }
+
 }

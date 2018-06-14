@@ -157,7 +157,7 @@ public class ListarPorAnoCurso extends javax.swing.JFrame {
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, 30));
 
         jcbCurso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jcbCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Fisica", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
+        jcbCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Análise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Fisica", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
         jPanel2.add(jcbCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 190, 30));
 
         btnPesquisar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N

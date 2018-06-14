@@ -200,7 +200,7 @@ public class ConsultarResultadoFinal extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         int linha = tbResultadoFinal.getSelectedRow();
         if (linha == -1) {
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+            JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else if (JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Excluir",
                 JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
             resultFinal = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", (int) tbResultadoFinal.getValueAt(linha, 0));

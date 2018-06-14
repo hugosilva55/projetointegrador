@@ -259,9 +259,8 @@ public class CadastrarGabaritoOficial extends javax.swing.JFrame {
         titulo.setText("Cadastrar Gabarito Oficial");
         jPanel3.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 230, -1));
 
-        jcCurso.setEditable(true);
         jcCurso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jcCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enfermagem", "Fisioterapia", "Educação Física", "Administração", "Ciências Contábeis", "Analise e Desenvolvimento de Sistemas", "Psicologia", "Serviço Social", "Direito" }));
+        jcCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enfermagem", "Fisioterapia", "Educação Física", "Administração", "Ciências Contábeis", "Análise e Desenvolvimento de Sistemas", "Psicologia", "Serviço Social", "Direito" }));
         jcCurso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcCursoActionPerformed(evt);

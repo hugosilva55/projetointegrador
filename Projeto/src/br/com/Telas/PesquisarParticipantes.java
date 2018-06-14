@@ -100,7 +100,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, -1, 30));
 
         jcbCurso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jcbCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Fisica", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
+        jcbCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Análise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Fisica", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
         jPanel4.add(jcbCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 190, 30));
 
         btnPesquisar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -219,15 +219,14 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         CorrigirGabaritoAluno cga = new CorrigirGabaritoAluno(this.tipoUsuario);
 
         if (linha == -1) {
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+            JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else {
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tableParicipantes.getValueAt(linha, 0));
             cga.Ano = txAno.getText();
             cga.Curso = String.valueOf(jcbCurso.getSelectedItem());
             cga.nomeParticipante = String.valueOf(tableParicipantes.getValueAt(tableParicipantes.getSelectedRow(), 1));
             cga.setVisible(true);
-            dispose();
-
+            
         }
     }//GEN-LAST:event_btnCorrigirActionPerformed
 

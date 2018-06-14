@@ -188,7 +188,6 @@
             </Component>
             <Component class="javax.swing.JComboBox" name="jcCurso">
               <Properties>
-                <Property name="editable" type="boolean" value="true"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="14" style="0"/>
                 </Property>
@@ -199,7 +198,7 @@
                     <StringItem index="2" value="Educa&#xe7;&#xe3;o F&#xed;sica"/>
                     <StringItem index="3" value="Administra&#xe7;&#xe3;o"/>
                     <StringItem index="4" value="Ci&#xea;ncias Cont&#xe1;beis"/>
-                    <StringItem index="5" value="Analise e Desenvolvimento de Sistemas"/>
+                    <StringItem index="5" value="An&#xe1;lise e Desenvolvimento de Sistemas"/>
                     <StringItem index="6" value="Psicologia"/>
                     <StringItem index="7" value="Servi&#xe7;o Social"/>
                     <StringItem index="8" value="Direito"/>

@@ -24,18 +24,18 @@ public class FuncionarioDAO extends GenericDAO<Funcionario> {
 
         if (func.getIdFuncionario() == 0) {
             if (adicionar(func)) {
-                JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
+                JOptionPane.showMessageDialog(null, "Funcionario Adicionado com Sucesso!!!");
             }
         } else {
             if (atualizar(func)) {
-                JOptionPane.showMessageDialog(null, "Funcionario editado com sucesso!!");
+                JOptionPane.showMessageDialog(null, "Funcionario Editado com sucesso!!!");
             }
         }
     }
 
     public void excluirFuncionario(Funcionario func) {
         if (remover(func)) {
-            JOptionPane.showMessageDialog(null, "Funcionario excluido com sucesso!!");
+            JOptionPane.showMessageDialog(null, "Funcionario Excluído com sucesso!!");
         }
     }
 

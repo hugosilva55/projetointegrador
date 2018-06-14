@@ -22,18 +22,18 @@ public class ParticipanteDAO extends GenericDAO<Participante> {
 
         if (part.getIdUsuario() == 0) {
             if (adicionar(part)) {
-                JOptionPane.showMessageDialog(null, "Adicionado com sucesso. Boa sorte!!");
+                JOptionPane.showMessageDialog(null, "Participante Adicionado com Sucesso!!!");
             }
         } else {
             if (atualizar(part)) {
-                JOptionPane.showMessageDialog(null, "Participante editado com sucesso!!");
+                JOptionPane.showMessageDialog(null, "Participante Editado com Sucesso!!!");
             }
         }
     }
 
     public void excluirParticipante(Participante part) {
         if (remover(part)) {
-            JOptionPane.showMessageDialog(null, "Participante excluido com sucesso!!");
+            JOptionPane.showMessageDialog(null, "Participante Excluído com Sucesso!!!");
         }
     }
 

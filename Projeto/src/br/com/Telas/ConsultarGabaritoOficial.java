@@ -203,7 +203,7 @@ public class ConsultarGabaritoOficial extends javax.swing.JFrame {
        int linha = tbGabaritoOfic1.getSelectedRow();
         if (linha == -1) {
 
-            JOptionPane.showMessageDialog(null, " Selecione uma linha!! ");
+            JOptionPane.showMessageDialog(null, "Por favor, selecione uma linha!! ");
         } else {
             gabaritoOfic = gabaritoOficDAO.pesquisarGabaritoOficId("idGabarito", (int) tbGabaritoOfic1.getValueAt(linha, 0));
             CadastrarGabaritoOficial  cadGabaritoOfic = new CadastrarGabaritoOficial (this.tipoUser);

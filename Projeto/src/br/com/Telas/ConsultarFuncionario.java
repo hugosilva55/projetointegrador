@@ -194,7 +194,7 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         int linha = tbFuncionario.getSelectedRow();
         if (linha == -1) {
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+            JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else {
             func = funcDAO.pesquisarFuncionarioId("idFuncionario", (int) tbFuncionario.getValueAt(linha, 0));
             CadastroFuncionario cadFunc = new CadastroFuncionario(this.tipoUser);
@@ -208,7 +208,7 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
        int linha = tbFuncionario.getSelectedRow();
         if (linha == -1) {
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+            JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else if (JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Excluir",
                 JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
             func = funcDAO.pesquisarFuncionarioId("idFuncionario", (int) tbFuncionario.getValueAt(linha, 0));

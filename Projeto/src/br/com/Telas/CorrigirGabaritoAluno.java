@@ -53,7 +53,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtRedacao.setBorder(lineBorder);
         this.tipoUser = tipo;
-        jLabel25.setText(tipoUser);
 
     }
 
@@ -93,7 +92,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         txtAno = new javax.swing.JTextField();
         txtCurso = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
         btSalvar = new javax.swing.JButton();
@@ -258,8 +256,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         txtCurso.setBackground(new java.awt.Color(255, 255, 255));
         txtCurso.setBorder(null);
 
-        jLabel25.setText("jLabel25");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -274,9 +270,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(txtCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addComponent(jLabel25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(181, 654, Short.MAX_VALUE)
                         .addComponent(jLabel22)))
                 .addGap(18, 18, 18))
         );
@@ -290,9 +284,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                         .addComponent(txtCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel25))))
+                        .addComponent(jLabel22)))
                 .addContainerGap())
         );
 
@@ -1740,12 +1732,12 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
 
         atualizarDados();
-
+        
         if (txtRedacao.getText().equals("")) {
 
             JOptionPane.showMessageDialog(null, "Preencha o Campo de Redação !!! ");
-        } else {
-
+            
+        }else {
             gabaritoOficial = gabaritoOficDAO.pesquisarGabaritoPorCursoAno(Ano, Curso);
 
             if (gabaritoOficial == null) {
@@ -1768,6 +1760,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 LimparCampos();
                 atualizarClassificacao(Ano, Curso);
                 dispose();
+                
             }
         }
 
@@ -2694,7 +2687,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

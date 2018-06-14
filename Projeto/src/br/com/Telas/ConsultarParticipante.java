@@ -217,7 +217,7 @@ public class ConsultarParticipante extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         int linha = tbParticipante.getSelectedRow();
         if (linha == -1) {
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+            JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else if (JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Excluir",
                  JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tbParticipante.getValueAt(linha, 0));
@@ -229,7 +229,7 @@ public class ConsultarParticipante extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         int linha = tbParticipante.getSelectedRow();
         if (linha == -1) {
-            JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
+            JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else {
             participante = participanteDAO.pesquisarParticipanteId("idUsuario", (int) tbParticipante.getValueAt(linha, 0));
             CadastroParticipante cadPart = new CadastroParticipante(this.tipoUsuario);
