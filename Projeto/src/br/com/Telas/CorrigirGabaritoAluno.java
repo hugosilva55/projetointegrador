@@ -30,14 +30,14 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     CalcularNotas calcNotas = new CalcularNotas();
     ResultadoFinal resultFinal = new ResultadoFinal();
     ResultadoFinalDAO resultFinalDAO = new ResultadoFinalDAO();
+    ConsultarResultadoFinal resultadoFinal = new ConsultarResultadoFinal();
 
     String Curso;
     String Ano;
     String nomeParticipante;
     String Redação;
-
+    
     private String tipoUser;
-
     /**
      * Creates new form GabaritoOficial
      */
@@ -47,13 +47,10 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         txtRedacao.setBorder(lineBorder);
 
     }
-
     public CorrigirGabaritoAluno(String tipo) {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtRedacao.setBorder(lineBorder);
-        this.tipoUser = tipo;
-        jLabel25.setText(tipoUser);
 
     }
 
@@ -93,7 +90,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         txtAno = new javax.swing.JTextField();
         txtCurso = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         titulo = new javax.swing.JLabel();
         btSalvar = new javax.swing.JButton();
@@ -258,8 +254,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
         txtCurso.setBackground(new java.awt.Color(255, 255, 255));
         txtCurso.setBorder(null);
 
-        jLabel25.setText("jLabel25");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -267,17 +261,13 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 285, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 285, Short.MAX_VALUE)
                         .addComponent(txtAno, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(txtCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addComponent(jLabel25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel22)))
+                    .addComponent(jLabel22))
                 .addGap(18, 18, 18))
         );
         jPanel2Layout.setVerticalGroup(
@@ -290,9 +280,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                         .addComponent(txtCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel22)
-                            .addComponent(jLabel25))))
+                        .addComponent(jLabel22)))
                 .addContainerGap())
         );
 
@@ -1745,32 +1733,32 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Preencha o Campo de Redação !!! ");
         } else {
-
+           
             gabaritoOficial = gabaritoOficDAO.pesquisarGabaritoPorCursoAno(Ano, Curso);
-
-            if (gabaritoOficial == null) {
-                JOptionPane.showMessageDialog(null, "Não existe Gabarito Cadastrado com o mesmo Ano: " + Ano + " e Curso: " + Curso);
-            } else {
-                PesquisarParticipantes pesqPart = new PesquisarParticipantes();
-                ConsultarResultadoFinal consultarRF = new ConsultarResultadoFinal();
-                resultFinal.setNomeParticipante(nomeParticipante);
-                resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas(), Integer.valueOf(txtRedacao.getText())));
-                resultFinal.setAno(Ano);
-                resultFinal.setCurso(Curso);
-
-                //Verificar se o participante zerou em algum bloco
-                if (linguagem() == 0 || matematica() == 0 || cNatureza() == 0 || cHumanas() == 0 || Integer.valueOf(txtRedacao.getText()) == 0) {
-                    resultFinal.setClassificacao("Desclassificado");
-                } else {
-                    resultFinal.setClassificacao("Classificado");
-                }
-                resultFinalDAO.salvarResultadoFinal(resultFinal);
-                LimparCampos();
-                atualizarClassificacao(Ano, Curso);
-                dispose();
+                
+            if(gabaritoOficial == null){
+                JOptionPane.showMessageDialog(null, "Não existe Gabarito Cadastrado com o mesmo Ano: "+Ano+ " e Curso: "+Curso);
+            }else{
+            PesquisarParticipantes pesqPart = new PesquisarParticipantes();
+            ConsultarResultadoFinal consultarRF = new ConsultarResultadoFinal();
+            resultFinal.setNomeParticipante(nomeParticipante);
+            resultFinal.setNotaFinal(calcNotas.calcNota(Curso, linguagem(), matematica(), cNatureza(), cHumanas(),Integer.valueOf(txtRedacao.getText())));
+            resultFinal.setAno(Ano);
+            resultFinal.setCurso(Curso);
+            
+            //Verificar se o participante zerou em algum bloco
+            if(linguagem() == 0 || matematica()==0 || cNatureza()==0 || cHumanas()==0 ||Integer.valueOf(txtRedacao.getText()) == 0 ){
+                resultFinal.setClassificacao("Desclassificado");
+            }else{  
+            resultFinal.setClassificacao("Classificado");
             }
+            resultFinalDAO.salvarResultadoFinal(resultFinal); 
+            LimparCampos();
+            atualizarClassificacao(Ano, Curso);
+            dispose();
+           }     
         }
-
+                
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void jrAlternativaB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrAlternativaB3ActionPerformed
@@ -2094,9 +2082,8 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_jrAlternativaA20ActionPerformed
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
-        ConsultarResultadoFinal resultadoFinal = new ConsultarResultadoFinal(this.tipoUser);
-        resultadoFinal.setVisible(true);
-        dispose();
+       resultadoFinal.setVisible(true);
+       dispose();
     }//GEN-LAST:event_btPesquisarActionPerformed
 
     private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
@@ -2104,6 +2091,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_txtAnoActionPerformed
 
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+
 
         Main main = new Main(this.tipoUser);
         main.setVisible(true);
@@ -2113,10 +2101,10 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
     private void txtRedacaoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRedacaoKeyTyped
         int ascii = evt.getKeyChar();
-        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+        if(!(ascii >= 48 && ascii <=57 ) && !(ascii == evt.VK_BACK_SPACE)){
             evt.consume();
         }
-        if (txtRedacao.getText().length() >= 3) {
+        if(txtRedacao.getText().length() >= 3){
             evt.consume();
         }
     }//GEN-LAST:event_txtRedacaoKeyTyped
@@ -2463,7 +2451,7 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
                 bgAlternativa20.setSelected(jrAlternativaE20.getModel(), true);
                 break;
         }
-
+          
         Redação = txtRedacao.getText();
     }
 
@@ -2694,7 +2682,6 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -2811,37 +2798,39 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
     private javax.swing.JTextField txtRedacao;
     // End of variables declaration//GEN-END:variables
 
-    private void atualizarClassificacao(String ano, String curso) {
-
+    private void atualizarClassificacao(String ano, String curso){
+            
         //Retornar todos os dados por curso e ano   
         for (ResultadoFinal rf : resultFinalDAO.listarAprovadosClassificadosPorCursoAno(ano, curso)) {
-
+                        
             //Recuperar o id dos particantes
             int id = rf.getIdResultadoFinal();
-
+            
             //Pesquisar resultado final pelo id
             ResultadoFinal idEncontrado = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", id);
             //System.out.println(idEncontrado.getIdResultadoFinal());
             //System.out.println("");
             idEncontrado.setClassificacao("Classificado");
             resultFinalDAO.salvarResultadoFinal(idEncontrado);
-
+                           
         }
-
+        
         //Setar os 40 como aprovado
         for (ResultadoFinal rf : resultFinalDAO.listar40Melhores(ano, curso)) {
-
+            
             //System.out.println(rf.getIdResultadoFinal());
+            
             //Recuperar o id dos particantes
             int id = rf.getIdResultadoFinal();
-
+            
             //Pesquisar resultado final pelo id
             ResultadoFinal idEncontrado = resultFinalDAO.pesquisarResultadoFinalId("idResultadoFinal", id);
             //System.out.println(idEncontrado.getIdResultadoFinal());
             idEncontrado.setClassificacao("Aprovado");
             resultFinalDAO.salvarResultadoFinal(idEncontrado);
-
+            
         }
-
+        
+        
     }
 }

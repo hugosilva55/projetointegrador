@@ -32,12 +32,16 @@ public class Main extends javax.swing.JFrame {
 
         if (tipoUsuario.equals("Funcionario")) {
             lbCadFunc.enable(false);
+            jLabel10.enable(false);
             lbCadGab.enable(false);
+            jLabel13.enable(false);
             userFuncionario = true;
             cadGabaritoOfic = false;
+            lbListaResult.enable(false);
             lbConsulFunc.enable(false);
             lbConsulGabOfci.enable(false);
             lbConsulAva.enable(false);
+            lbResultadosFinais.enable(false);
         }
         else{
             userFuncionario = false;
@@ -53,12 +57,16 @@ public class Main extends javax.swing.JFrame {
 
         if (funcionario.getNivelDeAcesso().equalsIgnoreCase("Funcionario") || tipoUsuario.equalsIgnoreCase("Funcionario")) {
             lbCadFunc.enable(false);
+            jLabel10.enable(false);
             lbCadGab.enable(false);
+            jLabel13.enable(false);
             userFuncionario = true;
             cadGabaritoOfic = false;
+            lbListaResult.enable(false);
             lbConsulFunc.enable(false);
             lbConsulGabOfci.enable(false);
             lbConsulAva.enable(false);
+            lbResultadosFinais.enable(false);
 
         }else{
             userFuncionario = false;
@@ -452,12 +460,11 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_lbCadAvaMouseClicked
 
     private void lbListaResultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbListaResultMouseClicked
-        
+        if (!userFuncionario) {
             ListarPorAnoCurso listAno = new ListarPorAnoCurso(tipoUsuario);
             listAno.setVisible(true);
             dispose();
-        
-        
+        }
     }//GEN-LAST:event_lbListaResultMouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
@@ -497,11 +504,11 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_lbConsulAvaMouseClicked
 
     private void lbResultadosFinaisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbResultadosFinaisMouseClicked
-       
+        if (!userFuncionario) {
         ListarPorAnoCurso listAno = new ListarPorAnoCurso(tipoUsuario);
         listAno.setVisible(true);
         dispose();
-        
+        }
     }//GEN-LAST:event_lbResultadosFinaisMouseClicked
 
     /**

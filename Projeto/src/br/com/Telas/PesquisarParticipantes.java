@@ -22,6 +22,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
     Participante participante = new Participante();
     ParticipanteDAO participanteDAO = new ParticipanteDAO();
 
+    CorrigirGabaritoAluno cga = new CorrigirGabaritoAluno();
     private String tipoUsuario;
 
     public PesquisarParticipantes() {
@@ -216,7 +217,6 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
 
     private void btnCorrigirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCorrigirActionPerformed
         int linha = tableParicipantes.getSelectedRow();
-        CorrigirGabaritoAluno cga = new CorrigirGabaritoAluno(this.tipoUsuario);
 
         if (linha == -1) {
             JOptionPane.showMessageDialog(rootPane, "Selecione unma linha!");
@@ -226,7 +226,11 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
             cga.Curso = String.valueOf(jcbCurso.getSelectedItem());
             cga.nomeParticipante = String.valueOf(tableParicipantes.getValueAt(tableParicipantes.getSelectedRow(), 1));
             cga.setVisible(true);
+
+            
+
             dispose();
+
 
         }
     }//GEN-LAST:event_btnCorrigirActionPerformed
