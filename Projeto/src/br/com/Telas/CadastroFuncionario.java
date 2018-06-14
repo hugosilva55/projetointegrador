@@ -281,7 +281,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "CPF Existente !!!");
             }
         } else {
-            JOptionPane.showMessageDialog(this, "login Existente !!!");
+            JOptionPane.showMessageDialog(this, "O Login Informado já Existe!!!");
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 

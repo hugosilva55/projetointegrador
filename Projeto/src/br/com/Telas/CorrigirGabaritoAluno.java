@@ -1737,6 +1737,9 @@ public class CorrigirGabaritoAluno extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(null, "Preencha o Campo de Redação !!! ");
             
+        }else if(Integer.valueOf(txtRedacao.getText())>400){
+            JOptionPane.showMessageDialog(null, "A nota maxima da Redação é 400 pontos !!! ");
+        
         }else {
             gabaritoOficial = gabaritoOficDAO.pesquisarGabaritoPorCursoAno(Ano, Curso);
 
