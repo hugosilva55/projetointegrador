@@ -31,7 +31,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtNome.setBorder(lineBorder);
-        //txtCPF.setBorder(lineBorder);
+        txtCPF.setBorder(lineBorder);
         txtEmail.setBorder(lineBorder);
         txtSenha.setBorder(lineBorder);
         txtLogin.setBorder(lineBorder);
@@ -41,7 +41,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         initComponents();
         LineBorder lineBorder = new LineBorder(Color.LIGHT_GRAY, 1, true);
         txtNome.setBorder(lineBorder);
-        //txtCPF.setBorder(lineBorder);
+        txtCPF.setBorder(lineBorder);
         txtEmail.setBorder(lineBorder);
         txtSenha.setBorder(lineBorder);
         txtLogin.setBorder(lineBorder);
@@ -256,7 +256,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if (funcDAO.chequeLogin("loginFunc", txtLogin.getText()) == false) {
+        if (funcDAO.chequeLogin("loginFunc", txtLogin.getText()) == false || funcionario.getIdFuncionario() != 0) {
             if (funcDAO.chequeCPF("cpf", txtCPF.getText()) == false || funcionario.getIdFuncionario() != 0) {
                 if (txtNome.getText().equals("") || txtCPF.getText().equals("") || txtEmail.getText().equals("")
                         || txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
