@@ -7,126 +7,427 @@
  * Author:  alves
  * Created: 08/06/2018
  */
---TABELA GABARITO OFICIAL
+/*--TABELA_GABARITO_OFICIAL*/
 
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Analise e Desenvolvimento de Sistemas');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Ciências Contabeis');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Enfermagem');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Direito');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Psicologia');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Serviço Social');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Fisioterapia');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Educação Fisica');
-INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) VALUES (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Administração');
+INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) 
+VALUES 
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Análise e Desenvolvimento de Sistemas'),
+(NULL, '2018.2', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Análise e Desenvolvimento de Sistemas'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Ciências Contabeis'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Enfermagem'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Direito'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Psicologia'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Serviço Social'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Fisioterapia'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Educação Fisica'),
+(NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Administração');
 
---TABELA DE FUNCIONARIO
+/*--TABELA_DE_FUNCIONARIO*/
 
-INSERT INTO `funcionario`(`idFuncionario`, `NivelDeAcesso`, `cpf`, `email`, `loginFunc`, `nomeFuncionario`, `senhaFunc`) VALUES (NULL,"Administrador", "123.223.555-98","admin@gmail.com","admin","admin","admin");
+INSERT INTO `funcionario`(`idFuncionario`, `NivelDeAcesso`, `cpf`, `email`, `loginFunc`, `nomeFuncionario`, `senhaFunc`) 
+VALUES 
+(NULL,"Administrador", "123.123.123-00","admin@gmail.com","admin","admin",MD5("admin"));
 
---TABELA DE PARTICIPANTE
+/*--TABELA_DE_PARTICIPANTE*/
 
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"249.355.263-60","45.285.440-4","Análise e Desenvolvimento de Sistemas","16/08/1997","email@gmail.com","Solteiro(a)","Brasileiro(a)","Elias Lucas Pinto","Helena Mirella Mariah Caldeira","Benício Cláudio Almeida","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"837.161.513-27","38.208.012-9","Análise e Desenvolvimento de Sistemas","12/02/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Cláudia Lucca Santos","Milena Caroline Daiane Fogaça","Luan Kevin Rodrigues","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"100.533.853-14","16.917.656-3","Análise e Desenvolvimento de Sistemas","22/10/1995","email@gmail.com","Solteiro(a)","Brasileiro(a)","Tereza Carla da Rosa","Aline Liz Hadassa da Mata","Fábio Raimundo Gomes","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"057.298.023-07","41.672.067-5","Análise e Desenvolvimento de Sistemas","04/05/1993","email@gmail.com","Solteiro(a)","Brasileiro(a)","Oliver Pedro Marcelo da Costa","Nina Daiane Silveira","Erick Gael Oliver Aparício","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"300.850.263-60","38.728.264-6","Análise e Desenvolvimento de Sistemas","05/12/1992","email@gmail.com","Solteiro(a)","Brasileiro(a)","Malu Maya Figueiredo","Alice Sandra Bernardes","Bruno Caio Pinto","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"281.060.163-15","10.733.340-5","Análise e Desenvolvimento de Sistemas","19/11/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Breno Lucca da Rosa","Aline Stella Sarah Souza","Isaac Sebastião Rodrigo Duarte","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"967.297.783-26","23.338.276-8","Análise e Desenvolvimento de Sistemas","01/03/2001","email@gmail.com","Solteiro(a)","Brasileiro(a)","Antônia Simone Ribeiro","Lorena Ester Raquel Brito","Diego Luís Kauê Galvão","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"689.116.103-72","47.927.431-9","Análise e Desenvolvimento de Sistemas","15/08/2000","email@gmail.com","Solteiro(a)","Brasileiro(a)","Elias Gael Lima","Fernanda Regina Joana Nascimento","Thomas Edson Yago Ramos","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"049.753.113-56","39.662.197-1","Análise e Desenvolvimento de Sistemas","14/07/1995","email@gmail.com","Solteiro(a)","Brasileiro(a)","Isabela Cláudia Olivia Rodrigues","Jennifer Isabel Patrícia da Mata","Cauê Martin Freitas","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"542.922.003-51","91.122.534-1","Análise e Desenvolvimento de Sistemas","06/05/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Henry Cláudio Vitor Rodrigues","Stefany Lúcia Laura Duarte","Kaio  Vinicius Freitas","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"446.962.643-00","46.865.693-5","Enfermagem","07/09/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Allana Isabella Costa","Emanuelly Priscila Araújo","Matheus Márcio Monteiro","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"355.366.723-04","13.938.993-3","Enfermagem","20/05/1997","email@gmail.com","Solteiro(a)","Brasileiro(a)","Mário Gustavo Nelson da Costa","Valentina Stefany Eliane Bernardes","Marcos da Costa Bernardes","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"950.108.673-97","18.655.516-7","Enfermagem","16/09/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Sarah Emanuelly Amanda Caldeira","Regina Rebeca Valentina Nogueira","Roberto Nogueira Caldeira","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"938.070.293-03","42.582.623-5","Enfermagem","27/06/1994","email@gmail.com","Solteiro(a)","Brasileiro(a)","Pedro Yuri Corte Real","Sophia Amanda da Costa","Pietro Corte da Costa","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"108.652.203-60","32.870.296-1","Enfermagem","27/06/1994","email@gmail.com","Solteiro(a)","Brasileiro(a)","Marli Daniela Pereira","Marlucia Pereira","Paulo Pereira","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"769.679.943-60","31.997.612-9","Enfermagem","15/10/1996","email@gmail.com","Solteiro(a)","Brasileiro(a)","Leonardo Thomas Martins","Nair Ana Isabelle Mendes","Leorio Martins Mendes","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"826.060.203-24","24.116.556-8","Enfermagem","19/09/1995","email@gmail.com","Solteiro(a)","Brasileiro(a)","Maria Alessandra Sales","Alana Carla da Luz","Mario Sales da Luz","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"948.436.873-59","19.788.611-5","Enfermagem","04/12/1995","email@gmail.com","Solteiro(a)","Brasileiro(a)","Thomas Leonardo Aragão","Sarah Mariana da Cunha","Tom Aragão da Cunha","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"859.572.593-49","28.448.557-3","Direito","21/08/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Luiza Ester Bernardes","Brenda Sônia Castro","Luiz Bernardes Castro","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"555.463.383-85","40.050.453-4","Direito","15/08/1993","email@gmail.com","Solteiro(a)","Brasileiro(a)","Luan Emanuel Ferreira","Hadassa Olivia Nogueira","Lucas Ferreira Nogueira","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"546.964.613-00","39.610.250-5","Direito","13/03/1992","email@gmail.com","Solteiro(a)","Brasileiro(a)","Emily Nair Tereza da Cruz","Tereza Marcela Laís Araújo","Emilio da Cruz Araújo","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"252.834.323-00","29.420.960-8","Direito","07/09/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Mateus Marcos Vinicius Severino Assunção","Rebeca Tereza Heloise Pereira","Afonso Severino Pereira","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"669.631.763-53","16.607.664-8","Direito","20/05/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Francisca Joana Teixeira","Melissa Laura Almeida","Francisco Teixeira Almeida","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"287.593.763-41","11.356.853-8","Ciências Contabeis","16/09/1997","email@gmail.com","Solteiro(a)","Brasileiro(a)","Isaac Anderson Yago Silveira","Benedita Ester Carolina da Cruz","Isaaf da Cruz Silveira","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"134.152.613-52","22.455.924-2","Ciências Contabeis","27/06/1995","email@gmail.com","Solteiro(a)","Brasileiro(a)","Isabelly Isabela Eloá Rodrigues","Lara Manuela Ana Cardoso","João Cardoso Rodrigues","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"395.666.363-26","46.623.299-8","Ciências Contabeis","27/06/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Mário Cavalcanti Melo","Lorena Tânia Cavalcanti","Lorenço Cavalcanti","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"333.314.633-96","12.928.481-6","Ciências Contabeis","15/10/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Cecília Luiza Sara Fogaça","Vera Julia Gabriela da Luz","Everaldo da Luz Fogaça","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"002.522.873-04","18.517.643-4","Educação Fisica","29/06/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Luiz Julio Ribeiro","Teresinha Brenda Aparício","Romerio Ribeiro Aparício","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"587.086.003-25","18.566.499-4","Educação Fisica","05/11/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Marlene Lívia Laura Nunes","Maria Nunes Dias","Henrique Dias Nunes","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"976.309.393-70","36.054.587-7","Educação Fisica","20/02/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Ricardo Ruan Kevin Barbosa","Elza Carla da Costa","Geraldo Rodrigues","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"210.226.613-37","36.145.655-4","Educação Fisica","16/09/1999","email@gmail.com","Solteiro(a)","Brasileiro(a)","Hadassa Marli Ribeiro","Daiane Josefa Cristiane Almada","Marcos Vinicius Porto","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"284.496.993-39","34.863.209-5","Administração","12/04/1991","email@gmail.com","Solteiro(a)","Brasileiro(a)","Miguel Juan Moura","Sophie Jennifer Luzia Mendes","Isaac Marcelo Fernandes","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"852.262.153-55","20.164.876-3","Administração","05/02/1990","email@gmail.com","Solteiro(a)","Brasileiro(a)","Josefa Olivia Andreia Pires","Alessandra Bárbara Barbosa","Sergio Costa","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"627.405.763-31","26.831.460-3","Administração","23/07/1997","email@gmail.com","Solteiro(a)","Brasileiro(a)","Renato Mário Pinto","Yasmin Giovanna Porto","Elias Hugo Brito","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"613.641.853-34","41.851.238-3","Administração","10/05/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Agatha Jéssica Rezende","Larissa Catarina Evelyn Ferreira","Thomas Nascimento","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"189.742.423-03","37.411.009-8","Serviço Social","20/02/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Sérgio Heitor Almeida","Ana Giovanna Aline Lopes","Enrico Paulo Alves","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"484.723.403-09","38.139.089-5","Serviço Social","28/05/1989","email@gmail.com","Solteiro(a)","Brasileiro(a)","Maya Gabriela Lopes","Cecília Elza Duarte","Otávio Osvaldo Pires","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"974.779.403-97","37.073.252-2","Serviço Social","29/11/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Vitor Nelson Barros","Gabrielly Cristiane Galvão","Ruan Gabriel Melo","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"897.716.673-00","44.267.657-8","Fisioterapia","12/05/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Mariana Daiane da Costa","Elaine Sebastiana Farias","Cauê Raul Ferreira","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"136.359.733-78","27.799.883-9","Fisioterapia","03/11/1994","email@gmail.com","Solteiro(a)","Brasileiro(a)","Noah Gael Francisco Bernardes","Liz Sarah Heloisa Costa","Heitor Marcos Gomes","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"828.082.593-28","18.778.203-9","Fisioterapia","20/03/1995","email@gmail.com","Solteiro(a)","Brasileiro(a)","Simone Joana Carvalho","Marlene Gabriela Viana","Vitor Caleb Jesus","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"283.959.443-90","27.067.290-4","Fisioterapia","15/08/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Kauê Gael Anthony Pires","Bruna Cristiane Almada","Carlos Assunção","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"940.822.183-43","37.355.737-1","Fisioterapia","10/05/1993","email@gmail.com","Solteiro(a)","Brasileiro(a)","Fernanda Carla Lara Cavalcanti","Sebastiana Cecília Assunção","Bruno Vitor Cardoso","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"642.795.383-44","35.551.663-9","Fisioterapia","02/10/1991","email@gmail.com","Solteiro(a)","Brasileiro(a)","Bryan Joaquim Ricardo Almeida","Olivia Julia Larissa Santos","Vitor Giovanni Aração","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"478.952.913-43","32.083.550-9","Psicologia","21/02/1997","email@gmail.com","Solteiro(a)","Brasileiro(a)","Luciana Alessandra Rezende","Ayla Vera Aragão","Renan Guilherme da Cunha","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"939.274.503-67","41.980.469-9","Psicologia","12/02/1993","email@gmail.com","Solteiro(a)","Brasileiro(a)","Carlos Nathan Nascimento","Adriana Analu Castro","Theo Giovanni da Mata","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"021.686.633-27","49.599.817-5","Psicologia","12/01/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Aline Pereira","Silvana Márcia Ferreira","Pietro Fábio Gomes","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"010.946.073-12","29.800.725-3","Psicologia","11/08/1997","email@gmail.com","Solteiro(a)","Brasileiro(a)","Bruno Lucca Fogaça","Helena Larissa Brenda Fogaça","Mateus Severino Alexandre da Costa","Masculino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"484.499.243-08","17.076.368-7","Psicologia","10/03/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Sophia Yasmin da Conceição","Lívia Emily Oliveira","Luiz Danilo Baptista","Feminino","2018.1");
-INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`) VALUES (NULL,"920.253.803-48","15.330.963-5","Psicologia","11/07/1998","email@gmail.com","Solteiro(a)","Brasileiro(a)","Roger Bragança Melo","Tatiane Fernanda Corte Real","Renato Francisco Bernardo Melo","Masculino","2018.1");
+INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`,`telefone`) 
+VALUES 
+(NULL,"249.355.263-60","45.285.440-4","Análise e Desenvolvimento de Sistemas","16/08/1997","eliaspinto@gmail.com","Solteiro(a)","Brasileiro(a)","Elias Lucas Pinto","Helena Mirella Mariah Caldeira","Benício Cláudio Almeida","Masculino","2018.1","(82) 98628-4249"),
+(NULL,"837.161.513-27","38.208.012-9","Análise e Desenvolvimento de Sistemas","12/02/1998","claudialucca@gmail.com","Solteiro(a)","Brasileiro(a)","Cláudia Lucca Santos","Milena Caroline Daiane Fogaça","Luan Kevin Rodrigues","Feminino","2018.1","(67) 99321-9837"),
+(NULL,"100.533.853-14","16.917.656-3","Análise e Desenvolvimento de Sistemas","22/10/1995","terezacarla@gmail.com","Solteiro(a)","Brasileiro(a)","Tereza Carla da Rosa","Aline Liz Hadassa da Mata","Fábio Raimundo Gomes","Feminino","2018.1","(91) 99627-6370"),
+(NULL,"057.298.023-07","41.672.067-5","Análise e Desenvolvimento de Sistemas","04/05/1993","oliverpedro@gmail.com","Solteiro(a)","Brasileiro(a)","Oliver Pedro Marcelo da Costa","Nina Daiane Silveira","Erick Gael Oliver Aparício","Masculino","2018.1",""),
+(NULL,"300.850.263-60","38.728.264-6","Análise e Desenvolvimento de Sistemas","05/12/1992","malumaya@gmail.com","Solteiro(a)","Brasileiro(a)","Malu Maya Figueiredo","Alice Sandra Bernardes","Bruno Caio Pinto","Feminino","2018.1","(47) 98473-8338"),
+(NULL,"281.060.163-15","10.733.340-5","Análise e Desenvolvimento de Sistemas","19/11/1999","brenolucca@gmail.com","Solteiro(a)","Brasileiro(a)","Breno Lucca da Rosa","Aline Stella Sarah Souza","Isaac Sebastião Rodrigo Duarte","Masculino","2018.1","(17) 98605-1964"),
+(NULL,"967.297.783-26","23.338.276-8","Análise e Desenvolvimento de Sistemas","01/03/2001","antoniasim@gmail.com","Solteiro(a)","Brasileiro(a)","Antônia Simone Ribeiro","Lorena Ester Raquel Brito","Diego Luís Kauê Galvão","Feminino","2018.1","(31) 98782-7877"),
+(NULL,"689.116.103-72","47.927.431-9","Análise e Desenvolvimento de Sistemas","15/08/2000","eliasgael@gmail.com","Solteiro(a)","Brasileiro(a)","Elias Gael Lima","Fernanda Regina Joana Nascimento","Thomas Edson Yago Ramos","Masculino","2018.1","(66) 99137-8793"),
+(NULL,"049.753.113-56","39.662.197-1","Análise e Desenvolvimento de Sistemas","14/07/1995","isacor@gmail.com","Solteiro(a)","Brasileiro(a)","Isabela Cláudia Olivia Rodrigues","Jennifer Isabel Patrícia da Mata","Cauê Martin Freitas","Feminino","2018.1","(48) 99536-7374"),
+(NULL,"542.922.003-51","91.122.534-1","Análise e Desenvolvimento de Sistemas","06/05/1999","henrycvr@gmail.com","Solteiro(a)","Brasileiro(a)","Henry Cláudio Vitor Rodrigues","Stefany Lúcia Laura Duarte","Kaio  Vinicius Freitas","Masculino","2018.1","(95) 98920-0443"),
+(NULL,"128.402.140-59","12.155.358-3","Analise e Desenvolvimento de Sistemas","20/03/1991","joaosantos@gmail.com","Solteiro(a)","Brasileiro(a)","Scott dos Santos","Harriet Brenda Laís","Andrew Francisco Ryan Nascimento","Masculino","2018.1","(88) 970717-2111"),
+(NULL,"200.055.550-60","20.226.974-9","Analise e Desenvolvimento de Sistemas","15/08/1992","Callum@gmail.com","Solteiro(a)","Brasileiro(a)","Callum Henrique Larcerda","Katherine Sara Isabel","Anthony Vitor Marcos Ferreira","Masculino","2018.1","(83) 97234-3130"),
+(NULL,"304.771.800-35","31.395.563-7","Analise e Desenvolvimento de Sistemas","11/05/1993","Luke@gmail.com","Solteiro(a)","Brasileiro(a)","Luke Henrique Pereira","Ruby Marlene","Apolo Iago de Paula","Masculino","2018.1","(88) 98628-2001"),
+(NULL,"404.771.800-35","41.395.563-7","Analise e Desenvolvimento de Sistemas","12/05/1994","Alex@gmail.com","Solteiro(a)","Brasileiro(a)","Alex Henrique Pereira","Cerlys Marlene","Benjamin Iago de Paula","Masculino","2018.1","(88) 98628-2002"),
+(NULL,"504.771.800-35","51.395.563-7","Analise e Desenvolvimento de Sistemas","13/05/1995","Harrison@gmail.com","Solteiro(a)","Brasileiro(a)","Harrison Henrique Pereira","Jolie Marlene","Bryan Iago de Paula","Masculino","2018.1","(88) 98628-2003"),
+(NULL,"604.771.800-35","61.395.563-7","Analise e Desenvolvimento de Sistemas","14/05/1996","Nicholas@gmail.com","Solteiro(a)","Brasileiro(a)","Nicholas Henrique Pereira","Chloe Marlene","Cauã Iago de Paula","Masculino","2018.1","(88) 98628-2004"),
+(NULL,"704.771.800-35","71.395.563-7","Analise e Desenvolvimento de Sistemas","15/05/1997","henrycvr@gmail.com","Solteiro(a)","Brasileiro(a)","Harvery Henrique Pereira","Molly Marlene","Caleb Iago de Paula","Masculino","2018.1","(88) 98628-2005"),
+(NULL,"904.771.800-35","81.395.563-7","Analise e Desenvolvimento de Sistemas","16/05/1998","Mark@gmail.com","Solteiro(a)","Brasileiro(a)","Mark Henrique Pereira","Sphie Marlene","Cássio Iago de Paula","Masculino","2018.1","(88) 98628-2006"),
+(NULL,"004.771.800-35","91.395.563-7","Analise e Desenvolvimento de Sistemas","17/05/1999","Peter@gmail.com","Solteiro(a)","Brasileiro(a)","Peter Henrique Pereira","Ella Marlene","Ciro Iago de Paula","Masculino","2018.1","(88) 98628-2007"),
+(NULL,"914.771.800-35","12.395.563-7","Analise e Desenvolvimento de Sistemas","10/06/1983","Oscar@gmail.com","Solteiro(a)","Brasileiro(a)","Oscar Henrique Pereira","Catherine Marlene","Conrado Iago de Paula","Masculino","2018.1","(88) 98628-2008"),
+(NULL,"924.771.800-35","13.395.563-7","Analise e Desenvolvimento de Sistemas","10/07/1983","Kian@gmail.com","Solteiro(a)","Brasileiro(a)","Kian Henrique Pereira","Eve Marlene","Dante Iago de Paula","Masculino","2018.1","(88) 98628-2009"),
+(NULL,"934.771.800-35","14.395.563-7","Analise e Desenvolvimento de Sistemas","10/08/1983","Willian@gmail.com","Solteiro(a)","Brasileiro(a)","Willian Henrique Pereira","Jasmine Marlene","Elieser Iago de Paula","Masculino","2018.1","(88) 98628-2010"),
+(NULL,"944.771.800-35","15.395.563-7","Analise e Desenvolvimento de Sistemas","10/09/1983","Aaron@gmail.com","Solteiro(a)","Brasileiro(a)","Aaron Henrique Pereira","Phoebe Marlene","Derek Iago de Paula","Masculino","2018.1","(88) 98628-2020"),
+(NULL,"954.771.800-35","16.395.563-7","Analise e Desenvolvimento de Sistemas","10/01/1983","Adam@gmail.com","Solteiro(a)","Brasileiro(a)","Adam Henrique Pereira","MiaMillie Marlene","Eloy Iago de Paula","Masculino","2018.1","(88) 98628-2030"),
+(NULL,"964.771.800-35","17.395.563-7","Analise e Desenvolvimento de Sistemas","10/02/1983","Alexander@gmail.com","Solteiro(a)","Brasileiro(a)","Alexander Henrique Pereira","Samantha Marlene","Dionísio Iago de Paula","Masculino","2018.1","(88) 98628-2040"),
+(NULL,"974.771.800-35","18.395.563-7","Analise e Desenvolvimento de Sistemas","17/03/1994","Alfie@gmail.com","Solteiro(a)","Brasileiro(a)","Alfie Henrique Pereira","Aimee Marlene","Enzo Iago de Paula","Masculino","2018.1","(88) 98628-2050"),
+(NULL,"984.771.800-35","19.395.563-7","Analise e Desenvolvimento de Sistemas","18/04/1993","Andrew@gmail.com","Solteiro(a)","Brasileiro(a)","Andrew Henrique Pereira","Isabele Marlene","Elton Iago de Paula","Masculino","2018.1","(88) 98628-2060"),
+(NULL,"994.771.800-35","21.395.563-7","Analise e Desenvolvimento de Sistemas","19/05/1991","thomas@gmail.com","Solteiro(a)","Brasileiro(a)","Thomas Henrique Pereira","Madeleine Marlene","Enrico Iago de Paula","Masculino","2018.1","(88) 98628-2070"),
+(NULL,"901.771.800-35","11.195.563-7","Analise e Desenvolvimento de Sistemas","20/06/1994","Jack@gmail.com","Solteiro(a)","Brasileiro(a)","Jack Henrique Pereira","Eleem Marlene","Erik Iago de Paula","Masculino","2018.1","(88) 98628-2080"),
+(NULL,"902.771.800-35","11.295.563-7","Analise e Desenvolvimento de Sistemas","22/07/1994","James@gmail.com","Solteiro(a)","Brasileiro(a)","James Henrique Pereira","Poppy Marlene","Ettore Iago de Paula","Masculino","2018.1","(88) 98628-2090"),
+(NULL,"903.771.800-35","11.495.563-7","Analise e Desenvolvimento de Sistemas","23/08/1994","Louis@gmail.com","Solteiro(a)","Brasileiro(a)","Louis Henrique Pereira","Rhiannon Marlene","Estevão Iago de Paula","Masculino","2018.1","(88) 98628-2100"),
+(NULL,"904.771.800-35","11.595.563-7","Analise e Desenvolvimento de Sistemas","24/09/1994","Jay@gmail.com","Solteiro(a)","Brasileiro(a)","Jay Henrique Pereira","Emily Marlene","Fausto Iago de Paula","Masculino","2018.1","(88) 98628-2200"),
+(NULL,"905.771.800-35","11.695.563-7","Analise e Desenvolvimento de Sistemas","25/05/1994","Morgan@gmail.com","Solteiro(a)","Brasileiro(a)","Morgan Henrique Pereira","Olivia Marlene","Frederico Iago de Paula","Masculino","2018.1","(88) 98628-2300"),
+(NULL,"906.771.800-35","11.795.563-7","Analise e Desenvolvimento de Sistemas","10/01/2000","Patrick@gmail.com","Solteiro(a)","Brasileiro(a)","Patrick Henrique Pereira","Grace Marlene","Gaspar Iago de Paula","Masculino","2018.1","(88) 98628-2400"),
+(NULL,"907.771.800-35","11.895.563-7","Analise e Desenvolvimento de Sistemas","10/02/2000","Billy@gmail.com","Solteiro(a)","Brasileiro(a)","Billy Henrique Pereira","Amy Marlene","Fauzer Iago de Paula","Masculino","2018.1","(88) 98628-2500"),
+(NULL,"908.771.800-35","11.995.563-7","Analise e Desenvolvimento de Sistemas","10/03/2000","Lewis@gmail.com","Solteiro(a)","Brasileiro(a)","Lewis Henrique Pereira","Leah Marlene","Gregory Iago de Paula","Masculino","2018.1","(88) 98628-2600"),
+(NULL,"909.771.800-35","11.315.563-7","Analise e Desenvolvimento de Sistemas","10/04/2000","Oliver@gmail.com","Solteiro(a)","Brasileiro(a)","Oliver Henrique Pereira","Sarah Marlene","Ian Iago de Paula","Masculino","2018.1","(88) 98628-2700"),
+(NULL,"900.772.800-35","11.325.563-7","Analise e Desenvolvimento de Sistemas","10/05/2000","Ryan@gmail.com","Solteiro(a)","Brasileiro(a)","Ryan Henrique Pereira","Natascha Marlene","Issac Iago de Paula","Masculino","2018.1","(88) 98628-2800"),
+(NULL,"904.773.800-35","11.335.563-7","Analise e Desenvolvimento de Sistemas","10/06/2000","Benjamin@gmail.com","Solteiro(a)","Brasileiro(a)","Bejamin Henrique Pereira","Imogen Marlene","enri Iago de Paula","Masculino","2018.1","(88) 98628-2900"),
+(NULL,"904.774.800-35","11.345.563-7","Analise e Desenvolvimento de Sistemas","10/07/2000","George@gmail.com","Solteiro(a)","Brasileiro(a)","George Henrique Pereira","Rosie Marlene","Herton Iago de Paula","Masculino","2018.1","(88) 98628-1000"),
+(NULL,"904.775.800-35","11.355.563-7","Analise e Desenvolvimento de Sistemas","10/08/2000","Thejota@gmail.com","Solteiro(a)","Brasileiro(a)","Thejota Henrique Pereira","Carlota Marlene","Heitor Iago de Paula","Masculino","2018.1","(88) 98628-3000"),
+(NULL,"904.776.800-35","11.365.563-7","Analise e Desenvolvimento de Sistemas","10/09/2000","Piter@gmail.com","Solteiro(a)","Brasileiro(a)","Piter Henrique Pereira","Carolina Marlene","Hugo Iago de Paula","Masculino","2018.1","(88) 98628-4000"),
+(NULL,"904.779.800-35","11.375.563-7","Analise e Desenvolvimento de Sistemas","10/10/2000","Jhon@gmail.com","Solteiro(a)","Brasileiro(a)","Jhon Henrique Pereira","Carolina Marlene","Ícaro Iago de Paula","Masculino","2018.1","(88) 98628-5000"),
+(NULL,"904.778.810-35","11.385.563-7","Analise e Desenvolvimento de Sistemas","10/11/2000","Lian@gmail.com","Solteiro(a)","Brasileiro(a)","Lian Henrique Pereira","Constança Marlene","Joaquim Iago de Paula","Masculino","2018.1","(88) 98628-6000"),
+(NULL,"904.771.820-35","11.305.563-7","Analise e Desenvolvimento de Sistemas","10/12/2000","Jordan@gmail.com","Solteiro(a)","Brasileiro(a)","Jordan Henrique Pereira","Joana Marlene","Ítalo Iago de Paula","Masculino","2018.1","(88) 98628-7000"),
+(NULL,"904.771.830-35","11.391.563-7","Analise e Desenvolvimento de Sistemas","11/05/2000","Joe@gmail.com","Solteiro(a)","Brasileiro(a)","Joe Henrique Pereira","Francisca Marlene","Kaique Iago de Paula","Masculino","2018.1","(88) 98628-8000"),
+(NULL,"904.771.840-35","11.392.563-7","Analise e Desenvolvimento de Sistemas","12/05/2000","John@gmail.com","Solteiro(a)","Brasileiro(a)","John Henrique Pereira","Mariana Marlene","Jonas Iago de Paula","Masculino","2018.1","(88) 98628-9000"),
+(NULL,"904.771.850-35","11.393.563-7","Analise e Desenvolvimento de Sistemas","13/05/2000","Elliot@gmail.com","Solteiro(a)","Brasileiro(a)","Elliot Henrique Pereira","Lara Marlene","Keid Iago de Paula","Masculino","2018.1","(88) 98628-0000"),
+(NULL,"904.771.860-35","11.394.563-7","Analise e Desenvolvimento de Sistemas","14/05/2000","Ross@gmail.com","Solteiro(a)","Brasileiro(a)","Ross Henrique Pereira","Mafalda Marlene","Leon Iago de Paula","Masculino","2018.1","(88) 98621-2000"),
+(NULL,"904.771.870-35","11.396.563-7","Analise e Desenvolvimento de Sistemas","15/05/2000","Kane@gmail.com","Solteiro(a)","Brasileiro(a)","Kane Henrique Pereira","Leonor Marlene","Levi Iago de Paula","Masculino","2018.1","(88) 98622-2000"),
+(NULL,"904.771.880-35","11.397.563-7","Analise e Desenvolvimento de Sistemas","16/05/2001","Lee@gmail.com","Solteiro(a)","Brasileiro(a)","Lee Henrique Pereira","Sofia Marlene","Lorenzo Iago de Paula","Masculino","2018.1","(88) 98623-2000"),
+(NULL,"904.771.890-35","11.398.563-7","Analise e Desenvolvimento de Sistemas","17/05/2001","Kieran@gmail.com","Solteiro(a)","Brasileiro(a)","Kieran Henrique Pereira","Isabel Marlene","Lucca Iago de Paula","Masculino","2018.1","(88) 98624-2000"),
+(NULL,"904.771.801-35","11.399.563-7","Analise e Desenvolvimento de Sistemas","18/05/2001","Ethan@gmail.com","Solteiro(a)","Brasileiro(a)","Ethan Henrique Pereira","Alexandra Marlene","Luigi Iago de Paula","Masculino","2018.1","(88) 98625-2000"),
+(NULL,"904.771.802-35","11.395.163-7","Analise e Desenvolvimento de Sistemas","19/05/2001","Max@gmail.com","Solteiro(a)","Brasileiro(a)","Max Henrique Pereira","Mara Marlene","Martin Iago de Paula","Masculino","2018.1","(88) 98626-2000"),
+(NULL,"904.771.803-35","11.395.263-7","Analise e Desenvolvimento de Sistemas","20/05/2001","henry@gmail.com","Solteiro(a)","Brasileiro(a)","Henry Henrique Pereira","Filipa Marlene","Max Iago de Paula","Masculino","2018.1","(88) 98627-2000"),
+(NULL,"904.771.804-35","11.395.363-7","Analise e Desenvolvimento de Sistemas","21/05/2001","Brandon@gmail.com","Solteiro(a)","Brasileiro(a)","Brandon Henrique Pereira","Sofia Marlene","Nathan Iago de Paula","Masculino","2018.1","(88) 98628-2000"),
+(NULL,"904.771.805-35","11.395.463-7","Analise e Desenvolvimento de Sistemas","22/05/2001","Kyle@gmail.com","Solteiro(a)","Brasileiro(a)","Kyle Henrique Pereira","Daniela Marlene","Nicolas Iago de Paula","Masculino","2018.1","(88) 98629-2000"),
+(NULL,"904.771.806-35","11.395.573-7","Analise e Desenvolvimento de Sistemas","23/05/2001","Reece@gmail.com","Solteiro(a)","Brasileiro(a)","Reece Henrique Pereira","Carolina Marlene","Olavo Iago de Paula","Masculino","2018.1","(88) 98620-2000"),
+(NULL,"904.771.807-35","11.395.663-7","Analise e Desenvolvimento de Sistemas","24/05/2001","Charles@gmail.com","Solteiro(a)","Brasileiro(a)","Charles Henrique Pereira","Beatriz Marlene","Otto Iago de Paula","Masculino","2018.1","(88) 98610-2000"),
+(NULL,"904.771.808-35","11.395.763-7","Analise e Desenvolvimento de Sistemas","25/05/2001","Owen@gmail.com","Solteiro(a)","Brasileiro(a)","Owen Henrique Pereira","Raquel Sofia","Patrick Iago de Paula","Masculino","2018.1","(88) 98638-2000"),
+
+(NULL,"446.962.643-00","46.865.693-5","Enfermagem","07/09/1998","allana@gmail.com","Solteiro(a)","Brasileiro(a)","Allana Isabella Costa","Emanuelly Priscila Araújo","Matheus Márcio Monteiro","Feminino","2018.1","(83) 99927-6233"),
+(NULL,"355.366.723-04","13.938.993-3","Enfermagem","20/05/1997","mario@gmail.com","Solteiro(a)","Brasileiro(a)","Mário Gustavo Nelson da Costa","Valentina Stefany Eliane Bernardes","Marcos da Costa Bernardes","Masculino","2018.1","(98) 98328-5318"),
+(NULL,"950.108.673-97","18.655.516-7","Enfermagem","16/09/1998","sarah@gmail.com","Solteiro(a)","Brasileiro(a)","Sarah Emanuelly Amanda Caldeira","Regina Rebeca Valentina Nogueira","Roberto Nogueira Caldeira","Feminino","2018.1","(21) 99747-1752"),
+(NULL,"938.070.293-03","42.582.623-5","Enfermagem","27/06/1994","pedro@gmail.com","Solteiro(a)","Brasileiro(a)","Pedro Yuri Corte Real","Sophia Amanda da Costa","Pietro Corte da Costa","Masculino","2018.1","(67) 98558-7455"),
+(NULL,"108.652.203-60","32.870.296-1","Enfermagem","27/06/1994","marli@gmail.com","Solteiro(a)","Brasileiro(a)","Marli Daniela Pereira","Marlucia Pereira","Paulo Pereira","Feminino","2018.1","(41) 98738-5796"),
+(NULL,"769.679.943-60","31.997.612-9","Enfermagem","15/10/1996","leonardo@gmail.com","Solteiro(a)","Brasileiro(a)","Leonardo Thomas Martins","Nair Ana Isabelle Mendes","Leorio Martins Mendes","Masculino","2018.1","(84) 98812-0871"),
+(NULL,"826.060.203-24","24.116.556-8","Enfermagem","19/09/1995","mariaale@gmail.com","Solteiro(a)","Brasileiro(a)","Maria Alessandra Sales","Alana Carla da Luz","Mario Sales da Luz","Feminino","2018.1","(96) 98512-3602"),
+(NULL,"948.436.873-59","19.788.611-5","Enfermagem","04/12/1995","thomasleo@gmail.com","Solteiro(a)","Brasileiro(a)","Thomas Leonardo Aragão","Sarah Mariana da Cunha","Tom Aragão da Cunha","Masculino","2018.1","(99) 99363-7715"),
+(NULL,"126.060.203-24","14.116.556-8","Enfermagem","11/01/1995","mariosa@gmail.com","Solteiro(a)","Brasileiro(a)","Mario Alessandro Sales","Alana Alessandro da Luz","Marcio Sales da Luz","Masculino","2018.1","(96) 94444-3602"),
+(NULL,"226.060.203-24","34.116.556-8","Enfermagem","12/02/1995","mariasales@gmail.com","Solteiro(a)","Brasileiro(a)","Mario Alessandro Sales","Giovanna Sales da Luz","Marconi nunes Silva","Feminino","2018.1","(96) 98444-3602"),
+(NULL,"326.060.203-24","44.116.556-8","Enfermagem","13/03/1995","guipenha@gmail.com","Solteiro(a)","Brasileiro(a)","Guilherme penha","Alana Carla da Luz","Mario Sales da Luz","Masculino","2018.1","(96) 98512-4444"),
+(NULL,"426.060.203-24","54.116.556-8","Enfermagem","14/04/1995","lucasfelx@gmail.com","Solteiro(a)","Brasileiro(a)","Lucas felix","julio felix","julia felix","Masculino","2018.1","(96) 93333-3602"),
+(NULL,"526.060.203-24","64.116.556-8","Enfermagem","15/05/1995","renancaio@gmail.com","Solteiro(a)","Brasileiro(a)","Renan Caio da Silva","Alana Caio","Mario Silva","Masculino","2018.1","(96) 98512-3333"),
+(NULL,"626.060.203-24","74.116.556-8","Enfermagem","16/06/1995","wevertpin@gmail.com","Solteiro(a)","Brasileiro(a)","Weverton Pinheiro Cardoso","mariana Pinheiro","Rambo Cardoso","Masculino","2018.1","(96) 98512-2222"),
+(NULL,"726.060.203-24","84.116.556-8","Enfermagem","17/08/1995","gabialmeida@gmail.com","Solteiro(a)","Brasileiro(a)","Gabriela Almeida Lima","Bruna Almeida","Fernando Lima","Feminino","2018.1","(96) 98512-1111"),
+(NULL,"826.060.203-24","94.116.556-8","Enfermagem","18/10/1995","brunagio@gmail.com","Solteiro(a)","Brasileiro(a)","Bruna Giovanni Melo","Luana Piovanni","Selton Melo","Feminino","2018.1","(96) 98512-0000"),
+
+(NULL,"859.572.593-49","28.448.557-3","Direito","21/08/1998","luizaester@gmail.com","Solteiro(a)","Brasileiro(a)","Luiza Ester Bernardes","Brenda Sônia Castro","Luiz Bernardes Castro","Feminino","2018.1","(95) 99605-4110"),
+(NULL,"555.463.383-85","40.050.453-4","Direito","15/08/1993","luanemanuel@gmail.com","Solteiro(a)","Brasileiro(a)","Luan Emanuel Ferreira","Hadassa Olivia Nogueira","Lucas Ferreira Nogueira","Masculino","2018.1","(92) 99548-1820"),
+(NULL,"546.964.613-00","39.610.250-5","Direito","13/03/1992","emilynair@gmail.com","Solteiro(a)","Brasileiro(a)","Emily Nair Tereza da Cruz","Tereza Marcela Laís Araújo","Emilio da Cruz Araújo","Feminino","2018.1","(91) 98280-0462"),
+(NULL,"252.834.323-00","29.420.960-8","Direito","07/09/1998","mateusmarcos@gmail.com","Solteiro(a)","Brasileiro(a)","Mateus Marcos Vinicius Severino Assunção","Rebeca Tereza Heloise Pereira","Afonso Severino Pereira","Masculino","2018.1","(86) 99616-3322"),
+(NULL,"669.631.763-53","16.607.664-8","Direito","20/05/1999","franciscajoana@gmail.com","Solteiro(a)","Brasileiro(a)","Francisca Joana Teixeira","Melissa Laura Almeida","Francisco Teixeira Almeida","Feminino","2018.1","(24) 99668-7129"),
+(NULL,"596.964.613-00","39.620.250-5","Direito","13/12/1992","juliamar@gmail.com","Solteiro(a)","Brasileiro(a)","Julia Marques Silva","Tereza Marques","Emilio Silva","Feminino","2018.1","(92) 98180-1462"),
+(NULL,"541.964.613-00","39.630.250-5","Direito","13/12/1992","julioal@gmail.com","Solteiro(a)","Brasileiro(a)","julio Almeida Lima","Aysa Almeida","João Lima","Masculino","2018.1","(93) 98980-2462"),
+(NULL,"542.964.613-00","39.640.250-5","Direito","13/12/1992","margleuda01@gmail.com","Solteiro(a)","Brasileiro(a)","margleuda Silva Barbosa","Maria Silva","Carlos Barbosa","Feminino","2018.1","(94) 98380-3462"),
+(NULL,"543.964.613-00","39.650.250-5","Direito","13/12/1992","Gilvana02@gmail.com","Solteiro(a)","Brasileiro(a)","Gilvana Almeida Lavor","maria Almeida","Tuan Lavor","Feminino","2018.1","(95) 98480-4462"),
+(NULL,"544.964.613-00","39.660.250-5","Direito","13/12/1992","Vitoria01@gmail.com","Solteiro(a)","Brasileiro(a)","Vitoria Palácio Vieira","Karina Palácio","Igor Vieira","Feminino","2018.1","(96) 98580-5462"),
+(NULL,"545.964.613-00","39.670.250-5","Direito","13/12/1992","clariceoficial@gmail.com","Solteiro(a)","Brasileiro(a)","Clarice Brandão Souza","Leticia Brandão","Lidia Souza","Feminino","2018.1","(97) 98680-6462"),
+(NULL,"546.964.613-00","39.680.250-5","Direito","13/12/1992","carinashu@gmail.com","Solteiro(a)","Brasileiro(a)","Carina Giovanna Pereira","Erica Giovanna","Thomas Pereira","Feminino","2018.1","(98) 98780-7462"),
+(NULL,"547.964.613-00","39.690.250-5","Direito","13/12/1992","yarinha@gmail.com","Solteiro(a)","Brasileiro(a)","Yara Soares Bandeira","Alice Soares","Janio Bandeira","Feminino","2018.1","(99) 98880-8462"),
+
+(NULL,"287.593.763-41","11.356.853-8","Ciências Contabeis","16/09/1997","isaacy@gmail.com","Solteiro(a)","Brasileiro(a)","Isaac Anderson Yago Silveira","Benedita Ester Carolina da Cruz","Isaaf da Cruz Silveira","Masculino","2018.1","(84) 99225-8496"),
+(NULL,"134.152.613-52","22.455.924-2","Ciências Contabeis","27/06/1995","ysaisa@gmail.com","Solteiro(a)","Brasileiro(a)","Isabelly Isabela Eloá Rodrigues","Lara Manuela Ana Cardoso","João Cardoso Rodrigues","Feminino","2018.1","(84) 98549-3560"),
+(NULL,"395.666.363-26","46.623.299-8","Ciências Contabeis","27/06/1999","mariomelo@gmail.com","Solteiro(a)","Brasileiro(a)","Mário Cavalcanti Melo","Lorena Tânia Cavalcanti","Lorenço Cavalcanti","Masculino","2018.1","(66) 99273-2718"),
+(NULL,"333.314.633-96","12.928.481-6","Ciências Contabeis","15/10/1998","luizacecilia@gmail.com","Solteiro(a)","Brasileiro(a)","Cecília Luiza Sara Fogaça","Vera Julia Gabriela da Luz","Everaldo da Luz Fogaça","Feminino","2018.1","(46) 99908-7434"),
+(NULL,"233.314.633-96","22.928.481-6","Ciências Contabeis","18/10/1994","Laura@gmail.com","Solteiro(a)","Brasileiro(a)","Laura Luiza Sara Fogaça","Rebecca Julia Gabriela da Luz","Cameron da Luz Fogaça","Feminino","2018.1","(46) 99108-7439"),
+(NULL,"133.314.633-96","32.928.481-6","Ciências Contabeis","18/10/1994","Chelsea@gmail.com","Solteiro(a)","Brasileiro(a)","Chelsea Luiza Sara Fogaça","Abigail Julia Gabriela da Luz","Ashley da Luz Fogaça","Feminino","2018.1","(46) 99208-7438"),
+(NULL,"433.314.633-96","42.928.481-6","Ciências Contabeis","18/10/1994","Melissa@gmail.com","Solteiro(a)","Brasileiro(a)","Melissa Luiza Sara Fogaça","Jade Julia Gabriela da Luz","Connor da Luz Fogaça","Feminino","2018.1","(46) 99308-7437"),
+(NULL,"533.314.633-96","52.928.481-6","Ciências Contabeis","18/10/1994","Alisha@gmail.com","Solteiro(a)","Brasileiro(a)","Alisha Luiza Sara Fogaça","Anna Julia Gabriela da Luz","Jake da Luz Fogaça","Feminino","2018.1","(46) 99408-7436"),
+(NULL,"633.314.633-96","62.928.481-6","Ciências Contabeis","16/11/1994","Natalie@gmail.com","Solteiro(a)","Brasileiro(a)","Natalie Luiza Sara Fogaça","Amber Julia Gabriela da Luz","Tyler da Luz Fogaça","Feminino","2018.1","(46) 99508-7435"),
+(NULL,"733.314.633-96","72.928.481-6","Ciências Contabeis","16/11/1994","Eloise@gmail.com","Solteiro(a)","Brasileiro(a)","Eloise Luiza Sara Fogaça","Abbie Julia Gabriela da Luz","Nathan da Luz Fogaça","Feminino","2018.1","(46) 99608-7431"),
+(NULL,"833.314.633-96","82.928.481-6","Ciências Contabeis","16/11/1994","Lauren@gmail.com","Solteiro(a)","Brasileiro(a)","Lauren Luiza Sara Fogaça","Lydia Julia Gabriela da Luz","Aidan da Luz Fogaça","Feminino","2018.1","(46) 99708-7432"),
+(NULL,"933.314.633-96","92.928.481-6","Ciências Contabeis","16/11/1994","Naomi@gmail.com","Solteiro(a)","Brasileiro(a)","Naomi Luiza Sara Fogaça","Daisy Julia Gabriela da Luz","Mohammed da Luz Fogaça","Feminino","2018.1","(46) 99808-7433")
+
+(NULL,"210.226.613-37","36.145.655-4","Educação Fisica","16/09/1999","hadassamarli@gmail.com","Solteiro(a)","Brasileiro(a)","Hadassa Marli Ribeiro","Daiane Josefa Cristiane Almada","Marcos Vinicius Porto","Feminino","2018.1","(62) 99241-8450"),
+(NULL,"002.522.873-04","18.517.643-4","Educação Fisica","29/06/1999","luizjulio@gmail.com","Solteiro(a)","Brasileiro(a)","Luiz Julio Ribeiro","Teresinha Brenda Aparício","Romerio Ribeiro Aparício","Masculino","2018.1","(64) 98751-5998"),
+(NULL,"587.086.003-25","18.566.499-4","Educação Fisica","05/11/1999","marlene@gmail.com","Solteiro(a)","Brasileiro(a)","Marlene Lívia Laura Nunes","Maria Nunes Dias","Henrique Dias Nunes","Feminino","2018.1","(99) 98608-3799"),
+(NULL,"976.309.393-70","36.054.587-7","Educação Fisica","20/02/1998","ricardoruan@gmail.com","Solteiro(a)","Brasileiro(a)","Ricardo Ruan Kevin Barbosa","Elza Carla da Costa","Geraldo Rodrigues","Masculino","2018.1","(46) 99192-9536"),
+(NULL,"210.226.613-37","36.145.655-4","Educação Fisica","16/09/1999","hadassa@gmail.com","Solteiro(a)","Brasileiro(a)","Hadassa Marli Ribeiro","Daiane Josefa Cristiane Almada","Marcos Vinicius Porto","Feminino","2018.1","(46) 99192-9536"),
+(NULL,"910.226.613-37","36.245.655-4","Educação Fisica","11/09/1999","marianamel@gmail.com","Solteiro(a)","Brasileiro(a)","mariana Melo Silva","Daiane Melo","Marcos Silva","Feminino","2018.1","(61) 99241-8451"),
+(NULL,"220.226.613-37","36.345.655-4","Educação Fisica","12/08/1999","gabs@gmail.com","Solteiro(a)","Brasileiro(a)","Gabriel Medina","Bruna Medina","Álvaro Medina","Masculino","2018.1","(62) 99242-8452"),
+(NULL,"230.226.613-37","36.445.655-4","Educação Fisica","13/07/1999","tonynho@gmail.com","Solteiro(a)","Brasileiro(a)","Tony Stark","Marta Stark","Brian Stark","Masculino","2018.1","(63) 99243-8453"),
+(NULL,"240.226.613-37","36.545.655-4","Educação Fisica","14/06/1999","chessman@gmail.com","Solteiro(a)","Brasileiro(a)","Garry Kasparov","Mokpar Kasparov","Cherno Kasparov","Masculino","2018.1","(64) 99244-8454"),
+(NULL,"250.226.613-37","36.645.655-4","Educação Fisica","15/05/1999","genious@gmail.com","Solteiro(a)","Brasileiro(a)","Albert Ainstein","Luiza Ainstein","Olavo Ainstein","Masculino","2018.1","(65) 99245-8456"),
+(NULL,"260.226.613-37","36.745.655-4","Educação Fisica","17/04/1999","vandin@gmail.com","Solteiro(a)","Brasileiro(a)","Vando Silva Carvalho","Rosangela Silva","Diego Carvalho","Masculino","2018.1","(66) 99246-8456"),
+(NULL,"270.226.613-37","36.845.655-4","Educação Fisica","18/03/1999","leomarq@gmail.com","Solteiro(a)","Brasileiro(a)","Leonardo Marques de Lima","mariana Marques","Gustavo Lima","Masculino","2018.1","(67) 99247-8457"),
+(NULL,"280.226.613-37","36.945.655-4","Educação Fisica","19/02/1999","analiv@gmail.com","Solteiro(a)","Brasileiro(a)","Ana Lívia Silva","Mariana Livia","Humberto Silva","Feminino","2018.1","(68) 99248-8458"),
+
+(NULL,"284.496.993-39","34.863.209-5","Administração","12/04/1991","migueljuan@gmail.com","Solteiro(a)","Brasileiro(a)","Miguel Juan Moura","Sophie Jennifer Luzia Mendes","Isaac Marcelo Fernandes","Masculino","2018.1","(96) 99349-6017"),
+(NULL,"852.262.153-55","20.164.876-3","Administração","05/02/1990","josefaolivia@gmail.com","Solteiro(a)","Brasileiro(a)","Josefa Olivia Andreia Pires","Alessandra Bárbara Barbosa","Sergio Costa","Feminino","2018.1","(86) 99677-0958"),
+(NULL,"627.405.763-31","26.831.460-3","Administração","23/07/1997","renatomario@gmail.com","Solteiro(a)","Brasileiro(a)","Renato Mário Pinto","Yasmin Giovanna Porto","Elias Hugo Brito","Masculino","2018.1","(79) 98508-5126"),
+(NULL,"613.641.853-34","41.851.238-3","Administração","10/05/1998","agathajessica@gmail.com","Solteiro(a)","Brasileiro(a)","Agatha Jéssica Rezende","Larissa Catarina Evelyn Ferreira","Thomas Nascimento","Feminino","2018.1","(61) 99238-0025"),
+(NULL,"525.801.410-44","11.215.056-1","Administração","11/09/1989","Anthony@gmail.com","Solteiro(a)","Brasileiro(a)","Anthony Carlos Silva","Zoe Sebastiana","Mason Alexandre Rezende","Masculino","2018.1","(81) 95600-4731"),
+(NULL,"525.802.410-44","12.215.056-1","Administração","12/09/1989","Taylor@gmail.com","Solteiro(a)","Brasileiro(a)","Taylor Carlos Alves","LylySebastiana","Charlie Alexandre Rezende","Masculino","2018.1","(81) 95608-4732"),
+(NULL,"525.803.410-44","13.215.056-1","Administração","13/09/1989","Kian@gmail.com","Solteiro(a)","Brasileiro(a)","Kian Carlos Alves","Victoria Sebastiana","Sean Alexandre Rezende","Masculino","2018.1","(81) 95607-4733"),
+(NULL,"525.804.410-44","14.215.056-1","Administração","14/09/1989","Joshua@gmail.com","Solteiro(a)","Brasileiro(a)","Joshua Carlos Alves","Isabella Sebastiana","Chis Alexandre Rezende","Masculino","2018.1","(81) 95606-4734"),
+(NULL,"525.805.410-44","15.215.056-1","Administração","15/09/1989","daniel@gmail.com","Solteiro(a)","Brasileiro(a)","Daniel Carlos Alves","Francesca Sebastiana","Isaac Alexandre Rezende","Masculino","2018.1","(81) 95605-4735"),
+(NULL,"525.806.410-44","16.215.056-1","Administração","19/09/1989","Harry@gmail.com","Solteiro(a)","Brasileiro(a)","Harry Carlos Alves","Freya Sebastiana","Kai Alexandre Rezende","Masculino","2018.1","(81) 95604-4736"),
+(NULL,"525.807.410-44","17.215.056-1","Administração","17/09/1989","Samuel@gmail.com","Solteiro(a)","Brasileiro(a)","Samuel Carlos Alves","Louise Sebastiana","Mitchell Alexandre Rezende","Masculino","2018.1","(81) 95603-4737"),
+(NULL,"525.808.410-44","18.215.056-1","Administração","18/09/1989","Joseph@gmail.com","Solteiro(a)","Brasileiro(a)","Joseph Carlos Alves","Alicia Sebastiana","Dereck Alexandre Rezende","Masculino","2018.1","(81) 95602-4738"),
+(NULL,"284.496.993-39","34.863.209-5","Administração","12/04/1991","migueljuan@gmail.com","Solteiro(a)","Brasileiro(a)","Miguel Juan Moura","Sophie Jennifer Luzia Mendes","Isaac Marcelo Fernandes","Masculino","2018.1","(81) 99237-5073"),
+(NULL,"852.262.153-55","20.164.876-3","Administração","05/02/1990","josefaoliva@gmail.com","Solteiro(a)","Brasileiro(a)","Josefa Olivia Andreia Pires","Alessandra Bárbara Barbosa","Sergio Costa","Feminino","2018.1","(81) 99237-5073"),
+(NULL,"627.405.763-31","26.831.460-3","Administração","23/07/1997","renato@gmail.com","Solteiro(a)","Brasileiro(a)","Renato Mário Pinto","Yasmin Giovanna Porto","Elias Hugo Brito","Masculino","2018.1","(98) 99994-9085"),
+(NULL,"613.641.853-34","41.851.238-3","Administração","10/05/1998","agatha@gmail.com","Solteiro(a)","Brasileiro(a)","Agatha Jéssica Rezende","Larissa Catarina Evelyn Ferreira","Thomas Nascimento","Feminino","2018.1","(85) 98710-5452"),
+
+(NULL,"189.742.423-03","37.411.009-8","Serviço Social","20/02/1998","sergio@gmail.com","Solteiro(a)","Brasileiro(a)","Sérgio Heitor Almeida","Ana Giovanna Aline Lopes","Enrico Paulo Alves","Masculino","2018.1","(85) 99453-2578"),
+(NULL,"484.723.403-09","38.139.089-5","Serviço Social","28/05/1989","maya@gmail.com","Solteiro(a)","Brasileiro(a)","Maya Gabriela Lopes","Cecília Elza Duarte","Otávio Osvaldo Pires","Feminino","2018.1","(84) 98451-8623"),
+(NULL,"974.779.403-97","37.073.252-2","Serviço Social","29/11/1998","vitor@gmail.com","Solteiro(a)","Brasileiro(a)","Vitor Nelson Barros","Gabrielly Cristiane Galvão","Ruan Gabriel Melo","Masculino","2018.1","(63) 98349-9101"),
+(NULL,"832.611.690-41","45.378.264-1","Serviço Social","11/05/1998","Lucas@gmail.com","Solteiro(a)","Brasileiro(a)","Lucas Almeida","Georgia Hadassa","Bailey Samuel da Cunha","Masculino","2018.1","(71) 99118-5635"),
+(NULL,"832.611.690-42","45.378.264-2","Serviço Social","12/05/1998","Robert@gmail.com","Solteiro(a)","Brasileiro(a)","Robert Almeida","Emma Hadassa","Bradley Samuel da Cunha","Masculino","2018.1","(71) 99218-5635"),
+(NULL,"832.611.690-43","45.378.264-3","Serviço Social","13/05/1998","David@gmail.com","Solteiro(a)","Brasileiro(a)","David Almeida","Elonor Hadassa","Dylan Samuel da Cunha","Masculino","2018.1","(71) 99318-5635"),
+(NULL,"832.611.690-45","45.378.264-5","Serviço Social","14/05/1998","Jamie@gmail.com","Solteiro(a)","Brasileiro(a)","Jamie Almeida","Rachel Hadassa","Edward Samuel da Cunha","Masculino","2018.1","(71) 99418-5635"),
+(NULL,"832.611.690-46","45.378.264-6","Serviço Social","15/05/1998","Michael@gmail.com","Solteiro(a)","Brasileiro(a)","Michael Almeida","Nicole Hadassa","Ewan Samuel da Cunha","Masculino","2018.1","(71) 99618-5635"),
+(NULL,"832.611.690-47","45.378.264-7","Serviço Social","16/05/1998","leon@gmail.com","Solteiro(a)","Brasileiro(a)","Leon Almeida","Jodie Hadassa","Archie Samuel da Cunha","Masculino","2018.1","(71) 99718-5635"),
+(NULL,"832.611.690-48","45.378.264-8","Serviço Social","17/05/1998","Stephen@gmail.com","Solteiro(a)","Brasileiro(a)","Stephen Almeida","Genna Hadassa","Ellis Samuel da Cunha","Masculino","2018.1","(71) 99818-5635"),
+(NULL,"832.611.690-48","45.378.264-8","Serviço Social","17/05/1998","Chernoalpha@gmail.com","Solteiro(a)","Brasileiro(a)","Cherno Alpha","Sasha Kaidonovsk","Alexys Kaidonovsk","Masculino","2018.1","(79) 99432-5634"),
+(NULL,"189.742.423-03","37.411.009-8","Serviço Social","20/02/1998","sergioheitor@gmail.com","Solteiro(a)","Brasileiro(a)","Sérgio Heitor Almeida","Ana Giovanna Aline Lopes","Enrico Paulo Alves","Masculino","2018.1","(85) 98423-3765"),
+(NULL,"484.723.403-09","38.139.089-5","Serviço Social","28/05/1989","mayagabriela@gmail.com","Solteiro(a)","Brasileiro(a)","Maya Gabriela Lopes","Cecília Elza Duarte","Otávio Osvaldo Pires","Feminino","2018.1","(16) 98987-5420"),
+(NULL,"974.779.403-97","37.073.252-2","Serviço Social","29/11/1998","vitornelson@gmail.com","Solteiro(a)","Brasileiro(a)","Vitor Nelson Barros","Gabrielly Cristiane Galvão","Ruan Gabriel Melo","Masculino","2018.1","(51) 98575-4658"),
+
+(NULL,"897.716.673-00","44.267.657-8","Fisioterapia","12/05/1998","mariana@gmail.com","Solteiro(a)","Brasileiro(a)","Mariana Daiane da Costa","Elaine Sebastiana Farias","Cauê Raul Ferreira","Feminino","2018.1","(24) 98317-4821"),
+(NULL,"136.359.733-78","27.799.883-9","Fisioterapia","03/11/1994","noah@gmail.com","Solteiro(a)","Brasileiro(a)","Noah Gael Francisco Bernardes","Liz Sarah Heloisa Costa","Heitor Marcos Gomes","Masculino","2018.1","(85) 98142-6740"),
+(NULL,"828.082.593-28","18.778.203-9","Fisioterapia","20/03/1995","simone@gmail.com","Solteiro(a)","Brasileiro(a)","Simone Joana Carvalho","Marlene Gabriela Viana","Vitor Caleb Jesus","Feminino","2018.1","(68) 99447-7321"),
+(NULL,"283.959.443-90","27.067.290-4","Fisioterapia","15/08/1998","kaue@gmail.com","Solteiro(a)","Brasileiro(a)","Kauê Gael Anthony Pires","Bruna Cristiane Almada","Carlos Assunção","Masculino","2018.1","(84) 98548-3313"),
+(NULL,"940.822.183-43","37.355.737-1","Fisioterapia","10/05/1993","fernanda@gmail.com","Solteiro(a)","Brasileiro(a)","Fernanda Carla Lara Cavalcanti","Sebastiana Cecília Assunção","Bruno Vitor Cardoso","Feminino","2018.1","(81) 99188-6995"),
+(NULL,"642.795.383-44","35.551.663-9","Fisioterapia","02/10/1991","bryan@gmail.com","Solteiro(a)","Brasileiro(a)","Bryan Joaquim Ricardo Almeida","Olivia Julia Larissa Santos","Vitor Giovanni Aração","Masculino","2018.1","(16) 99849-3079"),
+(NULL,"551.841.010-00","18.993.237-3","Fisioterapia","19/11/1998","Charlie@gmail.com","Solteiro(a)","Brasileiro(a)","Charlie da Penha","Gergina Esther","Joel Vitor Ramos","Feminino","2018.1","(84) 98310-1050"),
+(NULL,"551.842.010-00","38.993.237-3","Fisioterapia","28/11/1998","Charlott@gmail.com","Solteiro(a)","Brasileiro(a)","Charlott da Penha","Maisie Esther","Tom Vitor Ramos","Feminino","2018.1","(84) 98310-2050"),
+(NULL,"551.843.010-00","48.993.237-3","Fisioterapia","27/11/1998","Lucy@gmail.com","Solteiro(a)","Brasileiro(a)","Lucy da Penha","Isabel Esther","Jonathan Vitor Ramos","Feminino","2018.1","(84) 98310-3050"),
+(NULL,"551.844.010-00","58.993.237-3","Fisioterapia","26/11/1998","Shannon@gmail.com","Solteiro(a)","Brasileiro(a)","Shannon da Penha","Sthephanie Esther","Declan Vitor Ramos","Feminino","2018.1","(84) 98310-4050"),
+(NULL,"551.845.010-00","68.993.237-3","Fisioterapia","25/11/1998","Holly@gmail.com","Solteiro(a)","Brasileiro(a)","Holly da Penha","Mollie Esther","Jacob Vitor Ramos","Feminino","2018.1","(84) 98310-5050"),
+(NULL,"551.846.010-00","78.993.237-3","Fisioterapia","24/11/1998","Amelia@gmail.com","Solteiro(a)","Brasileiro(a)","Amelia da Penha","Hollie Esther","Toby Vitor Ramos","Feminino","2018.1","(84) 98310-6050"),
+(NULL,"551.847.010-00","88.993.237-3","Fisioterapia","23/11/1998","Paige@gmail.com","Solteiro(a)","Brasileiro(a)","Paige da Penha","Libby Esther","Dean Vitor Ramos","Feminino","2018.1","(84) 98310-7050"),
+(NULL,"551.848.010-00","98.993.237-3","Fisioterapia","22/11/1998","Alexandra@gmail.com","Solteiro(a)","Brasileiro(a)","Alexandra da Penha","Jessica Esther","Elliot Vitor Ramos","Feminino","2018.1","(84) 98310-8050"),
+(NULL,"897.716.673-00","44.267.657-8","Fisioterapia","12/05/1998","mariannadaiane@gmail.com","Solteiro(a)","Brasileiro(a)","Mariana Daiane da Costa","Elaine Sebastiana Farias","Cauê Raul Ferreira","Feminino","2018.1","(79) 99621-5793"),
+(NULL,"136.359.733-78","27.799.883-9","Fisioterapia","03/11/1994","noahgael@gmail.com","Solteiro(a)","Brasileiro(a)","Noah Gael Francisco Bernardes","Liz Sarah Heloisa Costa","Heitor Marcos Gomes","Masculino","2018.1","(95) 99159-3949"),
+(NULL,"828.082.593-28","18.778.203-9","Fisioterapia","20/03/1995","simonejoana@gmail.com","Solteiro(a)","Brasileiro(a)","Simone Joana Carvalho","Marlene Gabriela Viana","Vitor Caleb Jesus","Feminino","2018.1","(84) 99302-3415"),
+(NULL,"283.959.443-90","27.067.290-4","Fisioterapia","15/08/1998","kaue@gmail.com","Solteiro(a)","Brasileiro(a)","Kauê Gael Anthony Pires","Bruna Cristiane Almada","Carlos Assunção","Masculino","2018.1","(96) 98569-5436"),
+(NULL,"940.822.183-43","37.355.737-1","Fisioterapia","10/05/1993","fernanda@gmail.com","Solteiro(a)","Brasileiro(a)","Fernanda Carla Lara Cavalcanti","Sebastiana Cecília Assunção","Bruno Vitor Cardoso","Feminino","2018.1","(98) 99101-4391"),
+(NULL,"642.795.383-44","35.551.663-9","Fisioterapia","02/10/1991","bryan@gmail.com","Solteiro(a)","Brasileiro(a)","Bryan Joaquim Ricardo Almeida","Olivia Julia Larissa Santos","Vitor Giovanni Aração","Masculino","2018.1","(94) 98157-8672"),
+
+(NULL,"478.952.913-43","32.083.550-9","Psicologia","21/02/1997","luciana@gmail.com","Solteiro(a)","Brasileiro(a)","Luciana Alessandra Rezende","Ayla Vera Aragão","Renan Guilherme da Cunha","Feminino","2018.1","(86) 98382-4314"),
+(NULL,"939.274.503-67","41.980.469-9","Psicologia","12/02/1993","carlos@gmail.com","Solteiro(a)","Brasileiro(a)","Carlos Nathan Nascimento","Adriana Analu Castro","Theo Giovanni da Mata","Masculino","2018.1","(92) 98131-7872"),
+(NULL,"021.686.633-27","49.599.817-5","Psicologia","12/01/1998","aline@gmail.com","Solteiro(a)","Brasileiro(a)","Aline Pereira","Silvana Márcia Ferreira","Pietro Fábio Gomes","Feminino","2018.1","(84) 98517-6960"),
+(NULL,"010.946.073-12","29.800.725-3","Psicologia","11/08/1997","bruno@gmail.com","Solteiro(a)","Brasileiro(a)","Bruno Lucca Fogaça","Helena Larissa Brenda Fogaça","Mateus Severino Alexandre da Costa","Masculino","2018.1","(27) 99940-0358"),
+(NULL,"484.499.243-08","17.076.368-7","Psicologia","10/03/1998","sophia@gmail.com","Solteiro(a)","Brasileiro(a)","Sophia Yasmin da Conceição","Lívia Emily Oliveira","Luiz Danilo Baptista","Feminino","2018.1","(84) 98845-8397"),
+(NULL,"478.952.913-43","32.013.550-9","Psicologia","20/02/1997","kill@gmail.com","Solteiro(a)","Brasileiro(a)","Kilvia Bandeira Silva","maria Bandeira","Renan Silva","Feminino","2018.1","(85) 97382-4311"),
+(NULL,"478.952.913-43","32.023.550-9","Psicologia","22/02/1997","diala01@gmail.com","Solteiro(a)","Brasileiro(a)","Diala Moreira Silva","livia Moreira","mario Silva","Feminino","2018.1","(85) 96382-4312"),
+(NULL,"478.952.913-43","32.033.550-9","Psicologia","23/02/1997","clarinha@gmail.com","Solteiro(a)","Brasileiro(a)","Clara Cavalcante Oliveira","Cidy Cavalcante","Eduardo Oliveira","Feminino","2018.1","(85) 95382-4313"),
+(NULL,"478.952.913-43","32.043.550-9","Psicologia","24/02/1997","lizinha@gmail.com","Solteiro(a)","Brasileiro(a)","Liz Souza Rolim","Marina Souza","Tulio Rolim","Feminino","2018.1","(85) 94382-4315"),
+(NULL,"478.952.913-43","32.053.550-9","Psicologia","25/02/1997","toinha@gmail.com","Solteiro(a)","Brasileiro(a)","Antonia Silva Soares","Marcos Silva","Adalberto Soares","Feminino","2018.1","(85) 93382-4316"),
+(NULL,"478.952.913-43","32.063.550-9","Psicologia","26/02/1997","dreiaoficial@gmail.com","Solteiro(a)","Brasileiro(a)","Andreia Marina Vieira","Vanessa Marina","Luana Vieira","Feminino","2018.1","(85) 92382-4317"),
+(NULL,"478.952.913-43","32.073.550-9","Psicologia","27/02/1997","clarice003@gmail.com","Solteiro(a)","Brasileiro(a)","Clarice Rayane Neto","Janaina Rayane","João Neto","Feminino","2018.1","(85) 91382-4318"),
+(NULL,"478.953.213-43","32.093.550-9","Psicologia","28/02/1997","marcialima@gmail.com","Solteiro(a)","Brasileiro(a)","Marcia Lima Pereira","Giovanna Lima","noah Pereira","Feminino","2018.1","(85) 99352-4319"),
+(NULL,"478.952.913-43","32.083.550-9","Psicologia","21/02/1997","luciana@gmail.com","Solteiro(a)","Brasileiro(a)","Luciana Alessandra Rezende","Ayla Vera Aragão","Renan Guilherme da Cunha","Feminino","2018.1","(47) 99452-6129"),
+(NULL,"939.274.503-67","41.980.469-9","Psicologia","12/02/1993","carlos@gmail.com","Solteiro(a)","Brasileiro(a)","Carlos Nathan Nascimento","Adriana Analu Castro","Theo Giovanni da Mata","Masculino","2018.1","(51) 99475-2146"),
+(NULL,"021.686.633-27","49.599.817-5","Psicologia","12/01/1998","aline@gmail.com","Solteiro(a)","Brasileiro(a)","Aline Pereira","Silvana Márcia Ferreira","Pietro Fábio Gomes","Feminino","2018.1","(84) 98321-7964"),
+(NULL,"010.946.073-12","29.800.725-3","Psicologia","11/08/1997","bruno@gmail.com","Solteiro(a)","Brasileiro(a)","Bruno Lucca Fogaça","Helena Larissa Brenda Fogaça","Mateus Severino Alexandre da Costa","Masculino","2018.1","(86) 99831-6868"),
+(NULL,"484.499.243-08","17.076.368-7","Psicologia","10/03/1998","sophia@gmail.com","Solteiro(a)","Brasileiro(a)","Sophia Yasmin da Conceição","Lívia Emily Oliveira","Luiz Danilo Baptista","Feminino","2018.1","(55) 98414-0500"),
+(NULL,"920.253.803-48","15.330.963-5","Psicologia","11/07/1998","rogerbraga@gmail.com","Solteiro(a)","Brasileiro(a)","Roger Bragança Melo","Tatiane Fernanda Corte Real","Renato Francisco Bernardo Melo","Masculino","2018.1","(31) 98715-2462");
 
 
---TABELA DE RESULTADO FINAL
+/*--TABELA_DE_RESULTADO_FINAL*/
 
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (1,"1","Elias Lucas Pinto","1000");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (2,"2","Cláudia Lucca Santos","990");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (3,"3","Tereza Carla da Rosa","980");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (4,"4","Oliver Pedro Marcelo da Costa","970");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (5,"5","Malu Maya Figueiredo","960");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (6,"6","Breno Lucca da Rosa","950");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (7,"7","Antônia Simone Ribeiro","940");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (8,"8","Elias Gael Lima","930");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (9,"9","Isabela Cláudia Olivia Rodrigues","920");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (10,"10","Henry Cláudio Vitor Rodrigues","910");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (11,"11","Allana Isabella Costa","900");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (12,"12","Mário Gustavo Nelson da Costa","890");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (13,"13","Sarah Emanuelly Amanda Caldeira","880");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (14,"14","Pedro Yuri Corte Real","870");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (15,"15","Marli Daniela Pereira","860");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (16,"16","Leonardo Thomas Martins","850");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (17,"17","Maria Alessandra Sales","840");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (18,"18","Thomas Leonardo Aragão","830");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (19,"19","Luiza Ester Bernardes","820");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (20,"20","Luan Emanuel Ferreira","810");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (21,"21","Emily Nair Tereza da Cruz","800");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (22,"22","Mateus Marcos Vinicius Severino Assunção","790");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (23,"23","Francisca Joana Teixeira","780");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (24,"24","Isaac Anderson Yago Silveira","770");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (25,"25","Isabelly Isabela Eloá Rodrigues","760");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (26,"26","Mário Cavalcanti Melo","750");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (27,"27","Cecília Luiza Sara Fogaça","740");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (28,"28","Luiz Julio Ribeiro","730");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (29,"29","Marlene Lívia Laura Nunes","720");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (30,"30","Ricardo Ruan Kevin Barbosa","710");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (31,"31","Hadassa Marli Ribeiro","700");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (32,"32","Miguel Juan Moura","690");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (33,"33","Josefa Olivia Andreia Pires","680");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (34,"34","Renato Mário Pinto","670");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (35,"35","Agatha Jéssica Rezende","660");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (36,"36","Sérgio Heitor Almeida","650");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (37,"37","Maya Gabriela Lopes","640");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (38,"38","Vitor Nelson Barros","630");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (39,"39","Mariana Daiane da Costa","620");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (40,"40","Noah Gael Francisco Bernardes","610");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (41,"41","Simone Joana Carvalho","600");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (42,"42","Kauê Gael Anthony Pires","590");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (43,"43","Fernanda Carla Lara Cavalcanti","580");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (44,"44","Bryan Joaquim Ricardo Almeida","570");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (45,"45","Luciana Alessandra Rezende","560");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (46,"46","Carlos Nathan Nascimento","550");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (47,"47","Aline Pereira","540");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (48,"48","Bruno Lucca Fogaça","530");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (49,"49","Sophia Yasmin da Conceição","520");
-INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`) VALUES (50,"50","Roger Bragança Melo","510");
+INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) 
+VALUES
+(1,"Classificado","Elias Lucas Pinto","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(2,"Classificado","Cláudia Lucca Santos","990","2018.1","Analise e Desenvolvimento de Sistemas"),
+(3,"Classificado","Tereza Carla da Rosa","980","2018.1","Analise e Desenvolvimento de Sistemas"),
+(4,"Classificado","Oliver Pedro Marcelo da Costa","970","2018.1","Analise e Desenvolvimento de Sistemas"),
+(5,"Classificado","Malu Maya Figueiredo","960","2018.1","Analise e Desenvolvimento de Sistemas"),
+(6,"Classificado","Breno Lucca da Rosa","950","2018.1","Analise e Desenvolvimento de Sistemas"),
+(7,"Classificado","Antônia Simone Ribeiro","940","2018.1","Analise e Desenvolvimento de Sistemas"),
+(8,"Classificado","Elias Gael Lima","930","2018.1","Analise e Desenvolvimento de Sistemas"),
+(9,"Classificado","Isabela Cláudia Olivia Rodrigues","920","2018.1","Analise e Desenvolvimento de Sistemas"),
+(10,"Classificado","Henry Cláudio Vitor Rodrigues","910","2018.1","Analise e Desenvolvimento de Sistemas"),
+(11,"Desclassificado","João dos Santos","1200","2018.1","Analise e Desenvolvimento de Sistemas"),
+(12,"Desclassificado","Carlos Henrique Larcerda","1190","2018.1","Analise e Desenvolvimento de Sistemas"),
+(13,"Desclassificado","Paulo Henrique Pereira","1180","2018.1","Analise e Desenvolvimento de Sistemas"),
+(14,"Desclassificado","Lucas Prada Rezende","1170","2018.1","Analise e Desenvolvimento de Sistemas"),
+(15,"Desclassificado","Haroldo Nogueira Nascimento","1160","2018.1","Analise e Desenvolvimento de Sistemas"),
+(16,"Desclassificado","Valeria Diógenes","1150","2018.1","Analise e Desenvolvimento de Sistemas"),
+(17,"Desclassificado","Paula Cardoso","1140","2018.1","Analise e Desenvolvimento de Sistemas"),
+(18,"Desclassificado","Sofia Amorim","1130","2018.1","Analise e Desenvolvimento de Sistemas"),
+(19,"Desclassificado","Ricardo da Silva Nunes","1120","2018.1","Analise e Desenvolvimento de Sistemas"),
+(20,"Desclassificado","Henrique Renner","1110","2018.1","Analise e Desenvolvimento de Sistemas"),
+(21,"Classificado","Scott dos Santos","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(22,"Classificado","Callum Henrique Larcerda","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(23,"Classificado","Luke Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(24,"Classificado","Alex Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(25,"Classificado","Harrison Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(26,"Classificado","Nicholas Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(27,"Classificado","Harvery Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(28,"Classificado","Mark Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(29,"Classificado","Peter Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(30,"Classificado","Oscar Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(31,"Classificado","Kian Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(32,"Classificado","Willian Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(33,"Classificado","Aaron Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(34,"Classificado","Adam Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(35,"Classificado","Alexander Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(36,"Classificado","Alfie Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(37,"Classificado","Andrew Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(38,"Classificado","Thomas Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(39,"Classificado","Jack Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(40,"Classificado","James Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(41,"Classificado","Louis Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(42,"Classificado","Jay Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(43,"Classificado","Morgan Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(44,"Classificado","Patrick Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(45,"Classificado","Billy Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(46,"Classificado","Lewis Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(47,"Classificado","Oliver Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(48,"Classificado","Ryan Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(49,"Classificado","Bejamin Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(50,"Classificado","George Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(51,"Classificado","Thejota Henrique Pereira","1000","2018.1","Analise e Desenvolvimento de Sistemas"),
+(52,"Desclassificado","Piter Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(53,"Desclassificado","Jhon Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(54,"Desclassificado","Lian Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(55,"Desclassificado","Jordan Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(56,"Desclassificado","Joe Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(57,"Desclassificado","John Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(58,"Desclassificado","Elliot Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(59,"Desclassificado","Ross Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(60,"Desclassificado","Kane Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(61,"Desclassificado","Lee Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(62,"Desclassificado","Kieran Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(63,"Desclassificado","Ethan Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(64,"Desclassificado","Max Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(65,"Desclassificado","Henry Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(66,"Desclassificado","Brandon Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(67,"Desclassificado","Kyle Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(68,"Desclassificado","Reece Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(69,"Desclassificado","Charles Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+(70,"Desclassificado","Owen Henrique Pereira","500","2018.1","Analise e Desenvolvimento de Sistemas"),
+
+(71,"Classificado","Allana Isabella Costa","900","2018.1","Enfermagem"),
+(72,"Classificado","Mário Gustavo Nelson da Costa","890","2018.1","Enfermagem"),
+(73,"Classificado","Sarah Emanuelly Amanda Caldeira","880","2018.1","Enfermagem"),
+(74,"Classificado","Pedro Yuri Corte Real","870","2018.1","Enfermagem"),
+(75,"Classificado","Marli Daniela Pereira","860","2018.1","Enfermagem"),
+(76,"Classificado","Leonardo Thomas Martins","850","2018.1","Enfermagem"),
+(77,"Classificado","Maria Alessandra Sales","840","2018.1","Enfermagem"),
+(78,"Classificado","Thomas Leonardo Aragão","830","2018.1","Enfermagem"),
+(79,"Classificado","Mario Alessandro Sales","830","2018.1","Enfermagem"),
+(80,"Classificado","Mario Alessandro Sales","830","2018.1","Enfermagem"),
+(81,"Classificado","Guilherme penha","830","2018.1","Enfermagem"),
+(82,"Classificado","Lucas felix","830","2018.1","Enfermagem"),
+(83,"Classificado","Renan Caio da Silva","830","2018.1","Enfermagem"),
+(84,"Desclassificado","Gabriela Almeida Lima","530","2018.1","Enfermagem"),
+(85,"Desclassificado","Weverton Pinheiro Cardoso","530","2018.1","Enfermagem"),
+(86,"Desclassificado","Bruna Giovanni Melo","530","2018.1","Enfermagem"),
+
+(87,"Classificado","Luiza Ester Bernardes","820","2018.1","Direito"),
+(88,"Classificado","Luan Emanuel Ferreira","810","2018.1","Direito"),
+(89,"Classificado","Emily Nair Tereza da Cruz","800","2018.1","Direito"),
+(90,"Classificado","Mateus Marcos Vinicius Severino Assunção","790","2018.1","Direito"),
+(91,"Classificado","Francisca Joana Teixeira","780","2018.1","Direito"),
+(92,"Classificado","Julia Marques Silva","780","2018.1","Direito"),
+(93,"Classificado","julio Almeida Lima","780","2018.1","Direito"),
+(94,"Classificado","margleuda Silva Barbosa","780","2018.1","Direito"),
+(95,"Classificado","Gilvana Almeida Lavor","780","2018.1","Direito"),
+(96,"Classificado","Vitoria Palácio Vieira","780","2018.1","Direito"),
+(97,"Desclassificado","Clarice Brandão Souza","500","2018.1","Direito"),
+(98,"Desclassificado","Carina Giovanna Pereira","500","2018.1","Direito"),
+(99,"Desclassificado","Yara Soares Bandeiraa","500","2018.1","Direito"),
+
+(100,"Classificado","Isaac Anderson Yago Silveira","770","2018.1","Ciências Contabeis"),
+(101,"Classificado","Isabelly Isabela Eloá Rodrigues","760","2018.1","Ciências Contabeis"),
+(102,"Classificado","Mário Cavalcanti Melo","750","2018.1","Ciências Contabeis"),
+(103,"Classificado","Cecília Luiza Sara Fogaça","740","2018.1","Ciências Contabeis"),
+(104,"Classificado","Laura Luiza Sara Fogaça","940","2018.1","Ciências Contabeis"),
+(105,"Classificado","Chelsea Luiza Sara Fogaça","940","2018.1","Ciências Contabeis"),
+(106,"Classificado","Melissa Luiza Sara Fogaça","940","2018.1","Ciências Contabeis"),
+(107,"Classificado","Alisha Luiza Sara Fogaça","940","2018.1","Ciências Contabeis"),
+(108,"Classificado","Natalie Luiza Sara Fogaça","940","2018.1","Ciências Contabeis"),
+(109,"Desclassificado","Eloise Luiza Sara Fogaça","540","2018.1","Ciências Contabeis"),
+(110,"Desclassificado","Lauren Luiza Sara Fogaça","540","2018.1","Ciências Contabeis"),
+(111,"Desclassificado","Naomi Luiza Sara Fogaça","540","2018.1","Ciências Contabeis"),
+
+(112,"Classificado","Luiz Julio Ribeiro","730","2018.1","Educação Fisica"),
+(113,"Classificado","Marlene Lívia Laura Nunes","720","2018.1","Educação Fisica"),
+(114,"Classificado","Ricardo Ruan Kevin Barbosa","710","2018.1","Educação Fisica"),
+(115,"Classificado","Hadassa Marli Ribeiro","700","2018.1","Educação Fisica"),
+(116,"Classificado","mariana Melo Silva","700","2018.1","Educação Fisica"),
+(117,"Classificado","Gabriel Medina","700","2018.1","Educação Fisica"),
+(118,"Classificado","Tony Stark","700","2018.1","Educação Fisica"),
+(119,"Classificado","Garry Kasparov","700","2018.1","Educação Fisica"),
+(120,"Classificado","Albert Ainstein","700","2018.1","Educação Fisica"),
+(121,"Desclassificado","Vando Silva Carvalho","500","2018.1","Educação Fisica"),
+(122,"Desclassificado","Leonardo Marques de Lima","500","2018.1","Educação Fisica"),
+(123,"Desclassificado","Ana Lívia Silva","500","2018.1","Educação Fisica"),
+
+(124,"Classificado","Miguel Juan Moura","690","2018.1","Administração"),
+(125,"Classificado","Josefa Olivia Andreia Pires","680","2018.1","Administração"),
+(126,"Classificado","Renato Mário Pinto","670","2018.1","Administração"),
+(127,"Classificado","Agatha Jéssica Rezende","660","2018.1","Administração"),
+(128,"Classificado","Anthony Carlos Silva","860","2018.1","Administração"),
+(129,"Classificado","Taylor Carlos Alves","860","2018.1","Administração"),
+(130,"Classificado","Kian Carlos Alves","860","2018.1","Administração"),
+(131,"Classificado","Joshua Carlos Alves","860","2018.1","Administração"),
+(132,"Classificado","Daniel Carlos Alves","860","2018.1","Administração"),
+(133,"Desclassificado","Harry Carlos Alves","560","2018.1","Administração"),
+(134,"Desclassificado","Samuel Carlos Alves","560","2018.1","Administração"),
+(135,"Desclassificado","Joseph Carlos Alves","560","2018.1","Administração"),
+
+(136,"Classificado","Sérgio Heitor Almeida","650","2018.1","Serviço Social"),
+(137,"Classificado","Maya Gabriela Lopes","640","2018.1","Serviço Social"),
+(138,"Classificado","Vitor Nelson Barros","630","2018.1","Serviço Social"),
+(139,"Desclassificado","Cleiton Almeida","450","2018.1","Serviço Social"),
+(140,"Desclassificado","Mayara Lourdes","440","2018.1","Serviço Social"),
+(141,"Desclassificado","Hugo Mendonça","430","2018.1","Serviço Social"),
+(142,"Classificado","Lucas Almeida","930","2018.1","Serviço Social"),
+(143,"Classificado","Robert Almeida","930","2018.1","Serviço Social"),
+(144,"Classificado","David Almeida","930","2018.1","Serviço Social"),
+(145,"Classificado","Jamie Almeida","930","2018.1","Serviço Social"),
+(146,"Classificado","Michael Almeida","930","2018.1","Serviço Social"),
+(147,"Desclassificado","Leon Almeida","530","2018.1","Serviço Social"),
+(148,"Desclassificado","Stephen Almeida","530","2018.1","Serviço Social"),
+(149,"Desclassificado","Cherno Alpha","530","2018.1","Serviço Social"),
+
+(150,"Classificado","Mariana Daiane da Costa","620","2018.1","Fisioterapia"),
+(151,"Classificado","Noah Gael Francisco Bernardes","610","2018.1","Fisioterapia"),
+(152,"Desclassificado","Simone Joana Carvalho","600","2018.1","Fisioterapia"),
+(153,"Desclassificado","Kauê Gael Anthony Pires","590","2018.1","Fisioterapia"),
+(154,"Desclassificado","Fernanda Carla Lara Cavalcanti","580","2018.1","Fisioterapia"),
+(155,"Desclassificado","Bryan Joaquim Ricardo Almeida","570","2018.1","Fisioterapia"),
+(156,"Classificado","Charlie da Penha","970","2018.1","Fisioterapia"),
+(157,"Classificado","Charlott da Penha","970","2018.1","Fisioterapia"),
+(158,"Classificado","Lucy da Penha","970","2018.1","Fisioterapia"),
+(159,"Classificado","Shannon da Penha","970","2018.1","Fisioterapia"),
+(160,"Classificado","Holly da Penha","970","2018.1","Fisioterapia"),
+(161,"Desclassificado","Amelia da Penha","970","2018.1","Fisioterapia"),
+(162,"Desclassificado","Paige da Penha","970","2018.1","Fisioterapia"),
+(163,"Desclassificado","Alexandra da Penha","970","2018.1","Fisioterapia"),
+(164,"Desclassificado","Maria da Penha","420","2018.1","Fisioterapia"),
+(165,"Desclassificado","Rael Pereira Alves","410","2018.1","Fisioterapia"),
+(166,"Desclassificado","Simon Fagundes","400","2018.1","Fisioterapia"),
+
+(167,"Desclassificado","Luciana Alessandra Rezende","560","2018.1","Psicologia"),
+(168,"Desclassificado","Carlos Nathan Nascimento","550","2018.1","Psicologia"),
+(169,"Desclassificado","Aline Pereira","540","2018.1","Psicologia"),
+(170,"Desclassificado","Bruno Lucca Fogaça","530","2018.1","Psicologia"),
+(171,"Desclassificado","Sophia Yasmin da Conceição","520","2018.1","Psicologia"),
+(172,"Desclassificado","Roger Bragança Melo","510","2018.1","Psicologia"),
+(173,"Classificado","Kilvia Bandeira Silva","910","2018.1","Psicologia"),
+(174,"Classificado","Diala Moreira Silva","910","2018.1","Psicologia"),
+(175,"Classificado","Clara Cavalcante Oliveira","910","2018.1","Psicologia"),
+(176,"Classificado","Liz Souza Rolim","910","2018.1","Psicologia"),
+(177,"Classificado","Antonia Silva Soares","910","2018.1","Psicologia"),
+(178,"Desclassificado","Andreia Marina Vieira","510","2018.1","Psicologia"),
+(179,"Desclassificado","Clarice Rayane Neto","510","2018.1","Psicologia"),
+(180,"Desclassificado","Marcia Lima Pereira","510","2018.1","Psicologia"),
+
+(181,"Desclassificado","Joel Carlos Alves","490","2018.1","Administração"),
+(182,"Desclassificado","Charles Roban Brown","480","2018.1","Administração"),
+(183,"Desclassificado","Claudio Peres","470","2018.1","Administração"),
+(184,"Desclassificado","Vanessa Bernardes","460","2018.1","Administração"),
+(185,"Classificado","Anthony Carlos Silva","960","2018.1","Administração"),
+(186,"Classificado","Taylor Carlos Alves","960","2018.1","Administração"),
+(187,"Classificado","Kian Carlos Alves","960","2018.1","Administração"),
+(188,"Classificado","Joshua Carlos Alves","960","2018.1","Administração"),
+(189,"Classificado","Daniel Carlos Alves","960","2018.1","Administração"),
+(190,"Desclassificado","Harry Carlos Alves","560","2018.1","Administração"),
+(191,"Desclassificado","Samuel Carlos Alves","560","2018.1","Administração"),
+(192,"Desclassificado","Joseph Carlos Alves","560","2018.1","Administração");
 
