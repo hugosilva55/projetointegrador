@@ -6,7 +6,6 @@ import br.com.Util.GenericDAO;
 import br.com.Util.HibernateUtil;
 import java.util.List;
 import javax.swing.JOptionPane;
-import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 
 /**
@@ -52,7 +51,7 @@ public class ParticipanteDAO extends GenericDAO<Participante> {
             setTransacao(getSessao().beginTransaction());
         
         List<Participante> participante = sessao.createCriteria(Participante.class).add(Restrictions.eq("ano", ano)).
-                add(Restrictions.eq("curso", curso)).addOrder(Order.asc("classificacao").desc("notaFinal")).list();
+                add(Restrictions.eq("curso", curso)).list();
         
         if (participante.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Não existem dados Cadastrados!!!");
