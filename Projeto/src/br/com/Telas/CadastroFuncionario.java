@@ -256,30 +256,33 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if (funcDAO.chequeCPF("cpf", txtCPF.getText()) == false || funcionario.getIdFuncionario() != 0) {
-            if (txtNome.getText().equals("") || txtCPF.getText().equals("") || txtEmail.getText().equals("")
-                    || txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
-                JOptionPane.showMessageDialog(this, "Existem Campos em Branco");
+        if (funcDAO.chequeLogin("loginFunc", txtLogin.getText()) == false) {
+            if (funcDAO.chequeCPF("cpf", txtCPF.getText()) == false || funcionario.getIdFuncionario() != 0) {
+                if (txtNome.getText().equals("") || txtCPF.getText().equals("") || txtEmail.getText().equals("")
+                        || txtLogin.getText().equals("") || txtSenha.getText().equals("")) {
+                    JOptionPane.showMessageDialog(this, "Existem Campos em Branco");
 
-            } else {
-                try {
-                    funcionario.setCpf(txtCPF.getText());
-                    funcionario.setEmail(txtEmail.getText());
-                    funcionario.setLoginFunc(txtLogin.getText());
-                    funcionario.setNomeFuncionario(txtNome.getText());
-                    funcionario.setSenhaFunc(funcDAO.criptografia(txtSenha.getText()));
-                    funcionario.setNivelDeAcesso(String.valueOf(cbNivelAcesso.getSelectedItem()));
-                    funcDAO.salvarFuncionario(funcionario);
-                    limparCampos();
+                } else {
+                    try {
+                        funcionario.setCpf(txtCPF.getText());
+                        funcionario.setEmail(txtEmail.getText());
+                        funcionario.setLoginFunc(txtLogin.getText());
+                        funcionario.setNomeFuncionario(txtNome.getText());
+                        funcionario.setSenhaFunc(funcDAO.criptografia(txtSenha.getText()));
+                        funcionario.setNivelDeAcesso(String.valueOf(cbNivelAcesso.getSelectedItem()));
+                        funcDAO.salvarFuncionario(funcionario);
+                        limparCampos();
 
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
                 }
+            } else {
+                JOptionPane.showMessageDialog(this, "CPF Existente !!!");
             }
         } else {
-            JOptionPane.showMessageDialog(this, "CPF Existente !!!");
+            JOptionPane.showMessageDialog(this, "login Existente !!!");
         }
-
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

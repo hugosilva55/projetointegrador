@@ -100,7 +100,7 @@ public class PesquisarParticipantes extends javax.swing.JFrame {
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, -1, 30));
 
         jcbCurso.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jcbCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Análise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Fisica", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
+        jcbCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Análise e Desenvolvimento de Sistemas", "Ciências Contábeis", "Direito", "Educação Física", "Enfermagem", "Fisioterapia", "Psicologia", "Serviço Social" }));
         jPanel4.add(jcbCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 190, 30));
 
         btnPesquisar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N

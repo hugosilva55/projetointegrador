@@ -63,6 +63,9 @@ public class FuncionarioDAO extends GenericDAO<Funcionario> {
     public boolean chequeCPF(String campo, String valor) {
         return consultarValorRepetido(campo, valor);
     }
+    public boolean chequeLogin(String campo, String valor) {
+        return consultarValorRepetido(campo, valor);
+    }
 
     public static String criptografia(String original) throws UnsupportedEncodingException {
         String senha = null;

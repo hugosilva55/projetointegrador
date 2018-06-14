@@ -25,7 +25,7 @@ public class CalcularNotas {
                 return CalcularPesoA(bloco1, bloco2, bloco3, bloco4, redacao);
             case "Administração":
             case "Ciências Contábeis":
-            case "Analise e Desenvolvimento de Sistemas":
+            case "Análise e Desenvolvimento de Sistemas":
             case "Psicologia":
             case "Serviço Social":
             case "Direito":

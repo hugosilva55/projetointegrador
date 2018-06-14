@@ -20,6 +20,7 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
     Funcionario func = new Funcionario();
     FuncionarioDAO funcDAO = new FuncionarioDAO();
     private String tipoUser;
+
     /**
      * Creates new form ConsultarFuncionario
      */
@@ -27,7 +28,8 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
         initComponents();
         atualizarTabela();
     }
-       public ConsultarFuncionario(String tipo) {
+
+    public ConsultarFuncionario(String tipo) {
         initComponents();
         atualizarTabela();
         this.tipoUser = tipo;
@@ -206,7 +208,7 @@ public class ConsultarFuncionario extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-       int linha = tbFuncionario.getSelectedRow();
+        int linha = tbFuncionario.getSelectedRow();
         if (linha == -1) {
             JOptionPane.showMessageDialog(rootPane, "Por favor, selecione uma linha!!");
         } else if (JOptionPane.showConfirmDialog(rootPane, "Deseja realmente excluir?", "Excluir",
