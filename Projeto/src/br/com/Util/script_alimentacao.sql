@@ -7,7 +7,7 @@
  * Author:  alves
  * Created: 08/06/2018
  */
---TABELA_GABARITO_OFICIAL
+/*--TABELA_GABARITO_OFICIAL*/
 
 INSERT INTO `gabaritooficial` (`idGabarito`, `ProcessoSeletivo`, `Resposta1`, `Resposta10`, `Resposta11`, `Resposta12`, `Resposta13`, `Resposta14`, `Resposta15`, `Resposta16`, `Resposta17`, `Resposta18`, `Resposta19`, `Resposta2`, `Resposta20`, `Resposta3`, `Resposta4`, `Resposta5`, `Resposta6`, `Resposta7`, `Resposta8`, `Resposta9`, `curso`) 
 VALUES 
@@ -22,13 +22,13 @@ VALUES
 (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Educação Fisica'),
 (NULL, '2018.1', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'Administração');
 
---TABELA_DE_FUNCIONARIO
+/*--TABELA_DE_FUNCIONARIO*/
 
 INSERT INTO `funcionario`(`idFuncionario`, `NivelDeAcesso`, `cpf`, `email`, `loginFunc`, `nomeFuncionario`, `senhaFunc`) 
 VALUES 
 (NULL,"Administrador", "123.123.123-00","admin@gmail.com","admin","admin",MD5("admin"));
 
---TABELA_DE_PARTICIPANTE
+/*--TABELA_DE_PARTICIPANTE*/
 
 INSERT INTO `participante`(`idUsuario`, `CPF`, `RG`, `curso`, `dataNascimento`, `email`, `estadoCivil`, `nacionalidade`, `nome`, `nomeMae`, `nomePai`, `sexo`,`ano`,`telefone`) 
 VALUES 
@@ -225,7 +225,7 @@ VALUES
 (NULL,"920.253.803-48","15.330.963-5","Psicologia","11/07/1998","rogerbraga@gmail.com","Solteiro(a)","Brasileiro(a)","Roger Bragança Melo","Tatiane Fernanda Corte Real","Renato Francisco Bernardo Melo","Masculino","2018.1","(31) 98715-2462");
 
 
---TABELA_DE_RESULTADO_FINAL
+/*--TABELA_DE_RESULTADO_FINAL*/
 
 INSERT INTO `resultadofinal`(`idResultadoFinal`,`classificacao`,`nomeParticipante`,`notaFinal`,`ano`,`curso`) 
 VALUES
